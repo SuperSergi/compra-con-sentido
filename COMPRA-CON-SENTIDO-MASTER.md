@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 4 de octubre de 2026 · 08:30
+**Última actualización:** 4 de octubre de 2026 · 08:39
 **Mercado inicial:** España  
 **Idioma principal:** Español  
 **Dominio canónico:** `https://compraconsentido.es/`  
@@ -3205,3 +3205,172 @@ Regla adicional:
 - después de cualquier transformación masiva de tablas, el QA estructural debe validar aperturas y cierres antes del merge.
 
 Esta revisión se considera parte del cierre técnico de 03.3 y refuerza el principio de que una corrección transversal debe quedar protegida por una comprobación automática equivalente.
+
+
+---
+
+## Oportunidad SEO/comercial: mejores filamentos PLA · 04/10/2026 08:39
+
+Amazon.es ha confirmado que la elegibilidad de Creators API exige al menos 10 compras adscritas correspondientes a 10 pedidos separados dentro de una ventana móvil de 30 días. El estado confirmado era 13 productos agrupados en 8 pedidos válidos. Este objetivo refuerza el interés por productos baratos, fáciles de comprar y de recompra, pero no sustituye el criterio SEO/editorial.
+
+### Decisión SEO
+
+Se valida como oportunidad real la futura URL:
+
+`/impresion-3d/filamentos-3d/mejores-filamentos-pla/`
+
+Estado:
+
+**OPORTUNIDAD SEO VALIDADA. No crear ni publicar todavía. Investigación de producto inicial cerrada; contenido y diseño pendientes.**
+
+Keyword principal:
+
+`mejores filamentos PLA`
+
+Keywords secundarias naturales:
+
+- `mejor filamento PLA calidad precio`
+- `mejores marcas de filamento PLA`
+- `qué filamento PLA comprar`
+- `filamento PLA barato`
+- `PLA+`
+- `PLA alta velocidad`
+- `filamento PLA 1.75`
+
+No usar volúmenes de búsqueda inventados. La decisión se basa en SERP real, intención, competencia cualitativa, encaje de cluster y potencial comercial.
+
+### Intención y dificultad
+
+Intención principal:
+
+**Comercial / investigación previa a compra.**
+
+Intenciones secundarias:
+
+- relación calidad/precio;
+- marcas fiables;
+- PLA estándar frente a PLA+;
+- alta velocidad;
+- formatos baratos o con más cantidad;
+- acabado mate/estético;
+- facilidad de impresión;
+- uso práctico con sistemas de alimentación tipo AMS.
+
+La SERP española mezcla comparativas editoriales, blogs nicho de impresión 3D, rankings afiliados genéricos, categorías de retailers, comparadores de precio y guías informacionales.
+
+Competidores relevantes observados:
+
+- All3DP;
+- ImprimeFácil3D;
+- 3Dimpresoras.com;
+- ElGofio3D;
+- Zelpio;
+- retailers como PcComponentes, Leroy Merlin e Idealo.
+
+Dificultad cualitativa:
+
+**MEDIA.**
+
+Hay un competidor editorial fuerte como All3DP y dominios grandes de retail, pero también posicionan webs nicho y rankings genéricos. Existe hueco para una comparativa española más concreta y útil.
+
+### Oportunidades editoriales
+
+La página no será un ranking genérico de “los 10 mejores”.
+
+Diferenciación prevista:
+
+- recomendaciones según escenario;
+- referencias concretas, no solo marcas;
+- distinguir PLA estándar, PLA+ y alta velocidad;
+- explicar cuándo compensa pagar más y cuándo no;
+- separar acabado estético de resistencia o velocidad;
+- comparar cantidad real por bobina y formatos económicos;
+- tratar AMS con prudencia, verificando material y dimensiones de bobina;
+- explicar adaptadores/anillos cuando el fabricante los contemple;
+- no mostrar precios fijos;
+- CTA habitual `Ver precio en Amazon`.
+
+### Canibalización
+
+Riesgo actual:
+
+**BAJO**, manteniendo intenciones separadas.
+
+`/impresion-3d/filamentos-3d/` responde a **qué material elegir** entre PLA, PETG, ASA y TPU.
+
+`/impresion-3d/filamentos-3d/mejores-filamentos-pla/` responderá a **qué PLA concreto comprar** una vez decidido el material.
+
+Regla:
+
+- la guía actual no debe convertirse en una comparativa de marcas PLA;
+- la nueva página no debe intentar posicionar principalmente por PLA vs PETG/ASA/TPU;
+- ambas páginas deben enlazarse contextualmente.
+
+### Shortlist inicial de productos candidatos
+
+Antes de publicar se volverá a verificar ficha activa, color/variante, contenido exacto y ASIN.
+
+- **JAYO PLA 1.75 mm 1,1 kg negro** — ASIN `B0BHQR69RW`
+  - perfil: imprimir mucho gastando poco / más cantidad por bobina.
+
+- **ELEGOO PLA 1.75 mm 1 kg blanco** — ASIN `B0CD7B7ZKK`
+  - perfil: PLA estándar sencillo y fácil de comprar.
+  - ELEGOO publica además un anillo para facilitar el uso de su bobina de cartón en AMS.
+
+- **SUNLU PLA+ 2.0 1.75 mm 1 kg negro** — ASIN `B0DHCT8YDN`
+  - perfil: equilibrio calidad/precio / PLA+.
+
+- **eSUN PLA+ 1.75 mm 1 kg negro** — ASIN `B07FQDKR28`
+  - perfil: PLA+ generalista con mayor tenacidad que un PLA básico.
+
+- **Creality Hyper PLA RFID 1.75 mm 1 kg gris** — ASIN `B0DMVS9D3R`
+  - perfil: alta velocidad.
+  - no confundir esta referencia con Hyper PLA sin RFID.
+
+- **Polymaker PolyTerra PLA 1.75 mm 1 kg Charcoal Black** — ASIN `B08QMBPZBF`
+  - perfil: acabado mate.
+  - Polymaker ha renombrado PolyTerra PLA como Panchroma Matte; Amazon puede mantener la denominación histórica PolyTerra.
+
+La shortlist todavía no constituye un ranking ni una selección editorial inmutable. La siguiente fase debe normalizar criterios y comprobar que los seis aportan diferencias suficientes.
+
+### Criterios técnicos a normalizar antes de redactar
+
+- tipo: PLA / PLA+ / high-speed / matte;
+- diámetro nominal y tolerancia declarada;
+- peso neto;
+- temperatura de boquilla;
+- temperatura de cama;
+- velocidad recomendada o máxima solo cuando el fabricante la publique claramente;
+- material y dimensiones de bobina cuando afecten a AMS o alimentadores;
+- formato: bobina, refill o pack;
+- requisitos de secado/almacenamiento si se especifican.
+
+No comparar propiedades mecánicas de fabricantes distintos si los métodos de ensayo no son equivalentes.
+
+### Enlazado interno previsto
+
+Desde `/impresion-3d/filamentos-3d/`:
+
+Añadir en el bloque de PLA un enlace contextual hacia la comparativa para quien ya haya decidido utilizar PLA.
+
+Desde `/impresion-3d/`:
+
+Incorporar la nueva comparativa como contenido comercial específico del cluster de filamentos.
+
+Desde la nueva comparativa:
+
+- volver a `/impresion-3d/filamentos-3d/` para quien todavía dude entre materiales;
+- enlazar a impresoras 3D cuando se trate compatibilidad o velocidad;
+- enlazar a accesorios solo cuando almacenamiento, secado o alimentación lo justifiquen.
+
+No crear por ahora páginas equivalentes de PETG, TPU o ASA. Investigar cada material por separado y crear URL solo si su SERP, demanda e intención justifican una página propia.
+
+### Siguiente fase
+
+1. cerrar matriz técnica de los seis candidatos con documentación oficial;
+2. revisar experiencias reales y patrones recurrentes por referencia exacta;
+3. decidir si los seis aportan perfiles suficientemente distintos;
+4. cerrar title, meta description, H1, estructura H2/H3, FAQ y bloques de decisión;
+5. revalidar Amazon.es/ASIN justo antes de preparar enlaces afiliados.
+
+**No se crea ni publica todavía la URL.**
