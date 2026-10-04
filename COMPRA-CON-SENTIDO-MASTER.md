@@ -4508,3 +4508,62 @@ En las fichas:
 - se puede mencionar de forma contextual que una referencia acumula miles de valoraciones o que tiene una muestra local amplia si el dato ayuda a explicar la confianza;
 - no convertir `más reseñas` en `mejor producto`.
 
+
+
+---
+
+## Compatibilidad AMS · revisión v2 · filamentos PLA · 04/10/2026
+
+Se amplía la verificación de compatibilidad con Bambu Lab.
+
+### Bambu Lab
+
+Para AMS y AMS 2 Pro, Bambu Lab publica:
+- ancho de bobina: 50-68 mm;
+- diámetro: 197-202 mm;
+- recomienda bobinas plásticas;
+- para cartón recomienda adaptador.
+
+### Winkle PLA HD
+
+Las fichas oficiales actuales de Winkle para PLA HD estándar muestran en varios colores `Compatibilidad BambuLab: AMS Lite`.
+
+Distribuidores publican para la bobina PLA HD unas dimensiones aproximadas de 175 × 77 mm.
+
+Lectura editorial:
+- no marcar Winkle como ✅ para AMS / AMS 2 Pro;
+- la evidencia actual apunta a compatibilidad directa con AMS Lite en la gama PLA HD estándar;
+- antes de publicar, comprobar la bobina exacta negra B08LQJ8W1F y si la versión vendida actualmente conserva esas dimensiones.
+
+Estado provisional para columna AMS si se refiere a AMS/AMS 2 Pro: **❌/pendiente de validación exacta**, no ✅.
+
+### SUNLU High Speed PLA+ 2.0
+
+La bobina es plástica según revisión manual de Amazon.
+
+Datos publicados para bobinas SUNLU rondan 203 × 63-64 mm, ligeramente por encima del máximo oficial Bambu en diámetro, pero existen experiencias repetidas de uso real en AMS y AMS 2 Pro, incluida la gama High Speed PLA+ 2.0.
+
+SUNLU ha introducido generaciones de bobina específicamente adaptadas mejor a AMS.
+
+Estado provisional: **✅ si el ASIN actual usa bobina V3 / compatible; verificar visualmente antes de publicar.**
+
+No añadir advertencia genérica solo por ser SUNLU.
+
+### JAYO PLA
+
+La bobina actual observada por Sergio es plástica.
+
+Referencias comunitarias de bobinas JAYO plásticas actuales rondan 200 × 63 mm y usuarios recientes reportan funcionamiento en AMS 2 Pro.
+
+JAYO también ha vendido históricamente el mismo tipo de filamento en cartón, por lo que no generalizar a cualquier bobina JAYO.
+
+Estado provisional: **✅ para la bobina plástica actual si se confirma que el ASIN B0BHQR69RW corresponde a esa versión.**
+
+### ELEGOO / eSUN / OVERTURE
+
+- ELEGOO: cartón → ⚠️.
+- eSUN: cartón en la referencia actual → ⚠️.
+- OVERTURE: cartón → ⚠️.
+
+La precaución es por la bobina, no por el material PLA.
+
