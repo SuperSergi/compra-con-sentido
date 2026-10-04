@@ -4696,3 +4696,57 @@ Motivo:
 - Winkle además presenta indicios de compatibilidad AMS Lite que no deben extrapolarse automáticamente a AMS/AMS 2 Pro.
 
 La publicación no debe usar ✅ hasta cerrar la compatibilidad exacta por referencia.
+
+
+---
+
+## Borrador HTML montado · mejores filamentos PLA · 04/10/2026
+
+Se crea el borrador HTML estructural en:
+
+`.github/content-drafts/mejores-filamentos-pla.html`
+
+No está publicado en la URL final.
+
+Incluye:
+- title y meta description provisionales;
+- breadcrumbs;
+- hero;
+- exactamente 3 perfiles;
+- tabla principal;
+- metodología;
+- seis fichas completas;
+- barras de valoración;
+- bloques de packs;
+- bloque PLA / PLA+ / High Speed;
+- bloque AMS;
+- FAQ;
+- enlazado interno a la guía de filamentos;
+- footer y navegación vigentes.
+
+### Decisiones aplicadas en el HTML
+
+- CTA principal: `Ver en Amazon`.
+- Packs: `Ver pack de 2 en Amazon` y `Ver pack de 4 en Amazon`.
+- tabla con una bobina individual por producto;
+- sin ranking global;
+- notas con un decimal;
+- JAYO B0BHQR69RW tratado como PLA normal de 1,1 kg;
+- Winkle mantiene `No declarada` en tolerancia hasta tener fuente primaria inequívoca;
+- no se asigna símbolo AMS definitivo a SUNLU, JAYO ni Winkle;
+- el CTA de OVERTURE pack de 4 queda sin activar hasta confirmar el ASIN exacto de Amazon.es;
+- imágenes de producto quedan como placeholders para no usar representaciones inexactas.
+
+### Pendientes antes de mover el HTML a la URL pública
+
+1. imágenes exactas y optimizadas de los seis productos;
+2. cerrar AMS exacto de SUNLU, JAYO y Winkle;
+3. confirmar ASIN del pack de 4 OVERTURE visto en Amazon.es;
+4. revalidar ASIN, variante y disponibilidad de todos los CTA;
+5. añadir tag de afiliación vigente a los enlaces;
+6. cerrar hero/OG image;
+7. generar schema Article + BreadcrumbList + FAQPage cuando el contenido visible quede congelado;
+8. enlazado de entrada desde `/impresion-3d/filamentos-3d/` y `/impresion-3d/`;
+9. revisión responsive y build final.
+
+La URL continúa sin publicarse.
