@@ -3921,3 +3921,277 @@ Cada ficha podrá mostrar un pequeño bloque `Si compras más cantidad` con:
 No usar dos decimales en notas públicas. Redondear siempre a un decimal.
 
 No publicar precios como información permanente sin indicar que corresponden al momento del análisis.
+
+
+---
+
+## Estructura editorial cerrada · mejores filamentos PLA · 04/10/2026
+
+Se define la arquitectura editorial de la futura URL:
+
+`/impresion-3d/filamentos-3d/mejores-filamentos-pla/`
+
+La URL sigue sin crearse ni publicarse.
+
+### Title provisional
+
+`Mejores filamentos PLA calidad-precio: 6 opciones según el uso`
+
+Pendiente de ajuste final cuando se cierre la redacción.
+
+### H1
+
+`Mejores filamentos PLA: cuál comprar según lo que vas a imprimir`
+
+### Orden de contenidos
+
+1. Breadcrumbs.
+2. H1.
+3. Introducción breve orientada a decisión.
+4. Resumen rápido de recomendaciones por perfil.
+5. Tabla comparativa principal.
+6. Explicación breve de metodología y sistema de valoración.
+7. Seis fichas de producto.
+8. Bloque comparativo transversal: qué cambia realmente entre PLA, PLA+ y High Speed PLA+ dentro de esta selección.
+9. Bloque de packs y cuándo compensa comprar más cantidad.
+10. Bloque AMS / bobinas de cartón y plástico.
+11. Cómo elegir entre los seis.
+12. FAQ.
+13. Enlazado interno hacia guía de materiales y contenidos relacionados.
+
+### Resumen rápido
+
+La primera respuesta debe permitir decidir sin leer toda la página.
+
+Perfiles provisionales:
+
+- JAYO PLA → mejor si priorizas coste por kilo / cantidad.
+- ELEGOO PLA → PLA sencillo y fácil para uso diario.
+- eSUN PLA+ → PLA+ generalista equilibrado.
+- SUNLU High Speed PLA+ 2.0 → mejor para alta velocidad.
+- OVERTURE PLA Professional → piezas funcionales / PLA Pro equilibrado.
+- Winkle PLA HD → fabricación española, buen acabado y consistencia.
+
+No usar ranking 1.º, 2.º, 3.º.
+
+### Tabla comparativa principal
+
+Columnas:
+
+- Modelo
+- Tipo
+- Peso
+- Tolerancia
+- Temperatura de boquilla
+- Velocidad declarada
+- AMS
+- Calidad-precio
+- Mejor para
+
+Reglas:
+
+- una bobina individual por producto;
+- todos son 1,75 mm y se explicará una vez fuera de la tabla;
+- notas con un decimal;
+- AMS solo con símbolo ✅ / ⚠️ / ❌;
+- tolerancia solo si está documentada; si no, `No declarada`;
+- velocidad siempre presentada como declaración del fabricante, no como resultado de prueba propia;
+- no incluir temperatura de cama en la tabla principal;
+- no incluir precios fijos en la tabla pública.
+
+### Metodología
+
+Bloque breve antes de las fichas:
+
+`Nuestra valoración` se calcula con:
+
+- Calidad y acabado: 20 %.
+- Fiabilidad y experiencia real: 20 %.
+- Facilidad: 10 %.
+- Prestaciones para su uso objetivo: 15 %.
+- Precio por kg observado: 35 %.
+
+La parte de fiabilidad incorpora:
+
+- consistencia entre bobinas/lotes;
+- incidencias recurrentes;
+- atascos, enredos, roturas y humedad;
+- comportamiento reportado en distintas impresoras;
+- reseñas de usuarios;
+- pruebas independientes;
+- volumen y calidad de evidencia.
+
+Mantener además una señal interna de confianza de la valoración: Alta / Media-Alta / Media / Baja.
+
+No mostrar estrellas editoriales.
+
+### Plantilla de cada ficha
+
+Cada producto debe contener:
+
+#### 1. Encabezado
+- nombre exacto;
+- perfil de recomendación;
+- imagen;
+- CTA `Ver precio en Amazon`.
+
+#### 2. `La elegiría si...`
+Una frase concreta que explique qué característica puede justificar comprar ese producto frente a los otros cinco.
+
+#### 3. Datos clave
+Bloque compacto con:
+- tipo;
+- peso;
+- tolerancia;
+- boquilla;
+- velocidad fabricante;
+- cama si aporta valor;
+- secado si está especificado;
+- bobina/material;
+- AMS.
+
+#### 4. `Lo que destaca`
+2-4 puntos basados en diferencias reales.
+
+#### 5. `A tener en cuenta`
+Limitaciones, incidencias recurrentes o precauciones reales.
+
+#### 6. `Qué dicen las pruebas y los usuarios`
+Resumen editorial de patrones, sin copiar comentarios ni presentar una sola reseña como conclusión.
+
+Debe distinguir:
+- ventajas repetidas;
+- problemas repetidos;
+- nivel de confianza de la evidencia.
+
+#### 7. `Nuestra valoración`
+Cinco barras HTML/CSS:
+- Calidad
+- Fiabilidad
+- Facilidad
+- Prestaciones
+- Precio
+
+Debajo:
+`Calidad-precio: X,X/10`
+
+#### 8. `Si compras más cantidad`
+Solo cuando existan packs:
+- pack;
+- €/kg observado;
+- ahorro/sobrecoste frente a la unidad;
+- nueva nota calidad-precio;
+- CTA secundario opcional.
+
+Si el pack no mejora el €/kg, indicarlo claramente.
+
+#### 9. `La compraría frente a...`
+Una comparación breve con el rival más cercano dentro de los seis.
+
+### Diferenciación prevista por producto
+
+ELEGOO:
+- facilidad;
+- precio contenido;
+- PLA estándar;
+- cartón/AMS como precaución.
+
+eSUN:
+- PLA+ generalista;
+- equilibrio entre facilidad y prestaciones;
+- amplia experiencia acumulada de usuarios;
+- cartón/AMS como precaución.
+
+SUNLU:
+- alta velocidad;
+- documentación de temperatura ligada a velocidad;
+- bobina plástica;
+- explicar que 600 mm/s es máximo declarado, no rendimiento garantizado.
+
+OVERTURE:
+- PLA Professional / PLA+;
+- orientación a piezas funcionales;
+- documentación técnica sólida;
+- bobina de cartón.
+
+JAYO:
+- 1,1 kg;
+- coste por kg muy competitivo;
+- packs actuales no necesariamente mejores que unidad;
+- evidencia independiente menos profunda, por lo que la confianza debe tratarse con más prudencia.
+
+Winkle:
+- fabricación española;
+- documentación técnica clara;
+- bobina plástica;
+- buen feedback local;
+- precio alto frente al resto, que debe justificar mediante calidad/consistencia y no con marketing.
+
+### Bloque packs
+
+Explicar que la tabla usa una bobina individual para comparar en igualdad.
+
+Después mostrar ejemplos donde el pack cambia la compra:
+
+- ELEGOO 4 kg: muy competitivo por kg;
+- eSUN 4 kg: mejora notable;
+- SUNLU 4 kg: mejora el €/kg;
+- OVERTURE 4 kg: mejora fuerte con cupón observado;
+- JAYO: a los precios observados, la unidad puede salir mejor que el pack;
+- Winkle: no se localizó pack equivalente.
+
+No convertir promociones puntuales en afirmaciones permanentes.
+
+### Bloque AMS
+
+Explicar una sola vez:
+
+- ✅ uso directo;
+- ⚠️ compatible con precauciones/adaptador;
+- ❌ no compatible directamente.
+
+Después:
+- bobina plástica + dimensiones correctas → ✅;
+- cartón con dimensiones correctas → normalmente ⚠️;
+- incompatibilidad física/formato → ❌.
+
+Las fichas explican el motivo concreto.
+
+### FAQ previstas
+
+Preguntas candidatas:
+
+- ¿Qué filamento PLA tiene mejor relación calidad-precio?
+- ¿Qué diferencia hay entre PLA y PLA+?
+- ¿Qué PLA es mejor para impresoras rápidas?
+- ¿Qué filamentos PLA funcionan bien con AMS?
+- ¿Merece la pena comprar packs de varias bobinas?
+- ¿Qué temperatura de boquilla usar con PLA?
+- ¿Es importante la tolerancia del diámetro?
+- ¿Hay que secar el PLA antes de imprimir?
+
+Las FAQ definitivas deben responder a intención real y coincidir exactamente con FAQPage si se implementa schema.
+
+### Enlazado interno
+
+Desde la nueva página:
+
+- enlace a `/impresion-3d/filamentos-3d/` para quien aún dude entre PLA, PETG, ASA y TPU;
+- enlace contextual a impresoras 3D al hablar de high-speed y AMS;
+- enlace a accesorios si se trata almacenamiento/secado/adaptadores de bobina.
+
+Desde páginas existentes:
+
+- `/impresion-3d/filamentos-3d/` debe enlazar a esta comparativa desde el bloque PLA;
+- `/impresion-3d/` debe enlazarla como comparativa comercial del cluster.
+
+### Estado siguiente
+
+Siguiente fase:
+1. completar evidencia de uso real por producto;
+2. cerrar confianza de la valoración;
+3. revisar y ajustar notas v1;
+4. cerrar datos AMS definitivos;
+5. cerrar textos de las seis fichas;
+6. después preparar HTML y publicar mediante PR.
+
