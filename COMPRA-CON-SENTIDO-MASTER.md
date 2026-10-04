@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 4 de octubre de 2026 · 09:22  
+**Última actualización:** 4 de octubre de 2026 · 16:36  
 **Mercado inicial:** España  
 **Idioma principal:** Español  
 **Dominio canónico:** `https://compraconsentido.es/`  
@@ -5294,3 +5294,25 @@ Por tanto:
 
 **Página cerrada y publicada.**
 No realizar más cambios salvo incidencias detectadas en producción, datos de Search Console o mejoras posteriores basadas en rendimiento real.
+
+
+---
+
+## Revisión editorial final · comparativa mejores filamentos PLA · 04/10/2026
+
+Se realiza una revisión editorial completa de `/impresion-3d/filamentos-3d/mejores-filamentos-pla/` tras detectar restos de borrador y textos que podían dar sensación de página incompleta.
+
+Cambios cerrados:
+- eliminados textos internos como “debe cerrarse antes de publicar”, “referencia aportada” y atributos `data-amazon-validation="review-before-merge"`;
+- eliminados precios fijos por kilo y referencias a cupones para evitar datos comerciales caducables mientras no exista actualización automática de Amazon;
+- las comparaciones de packs se mantienen de forma cualitativa y contextual, sin cifras fijas;
+- la puntuación deja de depender del precio y pasa a mostrarse como **Valoración técnica**, basada en calidad/acabado, fiabilidad/experiencia real, facilidad y prestaciones;
+- mejorada la explicación de compatibilidad AMS con etiquetas visibles en la tabla y una leyenda específica;
+- cerrada la redacción de Winkle para AMS / AMS 2 Pro y eliminadas notas pendientes de validación propias del borrador;
+- mejoradas las FAQ de calidad-precio y AMS para responder directamente a la intención de búsqueda;
+- sustituido lenguaje interno de investigación por redacción editorial final;
+- matizado OVERTURE para hablar de piezas de uso frecuente o exigencia moderada;
+- eliminada la sección redundante “Una forma rápida de decidir entre los seis”, manteniendo el enlace a la guía general de filamentos;
+- mantenida la coherencia entre FAQ visibles y schema `FAQPage`.
+
+La página de metodología ya establece que no se deben publicar precios fijos, por lo que no requiere cambios adicionales.
