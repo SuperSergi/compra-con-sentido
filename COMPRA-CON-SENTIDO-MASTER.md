@@ -4300,3 +4300,36 @@ No duplicar información de todos los packs cuando uno sea claramente irrelevant
 
 Esta decisión sustituye el orden de ficha registrado anteriormente en el bloque `Estructura editorial cerrada · mejores filamentos PLA · 04/10/2026`.
 
+
+
+---
+
+## Ajuste de textos CTA por formato · filamentos PLA · 04/10/2026
+
+Se simplifican los textos de los botones de compra dentro de las fichas.
+
+### CTA principal
+
+El formato individual usa siempre:
+
+`Ver en Amazon`
+
+No mencionar `1 kg`, `1,1 kg` ni otra cantidad en el botón principal. El peso ya debe estar explicado en la ficha y en los datos clave.
+
+### CTA de packs
+
+Cuando existan formatos múltiples:
+
+- `Ver pack de 2 en Amazon`
+- `Ver pack de 4 en Amazon`
+
+La cantidad se refiere al número de bobinas/unidades, no al peso total.
+
+### Regla editorial
+
+Evitar repetir información ya visible en la ficha.
+
+El usuario debe entender el peso de cada bobina por el contenido de la ficha y la tabla. Los botones se limitan a identificar el formato de compra de forma clara y breve.
+
+Esta decisión sustituye los textos anteriores del tipo `Ver 1 kg en Amazon`, `Ver 1,1 kg en Amazon`, `Ver pack 2 kg` o `Ver pack 4 kg`.
+
