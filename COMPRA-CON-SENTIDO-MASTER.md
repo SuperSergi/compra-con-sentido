@@ -4333,3 +4333,178 @@ El usuario debe entender el peso de cada bobina por el contenido de la ficha y l
 
 Esta decisión sustituye los textos anteriores del tipo `Ver 1 kg en Amazon`, `Ver 1,1 kg en Amazon`, `Ver pack 2 kg` o `Ver pack 4 kg`.
 
+
+
+---
+
+## Evidencia de uso real y valoración v2 · filamentos PLA · 04/10/2026
+
+Se amplía la investigación de uso real con reseñas, pruebas independientes, comunidades técnicas y señales de volumen de opiniones.
+
+### Regla sobre popularidad
+
+La cantidad de reseñas, ventas visibles o compras recientes no puntúa por sí sola como calidad.
+
+Se usa para:
+- medir cuánta experiencia acumulada existe;
+- aumentar o reducir la confianza de la valoración;
+- detectar si un patrón negativo o positivo aparece sobre una base amplia.
+
+Un producto con muchas reseñas no recibe automáticamente una nota mayor.
+
+### Evidencia por producto
+
+#### ELEGOO PLA · ASIN B0CD7B7ZKK
+
+Señales encontradas:
+- MerchantWords España: aproximadamente 1.000+ reseñas y 4,8/5 para el ASIN exacto en la captura consultada;
+- otros índices internacionales del mismo ASIN muestran varios miles de valoraciones;
+- Filament Swatch: 8,2/10 global, 9/10 en imprimibilidad y 10/10 en valor;
+- patrones recurrentes: buena adhesión, impresión sencilla, buena relación coste/resultado;
+- limitaciones repetidas: variación entre lotes/colores y acabado menos fino que materiales premium;
+- fabricante: 1 kg, 1,75 mm, ±0,02 mm, 190-230 °C y bobina de cartón con anillo oficial para reducir problemas en AMS.
+
+Confianza editorial: **Alta**.
+
+#### eSUN PLA+ · ASIN B07FQ98RNP
+
+Señales encontradas:
+- MerchantWords: alrededor de 18.000-20.000 reseñas, ~4,4-4,5/5 según mercado/fecha;
+- tienda oficial eSUN: 4,8/5 sobre 105 reseñas y señal de decenas de miles de unidades vendidas en su propia tienda;
+- uso real muy extendido en distintas impresoras;
+- patrones positivos: facilidad, buena adhesión, buen equilibrio entre rigidez y tenacidad, comportamiento conocido;
+- patrones negativos: algunos casos de fragilidad si absorbe humedad, variación entre lotes/colores y experiencias puntuales de alimentación;
+- ficha oficial: 1 kg, 1,75 mm, ±0,03 mm, 210-230 °C, 45-60 °C, <300 mm/s.
+
+Confianza editorial: **Alta**.
+
+#### SUNLU High Speed PLA+ 2.0 · ASIN B0FDGKJ1BJ
+
+Señales encontradas:
+- MerchantWords España: alrededor de 657 reseñas y 4,7/5 para el ASIN exacto;
+- tienda SUNLU: 4,95/5 sobre 77 reseñas para la gama High Speed PLA+ 2.0;
+- fabricante: 1,75 ±0,02 mm y hasta 600 mm/s con escalado de temperatura según velocidad;
+- foros Bambu y Reddit muestran resultados muy buenos en algunos equipos, pero también experiencias claramente negativas con atascos, roturas o peor detalle fino;
+- el patrón es más polarizado que en ELEGOO, eSUN u OVERTURE;
+- no presentar 600 mm/s como calidad garantizada: requiere caudal, temperatura, perfil y hardware adecuados.
+
+Confianza editorial: **Media-Alta** por ser una referencia relativamente nueva y tener feedback más polarizado.
+
+#### OVERTURE PLA Professional · ASIN B09PDCLSLY
+
+Señales encontradas:
+- MerchantWords: ~7.800 reseñas y 4,6/5 para el ASIN;
+- análisis recientes recogen ~7.500 valoraciones globales en Amazon;
+- fabricante: ±0,02 mm, 190-220 °C, 25-60 °C, 40-70 mm/s, secado 50 °C/7 h;
+- uso real: buena reputación para piezas funcionales y comportamiento repetible;
+- también aparecen varios casos de adhesión problemática según superficie/perfil, especialmente en algunos usuarios de PEI/PET;
+- no confundir PLA Professional con PLA básico de OVERTURE.
+
+Confianza editorial: **Alta**.
+
+#### JAYO PLA · ASIN B0BHQR69RW
+
+Señales encontradas:
+- MerchantWords España: ~5.680 reseñas, 4,3/5 y señal aproximada de 100+ compras recientes para el ASIN exacto;
+- fabricante JAYO confirma para PLA 1,1 kg: 1,75 ±0,02 mm, 200-230 °C, cama 60-80 °C, 40-80 mm/s;
+- opiniones comunitarias suelen destacar precio, 1,1 kg y facilidad;
+- el 4,3/5 del ASIN es inferior al de ELEGOO, eSUN, SUNLU y OVERTURE, por lo que no debe recibir una nota de fiabilidad tan alta como esos modelos solo por ser barato;
+- existen cambios históricos de bobina/cartón/plástico y distintas variantes PLA/PLA+/Matte; mantener máxima precaución para no mezclar referencias.
+
+Confianza editorial: **Media-Alta**, con cautela adicional por variantes y bobina exacta.
+
+#### Winkle PLA HD · ASIN B08LQJ8W1F
+
+Señales encontradas:
+- PcComponentes: 4,7/5 con unas 35-36 opiniones según variante y mayoría de valoraciones de 5 estrellas;
+- Revi/Tresding: 4,9/5 con 187 opiniones y 97 % de recomendación;
+- comentarios repetidos: buen acabado, ausencia de atascos y buena consistencia;
+- aparecen también usuarios que necesitan ajustar parámetros y algún comentario sobre dificultad inicial;
+- la muestra es bastante menor que eSUN/OVERTURE, pero las opiniones locales verificadas son especialmente positivas;
+- fabricante Winkle declara fabricación española, 50-90 mm/s y 14 mm³/s en PLA HD actual.
+
+Confianza editorial: **Media-Alta**.
+
+### Correcciones técnicas
+
+#### Winkle tolerancia
+
+Se localizan múltiples distribuidores que publican para PLA HD:
+
+- 1,75 mm;
+- tolerancia ±0,03 mm.
+
+Hasta localizar el mismo dato en TDS oficial de Winkle, registrar internamente:
+
+**±0,03 mm corroborado por varios distribuidores; pendiente de fuente primaria.**
+
+Esto sustituye el antiguo estado `No declarada` como hipótesis de trabajo, pero no debe publicarse como dato oficial del fabricante sin validación final.
+
+#### Bobinas de plástico confirmadas visualmente
+
+Según revisión manual de Amazon realizada por Sergio:
+- SUNLU: plástico;
+- JAYO: plástico;
+- Winkle: plástico.
+
+No inferir compatibilidad AMS únicamente por el material de la bobina.
+
+### AMS / AMS 2 Pro / AMS Lite
+
+Bambu Lab publica para AMS y AMS 2 Pro:
+- ancho: 50-68 mm;
+- diámetro: 197-202 mm;
+- plástico recomendado;
+- cartón con adaptador.
+
+Hallazgo importante para Winkle:
+- PcComponentes publica para PLA HD una bobina de aprox. 175 × 77 mm;
+- esas dimensiones no encajan en el rango oficial de AMS/AMS 2 Pro;
+- Winkle declara en algunas fichas compatibilidad `AMS Lite` y en otras fichas actuales `AMS`;
+- existe por tanto una discrepancia que debe resolverse con la bobina exacta B08LQJ8W1F antes de asignar ✅.
+
+Estado Winkle AMS: **pendiente / no asignar ✅ todavía**.
+
+SUNLU:
+- se encuentran dimensiones alrededor de 203 × 63 mm para bobinas SUNLU;
+- el ancho encaja, el diámetro puede quedar 1 mm por encima del rango oficial Bambu;
+- no cerrar ✅ sin validar la bobina exacta High Speed PLA+ 2.0.
+
+JAYO:
+- referencias comunitarias sitúan bobina plástica alrededor de 200 × 63 mm;
+- encajaría en AMS/AMS 2 Pro si corresponde exactamente al ASIN actual;
+- mantener pendiente de verificación final del formato exacto.
+
+### Valoración v2
+
+Se corrigen las notas para incorporar volumen de evidencia y patrones reales. La nota de precio usa como referencia el mejor €/kg observado entre todos los formatos estudiados ese día: ELEGOO 4 kg ≈ 10,00 €/kg.
+
+| Producto | Calidad | Fiabilidad real | Facilidad | Prestaciones | Precio unidad | Calidad-precio unidad | Confianza |
+|---|---:|---:|---:|---:|---:|---:|---|
+| JAYO PLA | 7,8 | 7,4 | 8,1 | 7,5 | 9,2 | 8,2 | Media-Alta |
+| OVERTURE PLA Professional | 8,5 | 8,2 | 8,0 | 8,6 | 6,9 | 7,9 | Alta |
+| ELEGOO PLA | 8,2 | 8,2 | 8,9 | 7,5 | 7,1 | 7,8 | Alta |
+| eSUN PLA+ | 8,4 | 8,4 | 8,3 | 8,5 | 6,3 | 7,7 | Alta |
+| SUNLU High Speed PLA+ 2.0 | 8,4 | 7,6 | 7,9 | 9,4 | 6,3 | 7,6 | Media-Alta |
+| Winkle PLA HD | 8,7 | 8,6 | 8,3 | 8,0 | 4,8 | 7,2 | Media-Alta |
+
+Todas las notas públicas se redondean a un decimal.
+
+### Lectura editorial v2
+
+- JAYO sigue siendo la referencia de compra económica en formato individual, pero su nota de fiabilidad no debe inflarse: el precio explica buena parte de su ventaja.
+- OVERTURE queda como la opción más equilibrada entre evidencia, calidad, prestaciones funcionales y precio.
+- ELEGOO gana fuerza como opción fácil y económica gracias a la evidencia independiente y al gran volumen de uso.
+- eSUN tiene la base de experiencia real más consolidada de la selección.
+- SUNLU ofrece las mayores prestaciones de velocidad, pero el feedback más polarizado reduce su fiabilidad frente a eSUN/OVERTURE/ELEGOO.
+- Winkle mantiene una valoración alta de calidad/fiabilidad, pero su precio individual perjudica de forma clara su calidad-precio.
+
+### Uso público de reseñas
+
+En las fichas:
+- no mostrar un ranking por estrellas propio;
+- no copiar reseñas;
+- resumir patrones;
+- se puede mencionar de forma contextual que una referencia acumula miles de valoraciones o que tiene una muestra local amplia si el dato ayuda a explicar la confianza;
+- no convertir `más reseñas` en `mejor producto`.
+
