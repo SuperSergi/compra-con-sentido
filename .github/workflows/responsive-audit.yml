@@ -1,9 +1,9 @@
 name: Responsive audit
 
 on:
-  push:
+  pull_request:
     branches:
-      - comparativas-v3-unificacion
+      - main
     paths:
       - ".github/workflows/responsive-audit.yml"
       - ".github/scripts/responsive-audit.mjs"
@@ -68,4 +68,4 @@ jobs:
         run: |
           echo "" >> responsive-audit-summary.md
           echo "[Ver ejecución](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> responsive-audit-summary.md
-          gh pr comment 3 --body-file responsive-audit-summary.md
+          gh pr comment ${{ github.event.pull_request.number }} --body-file responsive-audit-summary.md
