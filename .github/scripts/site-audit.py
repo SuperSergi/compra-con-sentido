@@ -11,6 +11,9 @@ DOMAIN = "https://compraconsentido.es"
 ROOT = Path(".")
 SITEMAP = ROOT / "sitemap.xml"
 TRACKING = ROOT / ".github" / "amazon-tracking-ids.json"
+NAV_JS = ROOT / "js" / "main-v4.js"
+# Una URL hija profunda que no deba aparecer en el menú requiere una exclusión deliberada aquí.
+NAVIGATION_EXEMPT_CHILDREN: set[str] = set()
 MAX_IMAGE_BYTES = 350_000
 RASTER_EXTS = {".webp", ".png", ".jpg", ".jpeg", ".avif"}
 
@@ -85,6 +88,23 @@ for path in missing_in_sitemap:
     fail(f"sitemap: falta URL publicada {path}")
 for path in missing_files:
     fail(f"sitemap: URL sin index.html correspondiente {path}")
+
+# La navegación de segundo nivel se construye en main-v4.js. Una URL hija de
+# tercer nivel o más no puede publicarse y quedar olvidada fuera del menú por accidente.
+if NAV_JS.exists():
+    nav_js_text = NAV_JS.read_text(encoding="utf-8")
+    for url_path in sorted(sitemap_entries):
+        parts = [part for part in url_path.strip("/").split("/") if part]
+        if len(parts) < 3 or url_path in NAVIGATION_EXEMPT_CHILDREN:
+            continue
+        nav_fragment = url_path.strip("/")
+        if nav_fragment not in nav_js_text:
+            fail(
+                f"navegación dinámica: falta {url_path} en js/main-v4.js "
+                "(añádela a submenuData o declara una exclusión deliberada)"
+            )
+else:
+    fail("falta js/main-v4.js para validar navegación dinámica")
 
 tracking_values: set[str] = set()
 if TRACKING.exists():

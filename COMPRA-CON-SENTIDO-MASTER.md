@@ -5016,3 +5016,54 @@ La búsqueda automática de Amazon.es no devuelve de forma fiable todos los ASIN
 ### Estado
 
 Página lista para PR de publicación y despliegue tras `build` correcto.
+
+
+---
+
+## Corrección de navegación y UX · comparativa PLA · 04/10/2026
+
+Tras revisión manual de Sergio se detecta que la nueva comparativa PLA se publicó sin añadir su acceso al segundo nivel del menú global. La regla general de actualizar navegación existía, pero no cubría explícitamente el sistema dinámico de `main-v4.js`.
+
+### Regla global reforzada de navegación
+
+A partir de ahora, cuando se publique una URL hija que deba aparecer en la navegación:
+
+1. actualizar `submenuData` en `/js/main-v4.js` en el **mismo PR**;
+2. incrementar la versión de caché de `main-v4.js` en **todas las páginas públicas**;
+3. comprobar escritorio y móvil;
+4. no confiar únicamente en que los menús HTML estáticos sean iguales entre páginas.
+
+Para esta publicación se añade:
+
+`Filamentos 3D → Mejores filamentos PLA`
+
+El QA de `.github/scripts/site-audit.py` se refuerza para que una URL pública de tercer nivel o más no pueda quedar fuera de la navegación dinámica por accidente. Una excepción futura debe declararse de forma deliberada en el propio auditor.
+
+**Objetivo:** Sergio no debe tener que recordar ni revisar manualmente esta regla cada vez que se publica contenido anidado.
+
+### Hero y Open Graph
+
+La comparativa PLA deja de reutilizar la imagen genérica de la guía de filamentos.
+
+Se preparan dos imágenes propias generadas con IA, ilustrativas y sin marcas:
+
+- `/images/filamentos-pla/hero-mejores-filamentos-pla.webp`
+- `/images/filamentos-pla/og-mejores-filamentos-pla.webp`
+
+El hero deja espacio a la izquierda para el texto HTML. La imagen OG utiliza una composición más centrada para compartir en redes.
+
+### Cambios de UX en la comparativa PLA
+
+- el bloque grande `Cómo puntuamos` se elimina de debajo de la tabla;
+- la metodología queda al final de la página en formato discreto, con enlace a `/metodologia/`;
+- se fija expresamente el orden visual de las fichas:
+  `Imagen → H3/subtítulo → especificaciones → texto editorial → Lo que destaca/A tener en cuenta → La elegiría si… → Nuestra valoración → Si compras más cantidad → CTA`;
+- el problema detectado era de `order` CSS: los bloques PLA personalizados no tenían orden asignado y se mostraban antes de los bloques canónicos aunque el HTML estuviera correcto;
+- los CTA de unidad/pack usan el mismo botón amarillo/dorado con borde, sombra, realce y hover que el estándar Amazon del sitio;
+- en las fichas, AMS puede llevar una explicación breve:
+  - ⚠️ cartón / recomendable anillo o adaptador;
+  - ✅ bobina plástica;
+  - ❌ no encaja directamente en AMS / AMS 2 Pro;
+- en la tabla se mantiene solo el símbolo para no ensancharla innecesariamente.
+
+Estas reglas sustituyen cualquier estado anterior contradictorio para esta comparativa.
