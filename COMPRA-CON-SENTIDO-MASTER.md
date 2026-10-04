@@ -5067,3 +5067,66 @@ El hero deja espacio a la izquierda para el texto HTML. La imagen OG utiliza una
 - en la tabla se mantiene solo el símbolo para no ensancharla innecesariamente.
 
 Estas reglas sustituyen cualquier estado anterior contradictorio para esta comparativa.
+
+
+---
+
+## Ajustes finales de tabla, hero e interlinking PLA · 04/10/2026
+
+Tras nueva revisión visual de Sergio se aplican estos cambios a:
+
+`/impresion-3d/filamentos-3d/mejores-filamentos-pla/`
+
+### Hero
+
+La imagen existe correctamente en el repositorio, pero en producción no se estaba mostrando visualmente.
+
+Para evitar depender de la variable CSS `--ccs-hero-image`, el hero pasa a declarar de forma directa:
+
+`background-image:url('/images/filamentos-pla/hero-mejores-filamentos-pla.webp')!important`
+
+También se incrementa la versión de caché de `hero-v5.css` en esta página.
+
+La imagen OG permanece separada:
+
+`/images/filamentos-pla/og-mejores-filamentos-pla.webp`
+
+### Tabla comparativa
+
+Se elimina la columna `Peso`.
+
+Motivo:
+- cinco bobinas principales son de 1 kg;
+- JAYO es de 1,1 kg;
+- la diferencia se explica donde aporta contexto, pero no justifica una columna completa en la tabla.
+
+Nuevo orden:
+
+`Modelo | Tipo | Tolerancia | Boquilla | Velocidad fabricante | AMS | Mejor para | Calidad-precio | CTA`
+
+`Calidad-precio` queda justo antes del botón Amazon.
+
+### Velocidad ELEGOO
+
+Se elimina el texto ambiguo `PLA estándar`.
+
+La documentación oficial de ELEGOO para su PLA estándar publica una velocidad de impresión de **30-70 mm/s**, por lo que la tabla usa ese rango.
+
+Regla:
+- cuando exista una velocidad oficial comparable, mostrarla;
+- cuando no pueda verificarse para la referencia, usar `—`;
+- no sustituir una cifra por etiquetas vagas como `PLA estándar`.
+
+### Enlazado interno
+
+Se confirma que la nueva comparativa ya recibe enlaces desde:
+
+- `/impresion-3d/filamentos-3d/`
+- `/impresion-3d/`
+
+Además se añade a la sección de contenidos destacados de **Inicio**, utilizando la imagen propia del hero.
+
+Decisión:
+la comparativa PLA es una página comercial estratégica del cluster Impresión 3D y sí merece acceso directo desde Inicio, sin convertir la home en un listado exhaustivo de todas las URLs.
+
+Se actualiza `lastmod` de Inicio a `2026-10-04`.
