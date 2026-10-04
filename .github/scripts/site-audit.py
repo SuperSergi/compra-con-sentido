@@ -183,6 +183,9 @@ for url_path, path in sorted(public_urls.items()):
         "borrador",
         "publicaremos",
         "referencia aportada",
+        "comercialmente útil",
+        "utilizaremos",
+        "inconsistencia ya resuelta",
     )
     for residue in editorial_residues:
         if residue in visible_text:
