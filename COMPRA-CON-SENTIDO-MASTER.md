@@ -4621,3 +4621,78 @@ Estas cifras sustituyen aproximaciones anteriores que redondeaban SUNLU a 7,8/8,
 7. revalidar todos los ASIN y variantes justo antes de publicar.
 
 La URL sigue sin crearse ni publicarse.
+
+
+---
+
+## Cierres técnicos adicionales · filamentos PLA · 04/10/2026
+
+### JAYO B0BHQR69RW
+
+Se confirma mediante múltiples fichas del mismo ASIN que:
+
+- ASIN: `B0BHQR69RW`;
+- modelo/referencia comercial: `PLA-BK-1100G`;
+- tipo: PLA normal;
+- peso: 1,1 kg;
+- diámetro: 1,75 mm;
+- tolerancia publicada: ±0,02 mm;
+- parámetros publicados: 200-230 °C, cama 60-80 °C, 40-80 mm/s.
+
+Esto permite cerrar que el ASIN principal corresponde a **JAYO PLA normal**, no PLA Matte.
+
+La imagen aportada anteriormente que indicaba `PLA Matte Filament` no debe utilizarse para esta ficha.
+
+### SUNLU High Speed PLA+ 2.0
+
+La documentación oficial actual confirma:
+
+- 1,75 ±0,02 mm;
+- 1 kg;
+- hasta 600 mm/s;
+- relación temperatura/velocidad:
+  - 200-215 °C → 50-150 mm/s;
+  - 215-230 °C → 150-300 mm/s;
+  - 230-260 °C → 300-600 mm/s;
+- cama 50-60 °C / 55-65 °C según página oficial concreta.
+
+Mantener el mensaje editorial de que 600 mm/s es un máximo declarado y depende de caudal, hardware y perfil.
+
+### Winkle PLA HD · tolerancia
+
+Se detecta discrepancia entre distribuidores:
+
+- algunas fichas publican ±0,03 mm;
+- otras publican ±0,02 mm;
+- la fuente oficial/TDS localizada hasta ahora no muestra una tolerancia numérica inequívoca para cerrar la cifra.
+
+Decisión:
+- no presentar todavía ±0,02 ni ±0,03 como dato oficial del fabricante;
+- mantener la cifra pendiente de validación primaria;
+- en tabla final, si no se obtiene fuente primaria, usar `–` o `No declarada` según el criterio de tabla vigente.
+
+### OVERTURE pack de 4
+
+Se localiza un pack de 4 kg de OVERTURE PLA Professional / PLA+:
+
+- ASIN `B0DQTSZ4ZH`;
+- formato Black ×2 + White ×2;
+- 4 × 1 kg.
+
+También existen otras referencias de packs 4 kg en mercados distintos.
+
+No asignar todavía este ASIN al CTA del pack de 4 de Amazon.es hasta confirmar que corresponde exactamente a la ficha que Sergio vio a 49,99 € / 47,99 € + cupón.
+
+### Estado AMS
+
+No se cierran todavía como definitivos:
+- SUNLU High Speed PLA+ 2.0;
+- JAYO PLA;
+- Winkle PLA HD.
+
+Motivo:
+- el material de la bobina está confirmado visualmente como plástico en las referencias actuales revisadas por Sergio;
+- falta validar dimensiones exactas de la bobina actual frente al rango AMS / AMS 2 Pro;
+- Winkle además presenta indicios de compatibilidad AMS Lite que no deben extrapolarse automáticamente a AMS/AMS 2 Pro.
+
+La publicación no debe usar ✅ hasta cerrar la compatibilidad exacta por referencia.
