@@ -5254,3 +5254,43 @@ Ejemplos relevantes:
 - JAYO pack 4 → ≈11,13 €/kg
 
 La fecha general de actualización de la página ya cubre el contexto temporal; no es necesario repetir `04/10/2026` en las fichas.
+
+
+---
+
+## Comparativa PLA cerrada · 04/10/2026
+
+Se da por cerrada la publicación:
+
+`/impresion-3d/filamentos-3d/mejores-filamentos-pla/`
+
+### Comprobaciones finales SEO técnico
+
+Verificado en `main`:
+
+- la URL está incluida en `sitemap.xml`;
+- `lastmod` de la URL: `2026-10-04`;
+- `robots.txt` permite rastreo global con `Allow: /`;
+- `robots.txt` declara `https://compraconsentido.es/sitemap.xml`;
+- canonical correcto a la URL definitiva;
+- no existe `noindex`;
+- recibe enlaces internos desde:
+  - Inicio;
+  - `/impresion-3d/`;
+  - `/impresion-3d/filamentos-3d/`.
+
+Con esta arquitectura Google puede descubrir la URL tanto por sitemap como por enlazado interno.
+
+### Search Console
+
+Se intentó realizar una comprobación adicional mediante el conector de Google Search Console, pero el servicio GSC Wizard conectado devuelve `payment_required` porque su prueba/suscripción no está activa.
+
+Por tanto:
+- no se afirma que se haya solicitado indexación manual;
+- no es un bloqueo para el rastreo orgánico, ya que sitemap, robots, canonical e interlinking están correctamente preparados;
+- cuando vuelva a estar disponible Search Console, conviene inspeccionar esta URL y confirmar cobertura/indexación.
+
+### Estado
+
+**Página cerrada y publicada.**
+No realizar más cambios salvo incidencias detectadas en producción, datos de Search Console o mejoras posteriores basadas en rendimiento real.
