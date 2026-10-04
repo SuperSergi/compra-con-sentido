@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 04/10/2026 · 18:04
+**Última actualización:** 04/10/2026 · 18:09
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -457,7 +457,8 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 
 ## Pendientes inmediatos
 
-- [ ] **Alinear los CTA de la comparativa PLA con la norma de la sección 9.3** (`Ver precio en Amazon` y `Ver precio del pack de N en Amazon`; hoy usan `Ver en Amazon` y `Ver pack de N en Amazon`).
+- [x] CTA de la comparativa PLA alineados el 04/10/2026 con la sección 9.3: fichas en `Ver precio en Amazon` y packs en `Ver precio del pack de N en Amazon`; la tabla conserva `Ver en Amazon`.
+
 - [ ] Revisar en producción el destino del menú "Información" y la coherencia del footer.
 - [ ] Confirmar en el contrato de Amazon Afiliados qué exige sobre el aviso de afiliación antes de mantener la política de no repetirlo en cabecera.
 - [ ] Usar Search Console para decidir qué tres acciones o contenidos van en el primer pantallazo de Inicio (el titular y el peso visual de la home se revisarán con SEO, arquitectura y datos reales).
