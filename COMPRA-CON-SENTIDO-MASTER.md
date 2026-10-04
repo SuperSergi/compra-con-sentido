@@ -4840,3 +4840,31 @@ Siguen pendientes:
 - imágenes definitivas;
 - hero/OG;
 - validación final de disponibilidad y variante antes de publicación.
+
+
+---
+
+## Corrección JAYO · dimensiones de bobina · 04/10/2026
+
+Se revierte la decisión anterior de marcar JAYO como ❌ para AMS / AMS 2 Pro.
+
+Motivo:
+
+La imagen aportada por Sergio muestra:
+- 140 mm de diámetro exterior;
+- 61 mm de ancho;
+- 55 mm de diámetro interior.
+
+Pero esta cifra de 140 mm presenta una inconsistencia importante con una bobina de 1,1 kg y además contradice otras fuentes externas para JAYO 1,1 kg:
+
+- OnlySpoolz registra una bobina JAYO PLA de 1,1 kg con aproximadamente **195 mm de diámetro, 57 mm de ancho y 54 mm de agujero**.
+- Otros distribuidores de JAYO 1,1 kg publican aproximadamente **200 mm de diámetro, 61 mm de ancho y 56 mm de agujero**.
+- Una guía comunitaria de bobinas sitúa JAYO alrededor de **200 × 63 mm**.
+
+Por tanto:
+- no usar 140 mm como dato definitivo;
+- no marcar JAYO como ❌ por esa imagen;
+- compatibilidad AMS vuelve a estado **pendiente de cierre**;
+- antes de publicar hay que confirmar qué bobina corresponde exactamente al ASIN B0BHQR69RW actual.
+
+La cifra de 140 mm debe tratarse como posible error de imagen, imagen de otra bobina o dato mal rotulado hasta resolverlo.
