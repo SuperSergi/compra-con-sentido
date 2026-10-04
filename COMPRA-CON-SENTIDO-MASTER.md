@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 4 de octubre de 2026 · 16:36  
+**Última actualización:** 4 de octubre de 2026 · 17:00  
 **Mercado inicial:** España  
 **Idioma principal:** Español  
 **Dominio canónico:** `https://compraconsentido.es/`  
@@ -5316,3 +5316,109 @@ Cambios cerrados:
 - mantenida la coherencia entre FAQ visibles y schema `FAQPage`.
 
 La página de metodología ya establece que no se deben publicar precios fijos, por lo que no requiere cambios adicionales.
+
+
+---
+
+## Decisiones adoptadas tras informe externo v2 · 04/10/2026
+
+Tras contrastar el informe externo v2 con el estado real del proyecto y las normas vigentes del MASTER, se adoptan las siguientes decisiones:
+
+### 1. Tres elecciones según necesidad
+
+Las tres tarjetas de perfil obligatorias al inicio de cada comparativa pasan a tener una función explícita de **3 elecciones según necesidad**.
+
+Cada perfil debe incluir:
+- necesidad o tipo de usuario;
+- modelo recomendado;
+- diferencia concreta que justifica elegirlo frente a los demás;
+- una limitación relevante o contrapartida cuando exista;
+- CTA cuando ayude a reducir fricción, especialmente si el bloque queda separado de las fichas.
+
+Reglas:
+- mantener exactamente tres perfiles;
+- no numerarlos como 1.º, 2.º o 3.º;
+- no convertirlos en ranking global;
+- los perfiles dependen de cada categoría y no siguen una fórmula fija universal;
+- si dos modelos encajan en el mismo escenario, uno debe ser la recomendación principal y el otro puede aparecer como alternativa.
+
+Esta decisión evoluciona la estructura ya existente:
+`Hero → tarjeta blanca solapada → tres perfiles/escenarios → contenido específico → tabla → fichas`.
+
+### 2. CTA contextualizado cuando haya variantes
+
+El CTA estándar continúa siendo:
+
+`Ver precio en Amazon`
+
+Se puede contextualizar cuando:
+- existan varias variantes del mismo producto;
+- haya cuerpo solo y kit;
+- existan packs de distinta cantidad;
+- el botón aparezca fuera de la ficha individual y pueda existir ambigüedad.
+
+Ejemplos válidos:
+- `Ver precio del K2 Combo en Amazon`
+- `Ver precio del kit en Amazon`
+- `Ver precio del pack de 4 en Amazon`
+
+No utilizar el nombre del producto de forma redundante cuando el contexto ya sea inequívoco.
+
+### 3. Etiqueta positiva para pruebas físicas
+
+Puede utilizarse la etiqueta:
+
+`Probado por nosotros`
+
+únicamente cuando exista una prueba física real y documentable.
+
+La prueba debe poder respaldarse internamente mediante elementos como:
+- fotografías;
+- fecha o periodo de uso;
+- notas de prueba;
+- contexto de uso suficiente para justificar las conclusiones publicadas.
+
+No utilizar etiquetas negativas o defensivas como:
+- `No probado`
+- `Basado en ficha y opiniones`
+- equivalentes repetidos en cada producto.
+
+La metodología global sigue explicando cómo se investigan los productos no probados físicamente.
+
+### 4. Control previo a publicación de residuos editoriales
+
+Antes de publicar o actualizar una página comercial, realizar una comprobación específica para evitar restos de trabajo interno.
+
+Buscar como mínimo:
+- `pendiente`
+- `antes de publicar`
+- `validar`
+- `borrador`
+- `publicaremos`
+- notas o instrucciones dirigidas al equipo;
+- atributos HTML que puedan haberse quedado visibles, como `decoding=`, `loading=` o fragmentos `">&gt;`;
+- importes fijos con símbolo `€` cuando incumplan la política de precios del proyecto;
+- atributos internos de validación o prepublicación que no aporten nada al HTML final.
+
+La revisión de la comparativa PLA del 04/10/2026 se toma como referencia práctica de este control.
+
+### Decisiones no adoptadas por ahora
+
+**Indicador de gama económica / media / alta:** no se adopta mientras dependa de precios variables y requiera mantenimiento frecuente sin API fiable.
+
+**Autoría personal:** queda como decisión estratégica abierta. Antes de cambiar el sistema actual debe decidirse entre:
+- organización como autor;
+- autor personal + Compra con Sentido como publisher;
+- sistema mixto por categoría.
+
+Si se cambia la política de autoría, debe aplicarse de forma coherente en contenido visible, página Sobre nosotros y schema.
+
+### Comprobaciones pendientes derivadas del informe v2
+
+- comprobar en producción que no quede visible el patrón `decoding="async">` ni variantes equivalentes;
+- revisar en producción el destino actual del menú `Información` y la coherencia del footer;
+- mantener la política actual de afiliación salvo que una revisión contractual de Amazon exija cambios;
+- utilizar datos de Search Console antes de decidir qué comparativas o categorías deben tener prioridad visual en el primer pantallazo de la home;
+- revisar progresivamente las páginas no incluidas en la auditoría externa aplicando estos mismos criterios editoriales.
+
+Estas decisiones complementan, pero no sustituyen, las normas ya vigentes sobre comparativas, precios, afiliación, metodología, pruebas físicas y separación de intención informacional/transaccional.
