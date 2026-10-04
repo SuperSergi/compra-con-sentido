@@ -4750,3 +4750,43 @@ Incluye:
 9. revisión responsive y build final.
 
 La URL continúa sin publicarse.
+
+
+---
+
+## Tracking Amazon y revisión técnica del borrador PLA · 04/10/2026
+
+Se aplica al borrador HTML:
+
+`.github/content-drafts/mejores-filamentos-pla.html`
+
+el Tracking ID ya registrado para el cluster de filamentos:
+
+`ccc-filam3d-21`
+
+Todos los CTA Amazon presentes en el borrador:
+- incorporan `?tag=ccc-filam3d-21`;
+- mantienen `rel="nofollow sponsored"`;
+- incorporan `data-asin`;
+- incorporan `data-amazon-validation="review-before-merge"`.
+
+No se crea un Tracking ID nuevo para esta comparativa: se reutiliza el identificador vigente de filamentos 3D.
+
+### Revisión responsive estructural
+
+El borrador mantiene:
+- tabla dentro de contenedor horizontal desplazable;
+- aviso visible `← Desliza la tabla para ver todas las columnas →`;
+- sin primera columna fija;
+- CTA de fichas apilables al 100 % en móvil;
+- barras de valoración con rejilla reducida en móvil;
+- shell móvil a 24 px;
+- navegación y footer globales vigentes.
+
+Pendientes visuales reales:
+- incorporar imágenes exactas de producto;
+- incorporar hero/OG definitivo;
+- realizar revisión visual final con imágenes reales, porque su relación de aspecto puede afectar altura y ritmo de las fichas;
+- cerrar AMS y OVERTURE pack 4 antes de convertir el borrador en URL pública.
+
+La URL sigue sin publicarse.
