@@ -5219,3 +5219,38 @@ Se actualizan todas las referencias al hero nuevo en:
 La sección `Sigue explorando` recibe `margin-top:48px` respecto al bloque amarillo `Error habitual`, evitando que ambos bloques queden visualmente pegados.
 
 El archivo hero anterior se conserva temporalmente en el repositorio solo como histórico técnico, pero no debe volver a referenciarse.
+
+
+---
+
+## Precio observado por kilo en fichas PLA · 04/10/2026
+
+Se aclara el coste por kilo de la **bobina individual** dentro de cada ficha para que la comparación con packs tenga contexto.
+
+Valores mostrados como observación realizada durante la comparativa:
+
+- ELEGOO PLA 1 kg → **13,99 €/kg**
+- eSUN PLA+ 1 kg → **15,99 €/kg**
+- SUNLU High Speed PLA+ 2.0 1 kg → **15,99 €/kg**
+- OVERTURE PLA Professional 1 kg → **≈14,39 €/kg** aplicando el cupón observado
+- JAYO PLA 1,1 kg → **≈10,90 €/kg**
+- Winkle PLA HD 1 kg → **20,90 €/kg**
+
+### Copy de packs
+
+Se simplifica el texto editorial:
+- no repetir fecha exacta dentro de cada ficha;
+- usar fórmulas como `precio observado durante la comparativa`;
+- no mostrar ASIN ni códigos técnicos al lector;
+- los ASIN pueden seguir existiendo internamente en enlaces y atributos técnicos;
+- cuando se mencione un pack, explicar directamente su coste aproximado por kilo cuando aporte contexto.
+
+Ejemplos relevantes:
+- ELEGOO pack 4 → ≈10 €/kg
+- eSUN pack 4 → ≈11,25 €/kg
+- SUNLU pack 4 → ≈12,50 €/kg
+- OVERTURE pack 4 → ≈10,80 €/kg con el cupón observado
+- JAYO pack 2 → ≈12,72 €/kg
+- JAYO pack 4 → ≈11,13 €/kg
+
+La fecha general de actualización de la página ya cubre el contexto temporal; no es necesario repetir `04/10/2026` en las fichas.
