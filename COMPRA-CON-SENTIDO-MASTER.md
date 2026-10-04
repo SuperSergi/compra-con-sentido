@@ -4567,3 +4567,57 @@ Estado provisional: **✅ para la bobina plástica actual si se confirma que el 
 
 La precaución es por la bobina, no por el material PLA.
 
+
+
+---
+
+## Borrador estable de fichas · mejores filamentos PLA · 04/10/2026
+
+Tras revisar conjuntamente las seis fichas se crea el borrador estable:
+
+`.github/content-drafts/mejores-filamentos-pla.md`
+
+Contiene las fichas de:
+- ELEGOO PLA;
+- eSUN PLA+;
+- SUNLU High Speed PLA+ 2.0;
+- OVERTURE PLA Professional;
+- JAYO PLA;
+- Winkle PLA HD.
+
+### Orden definitivo de ficha
+
+`Imagen → H3/subtítulo → especificaciones → texto editorial → Lo que destaca / A tener en cuenta → La elegiría si… → Nuestra valoración → Si compras más cantidad → CTA`
+
+### Diferenciación editorial cerrada
+
+- ELEGOO: facilidad y coste contenido.
+- eSUN: PLA+ generalista con gran base de experiencia real.
+- SUNLU: alta velocidad.
+- OVERTURE: equilibrio y piezas funcionales.
+- JAYO: coste por kilo y 1,1 kg.
+- Winkle: consistencia, acabado y fabricación española.
+
+No usar ranking global.
+
+### Correcciones de cálculo incorporadas
+
+Al revisar conjuntamente las fichas se recalculan las notas de packs con la fórmula aprobada y referencia aproximada de 10 €/kg:
+
+- SUNLU pack 2: **7,7/10**; pack 4: **8,2/10**.
+- OVERTURE pack 2: **7,9/10**; pack 4: **8,7/10**.
+- JAYO pack 2: **7,7/10**; pack 4: **8,1/10**.
+
+Estas cifras sustituyen aproximaciones anteriores que redondeaban SUNLU a 7,8/8,3, OVERTURE pack 2 a 8,0 y JAYO pack 2 a 7,8.
+
+### Pendientes antes de HTML
+
+1. cerrar AMS exacto de SUNLU;
+2. cerrar AMS exacto de JAYO;
+3. cerrar AMS/AMS 2 Pro frente a AMS Lite de Winkle;
+4. validar ±0,03 mm de Winkle en fuente primaria si es posible;
+5. confirmar definitivamente que B0BHQR69RW es JAYO PLA normal y no Matte;
+6. obtener ASIN del pack de 4 de OVERTURE;
+7. revalidar todos los ASIN y variantes justo antes de publicar.
+
+La URL sigue sin crearse ni publicarse.
