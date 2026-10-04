@@ -3313,7 +3313,7 @@ Antes de publicar se volverá a verificar ficha activa, color/variante, contenid
 - **JAYO PLA 1.75 mm 1,1 kg negro** — ASIN `B0BHQR69RW`
   - perfil: imprimir mucho gastando poco / más cantidad por bobina.
 
-- **ELEGOO PLA 1.75 mm 1 kg blanco** — ASIN `B0CD7B7ZKK`
+- **ELEGOO PLA 1.75 mm 1 kg blanco** — ASIN `B0CD7BTN37`
   - perfil: PLA estándar sencillo y fácil de comprar.
   - ELEGOO publica además un anillo para facilitar el uso de su bobina de cartón en AMS.
 
@@ -3464,7 +3464,7 @@ Se priorizan cinco perfiles distintos. La comprobación de Amazon España se ha 
 
 1. **ELEGOO PLA blanco 1 kg**
    - perfil: PLA estándar económico y sencillo para uso diario
-   - ASIN: `B0CD7B7ZKK`
+   - ASIN: `B0CD7BTN37`
    - 1,75 mm, 1 kg
 
 2. **eSUN PLA+ blanco 1 kg**
@@ -3675,7 +3675,7 @@ Se completa una primera matriz normalizada para los seis candidatos definitivos 
 
 ### Referencias
 
-- ELEGOO PLA — ASIN `B0CD7B7ZKK`
+- ELEGOO PLA — ASIN `B0CD7BTN37`
 - eSUN PLA+ — ASIN `B07FQ98RNP`
 - SUNLU High Speed PLA+ 2.0 — ASIN `B0FDGKJ1BJ`
 - OVERTURE PLA Professional / PLA+ — ASIN `B09PDCLSLY`
@@ -4354,7 +4354,7 @@ Un producto con muchas reseñas no recibe automáticamente una nota mayor.
 
 ### Evidencia por producto
 
-#### ELEGOO PLA · ASIN B0CD7B7ZKK
+#### ELEGOO PLA · ASIN B0CD7BTN37
 
 Señales encontradas:
 - MerchantWords España: aproximadamente 1.000+ reseñas y 4,8/5 para el ASIN exacto en la captura consultada;
@@ -4911,3 +4911,22 @@ Winkle PLA HD:
 - se cierra como ❌ para AMS / AMS 2 Pro, sin extrapolar a AMS Lite.
 
 Esta clasificación sustituye los estados provisionales anteriores.
+
+
+---
+
+## Corrección ASIN ELEGOO PLA 1 kg · 04/10/2026
+
+Sergio confirma la referencia exacta actual para la bobina individual ELEGOO PLA negro 1 kg:
+
+- ASIN anterior descartado: `B0CD7B7ZKK`
+- ASIN correcto: `B0CD7BTN37`
+
+La imagen aportada muestra:
+- ELEGOO PLA negro;
+- 1 kg;
+- 1,75 mm;
+- tolerancia impresa ±0,02 mm;
+- bobina de cartón.
+
+Todos los CTA y referencias del borrador deben usar `B0CD7BTN37` para la unidad de 1 kg.
