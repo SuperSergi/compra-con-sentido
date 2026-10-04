@@ -43,6 +43,17 @@ document.addEventListener("DOMContentLoaded", () => {
       ]
     },
     {
+      label: "Filamentos 3D",
+      items: [
+        {
+          label: "Mejores filamentos PLA",
+          href:
+            base +
+            "impresion-3d/filamentos-3d/mejores-filamentos-pla/"
+        }
+      ]
+    },
+    {
       label: "Aspiradoras",
       items: [
         {
