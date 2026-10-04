@@ -483,6 +483,45 @@
 
   <link rel="stylesheet" href="/css/hero-v5.css?v=20261001-5">
   <link rel="stylesheet" href="/css/intro-v1.css?v=20261001-4">
+
+<style>
+  .content-library-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:20px;
+  }
+  .content-card{
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+    padding:0!important;
+    border:1px solid #dfe7e2;
+    border-radius:20px;
+    background:#fff;
+    color:inherit!important;
+    text-decoration:none!important;
+    box-shadow:0 8px 24px rgba(18,55,39,.055);
+    transition:transform .18s ease,box-shadow .18s ease;
+  }
+  .content-card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(18,55,39,.10)}
+  .content-card-image{
+    display:block;
+    width:100%;
+    aspect-ratio:16/9;
+    object-fit:cover;
+  }
+  .content-card-body{
+    display:flex;
+    flex:1;
+    flex-direction:column;
+    padding:20px 22px 22px;
+  }
+  .content-card-body h3{margin:8px 0;color:#26382e}
+  .content-card-body p{margin:0;color:#647069;line-height:1.6}
+  .content-card-cta{margin-top:auto;padding-top:16px;color:#063d26;font-weight:900}
+  @media(max-width:900px){.content-library-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(max-width:620px){.content-library-grid{grid-template-columns:1fr}}
+</style>
 </head>
 
 <body class="print3d-page">
@@ -736,34 +775,55 @@
     </div>
 
     <div class="content-library-grid">
-
-        <a class="content-card" data-type="guia" href="./impresoras-3d/">
+      <a class="content-card" data-type="guia" href="./impresoras-3d/">
+        <img class="content-card-image" src="/images/guia-impresoras-3d.webp" alt="Impresora 3D FDM" loading="lazy" decoding="async">
+        <span class="content-card-body">
           <span class="content-card-type">Guía de compra</span>
           <h3>Cómo elegir una impresora 3D</h3>
           <p>Volumen, estructura, automatización, materiales y ecosistema.</p>
-          <span class="content-card-cta">Abrir contenido <span>→</span></span>
-        </a>
+          <span class="content-card-cta">Abrir guía <span>→</span></span>
+        </span>
+      </a>
 
-        <a class="content-card" data-type="comparativa" href="./impresoras-3d/mejores-impresoras-3d/">
+      <a class="content-card" data-type="comparativa" href="./impresoras-3d/mejores-impresoras-3d/">
+        <img class="content-card-image" src="/images/comparativa-impresoras-3d.webp" alt="Comparativa de impresoras 3D" loading="lazy" decoding="async">
+        <span class="content-card-body">
           <span class="content-card-type">Comparativa</span>
           <h3>6 impresoras 3D comparadas</h3>
-          <p>Modelos FDM para perfiles diferentes, desde máquinas abiertas hasta sistemas cerrados.</p>
-          <span class="content-card-cta">Abrir contenido <span>→</span></span>
-        </a>
+          <p>Modelos FDM para perfiles distintos, desde máquinas abiertas hasta sistemas cerrados.</p>
+          <span class="content-card-cta">Ver comparativa <span>→</span></span>
+        </span>
+      </a>
 
-        <a class="content-card" data-type="consejo" href="./filamentos-3d/">
+      <a class="content-card" data-type="guia" href="./filamentos-3d/">
+        <img class="content-card-image" src="/images/guia-filamentos-3d.webp" alt="Bobinas de filamento para impresión 3D" loading="lazy" decoding="async">
+        <span class="content-card-body">
           <span class="content-card-type">Guía práctica</span>
           <h3>Filamentos 3D</h3>
           <p>Cuándo elegir PLA, PETG, ASA, TPU y otros materiales habituales.</p>
-          <span class="content-card-cta">Abrir contenido <span>→</span></span>
-        </a>
+          <span class="content-card-cta">Abrir guía <span>→</span></span>
+        </span>
+      </a>
 
-        <a class="content-card" data-type="consejo" href="./accesorios-3d/">
+      <a class="content-card" data-type="comparativa" href="./filamentos-3d/mejores-filamentos-pla/">
+        <img class="content-card-image" src="/images/filamentos-pla/hero-mejores-filamentos-pla.webp" alt="Bobinas de filamento PLA y piezas impresas en 3D" loading="lazy" decoding="async">
+        <span class="content-card-body">
+          <span class="content-card-type">Comparativa</span>
+          <h3>Mejores filamentos PLA</h3>
+          <p>ELEGOO, eSUN, SUNLU, OVERTURE, JAYO y Winkle comparados por uso, AMS y calidad-precio.</p>
+          <span class="content-card-cta">Ver comparativa <span>→</span></span>
+        </span>
+      </a>
+
+      <a class="content-card" data-type="guia" href="./accesorios-3d/">
+        <img class="content-card-image" src="/images/herramientas-accesorios-impresion-3d.webp" alt="Accesorios para impresión 3D" loading="lazy" decoding="async">
+        <span class="content-card-body">
           <span class="content-card-type">Guía práctica</span>
           <h3>Accesorios para impresión 3D</h3>
           <p>Qué accesorios resuelven problemas reales y cuáles aportan poco.</p>
-          <span class="content-card-cta">Abrir contenido <span>→</span></span>
-        </a>
+          <span class="content-card-cta">Abrir guía <span>→</span></span>
+        </span>
+      </a>
     </div>
 
     <p class="content-library-footnote">
