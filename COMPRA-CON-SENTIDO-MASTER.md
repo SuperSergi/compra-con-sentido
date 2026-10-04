@@ -3754,3 +3754,74 @@ Cuando se disponga de los seis precios observados en Amazon.es:
 5. guardar las cinco notas individuales para trazabilidad.
 
 No publicar todavía la URL.
+
+
+---
+
+## Valoración editorial v1 · filamentos PLA · 04/10/2026
+
+Se aplica por primera vez la fórmula de calidad-precio aprobada a los seis candidatos.
+
+Precios de una bobina individual observados manualmente en Amazon.es el 04/10/2026:
+
+- ELEGOO PLA: 13,99 € hoy; precio mostrado habitual 14,99 €.
+- eSUN PLA+: 15,99 €.
+- SUNLU High Speed PLA+ 2.0: 15,99 €.
+- OVERTURE PLA Professional: 15,99 € con cupón del 10 % → 14,39 € efectivos.
+- JAYO PLA: 11,99 € por 1,1 kg.
+- Winkle PLA HD: 20,90 €.
+
+€/kg usados para la nota de precio:
+
+- JAYO: 10,90 €/kg.
+- ELEGOO: 13,99 €/kg.
+- OVERTURE: 14,39 €/kg.
+- eSUN: 15,99 €/kg.
+- SUNLU: 15,99 €/kg.
+- Winkle: 20,90 €/kg.
+
+Nota de precio normalizada:
+
+- JAYO: 10,00.
+- ELEGOO: 7,79.
+- OVERTURE: 7,57.
+- eSUN: 6,82.
+- SUNLU: 6,82.
+- Winkle: 5,22.
+
+### Notas editoriales v1
+
+Estas notas no son mediciones físicas propias. Se basan en documentación oficial, pruebas publicadas, reseñas especializadas y patrones repetidos de usuarios. Deben revisarse si aparece nueva evidencia o si se cambia la referencia exacta.
+
+| Producto | Calidad | Fiabilidad | Facilidad | Prestaciones | Precio | Calidad-precio |
+|---|---:|---:|---:|---:|---:|---:|
+| ELEGOO PLA | 8,2 | 7,8 | 8,8 | 7,5 | 7,79 | 7,93 |
+| eSUN PLA+ | 8,3 | 7,8 | 8,2 | 8,4 | 6,82 | 7,69 |
+| SUNLU High Speed PLA+ 2.0 | 8,5 | 8,1 | 8,0 | 9,4 | 6,82 | 7,92 |
+| OVERTURE PLA Professional | 8,4 | 8,0 | 8,0 | 8,5 | 7,57 | 8,00 |
+| JAYO PLA | 7,8 | 7,5 | 8,2 | 7,5 | 10,00 | 8,50 |
+| Winkle PLA HD | 8,8 | 8,7 | 8,4 | 8,0 | 5,22 | 7,37 |
+
+### Interpretación
+
+- JAYO lidera actualmente la nota de calidad-precio por su precio por kg excepcionalmente bajo y 1,1 kg por bobina, aunque su base de evidencia externa es menos rica que la de eSUN, OVERTURE o Winkle.
+- OVERTURE queda muy equilibrado por precio efectivo, documentación técnica y perfil PLA Professional.
+- SUNLU consigue la mayor nota de prestaciones por su propuesta high-speed y documentación específica de temperatura/velocidad.
+- ELEGOO destaca especialmente en facilidad y precio contenido.
+- eSUN mantiene buen equilibrio técnico, pero su precio actual y cierta variabilidad reportada en experiencias de usuarios reducen su nota final.
+- Winkle obtiene las mejores notas de calidad/fiabilidad de esta primera pasada gracias a documentación y feedback español muy favorable, pero su precio de 20,90 €/kg penaliza mucho la relación calidad-precio.
+
+### Criterio de publicación
+
+No presentar estas notas como verdad objetiva ni como resultados de ensayo propio.
+
+En la página:
+
+- mostrar `Nuestra valoración`;
+- explicar la metodología una vez;
+- mantener barras para Calidad, Fiabilidad, Facilidad, Prestaciones y Precio;
+- mostrar la nota final de calidad-precio;
+- indicar que el precio usado corresponde al momento del análisis;
+- no afirmar que Compra con Sentido ha probado físicamente estos seis productos para esta comparativa.
+
+Antes de publicación, revisar especialmente JAYO por menor profundidad de evidencia independiente y confirmar bobina/dimensiones AMS de las referencias exactas.
