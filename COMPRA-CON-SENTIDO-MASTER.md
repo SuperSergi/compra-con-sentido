@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 3 de octubre de 2026 · 16:30
+**Última actualización:** 4 de octubre de 2026 · 08:30
 **Mercado inicial:** España  
 **Idioma principal:** Español  
 **Dominio canónico:** `https://compraconsentido.es/`  
@@ -729,9 +729,37 @@ Pendiente inmediato:
 - el Worker ya contiene una integración de prueba con Creators API para Amazon.es
 - prueba real realizada con `GetItems` y ASIN `B0BGBQSHPK`
 - autenticación y llamada llegan correctamente a Creators API, pero Amazon responde HTTP 403 con `AssociateNotEligible`
-- interpretación confirmada por la documentación oficial: la cuenta aún no cumple o Amazon aún no ha reconocido el requisito de 10 ventas cualificadas en los últimos 30 días
-- la propia interfaz de Amazon indica que la revisión de elegibilidad tras crear la credencial puede tardar hasta 48 horas
-- no hacer cambios en credenciales ni Worker por este 403; volver a probar cuando Amazon haya actualizado la elegibilidad
+- Amazon.es confirma por soporte el 04/10/2026 la causa exacta del bloqueo:
+  - la API exige al menos **10 compras adscritas correspondientes a 10 pedidos separados dentro de los últimos 30 días**
+  - varios productos dentro de un mismo pedido cuentan como **una sola compra adscrita** a efectos de elegibilidad de la API
+  - en el momento de la revisión Amazon muestra **13 productos**, pero agrupados en solo **8 compras adscritas / pedidos válidos**
+  - por tanto faltan **2 pedidos adscritos separados** dentro de la ventana móvil de 30 días para alcanzar el mínimo
+- este estado queda confirmado como un problema de elegibilidad comercial, no de autenticación, credenciales, Partner Tag, Worker ni endpoint
+- no hacer cambios en credenciales ni Worker por este 403
+- mientras no se cumpla el mínimo, utilizar SiteStripe / Barra Web o Mobile GetLink para crear enlaces
+- volver a probar Creators API cuando los informes de Amazon reflejen al menos 10 pedidos adscritos separados en los últimos 30 días
+- mantener un volumen regular de pedidos porque la elegibilidad depende de una ventana móvil de 30 días
+
+
+
+### Confirmación oficial de elegibilidad Creators API · 04/10/2026
+
+Amazon.es responde por soporte y confirma que el error `AssociateNotEligible` se debe exclusivamente al volumen de compras adscritas del último mes.
+
+Dato confirmado por Amazon:
+
+- 13 productos adscritos en los informes;
+- agrupados en 8 pedidos/compras adscritas válidas;
+- requisito de acceso a Creators API: 10 pedidos separados dentro de los últimos 30 días.
+
+Implicación operativa:
+
+- no modificar Worker, OAuth, credenciales, Partner Tag ni endpoints por este error;
+- no interpretar varias unidades o productos dentro de un mismo pedido como varias compras válidas para la API;
+- seguir usando SiteStripe o Mobile GetLink mientras el acceso esté bloqueado;
+- reintentar la API cuando el panel refleje al menos 10 pedidos separados dentro de la ventana móvil de 30 días.
+
+Este criterio sustituye la interpretación anterior basada únicamente en la posibilidad de retraso de actualización de elegibilidad.
 
 ## Precios
 
