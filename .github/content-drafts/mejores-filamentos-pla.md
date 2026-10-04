@@ -36,7 +36,7 @@ Las notas públicas usan un decimal.
 - Boquilla: 190-230 °C
 - Bobina: cartón
 - AMS: ⚠️, recomendable adaptador/anillo
-- ASIN: `B0CD7B7ZKK`
+- ASIN: `B0CD7BTN37`
 
 ELEGOO plantea este PLA como un material para impresión cotidiana, con una ventana amplia de temperatura y una tolerancia declarada de ±0,02 mm. Su punto fuerte no está en ofrecer una formulación especial, sino en resultar fácil de perfilar y suficientemente regular para piezas de uso diario.
 
