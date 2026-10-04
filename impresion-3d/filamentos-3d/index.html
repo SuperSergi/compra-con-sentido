@@ -385,6 +385,55 @@
       white-space:nowrap;
     }
 
+    .related-card-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:20px;
+      margin-top:26px;
+    }
+
+    .related-card{
+      overflow:hidden;
+      border:1px solid var(--cc-line);
+      border-radius:20px;
+      background:#fff;
+      color:inherit;
+      text-decoration:none;
+      box-shadow:0 8px 24px rgba(18,55,39,.055);
+      transition:transform .18s ease,box-shadow .18s ease;
+    }
+
+    .related-card:hover{
+      transform:translateY(-3px);
+      box-shadow:0 14px 30px rgba(18,55,39,.10);
+    }
+
+    .related-card img{
+      display:block;
+      width:100%;
+      aspect-ratio:16/9;
+      object-fit:cover;
+    }
+
+    .related-card-body{padding:20px 22px 22px}
+    .related-card-body .section-kicker{margin-bottom:8px}
+    .related-card h3{
+      margin:0 0 8px;
+      color:#26382e;
+      font-size:23px;
+    }
+    .related-card p{
+      margin:0;
+      color:var(--cc-muted);
+      line-height:1.6;
+    }
+    .related-card-cta{
+      display:inline-flex;
+      margin-top:14px;
+      color:var(--cc-green);
+      font-weight:900;
+    }
+
     .back-card{
       margin:30px 0 76px;
       padding:20px 22px;
@@ -445,7 +494,8 @@
       }
 
       .materials-grid,
-      .guide-grid{
+      .guide-grid,
+      .related-card-grid{
         grid-template-columns:1fr;
       }
 
@@ -823,22 +873,29 @@
         </p>
       </div>
 
-      <section class="more-box">
-        <div>
-          <span class="section-kicker">Sigue explorando</span>
-          <h2>La impresora también condiciona el material</h2>
-          <p>
-            Si quieres trabajar con ASA, TPU u otros materiales más exigentes,
-            conviene revisar primero qué temperaturas, extrusor y configuración ofrece tu máquina.
-          </p>
+      <section aria-labelledby="sigue-explorando-filamentos">
+        <span class="section-kicker">Sigue explorando</span>
+        <h2 id="sigue-explorando-filamentos">Más contenido de impresión 3D</h2>
+        <div class="related-card-grid">
+          <a class="related-card" href="/impresion-3d/impresoras-3d/">
+            <img src="/images/guia-impresoras-3d.webp" alt="Impresora 3D FDM" loading="lazy" decoding="async">
+            <div class="related-card-body">
+              <span class="section-kicker">Guía</span>
+              <h3>Cómo elegir una impresora 3D</h3>
+              <p>Volumen, estructura, materiales, automatización y ecosistema antes de elegir máquina.</p>
+              <span class="related-card-cta">Ver guía →</span>
+            </div>
+          </a>
+          <a class="related-card" href="/impresion-3d/filamentos-3d/mejores-filamentos-pla/">
+            <img src="/images/filamentos-pla/hero-mejores-filamentos-pla.webp" alt="Bobinas de filamento PLA y piezas impresas en 3D" loading="lazy" decoding="async">
+            <div class="related-card-body">
+              <span class="section-kicker">Comparativa</span>
+              <h3>Mejores filamentos PLA</h3>
+              <p>Seis opciones comparadas por fiabilidad, velocidad, AMS y relación calidad-precio.</p>
+              <span class="related-card-cta">Ver comparativa →</span>
+            </div>
+          </a>
         </div>
-
-        <a
-          class="more-btn"
-          href="/impresion-3d/impresoras-3d/"
-        >
-          Ver guía de impresoras →
-        </a>
       </section>
 
       <div class="back-card">
