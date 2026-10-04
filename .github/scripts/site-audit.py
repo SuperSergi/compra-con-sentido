@@ -168,6 +168,40 @@ for url_path, path in sorted(public_urls.items()):
     if bad_p:
         fail(f"{path}: párrafo visible empieza por separador huérfano")
 
+    # Residuos editoriales y HTML mal formado que pueden llegar a ser visibles.
+    # Se inspecciona el texto renderizable y, por separado, patrones de atributos
+    # internos que no deben llegar al HTML público.
+    residue_source = re.sub(r"<!--.*?-->", " ", html, flags=re.I | re.S)
+    residue_source = re.sub(r"<script\b.*?</script>", " ", residue_source, flags=re.I | re.S)
+    residue_source = re.sub(r"<style\b.*?</style>", " ", residue_source, flags=re.I | re.S)
+    visible_text = re.sub(r"<[^>]+>", " ", residue_source)
+    visible_text = re.sub(r"\s+", " ", visible_text).strip().lower()
+
+    editorial_residues = (
+        "antes de publicar",
+        "debe cerrarse antes de publicar",
+        "borrador",
+        "publicaremos",
+        "referencia aportada",
+    )
+    for residue in editorial_residues:
+        if residue in visible_text:
+            fail(f"{path}: residuo editorial visible: {residue!r}")
+
+    if re.search(r'data-amazon-validation\s*=\s*["\']review-before-merge["\']', html, re.I):
+        fail(f"{path}: atributo interno de prepublicación review-before-merge")
+
+    # Caso real detectado en Taladros: <img ... / decoding="async">.
+    # Ese slash antes del atributo deja texto residual en algunos navegadores.
+    if re.search(r"<img\b[^>]*?/\s+decoding\s*=", html, re.I | re.S):
+        fail(f"{path}: atributo decoding= mal colocado tras cierre de <img>")
+
+    # decoding= y &gt; no deben aparecer como texto visible fuera de etiquetas.
+    if re.search(r"\bdecoding\s*=", visible_text, re.I):
+        fail(f"{path}: decoding= aparece como texto visible")
+    if "&gt;" in visible_text:
+        fail(f"{path}: entidad &gt; aparece como texto visible")
+
     for structural_tag in ("table", "thead", "tbody"):
         opening = len(re.findall(rf"<{structural_tag}\b", html, re.I))
         closing = len(re.findall(rf"</{structural_tag}>", html, re.I))
