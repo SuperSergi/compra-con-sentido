@@ -4970,3 +4970,49 @@ La clasificación AMS final pasa a:
 ### Corrección color ELEGOO
 
 La referencia individual definitiva aportada por Sergio para ASIN `B0CD7BTN37` corresponde a **ELEGOO PLA negro 1 kg**. Las menciones antiguas a ELEGOO blanco para esta referencia quedan sustituidas por negro.
+
+
+---
+
+## Publicación preparada · mejores filamentos PLA · 04/10/2026
+
+Se mueve el contenido aprobado a la URL pública:
+
+`/impresion-3d/filamentos-3d/mejores-filamentos-pla/`
+
+### SEO final aplicado
+
+- Title: `Mejores filamentos PLA calidad-precio: 6 opciones según el uso`
+- H1: `Mejores filamentos PLA: cuál comprar según lo que vas a imprimir`
+- meta description cerrada;
+- canonical a la URL definitiva;
+- Open Graph y Twitter Card;
+- hero/OG reutiliza `/images/guia-filamentos-3d.webp`, imagen genérica de bobinas sin representar un modelo concreto;
+- schema `Article`;
+- schema `BreadcrumbList`;
+- schema `FAQPage` coincidente con las 8 FAQ visibles;
+- fecha de publicación/modificación: 04/10/2026.
+
+### Enlazado interno de entrada
+
+Se añade enlace hacia la comparativa desde:
+- `/impresion-3d/filamentos-3d/`, dentro del bloque PLA;
+- `/impresion-3d/`, dentro de la tarjeta Filamentos 3D.
+
+### Sitemap
+
+Se añade la URL con `lastmod 2026-10-04`.
+
+### Amazon
+
+Los enlaces mantienen:
+- Tracking ID `ccc-filam3d-21`;
+- `rel="nofollow sponsored"`;
+- ASIN exacto registrado;
+- botones individuales y packs aprobados.
+
+La búsqueda automática de Amazon.es no devuelve de forma fiable todos los ASIN, por lo que la validación final de variantes se apoya en las comprobaciones manuales realizadas por Sergio durante esta preparación. No sustituir esas referencias por resultados ambiguos del buscador.
+
+### Estado
+
+Página lista para PR de publicación y despliegue tras `build` correcto.
