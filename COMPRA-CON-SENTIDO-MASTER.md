@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 04/10/2026 · 18:38
+**Última actualización:** 04/10/2026 · 20:39
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -437,6 +437,7 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 **Packs:** la tabla compara siempre una bobina individual. En cada ficha, el bloque "Si compras más cantidad" explica de forma cualitativa cuándo compensa un pack (sin importes ni cupones) y los botones de pack son secundarios. JAYO es el caso donde la unidad puede salir mejor por kilo que sus packs.
 
 **Orden de ficha PLA:** el canónico de la sección 8.7 con "Nuestra valoración" y "Si compras más cantidad" antes del CTA. El orden visual se fija con `order` CSS (los bloques PLA personalizados deben llevarlo asignado). Hero con una sola capa verde (se neutraliza `.ccs-hero::before` en esta página para no tapar la imagen).
+**Ajuste visual 04/10/2026:** la comparativa PLA carga `comparison-opening-v1.css?v=20261004-2`, igual que las otras comparativas. Se cerró así la incidencia de caché por la que los CTA de las tres elecciones podían verse como simples enlaces en producción. Verificado visualmente por el usuario tras el despliegue.
 
 ---
 
@@ -462,7 +463,7 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 
 - [x] CTA de la comparativa PLA alineados el 04/10/2026 con la sección 9.3: fichas en `Ver precio en Amazon` y packs en `Ver precio del pack de N en Amazon`; la tabla conserva `Ver en Amazon`.
 
-- [ ] Confirmar visualmente en producción, tras el despliegue, que el menú muestra `Sobre nosotros` → `/sobre-nosotros/`, que `404.html` carga el footer global y que PLA sirve `/css/style-v4.css?v=20261002-3`. El código de `main` y el Responsive audit ya están correctos.
+- [ ] Confirmar visualmente en producción que el menú muestra `Sobre nosotros` → `/sobre-nosotros/` y que `404.html` carga el footer global. La comparativa PLA ya ha sido verificada visualmente tras el despliegue con sus CTA de las tres elecciones renderizados como botones y con `comparison-opening-v1.css?v=20261004-2` activo.
 - [ ] Confirmar en el contrato de Amazon Afiliados qué exige sobre el aviso de afiliación antes de mantener la política de no repetirlo en cabecera.
 - [ ] Usar Search Console para decidir qué tres acciones o contenidos van en el primer pantallazo de Inicio (el titular y el peso visual de la home se revisarán con SEO, arquitectura y datos reales).
 - [ ] Revisar con los criterios actuales las páginas no incluidas en la auditoría externa: filamentos 3D (guía), accesorios 3D, aspiradoras, deshumidificadores (guía y comparativa de litros), `/metodologia/` y `/aviso-legal/`.
