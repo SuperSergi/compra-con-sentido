@@ -3313,7 +3313,7 @@ Antes de publicar se volverá a verificar ficha activa, color/variante, contenid
 - **JAYO PLA 1.75 mm 1,1 kg negro** — ASIN `B0BHQR69RW`
   - perfil: imprimir mucho gastando poco / más cantidad por bobina.
 
-- **ELEGOO PLA 1.75 mm 1 kg blanco** — ASIN `B0CD7BTN37`
+- **ELEGOO PLA 1.75 mm 1 kg negro** — ASIN `B0CD7BTN37`
   - perfil: PLA estándar sencillo y fácil de comprar.
   - ELEGOO publica además un anillo para facilitar el uso de su bobina de cartón en AMS.
 
@@ -3462,7 +3462,7 @@ La página actual no trabaja marcas concretas, PLA+, alta velocidad ni recomenda
 
 Se priorizan cinco perfiles distintos. La comprobación de Amazon España se ha realizado con evidencia reciente de marketplace/trackers; antes de publicar deben revalidarse directamente la ficha activa, el color/pack exactos y la afiliación.
 
-1. **ELEGOO PLA blanco 1 kg**
+1. **ELEGOO PLA negro 1 kg**
    - perfil: PLA estándar económico y sencillo para uso diario
    - ASIN: `B0CD7BTN37`
    - 1,75 mm, 1 kg
@@ -4930,3 +4930,43 @@ La imagen aportada muestra:
 - bobina de cartón.
 
 Todos los CTA y referencias del borrador deben usar `B0CD7BTN37` para la unidad de 1 kg.
+
+
+---
+
+## Imágenes definitivas de producto · comparativa PLA · 04/10/2026
+
+Sergio aporta y valida las imágenes principales de las seis referencias.
+
+Se optimizan a WebP y se preparan para el borrador:
+
+- `/images/filamentos-pla/elegoo-pla.webp` — 640 × 613 px;
+- `/images/filamentos-pla/esun-pla-plus.webp` — 640 × 600 px;
+- `/images/filamentos-pla/sunlu-high-speed-pla-plus-2.webp` — 640 × 595 px;
+- `/images/filamentos-pla/overture-pla-professional.webp` — 550 × 640 px;
+- `/images/filamentos-pla/jayo-pla.webp` — 640 × 630 px;
+- `/images/filamentos-pla/winkle-pla-hd.webp` — 622 × 640 px.
+
+Pesos optimizados aproximados: entre 23 y 56 KB por imagen, muy por debajo del límite QA de 350 KB.
+
+### Corrección eSUN
+
+La imagen exacta aportada por Sergio para eSUN PLA+ muestra **bobina plástica**, no cartón.
+
+Para la referencia analizada:
+- eSUN PLA+ → bobina plástica;
+- compatibilidad AMS / AMS 2 Pro → **✅**;
+- se elimina la advertencia por cartón de esta referencia concreta.
+
+La clasificación AMS final pasa a:
+
+- ELEGOO → ⚠️
+- eSUN → ✅
+- SUNLU → ✅
+- OVERTURE → ⚠️
+- JAYO → ✅
+- Winkle → ❌ para AMS / AMS 2 Pro
+
+### Corrección color ELEGOO
+
+La referencia individual definitiva aportada por Sergio para ASIN `B0CD7BTN37` corresponde a **ELEGOO PLA negro 1 kg**. Las menciones antiguas a ELEGOO blanco para esta referencia quedan sustituidas por negro.
