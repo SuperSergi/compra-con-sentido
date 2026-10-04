@@ -3665,3 +3665,92 @@ Para cada producto se debe cerrar:
 - SUNLU: mantener únicamente la variante exacta High Speed PLA+ 2.0 si el argumento editorial principal es alta velocidad.
 
 No crear ni publicar todavía la URL.
+
+
+---
+
+## Matriz de investigación v1 · seis filamentos PLA · 04/10/2026
+
+Se completa una primera matriz normalizada para los seis candidatos definitivos de la futura comparativa de mejores filamentos PLA.
+
+### Referencias
+
+- ELEGOO PLA — ASIN `B0CD7B7ZKK`
+- eSUN PLA+ — ASIN `B07FQ98RNP`
+- SUNLU High Speed PLA+ 2.0 — ASIN `B0FDGKJ1BJ`
+- OVERTURE PLA Professional / PLA+ — ASIN `B09PDCLSLY`
+- JAYO PLA — ASIN `B0BHQR69RW`
+- Winkle PLA HD — ASIN `B08LQJ8W1F`
+
+### Datos técnicos normalizados
+
+| Producto | Peso | Tolerancia | Boquilla | Velocidad fabricante | Bobina / AMS | Papel editorial |
+|---|---:|---:|---:|---:|---|---|
+| ELEGOO PLA | 1 kg | ±0,02 mm | rango oficial pendiente de fijar por referencia exacta | documentación comercial actual orientada a PLA estándar | cartón; ⚠️ por recomendación de adaptador en AMS | PLA económico y sencillo |
+| eSUN PLA+ | 1 kg | ±0,03 mm | rango oficial de la gama PLA+ | fabricante lo presenta como apto para alta velocidad | cartón actual; ⚠️; eSUN ofrece adaptador oficial para AMS | PLA+ generalista |
+| SUNLU High Speed PLA+ 2.0 | 1 kg | ±0,02 mm | 200-260 °C según velocidad | 50-600 mm/s | bobina plástica; validar diámetro exacto frente a rango AMS | alta velocidad |
+| OVERTURE PLA Professional | 1 kg | ±0,02 mm | 190-220 °C | 40-70 mm/s | cartón; ⚠️ | PLA+/Pro para piezas funcionales |
+| JAYO PLA | 1,1 kg | ±0,02 mm | 200-210/230 °C según página oficial | 40-80 mm/s | versión reutilizable/plástica disponible; validar ASIN exacto | cantidad por bobina / coste |
+| Winkle PLA HD | 1 kg | no se ha localizado tolerancia ± oficial en TDS | 190-230 °C | 50-90 mm/s; 14 mm³/s máx. | bobina plástica; fabricante declara compatibilidad AMS | fabricación española / PLA HD bien documentado |
+
+Todos los productos se comparan como 1 bobina individual. JAYO conserva 1,1 kg y se normalizará mediante €/kg.
+
+### Compatibilidad AMS
+
+Bambu Lab publica para AMS y AMS 2 Pro:
+
+- ancho de bobina: 50-68 mm;
+- diámetro de bobina: 197-202 mm;
+- recomienda bobinas plásticas;
+- para cartón recomienda adaptador para reducir deslizamiento y residuos.
+
+Regla operativa:
+
+- ELEGOO: ⚠️ por cartón;
+- eSUN: ⚠️ por cartón;
+- OVERTURE: ⚠️ por cartón;
+- Winkle: candidato a ✅, pendiente de confirmar dimensiones exactas del ASIN;
+- SUNLU: candidato a ✅, pendiente de reconciliar dimensiones oficiales de bobina con el rango Bambu;
+- JAYO: pendiente de verificar que el ASIN `B0BHQR69RW` corresponde a la versión/bobina de la imagen definitiva. No usar la imagen aportada de PLA Matte para una ficha de PLA normal.
+
+### Evidencia de uso real
+
+Patrones encontrados:
+
+- ELEGOO PLA: buena relación calidad/precio y facilidad de uso recurrente; con AMS el cartón puede requerir anillo o protección de borde.
+- eSUN PLA+: reputación sólida como PLA+ generalista; aparecen experiencias mixtas con bobinas de cartón en AMS, desde uso directo sin incidencias hasta deslizamientos/errores.
+- SUNLU High Speed PLA+ 2.0: existe feedback positivo con perfiles Bambu/SUNLU; la velocidad máxima depende de temperatura, caudal y calibración, por lo que no se presentará como velocidad garantizada.
+- OVERTURE PLA Professional: buena reputación en piezas funcionales y facilidad de impresión, con algunos casos de ajuste necesario de adhesión/perfil.
+- JAYO PLA: opiniones generalmente positivas por coste y 1,1 kg; no asumir que comparte formulación con SUNLU aunque exista relación empresarial/marca.
+- Winkle PLA HD: buena base de opiniones españolas verificadas; PcComponentes muestra valoraciones altas y Revi/Tresding acumula una muestra amplia con comentarios positivos sobre acabado, ausencia de atascos y relación calidad/precio, aunque algunos usuarios requieren ajustar parámetros.
+
+### Winkle PLA HD
+
+El TDS oficial declara:
+
+- 1,75 mm;
+- bobinas de 300 g y 1 kg;
+- 190-230 °C;
+- cama 50-70 °C;
+- 50-90 mm/s;
+- velocidad volumétrica máxima 14 mm³/s;
+- fabricación bajo ISO 9001 / ISO 14001 y REACH;
+- no recomendado para alta temperatura ni impacto/flexión constante.
+
+La ausencia de una tolerancia ± numérica oficial localizada se mostrará como `No declarada`.
+
+### Precio y puntuación
+
+La puntuación final de calidad-precio sigue pendiente porque debe calcularse con el precio de una bobina individual observado el mismo día en Amazon.es.
+
+La herramienta automática no puede leer de forma fiable las seis páginas directas de Amazon.es en esta sesión, por lo que no se registrarán precios estimados ni datos de trackers como sustituto.
+
+Cuando se disponga de los seis precios observados en Amazon.es:
+
+1. calcular €/kg;
+2. normalizar la nota de precio;
+3. puntuar calidad, fiabilidad, facilidad y prestaciones;
+4. calcular la nota final con la fórmula aprobada;
+5. guardar las cinco notas individuales para trazabilidad.
+
+No publicar todavía la URL.
