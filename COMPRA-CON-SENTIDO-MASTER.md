@@ -5183,3 +5183,39 @@ Contenido mostrado:
 La comparativa PLA queda así visible como contenido propio del cluster, no escondida dentro de una tarjeta de Filamentos 3D.
 
 Estas tarjetas deben usar siempre la imagen hero de la URL de destino cuando exista.
+
+
+---
+
+## Corrección definitiva del asset hero PLA · 04/10/2026
+
+Se confirma que el problema visual no era ya el CSS: el archivo publicado como:
+
+`/images/filamentos-pla/hero-mejores-filamentos-pla.webp`
+
+había quedado subido de forma incorrecta y no era un WebP utilizable normal en producción.
+
+La imagen fuente validada es:
+- 1400 × 788 px;
+- WebP;
+- 30.092 bytes.
+
+Se vuelve a subir el archivo íntegro con un nombre nuevo para evitar cualquier caché/CDN sobre el recurso defectuoso:
+
+`/images/filamentos-pla/hero-mejores-filamentos-pla-v2.webp`
+
+Blob SHA verificado:
+`343178d0f9fa8fba3ea3e62b649d2ab1567d6ed7`
+
+Se actualizan todas las referencias al hero nuevo en:
+- comparativa PLA;
+- tarjeta de Filamentos 3D;
+- biblioteca de Impresión 3D;
+- tarjeta destacada de Inicio;
+- borrador interno.
+
+### Separación visual en Filamentos 3D
+
+La sección `Sigue explorando` recibe `margin-top:48px` respecto al bloque amarillo `Error habitual`, evitando que ambos bloques queden visualmente pegados.
+
+El archivo hero anterior se conserva temporalmente en el repositorio solo como histórico técnico, pero no debe volver a referenciarse.
