@@ -4790,3 +4790,53 @@ Pendientes visuales reales:
 - cerrar AMS y OVERTURE pack 4 antes de convertir el borrador en URL pública.
 
 La URL sigue sin publicarse.
+
+
+---
+
+## Datos aportados por Sergio · JAYO y OVERTURE · 04/10/2026
+
+### JAYO PLA · bobina actual
+
+Sergio aporta imagen de Amazon de la referencia JAYO donde aparecen las dimensiones de bobina:
+
+- diámetro exterior: **140 mm**;
+- ancho: **61 mm**;
+- diámetro/interior indicado en la imagen: **55 mm**;
+- bobina plástica.
+
+Comparado con el rango oficial de AMS / AMS 2 Pro registrado en este MASTER:
+
+- ancho 50-68 mm → **entra**;
+- diámetro 197-202 mm → **no entra**.
+
+Decisión para la comparativa:
+
+- JAYO PLA se marca **❌ para uso directo en AMS / AMS 2 Pro** con esta bobina;
+- no confundir con AMS Lite ni con otras bobinas JAYO de dimensiones diferentes;
+- esta decisión aplica a la bobina mostrada para la referencia actual, no a toda la marca.
+
+### OVERTURE pack de 4
+
+Sergio confirma el ASIN del pack de **4 kg negro** visto en Amazon.es:
+
+`B0DQ53M2BN`
+
+Se incorpora como CTA:
+
+`Ver pack de 4 en Amazon`
+
+con Tracking ID:
+
+`ccc-filam3d-21`
+
+El ASIN `B0DQTSZ4ZH` localizado anteriormente para un pack mixto negro/blanco no se utiliza como referencia principal del pack de 4 negro.
+
+### Pendientes reducidos
+
+Siguen pendientes:
+- dimensiones/AMS exacto de SUNLU High Speed PLA+ 2.0;
+- dimensiones/AMS exacto de Winkle PLA HD;
+- imágenes definitivas;
+- hero/OG;
+- validación final de disponibilidad y variante antes de publicación.
