@@ -3512,3 +3512,110 @@ GSC Wizard no está disponible actualmente porque el conector devuelve que la su
 ### Estado siguiente
 
 **Siguiente paso recomendado: cerrar los cinco productos definitivos con revalidación final de Amazon.es/ASIN y construir la matriz técnica/editorial comparable antes de redactar. La URL no se ha creado ni publicado.**
+
+
+---
+
+## Criterios cerrados · tabla y valoración de filamentos PLA · 04/10/2026
+
+Se cierran los criterios de presentación y valoración para la futura comparativa `/impresion-3d/filamentos-3d/mejores-filamentos-pla/`.
+
+### Tabla comparativa principal
+
+La tabla pública debe ser compacta y comparable. Criterios acordados:
+
+- todos los productos se comparan en formato de una bobina individual, no packs;
+- si una referencia ofrece packs, se podrán mencionar dentro de su ficha, pero no mezclar tamaños de pack en la tabla principal;
+- todos los filamentos comparados son de 1,75 mm; el diámetro nominal se explicará una vez fuera de la tabla;
+- se mantiene una columna de tolerancia de diámetro:
+  - usar solo el dato del fabricante o documentación técnica fiable de la gama/referencia;
+  - si no existe un dato fiable, indicar `No declarada`;
+  - no rellenar huecos con cifras dudosas de marketplaces;
+- mantener temperatura de boquilla y velocidad declarada por fabricante cuando sean comparables;
+- no incluir temperatura de cama en la tabla principal si perjudica legibilidad; puede quedar en la ficha;
+- incluir una columna AMS con un único símbolo;
+- incluir una columna de calidad-precio;
+- incluir una columna breve `Mejor para`.
+
+### Regla AMS
+
+La tabla utilizará únicamente:
+
+- ✅ compatible directamente: bobina y dimensiones adecuadas para uso directo;
+- ⚠️ compatible con precauciones: entra físicamente, pero material de bobina, bordes o diseño hacen recomendable adaptador/anillo u otra precaución;
+- ❌ no compatible directamente: dimensiones/formato incompatibles o problema documentado que impide uso directo.
+
+El símbolo debe corresponder a la bobina exacta de la referencia, no a una generalización por marca.
+
+Las explicaciones sobre cartón, adaptadores, dimensiones u otras precauciones irán dentro de cada ficha, no en la tabla.
+
+### Precio y formato comparable
+
+Para el análisis interno:
+
+- registrar el precio observado de una sola bobina en la misma fecha para todos los candidatos;
+- calcular €/kg usando el peso neto real;
+- JAYO 1,1 kg se normaliza por €/kg igual que una bobina de 1 kg;
+- packs de 2, 4 o más unidades pueden analizarse como alternativa dentro de la ficha, pero no se utilizan como referencia principal de la tabla.
+
+No mostrar precios fijos en la página publicada mientras no exista un sistema fiable de actualización.
+
+### Puntuación de calidad-precio
+
+Se utilizará una nota final de 0 a 10 calculada con cinco componentes:
+
+- calidad y acabado de impresión: 20 %;
+- consistencia y fiabilidad: 20 %;
+- facilidad de impresión: 10 %;
+- prestaciones para su uso objetivo: 15 %;
+- precio por kg observado: 35 %.
+
+Fórmula:
+
+`calidad-precio = calidad × 0,20 + fiabilidad × 0,20 + facilidad × 0,10 + prestaciones × 0,15 + precio × 0,35`
+
+La nota de precio se normalizará respecto al €/kg más bajo observado entre los productos comparados en la misma fecha:
+
+`nota precio = (€/kg más barato ÷ €/kg del producto) × 10`
+
+Conservar internamente las cinco notas individuales para mantener trazabilidad.
+
+La categoría `prestaciones` se evalúa respecto al propósito del producto, no comparando funciones distintas entre sí. Un PLA mate puede obtener una puntuación alta si cumple bien su objetivo estético aunque no sea un filamento high-speed.
+
+### Visualización en cada ficha
+
+Cada ficha de producto mostrará una sección compacta `Nuestra valoración` con cinco barras horizontales:
+
+- Calidad;
+- Fiabilidad;
+- Facilidad;
+- Prestaciones;
+- Precio.
+
+Debajo se mostrará la nota final de `Calidad-precio: X,X/10`.
+
+Implementación prevista:
+
+- HTML + CSS;
+- sin librerías gráficas;
+- sin JavaScript necesario;
+- ligera y responsive;
+- barras horizontales, no estrellas ni gráfico radar.
+
+La metodología se explicará una sola vez en la página. Las estrellas se descartan para evitar que parezca una valoración agregada de usuarios o de Amazon.
+
+### Estado siguiente
+
+La siguiente fase es preparar fichas de investigación completas para los seis candidatos actuales, cruzando:
+
+1. fabricante y TDS/manuales;
+2. referencia exacta y formato de bobina;
+3. dimensiones y material de bobina / AMS;
+4. pruebas independientes con metodología visible;
+5. patrones positivos y negativos de usuarios;
+6. incidencias recurrentes;
+7. diferencias reales respecto a los otros candidatos;
+8. precio de una bobina y €/kg observado en la misma fecha;
+9. argumentos que sí se pueden publicar y afirmaciones que deben evitarse.
+
+No crear ni publicar todavía la URL.
