@@ -4868,3 +4868,46 @@ Por tanto:
 - antes de publicar hay que confirmar qué bobina corresponde exactamente al ASIN B0BHQR69RW actual.
 
 La cifra de 140 mm debe tratarse como posible error de imagen, imagen de otra bobina o dato mal rotulado hasta resolverlo.
+
+
+---
+
+## Compatibilidad AMS cerrada · filamentos PLA · 04/10/2026
+
+Se cierra la columna AMS / AMS 2 Pro para la comparativa:
+
+- ELEGOO PLA → **⚠️**
+- eSUN PLA+ → **⚠️**
+- SUNLU High Speed PLA+ 2.0 → **✅**
+- OVERTURE PLA Professional → **⚠️**
+- JAYO PLA 1,1 kg → **✅**
+- Winkle PLA HD → **❌** para AMS / AMS 2 Pro
+
+### Criterio aplicado
+
+ELEGOO / eSUN / OVERTURE:
+- dimensiones de formato estándar compatibles en la práctica;
+- bobina de cartón;
+- se mantiene ⚠️ por la precaución adicional en AMS.
+
+SUNLU High Speed PLA+ 2.0:
+- bobina plástica;
+- medidas publicadas alrededor de 195 × 57 mm;
+- existe amplia evidencia de uso real en AMS / AMS 2 Pro;
+- se cierra como ✅.
+
+JAYO PLA 1,1 kg:
+- bobina plástica;
+- múltiples fuentes del formato JAYO 1,1 kg publican alrededor de 200 × 61 mm;
+- encaja con el rango de AMS / AMS 2 Pro;
+- la cifra de 140 mm mostrada en una imagen de Amazon se considera inconsistente y no se usa;
+- se cierra como ✅.
+
+Winkle PLA HD:
+- bobina plástica;
+- dimensiones publicadas alrededor de 175 × 77 mm;
+- queda fuera del formato de AMS / AMS 2 Pro;
+- algunas fichas actuales de Winkle mencionan AMS Lite;
+- se cierra como ❌ para AMS / AMS 2 Pro, sin extrapolar a AMS Lite.
+
+Esta clasificación sustituye los estados provisionales anteriores.
