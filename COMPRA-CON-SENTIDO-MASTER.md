@@ -3619,3 +3619,49 @@ La siguiente fase es preparar fichas de investigación completas para los seis c
 9. argumentos que sí se pueden publicar y afirmaciones que deben evitarse.
 
 No crear ni publicar todavía la URL.
+
+
+---
+
+## Shortlist definitiva de investigación · mejores filamentos PLA · 04/10/2026
+
+Se descarta definitivamente Polymaker/Panchroma Matte de esta comparativa. También queda fuera Creality Rainbow/efectos especiales, que se reservará para una futura comparativa específica de filamentos especiales.
+
+La investigación principal continúa con seis referencias:
+
+1. ELEGOO PLA
+2. eSUN PLA+
+3. SUNLU High Speed PLA+ 2.0
+4. OVERTURE PLA Professional / PLA+
+5. JAYO PLA 1,1 kg
+6. Winkle PLA HD
+
+### Criterio de trabajo
+
+Para cada producto se debe cerrar:
+
+- referencia y ASIN exactos;
+- color/variante;
+- peso neto;
+- tolerancia de diámetro;
+- temperatura de boquilla;
+- velocidad de impresión declarada;
+- material y dimensiones de bobina;
+- compatibilidad AMS mediante símbolo ✅ / ⚠️ / ❌;
+- documentación oficial y TDS;
+- pruebas/reseñas independientes;
+- patrones positivos y negativos de usuarios;
+- precio de una bobina individual y €/kg observado en la misma fecha;
+- cinco notas internas: calidad, fiabilidad, facilidad, prestaciones y precio;
+- nota final de calidad-precio según la fórmula ya aprobada.
+
+### Alertas detectadas
+
+- JAYO: la imagen aportada por Sergio muestra explícitamente `PLA Matte Filament`. Antes de cerrar el producto hay que verificar si el ASIN seleccionado corresponde a PLA normal o PLA Matte. No mezclar documentación de ambas variantes.
+- ELEGOO: la imagen aportada muestra bobina de cartón y marcado RFID. Confirmar que coincide con la referencia/ASIN exactos que se utilizarán.
+- eSUN: la marca ha utilizado bobinas de cartón y plástico según periodo/lote. El símbolo AMS debe asignarse a la referencia real que llegue actualmente, no por historial de marca.
+- OVERTURE B09PDCLSLY: queda como referencia principal a verificar para PLA Professional / PLA+ negro de 1 kg.
+- Winkle B08LQJ8W1F: candidato fuerte; la referencia visual aportada usa bobina plástica y corresponde a PLA HD negro azabache fabricado en España.
+- SUNLU: mantener únicamente la variante exacta High Speed PLA+ 2.0 si el argumento editorial principal es alta velocidad.
+
+No crear ni publicar todavía la URL.
