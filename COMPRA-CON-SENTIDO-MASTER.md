@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 4 de octubre de 2026 · 08:39
+**Última actualización:** 4 de octubre de 2026 · 09:22  
 **Mercado inicial:** España  
 **Idioma principal:** Español  
 **Dominio canónico:** `https://compraconsentido.es/`  
@@ -2281,7 +2281,7 @@ Mientras Search Console todavía no tenga datos de consultas, evitar crear nueva
 ## Norma de versionado del MASTER
 
 - Cada actualización del MASTER debe incluir también la hora local de actualización en formato `DD/MM/YYYY HH:MM` para que sea fácil identificar cuál es la versión más reciente subida al proyecto.
-- Última actualización de esta versión: 30/09/2026 21:55.
+- Última actualización de esta versión: 04/10/2026 09:22.
 
 ---
 
@@ -3374,3 +3374,141 @@ No crear por ahora páginas equivalentes de PETG, TPU o ASA. Investigar cada mat
 5. revalidar Amazon.es/ASIN justo antes de preparar enlaces afiliados.
 
 **No se crea ni publica todavía la URL.**
+
+
+---
+
+## Investigación SEO · Mejores filamentos PLA · 04/10/2026 09:22
+
+### Decisión
+
+**OPORTUNIDAD SEO/COMERCIAL APROBADA PARA PREPARAR. NO CREADA NI PUBLICADA.**
+
+URL propuesta:
+
+`/impresion-3d/filamentos-3d/mejores-filamentos-pla/`
+
+La intención principal es **comercial / investigación previa a compra**: el usuario ya ha decidido imprimir con PLA y quiere saber qué producto o marca concreta comprar.
+
+La SERP española actual confirma intención independiente respecto a la guía existente `/impresion-3d/filamentos-3d/`, que seguirá siendo informacional y centrada en elegir entre PLA, PETG, ASA o TPU.
+
+Keyword principal:
+
+`mejores filamentos PLA`
+
+Keywords secundarias a trabajar dentro de la misma URL:
+
+- `mejor filamento PLA`
+- `mejor filamento PLA calidad precio`
+- `mejores marcas de filamento PLA`
+- `qué filamento PLA comprar`
+- `filamento PLA barato`
+- `filamento PLA 1.75 mm`
+- `PLA+` / `filamento PLA Plus`
+- `filamento PLA alta velocidad`
+- `filamento PLA para Bambu Lab` / `AMS`
+- `pack filamento PLA`
+
+No crear por ahora URLs separadas para `PLA barato`, `PLA+`, `alta velocidad`, `AMS` o packs. Deben resolverse como perfiles/subtemas de la comparativa principal y solo separarse en el futuro si SERP y datos reales justifican una intención propia.
+
+### SERP y competencia
+
+La SERP mezcla comparativas editoriales, medios especializados fuertes como All3DP, webs nicho de impresión 3D, rankings afiliados genéricos, categorías de tiendas especializadas y páginas de fabricantes.
+
+Dificultad cualitativa:
+
+**MEDIA.**
+
+Existe competencia con autoridad, pero también resultados genéricos, rankings de marcas y páginas comerciales que dejan espacio a una comparación más útil basada en variantes concretas, perfiles de uso y disponibilidad real en Amazon España.
+
+### Oportunidad editorial
+
+No hacer un ranking genérico de “los 10 mejores”.
+
+Organizar recomendaciones por necesidad:
+
+- imprimir mucho gastando poco
+- PLA estándar sencillo para uso diario
+- PLA+ con mayor tenacidad
+- alta velocidad
+- buen acabado/mate
+- compatibilidad y uso práctico con sistemas multimaterial como AMS
+- packs o formatos económicos
+
+Diferenciadores:
+
+- comparar referencias concretas, no solo marcas
+- verificar variante exacta y ASIN
+- separar PLA estándar, PLA+ y PLA de alta velocidad sin asumir que las denominaciones son equivalentes entre marcas
+- explicar bobina, peso neto, formato y posibles implicaciones para AMS
+- usar parámetros oficiales del fabricante sin comparar cifras de velocidad máxima como si fueran una prueba común
+- explicar cuándo no compensa pagar más
+- no usar precios fijos en la página publicada
+
+### Canibalización
+
+Riesgo actual:
+
+**BAJO.**
+
+Propiedad de intención:
+
+- `/impresion-3d/filamentos-3d/` → cómo elegir material: PLA vs PETG vs ASA vs TPU
+- nueva comparativa → qué filamento PLA concreto comprar
+
+La página actual no trabaja marcas concretas, PLA+, alta velocidad ni recomendaciones de producto, por lo que ambas URLs pueden convivir con una separación clara.
+
+### Candidatos de producto preseleccionados
+
+Se priorizan cinco perfiles distintos. La comprobación de Amazon España se ha realizado con evidencia reciente de marketplace/trackers; antes de publicar deben revalidarse directamente la ficha activa, el color/pack exactos y la afiliación.
+
+1. **ELEGOO PLA blanco 1 kg**
+   - perfil: PLA estándar económico y sencillo para uso diario
+   - ASIN: `B0CD7B7ZKK`
+   - 1,75 mm, 1 kg
+
+2. **eSUN PLA+ blanco 1 kg**
+   - perfil: PLA+ equilibrado / mayor tenacidad
+   - ASIN: `B07FQ98RNP`
+   - 1,75 mm, 1 kg
+
+3. **SUNLU PLA+ 2.0 Fast negro 1 kg**
+   - perfil: alta velocidad / PLA+ económico
+   - ASIN: `B0FDGKJ1BJ`
+   - 1,75 mm, 1 kg
+
+4. **Polymaker PolyTerra PLA / actual Panchroma Matte, Charcoal Black 1 kg**
+   - perfil: acabado mate / piezas visuales
+   - ASIN de la variante PolyTerra observada en Amazon España: `B08QMBPZBF`
+   - Polymaker ha renombrado PolyTerra PLA como Panchroma Matte; revisar disponibilidad y nomenclatura exacta de Amazon antes de cerrar selección definitiva
+
+5. **OVERTURE PLA Plus negro, pack 2 x 1 kg**
+   - perfil: pack económico / imprimir mucho
+   - ASIN: `B0CQ1SP6YD`
+   - 1,75 mm, 2 x 1 kg
+
+Reserva:
+
+- **Creality Hyper PLA RFID 1 kg negro** — ASIN `B0DJXMLW6P`
+- considerar solo si aporta una sexta razón de compra clara o si falla disponibilidad de uno de los cinco principales
+
+No forzar seis productos si cinco cubren mejor los perfiles sin duplicar argumentos.
+
+### Enlazado interno previsto
+
+- `/impresion-3d/filamentos-3d/` → nueva comparativa desde el bloque de PLA con anchor comercial descriptivo
+- nueva comparativa → `/impresion-3d/filamentos-3d/` para quien aún no sepa qué material necesita
+- `/impresion-3d/` → nueva comparativa como contenido comercial del cluster
+- enlazado contextual con `/impresion-3d/impresoras-3d/` y/o su comparativa cuando aporte valor
+- valorar enlace contextual a `/impresion-3d/accesorios-3d/` para almacenamiento, secado o accesorios de bobina
+- no añadir enlaces a futuras comparativas PETG, TPU o ASA hasta que esas URLs existan y hayan superado su propia investigación SEO
+
+### Search Console
+
+No se han utilizado volúmenes inventados.
+
+GSC Wizard no está disponible actualmente porque el conector devuelve que la suscripción ha terminado o no está activa. La decisión se basa en SERP real, arquitectura, intención y competencia; deberá contrastarse con Search Console cuando vuelva a estar disponible.
+
+### Estado siguiente
+
+**Siguiente paso recomendado: cerrar los cinco productos definitivos con revalidación final de Amazon.es/ASIN y construir la matriz técnica/editorial comparable antes de redactar. La URL no se ha creado ni publicado.**
