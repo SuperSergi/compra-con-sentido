@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 04/10/2026 · 18:09
+**Última actualización:** 04/10/2026 · 18:22
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -170,6 +170,7 @@ No crear una URL por una simple variación de keyword. No inventar volúmenes de
 - Las tarjetas de hubs e Inicio usan la imagen hero de la URL de destino cuando exista.
 - Enlazados vigentes: `/hogar/` → guía de litros de deshumidificador; guías de taladros y gatos → sus comparativas con anchors variados; `/impresion-3d/filamentos-3d/` ↔ comparativa PLA; `/impresion-3d/` → comparativa PLA.
 - **Navegación al publicar una URL nueva:** actualizar hub, menú global (HTML estático de todas las páginas), `submenuData` en `/js/main-v4.js` si es una URL hija, versión de caché de `main-v4.js` en todas las páginas, breadcrumbs, enlaces contextuales y sitemap. Comprobar escritorio y móvil, enlaces duplicados y caracteres residuales. El cambio de menú se aplica a todas las páginas publicadas en el mismo PR.
+- **Menú principal:** la entrada informativa visible es `Sobre nosotros` y enlaza a `/sobre-nosotros/`. `Información` se mantiene como título de agrupación en el footer, donde conviven Sobre el proyecto, Metodología, Aviso legal, Privacidad y Contacto.
 
 ---
 
@@ -312,6 +313,7 @@ No usar el nombre del producto cuando el contexto ya sea inequívoco. Los CTA no
 - **Apertura de comparativas** (`/css/comparison-opening-v1.css`): `ccs-comparison-opening` + `ccs-comparison-opening-card`, `main` con `ccs-comparison-main` y tres tarjetas `ccs-comparison-profile` dentro de `ccs-comparison-profiles`. Otros CSS compartidos: `/css/comparativas-v3.css` (tablas) y `/css/product-cards-v1.css` (fichas).
 - **Espaciado global** (`/css/style-v4.css`): variables `--gap-content` (16 px), `--gap-card` (24 px), `--gap-section` (64 px), `--gap-page-end` (80 px) y `--pad-card`, con valores responsive reducidos (tarjetas 18 px, secciones 40 px, cierre 52 px). Utilidades `.ccs-stack`, `.ccs-card-grid`, `.ccs-section-gap`, `.ccs-card-pad`. No introducir `margin` o `gap` arbitrarios cuando una variable resuelva el caso.
 - **Footer:** componente visual único, idéntico en todas las páginas, con estilos aislados del CSS específico de cada página. Cualquier cambio de contenido, enlaces o estructura se aplica a todas las páginas actuales y futuras.
+- La página `404.html` utiliza también el footer global desde el 04/10/2026.
 - **Contenido dentro de `<main>`:** nada después de `</html>`; bloques como "Cómo analizamos" van dentro de `<main>`.
 - No compactar `hero-v5.css` ni `intro-v1.css` sin una regresión visual completa de toda la web.
 
@@ -459,7 +461,7 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 
 - [x] CTA de la comparativa PLA alineados el 04/10/2026 con la sección 9.3: fichas en `Ver precio en Amazon` y packs en `Ver precio del pack de N en Amazon`; la tabla conserva `Ver en Amazon`.
 
-- [ ] Revisar en producción el destino del menú "Información" y la coherencia del footer.
+- [ ] Confirmar visualmente en producción, tras el despliegue, que el menú muestra `Sobre nosotros` → `/sobre-nosotros/`, que `404.html` carga el footer global y que PLA sirve `/css/style-v4.css?v=20261002-3`. El código de `main` y el Responsive audit ya están correctos.
 - [ ] Confirmar en el contrato de Amazon Afiliados qué exige sobre el aviso de afiliación antes de mantener la política de no repetirlo en cabecera.
 - [ ] Usar Search Console para decidir qué tres acciones o contenidos van en el primer pantallazo de Inicio (el titular y el peso visual de la home se revisarán con SEO, arquitectura y datos reales).
 - [ ] Revisar con los criterios actuales las páginas no incluidas en la auditoría externa: filamentos 3D (guía), accesorios 3D, aspiradoras, deshumidificadores (guía y comparativa de litros), `/metodologia/` y `/aviso-legal/`.
