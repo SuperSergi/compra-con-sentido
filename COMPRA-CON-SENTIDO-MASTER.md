@@ -4195,3 +4195,108 @@ Siguiente fase:
 5. cerrar textos de las seis fichas;
 6. después preparar HTML y publicar mediante PR.
 
+
+
+---
+
+## Corrección de flujo de fichas y CTA múltiples · filamentos PLA · 04/10/2026
+
+Se corrige la estructura de ficha definida anteriormente para la futura comparativa de filamentos PLA.
+
+La referencia de orden vigente será la comparativa más reciente de sierras circulares, no las estructuras anteriores todavía presentes en algunas comparativas como amoladoras o llaves de impacto.
+
+### Orden correcto dentro de cada ficha
+
+1. Imagen + badge/perfil.
+2. H3 con nombre exacto del producto.
+3. Subtítulo / diferencia principal.
+4. Bloque compacto de especificaciones.
+5. Texto editorial principal:
+   - datos oficiales relevantes;
+   - experiencia real;
+   - pruebas y reseñas;
+   - ventajas y limitaciones prácticas;
+   - sin crear un bloque separado de `Qué dicen los usuarios`.
+6. Bloques paralelos:
+   - `Lo que destaca`;
+   - `A tener en cuenta`.
+7. `La elegiría si…`.
+8. `Nuestra valoración`:
+   - Calidad;
+   - Fiabilidad;
+   - Facilidad;
+   - Prestaciones;
+   - Precio;
+   - Calidad-precio X,X/10.
+9. Bloque de formatos / packs cuando existan.
+10. CTA de compra.
+
+### Regla de “La elegiría si…”
+
+Debe ir después de `Lo que destaca` y `A tener en cuenta`.
+
+Su función es cerrar la decisión tras haber explicado ventajas y limitaciones:
+
+`¿Qué característica o combinación de características puede justificar elegir este producto frente a los otros cinco?`
+
+No debe repetir literalmente ni el subtítulo ni los bloques de pros/contras.
+
+### CTA de la tabla
+
+La tabla comparativa principal enlaza siempre a la referencia individual principal usada para comparar:
+
+- una bobina;
+- ASIN principal;
+- mismo producto/variante analizado;
+- CTA compacto `🛒 Ver en Amazon`.
+
+### CTA dentro de la ficha
+
+Cuando existan varios formatos válidos en Amazon.es, la ficha podrá mostrar varios botones de compra.
+
+Orden previsto:
+
+1. botón principal:
+   - `Ver 1 kg en Amazon` o equivalente;
+   - enlaza al mismo ASIN individual utilizado en la tabla;
+2. botón secundario:
+   - `Ver pack 2 kg en Amazon`;
+3. botón secundario:
+   - `Ver pack 4 kg en Amazon`.
+
+Para JAYO, adaptar el texto al peso real:
+- `Ver 1,1 kg en Amazon`;
+- `Ver pack 2 × 1,1 kg`;
+- `Ver pack 4 × 1,1 kg`.
+
+Para Winkle, si no existe un pack equivalente, mostrar solo el CTA individual.
+
+### Bloque “Si compras más cantidad”
+
+Debe ir inmediatamente antes de los CTA cuando exista información útil de packs.
+
+Debe explicar de forma compacta:
+
+- precio/kg observado del formato individual;
+- precio/kg observado del mejor pack;
+- si existe ahorro real;
+- cómo cambia la nota de calidad-precio;
+- si el pack sale peor que comprar unidades sueltas, decirlo claramente.
+
+No duplicar información de todos los packs cuando uno sea claramente irrelevante. Se pueden mostrar los botones de 2 y 4 kg, pero el texto editorial debe centrarse en la diferencia que realmente cambia la compra.
+
+### Jerarquía visual de botones
+
+- el formato individual es el CTA principal porque es la referencia de la comparativa;
+- los packs son CTA secundarios;
+- mantener el estilo Amazon dorado del sitio;
+- diferenciar jerarquía mediante tamaño/énfasis, no mediante colores incompatibles con el sistema visual;
+- todos los enlaces afiliados deben usar `rel="nofollow sponsored"`;
+- no mostrar precios fijos dentro del botón.
+
+### Estructura resumida definitiva de ficha PLA
+
+`Imagen → H3/subtítulo → especificaciones → texto editorial → Lo que destaca / A tener en cuenta → La elegiría si… → Nuestra valoración → Si compras más cantidad → CTA 1 kg + CTA packs`
+
+Esta decisión sustituye el orden de ficha registrado anteriormente en el bloque `Estructura editorial cerrada · mejores filamentos PLA · 04/10/2026`.
+
