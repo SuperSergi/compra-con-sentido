@@ -5130,3 +5130,56 @@ Decisión:
 la comparativa PLA es una página comercial estratégica del cluster Impresión 3D y sí merece acceso directo desde Inicio, sin convertir la home en un listado exhaustivo de todas las URLs.
 
 Se actualiza `lastmod` de Inicio a `2026-10-04`.
+
+
+---
+
+## Corrección visual hero + tarjetas de navegación del cluster 3D · 04/10/2026
+
+### Causa real del hero poco visible
+
+La imagen nueva del hero **sí estaba subida correctamente** en:
+
+`/images/filamentos-pla/hero-mejores-filamentos-pla.webp`
+
+El problema no era el archivo ni la ruta.
+
+La comparativa estaba recibiendo **dos capas verdes simultáneas**:
+
+1. `comparativas-v3.css` aplicaba un degradado verde dentro de la propiedad `background`;
+2. `hero-v5.css` añadía otra capa verde mediante `.ccs-hero::before`.
+
+La imagen anterior, más contrastada, aún se percibía. La nueva imagen IA tiene fondo claro/verdoso y quedaba prácticamente anulada por la suma de ambas capas.
+
+Corrección:
+- se conserva una sola capa verde;
+- se neutraliza `.ccs-hero::before` solo en esta comparativa;
+- se usa un degradado más ligero hacia la derecha para dejar visible la imagen;
+- se mantiene texto legible a la izquierda.
+
+### Filamentos 3D
+
+El CTA final simple se sustituye por una sección visual `Sigue explorando` con dos tarjetas con imagen:
+
+1. `Cómo elegir una impresora 3D`
+   - imagen: hero de la guía de impresoras;
+2. `Mejores filamentos PLA`
+   - imagen: hero propio de la comparativa PLA.
+
+Se mantiene el retorno a `/impresion-3d/` debajo.
+
+### Impresión 3D
+
+La sección `Todo el contenido de Impresión 3D` pasa de tarjetas solo de texto a tarjetas visuales usando el hero real de cada página.
+
+Contenido mostrado:
+
+1. Cómo elegir una impresora 3D
+2. 6 impresoras 3D comparadas
+3. Filamentos 3D
+4. Mejores filamentos PLA
+5. Accesorios para impresión 3D
+
+La comparativa PLA queda así visible como contenido propio del cluster, no escondida dentro de una tarjeta de Filamentos 3D.
+
+Estas tarjetas deben usar siempre la imagen hero de la URL de destino cuando exista.
