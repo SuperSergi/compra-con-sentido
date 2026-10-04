@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 04/10/2026 · 17:26
+**Última actualización:** 04/10/2026 · 17:52
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -325,6 +325,15 @@ No usar el nombre del producto cuando el contexto ya sea inequívoco. Los CTA no
 
 ## 11.2 Control previo a publicación (residuos editoriales)
 
+El control está automatizado en `.github/scripts/site-audit.py` y forma parte del check `build`. Detecta, entre otros casos, lenguaje de borrador, atributos internos de prepublicación, `decoding=` mal colocado tras el cierre de una imagen y entidades HTML residuales asociadas a atributos visibles.
+
+Incidencias cerradas el 04/10/2026:
+- Taladros: corregidas las 6 fichas donde `decoding="async">` aparecía como texto visible por un cierre incorrecto de `<img>`.
+- Sierras circulares: eliminados `review-before-merge` y textos de prepublicación/internos; corregida también la discrepancia editorial de “tres enfoques” frente a seis viñetas.
+- Hogar: retirada la nota interna “Publicaremos nuevas categorías…”.
+- El workflow `Responsive audit` vuelve a ejecutarse en pull requests contra `main` y comenta sobre la PR actual.
+
+
 Antes de publicar o actualizar una página comercial buscar, como mínimo:
 
 - `pendiente`, `antes de publicar`, `validar`, `borrador`, `publicaremos`, notas dirigidas al equipo;
@@ -447,12 +456,10 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 ## Pendientes inmediatos
 
 - [ ] **Alinear los CTA de la comparativa PLA con la norma de la sección 9.3** (`Ver precio en Amazon` y `Ver precio del pack de N en Amazon`; hoy usan `Ver en Amazon` y `Ver pack de N en Amazon`).
-- [ ] Comprobar en producción que no queda visible `decoding="async">` ni variantes (la búsqueda en el código de `main` no lo encuentra; falta confirmar el HTML servido).
 - [ ] Revisar en producción el destino del menú "Información" y la coherencia del footer.
 - [ ] Confirmar en el contrato de Amazon Afiliados qué exige sobre el aviso de afiliación antes de mantener la política de no repetirlo en cabecera.
 - [ ] Usar Search Console para decidir qué tres acciones o contenidos van en el primer pantallazo de Inicio (el titular y el peso visual de la home se revisarán con SEO, arquitectura y datos reales).
 - [ ] Revisar con los criterios actuales las páginas no incluidas en la auditoría externa: filamentos 3D (guía), accesorios 3D, aspiradoras, deshumidificadores (guía y comparativa de litros), `/metodologia/` y `/aviso-legal/`.
-- [ ] Valorar automatizar el control de residuos (sección 11.2) dentro de `site-audit.py`.
 
 ## SEO / Search Console
 
