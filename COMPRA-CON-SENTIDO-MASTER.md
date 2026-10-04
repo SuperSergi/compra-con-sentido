@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 04/10/2026 · 17:52
+**Última actualización:** 04/10/2026 · 18:04
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -222,6 +222,8 @@ Los tres perfiles obligatorios funcionan explícitamente como **3 elecciones seg
 - un CTA cuando reduzca fricción, especialmente si el bloque está separado de las fichas.
 
 Reglas: exactamente tres; nunca numerados como ranking (1.º, 2.º, 3.º); los perfiles dependen de cada categoría y no siguen una fórmula universal (por ejemplo, un perfil "la más barata" o "la más potente" solo si encaja en esa categoría). Si dos modelos encajan en el mismo escenario, uno es la recomendación principal y el otro puede aparecer como alternativa.
+
+**Estado aplicado 04/10/2026:** las 9 comparativas publicadas (amoladoras, llaves de impacto, gatos hidráulicos, taladros, sierras circulares, impresoras 3D, filamentos PLA, deshumidificadores y robots aspiradores) ya usan este formato. Las recomendaciones se derivaron exclusivamente de las fichas y criterios ya publicados en cada página; no se introdujeron criterios de producto nuevos.
 
 ## 8.6 Tablas comparativas
 
