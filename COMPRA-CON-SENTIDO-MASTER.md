@@ -3825,3 +3825,99 @@ En la página:
 - no afirmar que Compra con Sentido ha probado físicamente estos seis productos para esta comparativa.
 
 Antes de publicación, revisar especialmente JAYO por menor profundidad de evidencia independiente y confirmar bobina/dimensiones AMS de las referencias exactas.
+
+
+---
+
+## Metodología de packs y valoración dinámica · filamentos PLA · 04/10/2026
+
+Se cierra la forma de tratar packs y promociones en la futura comparativa de mejores filamentos PLA.
+
+### Regla de comparación principal
+
+La tabla principal compara siempre una bobina individual por producto.
+
+La nota principal de calidad-precio se calcula con el precio efectivo observado de una bobina individual en Amazon.es en la fecha del análisis.
+
+Los packs no alteran la comparabilidad de la tabla principal.
+
+### Packs dentro de cada ficha
+
+Cuando exista un pack de 2, 4 o más bobinas:
+
+- registrar ASIN;
+- registrar número de bobinas y peso total;
+- calcular €/kg efectivo;
+- comparar ese €/kg con la compra de unidades sueltas;
+- recalcular únicamente la parte de precio de la valoración;
+- mostrar cómo cambia la nota final de calidad-precio si el usuario compra ese pack.
+
+La ficha podrá incluir una frase editorial breve del tipo:
+
+`Si compras el pack de 4, el coste baja a X €/kg y nuestra valoración sube de X,X a X,X.`
+
+O, cuando no compense:
+
+`Al precio observado, el pack de 2 sale peor por kilo que comprar bobinas individuales.`
+
+### Referencia de precio para normalización
+
+Para evitar que una bobina individual excepcionalmente barata distorsione la comparación de formatos, la nota de precio se normaliza respecto al mejor €/kg real observado entre todos los formatos comparables analizados ese día.
+
+Fórmula:
+
+`nota precio = (mejor €/kg observado ÷ €/kg del formato) × 10`
+
+La nota se limita a 10.
+
+### Precios y packs observados el 04/10/2026
+
+ELEGOO:
+- 1 kg: 13,99 € hoy; habitual observado 14,99 €;
+- 2 kg: 26,99 € hoy · ASIN `B0CD789G2S`;
+- 4 kg: 39,99 € hoy · ASIN `B0CD7C5GFH`;
+- mejor pack observado: 4 kg ≈ 10,00 €/kg.
+
+eSUN:
+- 1 kg: 15,99 €;
+- 2 kg: 26,99 € hoy · ASIN `B0B749Z8H1`;
+- 4 kg: 44,99 € · ASIN `B0CVVRPMJR`;
+- mejor pack observado: 4 kg ≈ 11,25 €/kg.
+
+SUNLU:
+- 1 kg: 15,99 €;
+- 2 kg: 29,99 € · ASIN `B0FDGCPMWJ`;
+- 4 kg: 49,99 € · ASIN `B0FDGFWFYP`;
+- mejor pack observado: 4 kg ≈ 12,50 €/kg.
+
+OVERTURE:
+- 1 kg: 15,99 € con cupón del 10 %;
+- 2 kg: 27,99 € · ASIN `B0CQ1SP6YD`;
+- 4 kg: 49,99 €, hoy 47,99 € + cupón del 10 %;
+- ASIN del pack de 4 todavía pendiente;
+- mejor pack observado: 4 kg ≈ 10,80 €/kg tras cupón.
+
+JAYO:
+- 1 bobina de 1,1 kg: 11,99 €;
+- pack 2 × 1,1 kg: 27,98 € · ASIN `B0BHR3SKCV`;
+- pack 4 × 1,1 kg: 48,99 € · ASIN `B0DPKQYS2X`;
+- a los precios observados, la bobina individual ofrece mejor €/kg que ambos packs.
+
+Winkle:
+- 1 kg: 20,90 €;
+- no se ha localizado pack equivalente en Amazon.es.
+
+### Presentación
+
+La tabla principal mostrará una sola nota de calidad-precio por producto, basada en una bobina individual.
+
+Cada ficha podrá mostrar un pequeño bloque `Si compras más cantidad` con:
+
+- pack;
+- €/kg;
+- ahorro o sobrecoste frente a la unidad;
+- nueva nota de calidad-precio.
+
+No usar dos decimales en notas públicas. Redondear siempre a un decimal.
+
+No publicar precios como información permanente sin indicar que corresponden al momento del análisis.
