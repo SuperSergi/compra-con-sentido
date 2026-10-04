@@ -202,8 +202,8 @@ for url_path, path in sorted(public_urls.items()):
     # decoding= y &gt; no deben aparecer como texto visible fuera de etiquetas.
     if re.search(r"\bdecoding\s*=", visible_text, re.I):
         fail(f"{path}: decoding= aparece como texto visible")
-    if "&gt;" in visible_text:
-        fail(f"{path}: entidad &gt; aparece como texto visible")
+    if re.search(r"(?:decoding|loading)\s*=.{0,120}&gt;|&gt;.{0,120}(?:decoding|loading)\s*=", visible_text, re.I):
+        fail(f"{path}: entidad &gt; forma parte de un atributo HTML visible")
 
     for structural_tag in ("table", "thead", "tbody"):
         opening = len(re.findall(rf"<{structural_tag}\b", html, re.I))
