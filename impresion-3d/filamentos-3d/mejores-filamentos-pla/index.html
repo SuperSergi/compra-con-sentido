@@ -156,6 +156,13 @@
   <link rel="stylesheet" href="/css/product-cards-v1.css">
   <style>
     .pla-shell{width:min(1160px,calc(100% - 32px));margin-inline:auto}
+    .ccs-comparison-v3 .ccs-hero{
+      --ccs-hero-image:url('/images/filamentos-pla/hero-mejores-filamentos-pla.webp');
+      background:
+        linear-gradient(90deg,rgba(6,61,38,.88) 0%,rgba(6,61,38,.72) 38%,rgba(6,61,38,.34) 67%,rgba(6,61,38,.12) 100%),
+        var(--ccs-hero-image) 50% 50%/cover no-repeat!important;
+    }
+    .ccs-comparison-v3 .ccs-hero::before{background:transparent!important}
     .pla-section{padding:64px 0 0}
     .pla-section h2{margin:0 0 14px;color:#26382e;font-size:clamp(28px,4vw,40px)}
     .pla-section>p,.pla-copy{color:#4d5a53;line-height:1.7}
@@ -189,7 +196,7 @@
 </head>
 <body class="ccs-comparison-v3">
 
-<header class="ccs-hero" style="background-image:url('/images/filamentos-pla/hero-mejores-filamentos-pla.webp')!important;--ccs-hero-position:50% 50%">
+<header class="ccs-hero">
   <div class="topbar shell">
     <a class="brand" href="/">Compra con Sentido</a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span class="menu-icon" aria-hidden="true">☰</span><span>Menú</span></button>
