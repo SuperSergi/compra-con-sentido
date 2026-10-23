@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PLA vs TPU: diferencias y cuál usar según la pieza</title>
+<meta name="description" content="Comparamos PLA y TPU en rigidez, flexibilidad, golpes, calor, facilidad de impresión y AMS para ayudarte a elegir el material según la pieza.">
+<link rel="canonical" href="https://compraconsentido.es/impresion-3d/filamentos-3d/pla-vs-tpu/"><meta name="robots" content="index,follow">
+<meta name="theme-color" content="#063d26"><link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:type" content="article"><meta property="og:locale" content="es_ES"><meta property="og:site_name" content="Compra con Sentido">
+<meta property="og:title" content="PLA vs TPU: diferencias y cuál usar según la pieza">
+<meta property="og:description" content="Qué filamento conviene para cada pieza: diferencias entre PLA y TPU, impresión, resistencia y compatibilidad con AMS.">
+<meta property="og:url" content="https://compraconsentido.es/impresion-3d/filamentos-3d/pla-vs-tpu/"><meta property="og:image" content="https://compraconsentido.es/images/filamentos-pla/hero-pla-vs-tpu.svg">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="PLA vs TPU: diferencias y cuál usar según la pieza">
+<meta name="twitter:description" content="Qué filamento conviene para cada pieza: diferencias entre PLA y TPU, impresión, resistencia y AMS.">
+<meta name="twitter:image" content="https://compraconsentido.es/images/filamentos-pla/hero-pla-vs-tpu.svg">
+<link rel="stylesheet" href="/css/style-v4.css?v=20261002-3"><link rel="stylesheet" href="/css/hero-v5.css?v=20261004-2"><link rel="stylesheet" href="/css/intro-v1.css?v=20261001-4">
+<style>
+body.pla-tpu-page{margin:0;padding-top:76px;background:#f6f8f7;color:#1f2924;font-family:Arial,Helvetica,sans-serif}
+.pt-shell{width:min(1100px,calc(100% - 32px));margin:auto}
+.pt-hero{background:linear-gradient(95deg,rgba(6,61,38,.94),rgba(6,61,38,.56)),url('/images/filamentos-pla/hero-pla-vs-tpu.svg') center/cover;min-height:440px;display:flex;align-items:center;color:white}
+.pt-hero-inner{padding:80px 0 100px}
+.pt-kicker{font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;color:#d1eade}
+.pt-hero h1{font-size:clamp(36px,5.8vw,65px);line-height:1.08;letter-spacing:-.04em;max-width:850px;margin:20px 0}
+.pt-hero p{font-size:clamp(17px,2vw,21px);line-height:1.6;max-width:780px;color:#e8f2eb}
+.pt-overlap{position:relative;margin-top:-55px}
+.pt-intro{background:white;border:1px solid #dfe7e2;border-radius:22px;padding:28px 34px;box-shadow:0 14px 35px rgba(18,55,39,.10);display:grid;grid-template-columns:1fr 1.2fr;gap:28px}
+.pt-intro h2{margin:0;color:#063d26;font-size:clamp(25px,3vw,34px)}
+.pt-intro p,.pt-section p,.case p{line-height:1.72;color:#46574c}
+.pt-section{margin-top:68px}.pt-section h2{color:#063d26;font-size:clamp(26px,3.4vw,37px);letter-spacing:-.025em;line-height:1.2}
+.pt-section h3{color:#23392d;font-size:21px}
+.pt-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin-top:24px}
+.pt-choice{padding:22px;border-radius:18px;border:1px solid #dfe7e2;background:#fff}.pt-choice h3{margin:0 0 10px}.pt-choice p{margin:0}
+.pt-choice:nth-child(1){border-top:5px solid #0b6c41}.pt-choice:nth-child(2){border-top:5px solid #c78b17}.pt-choice:nth-child(3){border-top:5px solid #789088}
+.pt-table{overflow-x:auto;border:1px solid #dfe7e2;border-radius:15px;background:white}
+.pt-table table{width:100%;border-collapse:collapse;min-width:620px}.pt-table th{background:#063d26;color:white;text-align:left;padding:14px}.pt-table td{padding:13px 14px;border-bottom:1px solid #e2e8e4;color:#405249}.pt-table tr:nth-child(even){background:#f8faf9}.pt-hint{font-size:13px;color:#6d776f}
+.pt-cases{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin-top:24px}.case{padding:21px;border:1px solid #dfe7e2;background:white;border-radius:16px}.case h3{margin:10px 0}.case p{margin:0}.case-choice{display:inline-block!important;background:#e9f4ee;color:#075432!important;border-radius:30px;padding:5px 11px;font-size:12px;font-weight:800}
+.pt-grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.pt-text-card{padding:25px;border:1px solid #dfe7e2;background:white;border-radius:16px}
+.pt-faq details{border-bottom:1px solid #dae5de;padding:17px 0}.pt-faq summary{font-weight:800;color:#143d28;cursor:pointer}.pt-faq p{margin:12px 0}
+.pt-related{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}.pt-related a{border:1px solid #d3e5d8;border-radius:10px;background:#fff;padding:14px;color:#075432;font-weight:700;text-decoration:none}
+.pt-sources{color:#65756b;font-size:13px}.pt-sources a{color:#0b6942}
+@media(max-width:800px){body.pla-tpu-page{padding-top:64px}.pt-intro,.pt-choices,.pt-grid2,.pt-cases{grid-template-columns:1fr}.pt-intro{padding:24px}.pt-overlap{margin-top:-30px}.pt-section{margin-top:48px}.pt-hero-inner{padding:60px 0 80px}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://compraconsentido.es/impresion-3d/filamentos-3d/pla-vs-tpu/#article","headline":"PLA vs TPU: cuál usar según la pieza que vas a imprimir","description":"Comparamos PLA y TPU en rigidez, flexibilidad, golpes, calor, facilidad de impresión y AMS para ayudarte a elegir el material según la pieza.","image":["https://compraconsentido.es/images/filamentos-pla/hero-pla-vs-tpu.svg"],"datePublished":"2026-10-23","dateModified":"2026-10-23","inLanguage":"es","mainEntityOfPage":{"@id":"https://compraconsentido.es/impresion-3d/filamentos-3d/pla-vs-tpu/"},"author":{"@type":"Organization","name":"Compra con Sentido","url":"https://compraconsentido.es/sobre-nosotros/"},"publisher":{"@type":"Organization","name":"Compra con Sentido","url":"https://compraconsentido.es/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://compraconsentido.es/"},{"@type":"ListItem","position":2,"name":"Impresión 3D","item":"https://compraconsentido.es/impresion-3d/"},{"@type":"ListItem","position":3,"name":"Filamentos 3D","item":"https://compraconsentido.es/impresion-3d/filamentos-3d/"},{"@type":"ListItem","position":4,"name":"PLA vs TPU","item":"https://compraconsentido.es/impresion-3d/filamentos-3d/pla-vs-tpu/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Es más resistente el TPU que el PLA?","acceptedAnswer":{"@type":"Answer","text":"Depende de qué resistencia necesites. PLA es mucho más rígido y mantiene mejor la forma; TPU soporta deformaciones más grandes y normalmente absorbe mejor los golpes."}},{"@type":"Question","name":"¿Qué es más fácil de imprimir, PLA o TPU?","acceptedAnswer":{"@type":"Answer","text":"PLA suele ser más sencillo: permite trabajar con geometrías complejas y requiere menos ajustes. TPU exige controlar mejor la velocidad, las retracciones, el guiado y la humedad."}},{"@type":"Question","name":"¿TPU necesita extrusor direct drive?","acceptedAnswer":{"@type":"Answer","text":"No siempre. Direct drive facilita el control de filamentos flexibles, pero algunas formulaciones de TPU relativamente duras pueden imprimirse con Bowden si la impresora y el perfil lo permiten."}},{"@type":"Question","name":"¿Se puede imprimir TPU desde un AMS de Bambu Lab?","acceptedAnswer":{"@type":"Answer","text":"Depende del sistema y del filamento concreto. AMS 2 Pro admite TPU for AMS, pero no TPU genérico ni Bambu TPU 95A. AMS HT tiene una vía bypass para ciertos flexibles sin alimentación y retirada automáticas."}},{"@type":"Question","name":"¿PLA o TPU para piezas de coche o exterior?","acceptedAnswer":{"@type":"Answer","text":"No elijas solo por el nombre del material. Hay que valorar temperatura, sol, esfuerzos y flexibilidad. PETG o ASA suelen merecer estudio para piezas rígidas y, si se necesita flexibilidad, hay que revisar la ficha del TPU concreto."}}]}]}</script>
+</head>
+<body class="pla-tpu-page">
+
+<header class="topbar shell">
+  <a class="brand" href="/">
+    Compra con Sentido
+  </a>
+
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+    <span class="menu-icon" aria-hidden="true">☰</span>
+    <span>Menú</span>
+  </button>
+
+  <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+    <a href="/">Inicio</a>
+
+    <div class="nav-group">
+      <a href="/herramientas/">
+        Herramientas <span aria-hidden="true">⌄</span>
+      </a>
+      <div class="dropdown">
+          <a href="/herramientas/gatos-hidraulicos/">Gatos hidráulicos</a>
+          <a href="/herramientas/taladros-a-bateria/">Taladros a batería</a>
+          <a href="/herramientas/llaves-de-impacto/">Llaves de impacto</a>
+          <a href="/herramientas/amoladoras-a-bateria/">Amoladoras a batería</a>
+          <a href="/herramientas/sierras-circulares-a-bateria/">Sierras circulares a batería</a>
+        </div>
+    </div>
+
+    <div class="nav-group">
+      <a class="active" href="/impresion-3d/">
+        Impresión 3D <span aria-hidden="true">⌄</span>
+      </a>
+      <div class="dropdown">
+        <a href="/impresion-3d/impresoras-3d/">Impresoras 3D</a>
+        <a href="/impresion-3d/filamentos-3d/">Filamentos 3D</a>
+        <a href="/impresion-3d/accesorios-3d/">Accesorios 3D</a>
+      </div>
+    </div>
+
+    <a href="/hogar/">Hogar</a>
+    <a href="/sobre-nosotros/">Sobre nosotros</a>
+  </nav>
+</header>
+<nav class="site-breadcrumbs" aria-label="Migas de pan"><div class="shell"><a href="/">Inicio</a><span aria-hidden="true">›</span><a href="/impresion-3d/">Impresión 3D</a><span aria-hidden="true">›</span><a href="/impresion-3d/filamentos-3d/">Filamentos 3D</a><span aria-hidden="true">›</span><span aria-current="page">PLA vs TPU</span></div></nav>
+
+
+<main>
+<section class="pt-hero"><div class="pt-shell pt-hero-inner"><span class="pt-kicker">Guía de materiales · impresión 3D</span><h1>PLA vs TPU: cuál usar según la pieza que vas a imprimir</h1><p>Una comparativa para decidir por el comportamiento de la pieza: rigidez, flexibilidad, golpes, temperatura y facilidad de impresión.</p></div></section>
+<div class="pt-shell">
+<section class="pt-overlap"><div class="pt-intro"><h2>La función de la pieza decide el material</h2><p>PLA suele ser mejor para piezas rígidas, detalladas y fáciles de imprimir. TPU tiene sentido cuando deben doblarse, comprimirse, absorber golpes o recuperar su forma. Y si buscas una pieza rígida expuesta al calor o a impactos repetidos, quizá convenga valorar PETG o ASA.</p></div></section>
+<section class="pt-section" id="respuesta"><h2>PLA vs TPU: respuesta rápida</h2><div class="pt-choices">
+<article class="pt-choice"><h3>Elige PLA</h3><p>Si quieres rigidez, detalle, estabilidad dimensional y una impresión sencilla. Encaja en figuras, organizadores y prototipos de forma.</p></article>
+<article class="pt-choice"><h3>Elige TPU</h3><p>Si necesitas flexión, agarre, compresión, absorción de impactos o amortiguación. Encaja en fundas, juntas, topes y pies antideslizantes.</p></article>
+<article class="pt-choice"><h3>Valora otra opción</h3><p>Si necesitas rigidez combinada con impactos, temperatura o exposición exterior. PETG, ASA y otros materiales pueden ser más adecuados.</p></article></div></section>
+<section class="pt-section" id="diferencias"><h2>Diferencias principales entre PLA y TPU</h2><p class="pt-hint">En móvil puedes deslizar la tabla horizontalmente.</p><div class="pt-table"><table><thead><tr><th>Criterio</th><th>PLA</th><th>TPU</th></tr></thead><tbody><tr><td>Rigidez</td><td>Alta</td><td>Baja o media según formulación</td></tr><tr><td>Flexibilidad</td><td>Muy limitada</td><td>Alta</td></tr><tr><td>Deformación recuperable</td><td>Limitada</td><td>Alta</td></tr><tr><td>Golpes</td><td>Más propenso a fractura</td><td>Generalmente buena absorción</td></tr><tr><td>Detalle y precisión</td><td>Generalmente muy buenos</td><td>Más exigentes</td></tr><tr><td>Facilidad de impresión</td><td>Alta</td><td>Menor</td></tr><tr><td>Velocidad</td><td>Normalmente mayor</td><td>Normalmente menor</td></tr><tr><td>Puentes y voladizos</td><td>Más sencillos</td><td>Más difíciles</td></tr><tr><td>Stringing</td><td>Más fácil de controlar</td><td>Más frecuente</td></tr><tr><td>Humedad</td><td>Conviene controlarla</td><td>Especialmente importante</td></tr></tbody></table></div><p>Estas son tendencias generales. El resultado concreto depende de la formulación, la dureza, el diseño y los parámetros de impresión.</p></section>
+<section class="pt-section" id="usos"><h2>¿Qué elegir según la pieza?</h2><p>Elige primero qué debe hacer la pieza. Estas recomendaciones sirven como punto de partida y deben contrastarse con las condiciones reales de trabajo.</p><div class="pt-cases"><article class="case"><p class="case-choice">PLA</p><h3>Figuras, miniaturas y decoración</h3><p>Su rigidez y facilidad para reproducir detalle encajan mejor con objetos que deben conservar la forma.</p></article>
+<article class="case"><p class="case-choice">PLA</p><h3>Prototipos y piezas dimensionales</h3><p>Es práctico para comprobar encajes y geometrías. Si el prototipo va a soportar impacto o calor, conviene revisar otros materiales.</p></article>
+<article class="case"><p class="case-choice">TPU</p><h3>Fundas, protectores y topes</h3><p>Puede flexar al montarse y absorber parte de los golpes. El espesor y la dureza influyen mucho en el resultado.</p></article>
+<article class="case"><p class="case-choice">TPU, con cautela</p><h3>Juntas y piezas compresibles</h3><p>Sirve para juntas sencillas, pero una aplicación con temperatura, presión o productos químicos exige verificar compatibilidades específicas.</p></article>
+<article class="case"><p class="case-choice">TPU</p><h3>Pies antideslizantes y agarres</h3><p>Su flexibilidad y comportamiento superficial ayudan en grips y apoyos.</p></article>
+<article class="case"><p class="case-choice">TPU</p><h3>Ruedas y rodillos flexibles</h3><p>La dureza, las paredes y el relleno deben ajustarse al esfuerzo y a la deformación deseada.</p></article>
+<article class="case"><p class="case-choice">Valorar PETG</p><h3>Soportes rígidos que reciben golpes</h3><p>PLA puede fracturarse y TPU deformarse demasiado. PETG merece estudiarse para combinar rigidez con mayor tenacidad.</p></article>
+<article class="case"><p class="case-choice">Evaluar otras familias</p><h3>Piezas para coche, calor o exterior</h3><p>La temperatura de servicio, la radiación solar y los esfuerzos pueden justificar PETG, ASA u otro material.</p></article></div></section>
+<section class="pt-section" id="resistencia"><h2>¿Cuál es más resistente: PLA o TPU?</h2><p>Depende de qué propiedad quieras comparar. El PLA ofrece mucha más <strong>rigidez</strong>: ante una carga, tiende a deformarse menos. El TPU permite mucha más <strong>deformación recuperable</strong> y normalmente absorbe mejor los golpes. Rigidez, resistencia a tracción y tenacidad son propiedades distintas.</p><p>Por ejemplo, las fichas técnicas de productos concretos como PolyLite PLA y PolyFlex TPU95 muestran diferencias grandes en módulo elástico y elongación. Esos datos ilustran el comportamiento de las familias, pero no describen todas las formulaciones ni sustituyen ensayos comparables.</p></section>
+<section class="pt-section" id="imprimir"><h2>Imprimir PLA frente a TPU: dónde cambian las cosas</h2><div class="pt-grid2">
+<article class="pt-text-card"><h3>Facilidad y velocidad</h3><p>PLA suele imprimirse con menos ajustes y a mayor velocidad. TPU flexible puede comprimirse durante la alimentación; hay variantes de alto flujo, por lo que no existe una velocidad universal.</p></article>
+<article class="pt-text-card"><h3>Retracciones y stringing</h3><p>TPU suele generar más hilos y necesita retracciones prudentes. Si el material está húmedo, tanto la superficie como la extrusión pueden empeorar.</p></article>
+<article class="pt-text-card"><h3>Puentes, voladizos y soportes</h3><p>PLA suele resolver mejor puentes y detalles complejos. En TPU conviene revisar orientación y geometría para reducir soportes y zonas difíciles.</p></article>
+<article class="pt-text-card"><h3>Direct drive o Bowden</h3><p>Direct drive facilita el TPU porque acorta el recorrido del filamento flexible. Un Bowden puede funcionar con formulaciones relativamente duras y parámetros adecuados, aunque suele exigir más ajustes.</p></article>
+<article class="pt-text-card"><h3>Adhesión a la cama</h3><p>TPU puede adherirse mucho a ciertas superficies. Comprueba la lámina y, si lo recomienda su fabricante, utiliza una capa separadora para facilitar la retirada.</p></article>
+<article class="pt-text-card"><h3>Secado y almacenamiento</h3><p>TPU absorbe humedad y puede requerir secado previo según la ficha del fabricante. Conserva el filamento cerrado y seco. Consulta también los <a href="/impresion-3d/accesorios-3d/">accesorios para secar y almacenar filamento</a>.</p></article>
+</div></section>
+<section class="pt-section" id="ams"><h2>PLA y TPU en Bambu Lab: ¿qué ocurre con AMS?</h2><p>Hay que distinguir <strong>TPU for AMS</strong> de un TPU genérico. PLA forma parte de los materiales habituales de los AMS compatibles, siempre que la bobina cumpla las condiciones mecánicas del sistema. Bambu comercializa <strong>TPU for AMS</strong> como formulación específica para alimentación automática.</p><p>Según la información oficial de Bambu Lab, <strong>AMS 2 Pro admite TPU for AMS</strong>, pero excluye TPU genérico y Bambu TPU 95A de la alimentación normal. La ficha de TPU 95A HF también indica incompatibilidad con AMS y AMS Lite.</p><p>AMS HT tiene una vía <em>bypass</em> para ciertos TPU genéricos y 95A, pero exige alimentación manual y no equivale a cargar ese filamento mediante la alimentación y retirada automáticas.</p><p>Antes de utilizar un filamento flexible, comprueba el modelo AMS y la referencia exacta del material.</p></section>
+<section class="pt-section" id="shore"><h2>Qué significa la dureza Shore del TPU</h2><p>Un TPU 95A tiene una dureza medida en la escala Shore A, usada para materiales elásticos. No significa que sea más rígido que el PLA por tener un número elevado. La flexibilidad final depende también del grosor, las paredes, el relleno y la geometría de la pieza.</p></section>
+<section class="pt-section" id="alternativas"><h2>Cuándo no elegir ni PLA ni TPU</h2><p>Si buscas <strong>rigidez y mayor tenacidad ante golpes</strong>, valora PETG. Si necesitas una pieza rígida sometida a radiación solar o temperaturas elevadas, ASA puede ser más adecuado. Los materiales técnicos como PC o nylon también existen, pero requieren comprobar compatibilidad y condiciones de impresión. La elección debe partir del uso real de la pieza.</p></section>
+<section class="pt-section pt-faq" id="faq"><h2>Preguntas frecuentes</h2><details><summary>¿Es más resistente el TPU que el PLA?</summary><p>Depende de qué resistencia necesites. PLA es mucho más rígido y mantiene mejor la forma; TPU soporta deformaciones más grandes y normalmente absorbe mejor los golpes.</p></details>
+<details><summary>¿Qué es más fácil de imprimir, PLA o TPU?</summary><p>PLA suele ser más sencillo: permite trabajar con geometrías complejas y requiere menos ajustes. TPU exige controlar mejor la velocidad, las retracciones, el guiado y la humedad.</p></details>
+<details><summary>¿TPU necesita extrusor direct drive?</summary><p>No siempre. Direct drive facilita el control de filamentos flexibles, pero algunas formulaciones de TPU relativamente duras pueden imprimirse con Bowden si la impresora y el perfil lo permiten.</p></details>
+<details><summary>¿Se puede imprimir TPU desde un AMS de Bambu Lab?</summary><p>Depende del sistema y del filamento concreto. AMS 2 Pro admite TPU for AMS, pero no TPU genérico ni Bambu TPU 95A. AMS HT tiene una vía bypass para ciertos flexibles sin alimentación y retirada automáticas.</p></details>
+<details><summary>¿PLA o TPU para piezas de coche o exterior?</summary><p>No elijas solo por el nombre del material. Hay que valorar temperatura, sol, esfuerzos y flexibilidad. PETG o ASA suelen merecer estudio para piezas rígidas y, si se necesita flexibilidad, hay que revisar la ficha del TPU concreto.</p></details></section>
+<section class="pt-section"><h2>Conclusión: elige por función, no por el nombre</h2><p>Para detalle, rigidez y facilidad, PLA suele ser el punto de partida. Para flexibilidad, amortiguación y piezas compresibles, TPU. Si necesitas rigidez combinada con calor, golpes o exterior, revisa otras familias de materiales.</p>
+<div class="pt-related"><a href="/impresion-3d/filamentos-3d/">Guía para elegir filamento 3D</a><a href="/impresion-3d/filamentos-3d/mejores-filamentos-pla/">Mejores filamentos PLA</a><a href="/impresion-3d/accesorios-3d/">Accesorios para impresión 3D</a></div></section>
+<section class="pt-section pt-sources" aria-label="Fuentes de la investigación"><h2>Fuentes técnicas consultadas</h2><p>Documentación de <a href="https://help.prusa3d.com/article/flexible-materials_2057" rel="noopener noreferrer">Prusa sobre filamentos flexibles</a>, fichas técnicas de PLA y TPU de Polymaker y especificaciones oficiales de <a href="https://eu.store.bambulab.com/es-es/products/ams-2-pro" rel="noopener noreferrer">Bambu Lab AMS 2 Pro</a> y <a href="https://eu.store.bambulab.com/es-es/products/ams-ht" rel="noopener noreferrer">AMS HT</a>. Las prestaciones pueden variar entre formulaciones y versiones.</p></section>
+</div></main>
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <section><h2>Compra con Sentido</h2><p>Guías, comparativas y análisis para elegir productos según sus características, diferencias y tipo de uso.</p></section>
+    <section><h2>Categorías</h2><a href="/impresion-3d/">Impresión 3D</a><a href="/herramientas/">Herramientas</a><a href="/hogar/">Hogar</a></section>
+    <section><h2>Guías</h2><a href="/impresion-3d/impresoras-3d/">Impresoras 3D</a><a href="/impresion-3d/filamentos-3d/">Filamentos 3D</a><a href="/herramientas/taladros-a-bateria/">Taladros a batería</a><a href="/herramientas/gatos-hidraulicos/">Gatos hidráulicos</a></section>
+    <section><h2>Información</h2><a href="/sobre-nosotros/">Sobre el proyecto</a><a href="/metodologia/">Metodología</a><a href="/aviso-legal/">Aviso legal y afiliación</a><a href="/aviso-legal/#privacidad">Privacidad y cookies</a><a href="/aviso-legal/#contacto">Contacto</a></section>
+  </div>
+  <div class="shell footer-bottom"><p>En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables.</p><p>© 2026 Compra con Sentido.</p></div>
+</footer>
+
+<script src="/js/main-v4.js?v=20261004-1"></script>
+</body>
+</html>
