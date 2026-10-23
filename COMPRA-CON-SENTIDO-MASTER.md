@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 04/10/2026 · 20:39
+**Última actualización:** 23/10/2026 · 16:36
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -121,13 +121,13 @@ Toda página pública mantiene:
 - **Search Console:** propiedad de dominio `compraconsentido.es`, verificada por DNS mediante Cloudflare. Se eliminaron las propiedades antiguas de Google Sites y GitHub Pages. Es la fuente principal de datos SEO reales.
 - **Bing Webmaster Tools:** pendiente de configurar.
 - **Analítica:** Search Console y Cloudflare Web Analytics. Valorar GA4 más adelante.
-- **Conector GSC Wizard:** conectado el 30/09/2026 a `sc-domain:compraconsentido.es`, pero a 04/10/2026 devuelve `payment_required` (suscripción no activa). No afirmar que se ha solicitado indexación manual mientras no esté disponible.
+- **Conector operativo para Search Console:** Windsor.ai sobre `sc-domain:compraconsentido.es`. Permite consultar rendimiento por fecha, página y consulta (clics, impresiones, CTR y posición), además del estado básico del sitemap. Search Console sigue siendo la fuente principal y Windsor.ai solo actúa como vía de acceso a esos datos. El antiguo GSC Wizard sigue sin ser fiable para este proyecto (`payment_required`).
 
-## Estado de indexación (última inspección completa: 30/09/2026)
+## Estado de indexación y primeras señales SEO (actualizado 23/10/2026)
 
-Sitemap sin errores ni warnings. De las 21 URLs de entonces, 15 figuraban como `Submitted and indexed`; 3 como `Discovered - currently not indexed` (`/hogar/deshumidificadores/`, su comparativa y `/impresion-3d/filamentos-3d/`) y 3 como `URL is unknown to Google` (`/impresion-3d/impresoras-3d/`, `/impresion-3d/accesorios-3d/`, `/metodologia/`). A esa fecha había 0 clics e impresiones.
+El sitemap mantiene 24 URLs enviadas, sin warnings ni errores en las últimas lecturas, y Google lo sigue descargando con normalidad. Las cuatro URLs que el 09/10/2026 estaban como `Descubierta: actualmente sin indexar` (`/hogar/deshumidificadores/mejores-deshumidificadores/`, `/impresion-3d/accesorios-3d/`, `/impresion-3d/filamentos-3d/` y `/impresion-3d/impresoras-3d/`) recibieron solicitud manual de indexación y posteriormente empezaron a generar impresiones; la indexación ya no se considera el principal cuello de botella.
 
-Sierras circulares y mejores filamentos PLA se publicaron después y aún no tienen estado verificado. No hacer cambios agresivos ni crear URLs para forzar indexación: mantener sitemap, enlazado interno y contenido estables y volver a inspeccionar.
+En ventana de 28 días consultada el 23/10/2026, las señales principales son: comparativa de gatos hidráulicos 36 impresiones / 3 clics / posición media 8,5; PLA 29 / 0 / 11,0; llaves de impacto 26 / 1 / 19,35; deshumidificadores 24 / 1 / 15,67; guía de litros 8 / 0 / 7,38. Search Console oculta parte de las consultas de bajo volumen por privacidad, por lo que no se debe inferir el reparto de impresiones entre queries no visibles.
 
 ---
 
@@ -152,17 +152,23 @@ No crear una URL por una simple variación de keyword. No inventar volúmenes de
 - Clusters actuales: `/herramientas/`, `/hogar/`, `/impresion-3d/`. Otras categorías (tecnología, automoción) se valorarán con investigación suficiente.
 - URLs cortas, descriptivas, permanentes, sin fechas ni palabras innecesarias.
 - Separar siempre intención **informacional** ("cómo elegir") y **comparativa/transaccional** ("mejores X"). Ambas URLs pueden convivir y posicionar búsquedas distintas.
-- No crear por ahora páginas separadas para: gatos hidráulicos 3 toneladas, perfil bajo o SUV; taladros a batería menos de 100 €; variantes de sierras (165 mm, 18 V, brushless, calidad-precio) ni de PLA (barato, PLA+, alta velocidad, AMS, packs). Primero reforzar las URLs existentes si Search Console empieza a mostrar esas consultas.
+- **Criterio de expansión vigente desde 23/10/2026:** ya no es necesario esperar a 50-100 impresiones para crear contenido nuevo. Se pueden abrir nuevas URLs cuando exista una **intención de búsqueda claramente diferenciada**, una SERP propia y contenido sustancialmente distinto que aporte valor, apoyándose en Search Console, SERP y análisis de canibalización. Las páginas que estén subiendo no se modifican solo para perseguir nuevas queries: las nuevas intenciones se trabajan en URLs separadas y se enlazan desde/ hacia la página principal del cluster.
+- Se mantiene la prohibición de crear URLs por simples modificadores o atributos que la página existente ya cubre. En particular, no abrir por ahora páginas separadas para gatos 3 toneladas, perfil bajo o SUV; llaves de impacto `a batería`, `para coche` o `para ruedas`; sierras 165 mm, 18 V, brushless o compactas; ni PLA barato, PLA+, alta velocidad, AMS o packs. Estas variantes permanecen dentro de las comparativas actuales salvo que una investigación posterior demuestre una intención independiente.
 - No crear una subcategoría `/herramientas/sierras/` hasta que exista contenido real que la justifique.
 
-## 7.3 URLs prioritarias para seguimiento
+## 7.3 Prioridades SEO y expansión
 
-1. `/hogar/deshumidificadores/cuantos-litros-deshumidificador-metros-cuadrados/`
-2. Comparativa de taladros a batería
-3. Comparativa de gatos hidráulicos
-4. Comparativa de deshumidificadores
-5. Comparativa de impresoras 3D
-6. Comparativa de robots aspiradores
+**Páginas actuales a vigilar sin modificar mientras mantengan tendencia ascendente:** comparativa de gatos hidráulicos, comparativa PLA, llaves de impacto, comparativa de deshumidificadores y guía de litros por metros cuadrados. Robots aspiradores e impresoras 3D comparativa no son prioridad de expansión inmediata.
+
+**Primer bloque de nuevas URLs a investigar y publicar una a una, siempre tras SERP, competencia, productos/ASIN y enlazado:**
+
+1. `Mejores deshumidificadores para secar ropa` — intención comercial específica dentro de un cluster que ya gana visibilidad.
+2. `Mejores gatos hidráulicos de botella para coche` — subtipo físicamente diferente de la comparativa general y con menor riesgo de canibalización.
+3. `PLA vs TPU: cuál usar según la pieza` — intención informacional distinta; Search Console muestra 31 impresiones visibles combinando `filamento tpu vs pla` y `pla vs tpu` en la guía de filamentos.
+4. `Mejores taladros percutores a batería` — comparativa específica por capacidad de perforación/percusión, diferenciada de la comparativa general si la SERP confirma intención propia.
+5. `Mejores deshumidificadores silenciosos para dormitorio` — criterios de ruido, modo noche y uso prolongado distintos de la comparativa general.
+
+La lista es una prioridad de investigación, no una autorización automática para publicar sin completar el proceso de la sección 7.1.
 
 ## 7.4 Enlazado interno y navegación
 
@@ -443,7 +449,7 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 
 # 13. Decisiones cerradas (consolidado)
 
-**Infraestructura y SEO:** marca Compra con Sentido y dominio `compraconsentido.es` sin `www`, con `www` → 301; GitHub es la fuente del código; Cloudflare Pages es el hosting y gestiona DNS, CDN y HTTPS; infraestructura estática siempre que sea posible; TLS mínimo 1.2; HSTS desactivado por ahora; no usar `pages.dev` como URL pública; Search Console principal = propiedad de dominio; no tocar DNS ni sitemap sin razón; no bloquear bots de entrenamiento por ahora; no crear URLs por variaciones de keyword sin datos o SERP que lo justifiquen.
+**Infraestructura y SEO:** marca Compra con Sentido y dominio `compraconsentido.es` sin `www`, con `www` → 301; GitHub es la fuente del código; Cloudflare Pages es el hosting y gestiona DNS, CDN y HTTPS; infraestructura estática siempre que sea posible; TLS mínimo 1.2; HSTS desactivado por ahora; no usar `pages.dev` como URL pública; Search Console principal = propiedad de dominio; no tocar DNS ni sitemap sin razón; no bloquear bots de entrenamiento por ahora; crecimiento mediante URLs nuevas solo para intenciones diferenciadas demostrables por SERP/GSC y sin exigir un umbral fijo de 50-100 impresiones; no crear páginas por simples variaciones de keyword.
 
 **Contenido y afiliación:** Amazon España es el destino principal; verificar ASIN y variante antes de publicar; sin precios fijos; sin pruebas físicas inexistentes; fuentes oficiales primero; no mezclar magnitudes no equivalentes; sin ranking global; exactamente 3 perfiles ("3 elecciones según necesidad") sin numerar; tabla móvil sin columna fija; CTA estándar `Ver precio en Amazon`, contextualizado con variantes; `Probado por nosotros` solo con prueba documentada y sin etiquetas negativas; sin aviso de afiliación repetido en cabecera; separación informacional / comparativa; control previo a publicación de residuos editoriales; breadcrumbs en todas las páginas salvo la home; navegación revisada globalmente al publicar.
 
@@ -473,14 +479,14 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 - [ ] Reinspeccionar las URLs no indexadas el 30/09 y las publicadas después (sierras y PLA); revisar el informe agregado del sitemap cuando se actualice.
 - [ ] Analizar consultas e impresiones cuando haya datos; priorizar posiciones aproximadamente 8-20 y revisar Core Web Vitals reales.
 - [ ] Configurar Bing Webmaster Tools.
-- [ ] Reactivar un conector de Search Console utilizable (GSC Wizard devuelve `payment_required`).
+- [x] Search Console accesible mediante Windsor.ai para `sc-domain:compraconsentido.es`; mantener GSC como fuente de verdad y no depender de GSC Wizard.
 
 ## Contenido
 
-- [ ] Continuar la keyword research del cluster Herramientas.
-- [ ] Investigar plataformas de herramientas/baterías 18 V (tercera prioridad: hub estratégico para elegir ecosistema de batería, no para comparar amoladoras ni sierras) y analizar el encaje arquitectónico de hidrolimpiadoras para coche (cuarta prioridad).
-- [ ] Definir progresivamente las primeras 20-30 URLs de alta calidad.
-- [ ] No crear variantes de gatos, taladros, sierras o PLA sin evidencia SEO.
+- [ ] Continuar la keyword research del cluster Herramientas y validar por SERP las nuevas URLs antes de producirlas.
+- [ ] Ejecutar el primer bloque de expansión por intención diferenciada: deshumidificadores para secar ropa → gatos de botella → PLA vs TPU → taladros percutores a batería → deshumidificadores silenciosos/dormitorio, ajustando el orden si nuevos datos de GSC o SERP lo justifican.
+- [ ] Investigar plataformas de herramientas/baterías 18 V (hub estratégico para elegir ecosistema de batería, no para duplicar comparativas existentes) y analizar el encaje arquitectónico de hidrolimpiadoras para coche.
+- [ ] Definir progresivamente las primeras 20-30 URLs de alta calidad. No crear variantes por simples keywords/modificadores si la intención ya queda cubierta por una URL existente.
 
 ## Sitio y transparencia
 
