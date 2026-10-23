@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 720" role="img" aria-label="Bobinas de filamento 3D rígido y flexible, ilustración">
+<defs><linearGradient id="b" x2="1" y2="1"><stop stop-color="#0b4e34"/><stop offset="1" stop-color="#052519"/></linearGradient><linearGradient id="a" x2="0" y2="1"><stop stop-color="#f3c176"/><stop offset="1" stop-color="#d98736"/></linearGradient><linearGradient id="p" x2="0" y2="1"><stop stop-color="#e5f1e9"/><stop offset="1" stop-color="#8eaca0"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#001b0e" flood-opacity=".33"/></filter></defs>
+<rect width="1440" height="720" fill="url(#b)"/><circle cx="1220" cy="80" r="360" fill="#20784f" opacity=".13"/><circle cx="950" cy="580" r="340" fill="#b6d7bd" opacity=".07"/>
+<g filter="url(#s)">
+<ellipse cx="982" cy="576" rx="355" ry="48" fill="#00180d" opacity=".3"/>
+<g transform="translate(765 140)">
+<path d="M90 60h175v390H90z" fill="url(#p)"/>
+<path d="M105 92h145M105 108h145M105 124h145M105 140h145M105 156h145M105 172h145M105 188h145M105 204h145M105 220h145M105 236h145M105 252h145M105 268h145M105 284h145M105 300h145M105 316h145M105 332h145M105 348h145M105 364h145M105 380h145M105 396h145M105 412h145" fill="none" stroke="#6a9283" stroke-width="7" opacity=".7"/>
+<ellipse cx="95" cy="254" rx="90" ry="205" fill="#192820"/><ellipse cx="275" cy="254" rx="88" ry="205" fill="#26362c"/><ellipse cx="281" cy="254" rx="67" ry="166" fill="#3a4a3f"/><ellipse cx="285" cy="254" rx="22" ry="64" fill="#091a12"/>
+</g>
+<g transform="translate(1040 170) rotate(7)">
+<path d="M80 60h137v348H80z" fill="url(#a)"/>
+<path d="M89 85h120M89 99h120M89 113h120M89 127h120M89 141h120M89 155h120M89 169h120M89 183h120M89 197h120M89 211h120M89 225h120M89 239h120M89 253h120M89 267h120M89 281h120M89 295h120M89 309h120M89 323h120M89 337h120M89 351h120M89 365h120M89 379h120" stroke="#b6692b" stroke-width="5"/>
+<ellipse cx="80" cy="234" rx="77" ry="180" fill="#283a2d"/><ellipse cx="230" cy="234" rx="70" ry="180" fill="#283a2d"/><ellipse cx="235" cy="234" rx="50" ry="137" fill="#425547"/><ellipse cx="237" cy="234" rx="17" ry="48" fill="#122719"/>
+</g>
+<g transform="translate(830 515)"><path d="M0 5L85-35l90 35v80l-90 42L0 75z" fill="#cfddd4"/><path d="M85-35v90l90-50M85 55L0 5" fill="none" stroke="#789f88" stroke-width="5"/></g>
+<g transform="translate(1070 522)"><path d="M0 40q35-80 70-4t70-7" fill="none" stroke="#f8b065" stroke-width="36" stroke-linecap="round"/><path d="M0 40q35-80 70-4t70-7" fill="none" stroke="#ffdfb4" stroke-width="6" stroke-linecap="round" opacity=".6"/></g>
+</g></svg>
