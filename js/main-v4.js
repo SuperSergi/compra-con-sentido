@@ -78,6 +78,12 @@ document.addEventListener("DOMContentLoaded", () => {
           href:
             base +
             "hogar/deshumidificadores/mejores-deshumidificadores/"
+        },
+        {
+          label: "Deshumidificadores para secar ropa",
+          href:
+            base +
+            "hogar/deshumidificadores/deshumidificadores-para-secar-ropa/"
         }
       ]
     }
