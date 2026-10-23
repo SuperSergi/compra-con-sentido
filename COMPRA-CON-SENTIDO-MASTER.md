@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 23/10/2026 · 18:48
+**Última actualización:** 23/10/2026 · 19:06
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -163,7 +163,7 @@ No crear una URL por una simple variación de keyword. No inventar volúmenes de
 **Primer bloque de nuevas URLs a investigar y publicar una a una, siempre tras SERP, competencia, productos/ASIN y enlazado:**
 
 1. `Mejores deshumidificadores para secar ropa` — **publicada el 23/10/2026** tras PR #66 y squash merge a `main` (`b82ec35c7885b12205ca0b779e2282849d0b1bb2`). Incluye hero propio, seis imágenes exactas aportadas manualmente, enlazado interno, menú/submenú y sitemap. Build, optimización de imágenes y auditoría responsive quedaron en verde; revisión visual aprobada antes del merge.
-2. `PLA vs TPU: cuál usar según la pieza` — **siguiente prioridad de investigación** por señal directa de Search Console. En la guía `/impresion-3d/filamentos-3d/`, durante 14–20/10/2026 hubo 62 impresiones frente a 12 en 7–13/10/2026. Las consultas `filamento tpu vs pla` (15 vs 2) y `pla vs tpu` (13 vs 1) sumaron 28 impresiones frente a 3 la semana anterior. Esta señal justifica adelantar la investigación de una URL específica, manteniendo obligatoriamente validación SERP, intención y canibalización antes de crearla.
+2. `PLA vs TPU: cuál usar según la pieza` — **investigación SEO cerrada el 23/10/2026 y decisión de crear la URL** `/impresion-3d/filamentos-3d/pla-vs-tpu/`. La intención es informacional de decisión: el usuario ya duda entre PLA y TPU y necesita elegir según el comportamiento de la pieza. La SERP reconoce una intención específica y existe hueco editorial para resolver casos reales, matizar qué significa «resistencia», explicar impresión/humedad y compatibilidad Bambu/AMS, y señalar cuándo conviene otro material. Se mantiene separada de `/impresion-3d/filamentos-3d/` (guía general de materiales) y de `/impresion-3d/filamentos-3d/mejores-filamentos-pla/` (comparativa comercial de PLA). No se convertirá en comparativa de bobinas ni se introducirán productos solo para monetizar. Enlazado previsto: guía general → PLA vs TPU; hub `/impresion-3d/` → PLA vs TPU; comparativa PLA → PLA vs TPU; nueva URL → guía general, comparativa PLA y accesorios 3D cuando se trate secado/almacenamiento. La investigación técnica previa fija además estas cautelas: evitar cifras universales para familias completas; distinguir rigidez, impacto y deformación; TPU genérico no equivale a `TPU for AMS`; AMS 2 Pro admite `TPU for AMS` pero excluye TPU genérico y Bambu TPU 95A, mientras AMS HT usa bypass para TPU genérico/95A sin alimentación/retorno automáticos.
 3. `Mejores gatos hidráulicos de botella para coche` — subtipo físicamente diferente de la comparativa general y con menor riesgo de canibalización.
 4. `Mejores taladros percutores a batería` — comparativa específica por capacidad de perforación/percusión, diferenciada de la comparativa general si la SERP confirma intención propia.
 5. `Mejores deshumidificadores silenciosos para dormitorio` — criterios de ruido, modo noche y uso prolongado distintos de la comparativa general.
@@ -480,7 +480,7 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 - [ ] Analizar consultas e impresiones cuando haya datos; priorizar posiciones aproximadamente 8-20 y revisar Core Web Vitals reales.
 - [ ] Configurar Bing Webmaster Tools.
 - [x] Search Console accesible mediante Windsor.ai para `sc-domain:compraconsentido.es`; mantener GSC como fuente de verdad y no depender de GSC Wizard.
-- [x] Señal GSC 23/10/2026 en `/impresion-3d/filamentos-3d/`: 62 impresiones (14–20/10) frente a 12 (7–13/10); `filamento tpu vs pla` 15 vs 2 y `pla vs tpu` 13 vs 1. Resultado: PLA vs TPU pasa a ser la siguiente URL a investigar, no una autorización automática para publicarla.
+- [x] Señal GSC 23/10/2026 en `/impresion-3d/filamentos-3d/`: 62 impresiones (14–20/10) frente a 12 (7–13/10); `filamento tpu vs pla` 15 vs 2 y `pla vs tpu` 13 vs 1. Investigación SERP, intención, canibalización y matriz técnica cerradas el 23/10/2026. Resultado: se aprueba crear `/impresion-3d/filamentos-3d/pla-vs-tpu/`; siguiente fase = redacción y producción sin publicar hasta completar controles técnicos, visuales y de enlazado.
 
 ## Contenido
 
