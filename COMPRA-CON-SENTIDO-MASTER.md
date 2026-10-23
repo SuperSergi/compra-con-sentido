@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 23/10/2026 · 18:45
+**Última actualización:** 23/10/2026 · 18:48
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -163,8 +163,8 @@ No crear una URL por una simple variación de keyword. No inventar volúmenes de
 **Primer bloque de nuevas URLs a investigar y publicar una a una, siempre tras SERP, competencia, productos/ASIN y enlazado:**
 
 1. `Mejores deshumidificadores para secar ropa` — **publicada el 23/10/2026** tras PR #66 y squash merge a `main` (`b82ec35c7885b12205ca0b779e2282849d0b1bb2`). Incluye hero propio, seis imágenes exactas aportadas manualmente, enlazado interno, menú/submenú y sitemap. Build, optimización de imágenes y auditoría responsive quedaron en verde; revisión visual aprobada antes del merge.
-2. `Mejores gatos hidráulicos de botella para coche` — subtipo físicamente diferente de la comparativa general y con menor riesgo de canibalización.
-3. `PLA vs TPU: cuál usar según la pieza` — intención informacional distinta; Search Console muestra 31 impresiones visibles combinando `filamento tpu vs pla` y `pla vs tpu` en la guía de filamentos.
+2. `PLA vs TPU: cuál usar según la pieza` — **siguiente prioridad de investigación** por señal directa de Search Console. En la guía `/impresion-3d/filamentos-3d/`, durante 14–20/10/2026 hubo 62 impresiones frente a 12 en 7–13/10/2026. Las consultas `filamento tpu vs pla` (15 vs 2) y `pla vs tpu` (13 vs 1) sumaron 28 impresiones frente a 3 la semana anterior. Esta señal justifica adelantar la investigación de una URL específica, manteniendo obligatoriamente validación SERP, intención y canibalización antes de crearla.
+3. `Mejores gatos hidráulicos de botella para coche` — subtipo físicamente diferente de la comparativa general y con menor riesgo de canibalización.
 4. `Mejores taladros percutores a batería` — comparativa específica por capacidad de perforación/percusión, diferenciada de la comparativa general si la SERP confirma intención propia.
 5. `Mejores deshumidificadores silenciosos para dormitorio` — criterios de ruido, modo noche y uso prolongado distintos de la comparativa general.
 
@@ -480,11 +480,12 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 - [ ] Analizar consultas e impresiones cuando haya datos; priorizar posiciones aproximadamente 8-20 y revisar Core Web Vitals reales.
 - [ ] Configurar Bing Webmaster Tools.
 - [x] Search Console accesible mediante Windsor.ai para `sc-domain:compraconsentido.es`; mantener GSC como fuente de verdad y no depender de GSC Wizard.
+- [x] Señal GSC 23/10/2026 en `/impresion-3d/filamentos-3d/`: 62 impresiones (14–20/10) frente a 12 (7–13/10); `filamento tpu vs pla` 15 vs 2 y `pla vs tpu` 13 vs 1. Resultado: PLA vs TPU pasa a ser la siguiente URL a investigar, no una autorización automática para publicarla.
 
 ## Contenido
 
 - [ ] Continuar la keyword research del cluster Herramientas y validar por SERP las nuevas URLs antes de producirlas.
-- [ ] Ejecutar el primer bloque de expansión por intención diferenciada: la primera URL (`deshumidificadores para secar ropa`) ya está publicada; continuar con gatos de botella → PLA vs TPU → taladros percutores a batería → deshumidificadores silenciosos/dormitorio, ajustando el orden si nuevos datos de GSC o SERP lo justifican.
+- [ ] Ejecutar el primer bloque de expansión por intención diferenciada: `deshumidificadores para secar ropa` ya está publicada; por la señal de GSC del 23/10/2026 el orden vigente pasa a PLA vs TPU → gatos de botella → taladros percutores a batería → deshumidificadores silenciosos/dormitorio. Validar cada URL por SERP antes de producirla.
 - [ ] Investigar plataformas de herramientas/baterías 18 V (hub estratégico para elegir ecosistema de batería, no para duplicar comparativas existentes) y analizar el encaje arquitectónico de hidrolimpiadoras para coche.
 - [ ] Definir progresivamente las primeras 20-30 URLs de alta calidad. No crear variantes por simples keywords/modificadores si la intención ya queda cubierta por una URL existente.
 
