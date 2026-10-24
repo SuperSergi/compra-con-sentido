@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 23/10/2026 · 19:06
+**Última actualización:** 24/10/2026 17:45
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -480,12 +480,12 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 - [ ] Analizar consultas e impresiones cuando haya datos; priorizar posiciones aproximadamente 8-20 y revisar Core Web Vitals reales.
 - [ ] Configurar Bing Webmaster Tools.
 - [x] Search Console accesible mediante Windsor.ai para `sc-domain:compraconsentido.es`; mantener GSC como fuente de verdad y no depender de GSC Wizard.
-- [x] Señal GSC 23/10/2026 en `/impresion-3d/filamentos-3d/`: 62 impresiones (14–20/10) frente a 12 (7–13/10); `filamento tpu vs pla` 15 vs 2 y `pla vs tpu` 13 vs 1. Investigación SERP, intención, canibalización y matriz técnica cerradas el 23/10/2026. Resultado: se aprueba crear `/impresion-3d/filamentos-3d/pla-vs-tpu/`; siguiente fase = redacción y producción sin publicar hasta completar controles técnicos, visuales y de enlazado.
+- [x] Señal GSC 23/10/2026 en `/impresion-3d/filamentos-3d/`: 62 impresiones (14–20/10) frente a 12 (7–13/10); `filamento tpu vs pla` 15 vs 2 y `pla vs tpu` 13 vs 1. Investigación SERP, intención, canibalización y matriz técnica cerradas el 23/10/2026. Resultado: `/impresion-3d/filamentos-3d/pla-vs-tpu/` publicada el 24/10/2026, tras redacción, revisión editorial y visual, imágenes WebP, enlaces contextuales entrantes desde hub de impresión 3D, guía de filamentos, mejores PLA y accesorios 3D, enlaces salientes relacionados, navegación dinámica global, sitemap y comprobaciones de build/responsive/optimización. Pendiente: inspección e indexación en Search Console y seguimiento de consultas.
 
 ## Contenido
 
 - [ ] Continuar la keyword research del cluster Herramientas y validar por SERP las nuevas URLs antes de producirlas.
-- [ ] Ejecutar el primer bloque de expansión por intención diferenciada: `deshumidificadores para secar ropa` ya está publicada; por la señal de GSC del 23/10/2026 el orden vigente pasa a PLA vs TPU → gatos de botella → taladros percutores a batería → deshumidificadores silenciosos/dormitorio. Validar cada URL por SERP antes de producirla.
+- [ ] Ejecutar el primer bloque de expansión por intención diferenciada: `deshumidificadores para secar ropa` ya está publicada; por la señal de GSC del 23/10/2026 PLA vs TPU queda completada; siguiente orden: gatos de botella → taladros percutores a batería → deshumidificadores silenciosos/dormitorio. Validar cada URL por SERP antes de producirla.
 - [ ] Investigar plataformas de herramientas/baterías 18 V (hub estratégico para elegir ecosistema de batería, no para duplicar comparativas existentes) y analizar el encaje arquitectónico de hidrolimpiadoras para coche.
 - [ ] Definir progresivamente las primeras 20-30 URLs de alta calidad. No crear variantes por simples keywords/modificadores si la intención ya queda cubierta por una URL existente.
 
