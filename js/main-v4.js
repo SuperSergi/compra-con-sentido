@@ -50,6 +50,12 @@ document.addEventListener("DOMContentLoaded", () => {
           href:
             base +
             "impresion-3d/filamentos-3d/mejores-filamentos-pla/"
+        },
+        {
+          label: "PLA vs TPU: diferencias",
+          href:
+            base +
+            "impresion-3d/filamentos-3d/pla-vs-tpu/"
         }
       ]
     },
