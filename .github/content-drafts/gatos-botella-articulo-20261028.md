@@ -4,7 +4,7 @@
 **Title:** Mejores gatos hidráulicos de botella para coche y SUV  
 **Meta description:** Comparamos 6 gatos hidráulicos de botella de 2 a 6 toneladas según altura mínima, elevación, peso y uso real en coche, SUV o furgoneta.  
 **H1:** Mejores gatos hidráulicos de botella: cuál elegir según tu vehículo  
-**Estado:** documento preparatorio; sin publicación, imágenes de modelo exacto ni ASIN ratificados en Amazon.es por el usuario.  
+**Estado:** borrador de investigación previo a la revisión Humanizer-Sergi. **El texto editorial vigente es el HTML de `herramientas/gatos-hidraulicos/mejores-gatos-hidraulicos-botella/index.html` en la PR #75**, revisado el 28/10/2026. Las seis imágenes y el hero están incorporados a esa rama; aún no está publicado en `main` y falta la validación comercial final de los ASIN.  
 **Fuentes y evidencias:** documento hermano 'gatos-botella-investigacion-20261028.md'. No afirmar pruebas propias.
 
 ## Apertura
