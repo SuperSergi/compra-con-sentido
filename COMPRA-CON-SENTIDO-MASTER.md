@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 28/10/2026
+**Última actualización:** 28/10/2026 16:00
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -230,6 +230,9 @@ La lista es una prioridad de investigación, no una autorización automática pa
 El contenido debe aportar más que una ficha de producto. Priorizar comparaciones, tablas, criterios de selección, ventajas e inconvenientes reales, diferencias entre modelos, escenarios de uso, explicación técnica, recomendaciones según necesidad, FAQ útiles, alternativas y cuándo compensa pagar más. No copiar descripciones de fabricantes o Amazon.
 
 Compra con Sentido no es otra lista de "los 10 mejores": su diferenciación es explicar para quién tiene sentido cada producto, qué cambia frente a otro, qué limitación puede importar y qué información está respaldada.
+
+
+**Criterio visual FAQ aprobado (28/10/2026):** seguir la presentación de PLA vs TPU: encabezado «Preguntas frecuentes» fuera de cualquier tarjeta grande y una tarjeta independiente por cada pregunta desplegable. Las secciones FAQ no deben tener fondo, borde, sombra ni relleno de tarjeta envolvente. Aplicado mediante `css/faq-standard-v1.css` en la rama UX de la PR #79; pendiente de validación visual, sin publicar.
 
 ## 8.2 Metodología de investigación
 
