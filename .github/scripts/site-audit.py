@@ -1,12 +1,13 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import re
 from html import unescape
 from html.parser import HTMLParser
 from datetime import date
 from pathlib import Path
-from urllib.parse import unquote, urljoin, urlparse
+from urllib.parse import parse_qs, unquote, urljoin, urlparse
 import xml.etree.ElementTree as ET
 
 DOMAIN = "https://compraconsentido.es"
@@ -134,6 +135,10 @@ def check_local_references(path: Path, url_path: str) -> None:
         if not target.resolve().is_relative_to(ROOT.resolve()) or not target.is_file():
             fail(f"{path}: referencia interna sin archivo: {reference}")
             continue
+        if absolute.path == "/js/main-v4.js":
+            expected_version = hashlib.sha256(target.read_text(encoding="utf-8").encode("utf-8")).hexdigest()[:12]
+            if parse_qs(absolute.query).get("v") != [expected_version]:
+                fail(f"{path}: versión de main-v4.js obsoleta; esperado v={expected_version}")
         if absolute.fragment and target.suffix.lower() == ".html":
             fragment = unquote(absolute.fragment)
             # Los fragmentos de texto los interpreta el navegador; no son IDs.

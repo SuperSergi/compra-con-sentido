@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "bundles": {
+    "ccs-06c3f73f57fe": {
+      "sources": [
+        "css/legal.css",
+        "css/hero-v5.css",
+        "css/intro-v1.css"
+      ],
+      "output": "css/compiled/ccs-06c3f73f57fe-f4a177236e44.css"
+    },
+    "ccs-d285423c873d": {
+      "sources": [
+        "css/amoladoras-bateria.css",
+        "css/comparativas-v3.css",
+        "css/hero-v5.css",
+        "css/product-cards-v1.css",
+        "css/intro-v1.css",
+        "css/comparison-opening-v1.css",
+        "css/related-heroes-v1.css",
+        "css/faq-standard-v1.css",
+        "css/guide-consistency-v1.css"
+      ],
+      "output": "css/compiled/ccs-d285423c873d-af14fc9e93a5.css"
+    },
+    "ccs-967ef3a1c1db": {
+      "sources": [
+        "css/hero-v5.css",
+        "css/intro-v1.css",
+        "css/related-heroes-v1.css"
+      ],
+      "output": "css/compiled/ccs-967ef3a1c1db-4023f54d74ff.css"
+    },
+    "ccs-b1951a3eb5e8": {
+      "sources": [
+        "css/comparativas-v3.css",
+        "css/hero-v5.css",
+        "css/product-cards-v1.css",
+        "css/intro-v1.css",
+        "css/comparison-opening-v1.css"
+      ],
+      "output": "css/compiled/ccs-b1951a3eb5e8-45aab05d3398.css"
+    },
+    "ccs-b5be30402389": {
+      "sources": [
+        "css/related-heroes-v1.css",
+        "css/faq-standard-v1.css"
+      ],
+      "output": "css/compiled/ccs-b5be30402389-a952b2d3c3ec.css"
+    },
+    "ccs-16ac3ddfaa91": {
+      "sources": [
+        "css/herramientas.css",
+        "css/hero-v5.css",
+        "css/intro-v1.css",
+        "css/category-library-v1.css"
+      ],
+      "output": "css/compiled/ccs-16ac3ddfaa91-b7b944d69fe6.css"
+    },
+    "ccs-fcd597550ca4": {
+      "sources": [
+        "css/llaves-impacto.css",
+        "css/comparativas-v3.css",
+        "css/hero-v5.css",
+        "css/product-cards-v1.css",
+        "css/intro-v1.css",
+        "css/comparison-opening-v1.css",
+        "css/related-heroes-v1.css",
+        "css/faq-standard-v1.css"
+      ],
+      "output": "css/compiled/ccs-fcd597550ca4-e1eb7540b204.css"
+    },
+    "ccs-f45aa3198058": {
+      "sources": [
+        "css/hero-v5.css",
+        "css/intro-v1.css",
+        "css/comparison-opening-v1.css",
+        "css/comparativas-v3.css",
+        "css/product-cards-v1.css",
+        "css/sierras-circulares.css",
+        "css/related-heroes-v1.css",
+        "css/faq-standard-v1.css",
+        "css/guide-consistency-v1.css"
+      ],
+      "output": "css/compiled/ccs-f45aa3198058-c5f9f0275d40.css"
+    },
+    "ccs-0e7da31fb70b": {
+      "sources": [
+        "css/taladros.css",
+        "css/hero-v5.css",
+        "css/intro-v1.css",
+        "css/related-heroes-v1.css"
+      ],
+      "output": "css/compiled/ccs-0e7da31fb70b-882dc1902b12.css"
+    },
+    "ccs-182cace8d04f": {
+      "sources": [
+        "css/comparativas-v3.css",
+        "css/hero-v5.css",
+        "css/product-cards-v1.css",
+        "css/intro-v1.css",
+        "css/comparison-opening-v1.css",
+        "css/related-heroes-v1.css",
+        "css/faq-standard-v1.css"
+      ],
+      "output": "css/compiled/ccs-182cace8d04f-0c0f382cf1c3.css"
+    },
+    "ccs-0f02f923d900": {
+      "sources": [
+        "css/aspiradoras.css",
+        "css/hero-v5.css",
+        "css/intro-v1.css",
+        "css/related-heroes-v1.css"
+      ],
+      "output": "css/compiled/ccs-0f02f923d900-ee63b7070913.css"
+    },
+    "ccs-6a0eb9497ca4": {
+      "sources": [
+        "css/robots-aspiradores.css",
+        "css/comparativas-v3.css",
+        "css/hero-v5.css",
+        "css/product-cards-v1.css",
+        "css/intro-v1.css",
+        "css/comparison-opening-v1.css",
+        "css/related-heroes-v1.css",
+        "css/faq-standard-v1.css"
+      ],
+      "output": "css/compiled/ccs-6a0eb9497ca4-9c5a974a5774.css"
+    },
+    "ccs-ea0bddc6066b": {
+      "sources": [
+        "css/deshumidificador-capacidad.css",
+        "css/hero-v5.css",
+        "css/intro-v1.css"
+      ],
+      "output": "css/compiled/ccs-ea0bddc6066b-57ed95964a6f.css"
+    },
+    "ccs-242c44178772": {
+      "sources": [
+        "css/comparativa-deshumidificadores.css",
+        "css/comparativas-v3.css",
+        "css/hero-v5.css",
+        "css/product-cards-v1.css",
+        "css/intro-v1.css",
+        "css/comparison-opening-v1.css",
+        "css/related-heroes-v1.css",
+        "css/faq-standard-v1.css"
+      ],
+      "output": "css/compiled/ccs-242c44178772-5589142bca27.css"
+    },
+    "ccs-9584529e160d": {
+      "sources": [
+        "css/deshumidificadores.css",
+        "css/hero-v5.css",
+        "css/intro-v1.css",
+        "css/related-heroes-v1.css",
+        "css/faq-standard-v1.css"
+      ],
+      "output": "css/compiled/ccs-9584529e160d-73b3daeae450.css"
+    },
+    "ccs-210e4bef3294": {
+      "sources": [
+        "css/comparativa-deshumidificadores.css",
+        "css/comparativas-v3.css",
+        "css/hero-v5.css",
+        "css/product-cards-v1.css",
+        "css/intro-v1.css",
+        "css/comparison-opening-v1.css",
+        "css/related-heroes-v1.css",
+        "css/guide-consistency-v1.css"
+      ],
+      "output": "css/compiled/ccs-210e4bef3294-d966866dc059.css"
+    },
+    "ccs-cc550ded71c3": {
+      "sources": [
+        "css/hogar.css",
+        "css/hero-v5.css",
+        "css/intro-v1.css",
+        "css/category-library-v1.css"
+      ],
+      "output": "css/compiled/ccs-cc550ded71c3-74d16d12900e.css"
+    },
+    "ccs-17a009de8fc4": {
+      "sources": [
+        "css/hero-v5.css",
+        "css/intro-v1.css",
+        "css/comparison-opening-v1.css",
+        "css/comparativas-v3.css",
+        "css/product-cards-v1.css"
+      ],
+      "output": "css/compiled/ccs-17a009de8fc4-65396d2faa13.css"
+    },
+    "ccs-570c2a4da68e": {
+      "sources": [
+        "css/hero-v5.css",
+        "css/intro-v1.css"
+      ],
+      "output": "css/compiled/ccs-570c2a4da68e-f9e63c216ee2.css"
+    },
+    "ccs-0f73d7d762bf": {
+      "sources": [
+        "css/metodologia.css",
+        "css/intro-v1.css",
+        "css/related-heroes-v1.css"
+      ],
+      "output": "css/compiled/ccs-0f73d7d762bf-de6ed284d93a.css"
+    },
+    "ccs-48b62b0723bc": {
+      "sources": [
+        "css/about.css",
+        "css/intro-v1.css",
+        "css/related-heroes-v1.css"
+      ],
+      "output": "css/compiled/ccs-48b62b0723bc-383202f8a955.css"
+    }
+  }
+}
