@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 28/10/2026 11:35
+**Última actualización:** 28/10/2026 12:20
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -369,6 +369,7 @@ No usar el nombre del producto cuando el contexto ya sea inequívoco. Los CTA no
 - **Contenido dentro de `<main>`:** nada después de `</html>`; bloques como "Cómo analizamos" van dentro de `<main>`.
 - No compactar `hero-v5.css` ni `intro-v1.css` sin una regresión visual completa de toda la web.
 - **Cierre de navegación con tarjetas hero clicables (aprobación de estilo 28/10/2026):** el formato preparado en la comparativa de gatos de botella, PR #75, utiliza un párrafo breve seguido de dos tarjetas con sus propias imágenes hero; cada tarjeta entera funciona como enlace, sin botones separados. Presentación de dos columnas en escritorio y una en móvil. **Plan:** una vez publicada y validada esta página, revisar y extender el patrón al resto de páginas donde existan dos destinos internos relevantes; no crear tarjetas sin utilidad editorial ni afirmar que este cambio ya está aplicado a toda la web.
+- **Componente compartido de enlaces con hero (`/css/related-heroes-v1.css`):** diseñado en PR #76 para evitar duplicar CSS en cada página. Dos tarjetas con imagen existente, enlace en toda la superficie, sin botones separados, dos columnas en escritorio y una en móvil. La selección debe ser contextual: guías/comparativas relacionadas, no enlaces de relleno. Aplicación a 10 páginas en rama de trabajo pendiente de revisión, todavía no publicada.
 
 
 ---
@@ -402,6 +403,20 @@ Antes de publicar o actualizar una página comercial buscar, como mínimo:
 ## 11.3 Checklist de cierre de una página nueva
 
 Contenido y SEO cerrados; hero específico; imagen de tarjeta si aparece en hub/Inicio; imágenes exactas de producto; ASIN verificados manualmente; tracking; CTA; menú (HTML y `submenuData`); breadcrumbs; enlazado interno; sitemap; schema; favicon; revisión responsive; control de residuos; `build` en success; preview visual aprobada por Sergio; autorización explícita de merge.
+
+---
+
+## 11.4 Lote de humanización y enlaces internos · PR #76 (28/10/2026)
+
+**Estado:** en desarrollo, rama `editorial/humanizar-10-paginas-20261028`, PR #76 en borrador. No aparece en producción hasta aprobación explícita y fusión con `main`.
+
+**Alcance (10 URLs ya existentes):** guía de gatos hidráulicos, comparativa de carretilla, guía y comparativa de taladros, llaves de impacto, amoladoras, sierras circulares, guía y comparativa de deshumidificadores y comparativa de PLA. Se preservan URL, canonical, tablas, cifras, productos, ASIN y tracking.
+
+**Trabajo preparado:** dos pasadas con `humanizer-sergi` de introducciones, recomendaciones y descripción de experiencia de uso; limpieza de recuadros «Cómo analizamos», «Cómo puntuamos», referencias defensivas a procedimientos/cálculos y notas genéricas de documentación. Se mantiene la información que resuelve dudas reales y los datos técnicos no verificados no se presentan como confirmados. Dos tarjetas hero y destinos internos específicos al final de cada una de las 10 URLs; nuevo CSS compartido; byline, `dateModified` y `lastmod` del sitemap actualizados.
+
+**Control estructural tras segunda pasada:** las 10 páginas se han auditado sin encontrar restos de los recuadros, frases de cálculo o metacomentarios señalados; todas conservan H1, tablas, CTA y enlaces de afiliado, sus dos tarjetas hero y datos estructurados parseables. Los valores no publicados por fabricante se conservan como no confirmados donde son materialmente relevantes, sin inventarlos. Build y optimización de imágenes correctos; revisión responsive más reciente pendiente de terminar al actualizar este apartado.
+
+**Pendiente antes de merge:** confirmar auditoría responsive del último commit, hacer revisión visual de enlaces, alt, imágenes y jerarquía en móvil y escritorio, corregir si aparecen incidencias, y obtener aprobación editorial de las 10 páginas por Sergio. No fusionar este lote automáticamente.
 
 ---
 
