@@ -1,6 +1,6 @@
 /* Biblioteca visual única para las categorías principales.
    Alcance limitado a .ccs-library-v2: sin JavaScript ni dependencias externas. */
-.ccs-library-v2{padding:clamp(38px,5vw,72px) 0 clamp(42px,5vw,76px);background:#f6f9f7}
+.ccs-library-v2{padding:clamp(38px,5vw,72px) 0 clamp(42px,5vw,76px);background:#f6f9f7;scroll-margin-top:90px}
 .ccs-library-v2 *{box-sizing:border-box}
 .ccs-library-v2__inner{width:min(1160px,calc(100% - 40px));margin:0 auto}
 .ccs-library-v2__eyebrow{display:block;margin:0 0 10px;color:#247b50;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.075em}
