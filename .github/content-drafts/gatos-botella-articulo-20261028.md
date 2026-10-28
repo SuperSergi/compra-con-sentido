@@ -37,12 +37,12 @@ Esta comparativa reúne seis modelos de 2 a 6 toneladas, con diferentes alturas 
 |---|---|---|---|---|---|---|
 | Bahco BH4G2 | 2 t | 181 mm | 344 mm | 115 mm | 48 mm | 2,4 kg |
 | KS Tools 160.0351 | 3 t | 194 mm | 372 mm | 118 mm | 60 mm | 2,8 kg |
-| Michelin 009559 | 3 t | 195 mm | 385 mm | No declarado | No declarado | ≈3 kg* (Stock24; Norauto indica 3,4 kg) |
+| Michelin 009559 | 3 t | 195 mm | 385 mm | 130 mm† (calculado) | 60 mm† (calculado) | ≈3 kg* (Stock24; Norauto indica 3,4 kg) |
 | KS Tools 160.0352 | 5 t | 216 mm | 413 mm | 127 mm | 70 mm | 3,7 kg |
 | SIXTOL SX1147 | 6 t | 200 mm | 385 mm | No declarado | 60 mm | 4,0 kg |
 | SIXTOL SX3080 Premium | 6 t | 215 mm | 435 mm | No declarado | 60 mm | 4,15 kg |
 
-*Los máximos reflejan las cotas de cada fabricante. No deducir automáticamente el recorrido hidráulico restando los extremos cuando no están documentados. La tabla se presenta deslizable en móviles.*
+*Los máximos reflejan las cotas de cada fabricante. † Para Michelin, las medidas de carrera y tornillo se derivan de la altura intermedia de 325 mm sin desenroscar aportada durante la revisión, no de un desglose oficial. No deducir automáticamente el recorrido hidráulico restando solo los extremos. La tabla se presenta deslizable en móviles.*
 
 ## Análisis de los modelos
 
@@ -72,7 +72,7 @@ Frente al Bahco de 2 toneladas soporta mayor carga nominal, pero necesita 13 mm 
 
 ### Michelin 009559: 3 toneladas con 385 mm de altura final
 
-El Michelin 009559 tiene un rango de 195 a 385 mm y capacidad nominal de 3 toneladas, confirmados en su manual. Frente al KS Tools de 3 toneladas, ofrece 13 mm más de altura final con una altura de entrada prácticamente igual (195 frente a 194 mm). El peso declarado por Stock24 es de 3 kg, mientras que Norauto indica 3,4 kg. Por eso se utiliza aproximadamente 3 kg, atribuido a Stock24, sin considerarlo peso neto oficial. La diferencia entre 195 y 385 mm es de 190 mm de ajuste total; incluye el tornillo roscado y no permite calcular por separado la carrera hidráulica.
+El Michelin 009559 tiene un rango de 195 a 385 mm y capacidad nominal de 3 toneladas, confirmados en su manual. Frente al KS Tools de 3 toneladas, ofrece 13 mm más de altura final con una altura de entrada prácticamente igual (195 frente a 194 mm). El peso declarado por Stock24 es de 3 kg, mientras que Norauto indica 3,4 kg. Por eso se utiliza aproximadamente 3 kg, atribuido a Stock24, sin considerarlo peso neto oficial. Durante la revisión se aportó la altura intermedia de 325 mm sin desenroscar el tornillo. Por diferencia se calculan 325 − 195 = 130 mm de carrera hidráulica y 385 − 325 = 60 mm de rosca extensible. Son magnitudes calculadas a partir de un dato facilitado durante la revisión, no cifras del recorrido desglosadas en el manual Michelin.
 
 La cifra que más interesa aquí son los 385 mm de altura máxima. Es una alternativa para quien busca un gato de 3 toneladas con algo más de altura, aunque sigue siendo imprescindible comprobar acceso y recorrido en el vehículo real.
 
