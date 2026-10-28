@@ -37,7 +37,7 @@ Esta comparativa reúne seis modelos de 2 a 6 toneladas, con diferentes alturas 
 |---|---|---|---|---|---|---|
 | Bahco BH4G2 | 2 t | 181 mm | 344 mm | 115 mm | 48 mm | 2,4 kg |
 | KS Tools 160.0351 | 3 t | 194 mm | 372 mm | 118 mm | 60 mm | 2,8 kg |
-| Michelin 009559 | 3 t | 195 mm | 385 mm | No declarado | No declarado | ≈3 kg (distribuidor, no confirmado fabricante) |
+| Michelin 009559 | 3 t | 195 mm | 385 mm | No declarado | No declarado | ≈3 kg* (Stock24; Norauto indica 3,4 kg) |
 | KS Tools 160.0352 | 5 t | 216 mm | 413 mm | 127 mm | 70 mm | 3,7 kg |
 | SIXTOL SX1147 | 6 t | 200 mm | 385 mm | No declarado | 60 mm | 4,0 kg |
 | SIXTOL SX3080 Premium | 6 t | 215 mm | 435 mm | No declarado | 60 mm | 4,15 kg |
@@ -72,7 +72,7 @@ Frente al Bahco de 2 toneladas soporta mayor carga nominal, pero necesita 13 mm 
 
 ### Michelin 009559: 3 toneladas con 385 mm de altura final
 
-El Michelin 009559 tiene un rango de 195 a 385 mm y capacidad nominal de 3 toneladas, confirmados en su manual. Frente al KS Tools de 3 toneladas, ofrece 13 mm más de altura final con una altura de entrada prácticamente igual (195 frente a 194 mm). El peso aparece en torno a 3 kg en una ficha de distribuidor, pero no se ha localizado una cifra de peso neto de fabricante inequívoca.
+El Michelin 009559 tiene un rango de 195 a 385 mm y capacidad nominal de 3 toneladas, confirmados en su manual. Frente al KS Tools de 3 toneladas, ofrece 13 mm más de altura final con una altura de entrada prácticamente igual (195 frente a 194 mm). El peso declarado por Stock24 es de 3 kg, mientras que Norauto indica 3,4 kg. Por eso se utiliza aproximadamente 3 kg, atribuido a Stock24, sin considerarlo peso neto oficial. La diferencia entre 195 y 385 mm es de 190 mm de ajuste total; incluye el tornillo roscado y no permite calcular por separado la carrera hidráulica.
 
 La cifra que más interesa aquí son los 385 mm de altura máxima. Es una alternativa para quien busca un gato de 3 toneladas con algo más de altura, aunque sigue siendo imprescindible comprobar acceso y recorrido en el vehículo real.
 
