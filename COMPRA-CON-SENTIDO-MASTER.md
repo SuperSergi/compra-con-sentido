@@ -670,3 +670,12 @@ Validación detallada: .github/measurement/lote-d-validation-20261028.md. La red
 Lote C pendiente de decisión con Sergi: inventario de 12 fichas y cabecera de llaves, más 23 escenas ambiente de procedencia por confirmar. Preferir foto real del modelo exacto con permiso documentado o recurso genérico sin marca aprobado. No sustituir todavía.
 
 Lote E después del D: «Selección actual», «Peso*», «2,95 kg producto», «Manitas», «Para nosotros», «Tabla comparable», nombres de navegación aprobados y «No elegiría una amoladora únicamente por este punto» a «No conviene elegir una amoladora únicamente por este punto…». Autoría, parte legal y rediseño de portada siguen aparte.
+
+
+## Publicación de lotes D y E y decisión sobre imágenes (28/10/2026)
+
+Lote D integrado por autorización del usuario, PR #85. Commit de main aa51c5985570a5fe2d9df101ba6cd8ba0e0c87a3. Build, optimización, Cloudflare y 108/108 comprobaciones responsive correctos. Pendiente repetición de PageSpeed por Sergi.
+
+El lote C queda aparcado por decisión de Sergi. Las imágenes actuales son provisionales hasta disponer del acceso a la API de Amazon, que el usuario prevé desbloquear tras diez ventas. No sustituir imágenes ahora. Cuando la API esté disponible, sustituir todas las imágenes de producto por las oficiales obtenidas de Amazon y retirar la etiqueta «Imagen ilustrativa» de cada imagen sustituida. Antes de implementar esa integración se comprobarán el acceso y las condiciones técnicas vigentes; no se implementa la API en este lote.
+
+Lote E: etiqueta «Imagen ilustrativa» en las seis llaves y las escenas ambiente activas de gatos para coche, taladros, robots y deshumidificadores, usando el componente de nota ya existente. Las amoladoras conservan su etiqueta. Sin cambios de archivos ni URLs de imágenes. Se aplican los nombres aprobados «Sobre nosotros», «Aviso legal, privacidad y afiliación» y «Guías destacadas» en el pie, manteniendo destinos. Retirados los restos editoriales enumerados y la primera persona singular de la guía de amoladoras. El peso 2,95 kg mantiene su cifra sin añadir una base de medición no verificada. Autoría, parte legal y rediseño de portada siguen aparte.
