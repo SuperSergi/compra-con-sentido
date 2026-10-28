@@ -42,7 +42,7 @@ La antigua ruta polymaker.com/product/polylite-pla/ redirige actualmente a PLA-C
 - La incorporación de fuentes se ha hecho donde se ha cerrado una referencia concreta. Falta completar la trazabilidad técnica de cada modelo/variante, especialmente gatos, taladros, PLA y Lefant. Retirar testimonios sin fuente no equivale a verificar todas sus especificaciones.
 - Sin cambios en archivos o etiquetas de imagen, estilos inline, CSS externo, JS, precargas, srcset o dimensiones. Sin rediseño de Inicio, cambios de autoría ni contenido legal.
 - Tipografía y nombres de navegación aprobados se aplicarán en sus lotes; los CTA compactos y la tabla sin columna fija se conservan.
-- Los datos de peso móvil están en measurement/mobile-baseline-20261028.md. LCP/CLS de PageSpeed pendientes de Sergi.
+- Los datos de peso móvil están en measurement/mobile-baseline-20261028.md. PageSpeed móvil ya recibido: rendimiento 98/99/99, LCP 1,1 s y CLS 0 en las tres páginas. Las prioridades del lote separado están en measurement/performance-plan-20261028.md.
 
 ## Comprobaciones para revisar
 

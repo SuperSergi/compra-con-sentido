@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 28/10/2026 18:02
+**Última actualización:** 28/10/2026 18:13
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -559,7 +559,7 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 - Una PR por lote, siempre contra main. Tras publicar, entregar textos y archivos concretos que comprobar en producción.
 - El usuario autoriza corregir ya el enlace de «Cuántos litros» y sustituir la imagen defectuosa de Cecotec por la imagen existente del mismo modelo/ASIN usada en «Secar ropa». Se añade la leyenda «–: no declarado en la ficha española» bajo la tabla de amoladoras, sin atribuir ni negar AFT a Makita.
 - **Lote A cerrado:** PR #83 fusionada contra main mediante squash `e995b626908534fc218bed6f2bd1e8b415018e47`. Build, optimización y Cloudflare correctos; responsive 108/108. Enlace de litros, Cecotec y leyenda de amoladoras comprobados en producción por el usuario el 28/10/2026.
-- Antes del lote de imágenes y rendimiento (srcset, dimensiones, precargas o fotos de amoladoras/llaves), esperar los datos de LCP/CLS de PageSpeed que aporta Sergi. Los pesos iniciales ya están registrados abajo. La sustitución puntual del Cecotec está cerrada.
+- Datos iniciales de PageSpeed móvil recibidos (28/10/2026, 17:54-17:58). El lote de rendimiento se prepara por separado del contenido y prioriza CSS bloqueante, contraste de fichas y texto descriptivo de cookies; srcset y precargas son secundarios. La sustitución puntual del Cecotec está cerrada.
 
 ### Lote B de contenido en preparación
 
@@ -577,7 +577,13 @@ Pendientes técnicos: correspondencia ASIN/referencia y Wi-Fi de Midea; comparac
 | Amoladoras | 156 KB | 753 KB |
 | Gatos para coche | 124 KB | 1.537 KB |
 
-HTML, CSS y JS: entre 24 y 36 KB según página. El usuario observa 0 saltos de diseño en las tres. Esto no sustituye una medición CLS de PageSpeed. LCP/CLS de PageSpeed pendientes de Sergi desde su navegador. No constan aún dispositivo, caché o condiciones de red; comparar antes/después con las mismas condiciones. Registro detallado en `.github/measurement/mobile-baseline-20261028.md`.
+HTML, CSS y JS: entre 24 y 36 KB según página. El usuario observa 0 saltos de diseño en las tres.
+
+**PageSpeed móvil (28/10/2026, 17:54-17:58, datos del usuario):** portada 98 / LCP 1,1 s / CLS 0 / TBT 0 ms / Speed Index 3,8 s; amoladoras 99 / 1,1 s / 0 / 0 ms / 3,7 s; gatos para coche 99 / 1,1 s / 0 / 0 ms / 3,6 s. CSS bloqueante estimado: 420 / 710 / 650 ms. Ahorro potencial de imágenes: 402 KiB / 46 KiB / no indicado. Accesibilidad: 100 / 96 / 96; SEO: 92 en las tres. Conservar KB y KiB como unidades distintas. Son mediciones iniciales aportadas por el usuario, no una prueba de regresión de la preview del lote B.
+
+No hay evidencia de un problema de LCP o CLS en estas pruebas. Prioridades del siguiente lote: evaluar agrupación o CSS crítico sin alterar cascada; etiquetas de fichas de #6b7770 a un color con contraste suficiente, propuesta #5f6d65 sobre #f7faf8; banner «Más información sobre cookies». Imágenes y precargas quedan como mejoras secundarias basadas en ahorro medido. No prometer que todo el tiempo señalado como CSS bloqueante se recuperará en Speed Index. El usuario repetirá las mismas mediciones al publicar ese lote.
+
+No constan aún dispositivo, caché o condiciones de red; comparar antes/después con las mismas condiciones. Registro detallado en `.github/measurement/mobile-baseline-20261028.md` y plan en `.github/measurement/performance-plan-20261028.md`.
 
 ## Pendientes inmediatos
 
