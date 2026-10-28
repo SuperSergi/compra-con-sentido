@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 28/10/2026 11:35
+**Última actualización:** 28/10/2026 11:51
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -369,6 +369,7 @@ No usar el nombre del producto cuando el contexto ya sea inequívoco. Los CTA no
 - **Contenido dentro de `<main>`:** nada después de `</html>`; bloques como "Cómo analizamos" van dentro de `<main>`.
 - No compactar `hero-v5.css` ni `intro-v1.css` sin una regresión visual completa de toda la web.
 - **Cierre de navegación con tarjetas hero clicables (aprobación de estilo 28/10/2026):** el formato preparado en la comparativa de gatos de botella, PR #75, utiliza un párrafo breve seguido de dos tarjetas con sus propias imágenes hero; cada tarjeta entera funciona como enlace, sin botones separados. Presentación de dos columnas en escritorio y una en móvil. **Plan:** una vez publicada y validada esta página, revisar y extender el patrón al resto de páginas donde existan dos destinos internos relevantes; no crear tarjetas sin utilidad editorial ni afirmar que este cambio ya está aplicado a toda la web.
+- **Componente compartido de enlaces con hero (`/css/related-heroes-v1.css`):** diseñado en PR #76 para evitar duplicar CSS en cada página. Dos tarjetas con imagen existente, enlace en toda la superficie, sin botones separados, dos columnas en escritorio y una en móvil. La selección debe ser contextual: guías/comparativas relacionadas, no enlaces de relleno. Aplicación a 10 páginas en rama de trabajo pendiente de revisión, todavía no publicada.
 
 
 ---
@@ -402,6 +403,18 @@ Antes de publicar o actualizar una página comercial buscar, como mínimo:
 ## 11.3 Checklist de cierre de una página nueva
 
 Contenido y SEO cerrados; hero específico; imagen de tarjeta si aparece en hub/Inicio; imágenes exactas de producto; ASIN verificados manualmente; tracking; CTA; menú (HTML y `submenuData`); breadcrumbs; enlazado interno; sitemap; schema; favicon; revisión responsive; control de residuos; `build` en success; preview visual aprobada por Sergio; autorización explícita de merge.
+
+---
+
+## 11.4 Lote de humanización y enlaces internos · PR #76 (28/10/2026)
+
+**Estado:** en desarrollo, rama `editorial/humanizar-10-paginas-20261028`, PR #76 en borrador. No aparece en producción hasta aprobación explícita y fusión con `main`.
+
+**Alcance (10 URLs ya existentes):** guía de gatos hidráulicos, comparativa de carretilla, guía y comparativa de taladros, llaves de impacto, amoladoras, sierras circulares, guía y comparativa de deshumidificadores y comparativa de PLA. Se preservan URL, canonical, tablas, cifras, productos, ASIN y tracking.
+
+**Trabajo preparado:** primera pasada con `humanizer-sergi` de introducciones y recomendaciones según necesidades; simplificación de algunos bloques autorreferenciales redundantes; incorporación de dos tarjetas con heroes y destinos internos específicos al final de cada una de las 10 URLs; nuevo CSS compartido; byline y `dateModified` coherentes con la revisión; `lastmod` del sitemap actualizado solo para las 10 páginas editadas.
+
+**Pendiente antes de merge:** build, auditoría responsive y revisión visual de los enlaces, alt, imágenes y jerarquía en móvil y escritorio. Corregir problemas detectados; revisión editorial de las 10 páginas por Sergio; registrar resultados en esta sección al cerrar. No fusionar este lote automáticamente. El contenido que hoy posiciona no debe perder detalles técnicos útiles ni justificarse con frases mecánicas.
 
 ---
 
