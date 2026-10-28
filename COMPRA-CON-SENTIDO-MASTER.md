@@ -443,7 +443,7 @@ Contenido y SEO cerrados; hero específico; imagen de tarjeta si aparece en hub/
 
 **Corrección importante:** la antigua referencia a `GitHub Pages` dentro de Aviso legal se sustituye por `Cloudflare Pages` como alojamiento de la web; GitHub continúa como repositorio del código.
 
-**Comprobaciones de trabajo:** seis H1 únicos, HTML equilibrado, JSON-LD parseable, enlaces de 10 tarjetas hero apuntando a URLs existentes y WebP comprobados en GitHub, sitemap con lastmod 28/10/2026 para las seis URLs revisadas. Pendientes build, auditoría responsive, comprobación final de preview y aprobación visual/editorial. No fusionar ni publicar PR #77 ni PR #78 sin autorización del usuario. En el momento de publicar, fusionar primero PR #77 y después retargetar PR #78 a main (o realizar los merges en orden conservando historial de cambios).
+**Comprobaciones de trabajo:** seis H1 únicos, HTML equilibrado, JSON-LD parseable, canonicals y title conservados, enlaces de 10 tarjetas hero apuntando a URLs existentes y WebP comprobados en GitHub, sitemap con lastmod 28/10/2026 para las seis URLs revisadas. Cero enlaces de afiliado modificados. Para activar el CI se apunta temporalmente la PR #78 a `main`; una vez ejecutados los checks se devuelve a la rama base de PR #77. Pendientes build, auditoría responsive, comprobación final de preview y aprobación visual/editorial. No fusionar ni publicar PR #77 ni PR #78 sin autorización del usuario. En el momento de publicar, fusionar primero PR #77 y después retargetar PR #78 a main (o realizar los merges en orden conservando historial de cambios).
 
 ---
 
