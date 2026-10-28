@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 28/10/2026 11:51
+**Última actualización:** 28/10/2026 12:20
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -412,9 +412,11 @@ Contenido y SEO cerrados; hero específico; imagen de tarjeta si aparece en hub/
 
 **Alcance (10 URLs ya existentes):** guía de gatos hidráulicos, comparativa de carretilla, guía y comparativa de taladros, llaves de impacto, amoladoras, sierras circulares, guía y comparativa de deshumidificadores y comparativa de PLA. Se preservan URL, canonical, tablas, cifras, productos, ASIN y tracking.
 
-**Trabajo preparado:** primera pasada con `humanizer-sergi` de introducciones y recomendaciones según necesidades; simplificación de algunos bloques autorreferenciales redundantes; incorporación de dos tarjetas con heroes y destinos internos específicos al final de cada una de las 10 URLs; nuevo CSS compartido; byline y `dateModified` coherentes con la revisión; `lastmod` del sitemap actualizado solo para las 10 páginas editadas.
+**Trabajo preparado:** dos pasadas con `humanizer-sergi` de introducciones, recomendaciones y descripción de experiencia de uso; limpieza de recuadros «Cómo analizamos», «Cómo puntuamos», referencias defensivas a procedimientos/cálculos y notas genéricas de documentación. Se mantiene la información que resuelve dudas reales y los datos técnicos no verificados no se presentan como confirmados. Dos tarjetas hero y destinos internos específicos al final de cada una de las 10 URLs; nuevo CSS compartido; byline, `dateModified` y `lastmod` del sitemap actualizados.
 
-**Pendiente antes de merge:** build, auditoría responsive y revisión visual de los enlaces, alt, imágenes y jerarquía en móvil y escritorio. Corregir problemas detectados; revisión editorial de las 10 páginas por Sergio; registrar resultados en esta sección al cerrar. No fusionar este lote automáticamente. El contenido que hoy posiciona no debe perder detalles técnicos útiles ni justificarse con frases mecánicas.
+**Control estructural tras segunda pasada:** las 10 páginas se han auditado sin encontrar restos de los recuadros, frases de cálculo o metacomentarios señalados; todas conservan H1, tablas, CTA y enlaces de afiliado, sus dos tarjetas hero y datos estructurados parseables. Los valores no publicados por fabricante se conservan como no confirmados donde son materialmente relevantes, sin inventarlos. Build y optimización de imágenes correctos; revisión responsive más reciente pendiente de terminar al actualizar este apartado.
+
+**Pendiente antes de merge:** confirmar auditoría responsive del último commit, hacer revisión visual de enlaces, alt, imágenes y jerarquía en móvil y escritorio, corregir si aparecen incidencias, y obtener aprobación editorial de las 10 páginas por Sergio. No fusionar este lote automáticamente.
 
 ---
 
