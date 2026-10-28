@@ -12,3 +12,10 @@
 .ccs-faq-standard details>p+p{padding-top:0!important}
 .ccs-faq-standard summary:focus-visible{outline:3px solid #ecc748;outline-offset:2px;border-radius:12px}
 @media(max-width:700px){.ccs-faq-standard{width:calc(100% - 24px);margin:38px auto 45px}.ccs-faq-standard summary{padding:17px 42px 17px 16px!important;font-size:15px!important}.ccs-faq-standard details>p{padding:15px 16px 18px!important}}
+
+/* Patrón aprobado: título fuera y tarjetas independientes, sin tarjeta envolvente. */
+.ccs-faq-standard{background:transparent!important;border:0!important;box-shadow:none!important;border-radius:0!important;padding:0!important}
+.ccs-faq-standard::before,.ccs-faq-standard::after{box-shadow:none}
+.ccs-faq-standard>h2{background:transparent!important;border:0!important;padding:0!important}
+/* Algunas guías usan una caja interior para agrupar el encabezado y las preguntas. */
+.ccs-faq-standard .dehum-faq-list,.ccs-faq-standard .cap-faq-list{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important}
