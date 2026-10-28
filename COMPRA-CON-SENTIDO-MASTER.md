@@ -433,6 +433,20 @@ Contenido y SEO cerrados; hero específico; imagen de tarjeta si aparece en hub/
 
 ---
 
+## 11.6 Últimas seis páginas: humanización y navegación · PR #78 (28/10/2026)
+
+**Estado:** pendiente de aprobación; rama `editorial/humanizar-ultimas-6-20261028` creada desde la rama del segundo bloque `editorial/humanizar-siguiente-10-20261028` (PR #77). La PR #78 se presenta **apilada sobre PR #77** para que su diferencia incluya solo las seis páginas finales. Ninguna de las dos PR se ha fusionado con `main`.
+
+**Inventario:** 27 páginas HTML en el sitio. La comparativa de gatos de botella ya está publicada, la primera tanda de 10 páginas se publicó con PR #76, el segundo bloque de 10 queda en PR #77 y las otras seis páginas se revisan en PR #78. Los cambios de las últimas 16 quedan pendientes de aprobación.
+
+**Seis páginas revisadas:** portada `/`, categoría Herramientas, categoría Hogar, Sobre nosotros, Metodología y Aviso legal. El enfoque editorial en la portada y las categorías deja de hablar de «nuestros criterios» y explica medidas, limitaciones y costes que el lector debe comprobar. Se sustituyen los bloques finales de botones por dos enlaces hero clicables en portada y categorías. Sobre nosotros y Metodología enlazan a dos ejemplos reales de comparativas cada una; se conserva la explicación transparente de fuentes, afiliación y la ausencia de pruebas físicas propias. En Aviso legal no se añaden cards promocionales: se conserva la estructura de afiliación, privacidad, cookies y contacto.
+
+**Corrección importante:** la antigua referencia a `GitHub Pages` dentro de Aviso legal se sustituye por `Cloudflare Pages` como alojamiento de la web; GitHub continúa como repositorio del código.
+
+**Comprobaciones de trabajo:** seis H1 únicos, HTML equilibrado, JSON-LD parseable, enlaces de 10 tarjetas hero apuntando a URLs existentes y WebP comprobados en GitHub, sitemap con lastmod 28/10/2026 para las seis URLs revisadas. Pendientes build, auditoría responsive, comprobación final de preview y aprobación visual/editorial. No fusionar ni publicar PR #77 ni PR #78 sin autorización del usuario. En el momento de publicar, fusionar primero PR #77 y después retargetar PR #78 a main (o realizar los merges en orden conservando historial de cambios).
+
+---
+
 # 12. Estado del sitio
 
 ## 12.1 Páginas publicadas
