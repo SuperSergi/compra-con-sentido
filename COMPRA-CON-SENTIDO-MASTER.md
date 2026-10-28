@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 28/10/2026 09:11
+**Última actualización:** 28/10/2026 11:35
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -207,7 +207,7 @@ La lista es una prioridad de investigación, no una autorización automática pa
 
 **Referencias SERP consultadas:** https://criteriotech.es/impresion-3d/mejor-secador-filamento/ ; https://todoimpresion3d.com/mejores-secadores-de-filamento-2026/ ; https://www.motor16.com/comparativas/mejor-gato-hidraulico-para-coche/ ; https://zonataller.com/blogs/taller/gato-hidraulico-para-coche-perfil-bajo-botella-carretilla-y-2t-3t ; https://elmaletero.es/mejores-compresores-de-aire-portatiles/ ; https://espacioseco.com/mejor-deshumidificador-bano/ ; https://compara3d.com/filamentos-petg/
 
-**Enlazado si se aprueban:** secadores desde accesorios 3D, hub filamentos y PLA vs TPU; gatos de botella desde hub de gatos y comparativa de gatos; baños desde hub deshumidificadores, guía litros y comparativa; PETG desde hub de filamentos y comparativa PLA. Compresores requiere antes arquitectura de automoción, no crear URL huérfana.
+**Enlazado previsto si se aprueban futuras páginas:** secadores desde accesorios 3D, hub filamentos y PLA vs TPU; baños desde hub deshumidificadores, guía litros y comparativa; PETG desde hub de filamentos y comparativa PLA. **Gatos de botella: enlazado ya realizado** desde el hub Herramientas, la guía de gatos y la comparativa de carretilla, además del menú global. Revisar enlaces contextuales adicionales al humanizar el resto de la web. Compresores requiere antes arquitectura de automoción, no crear URL huérfana.
 
 **Trabajo paralelo en páginas existentes:** revisar consultas, CTR, intención y enlazado para gatos hidráulicos (38 impresiones, posición media 8,37), comparativa PLA (37, 10,49), deshumidificadores (37, 11,70), llaves de impacto (32, 16,56) y guía de litros (17, 6,82), periodo 28/09-25/10/2026. Son medias de URL, no ranking de keyword. No hacer cambios sin SERP y tendencia.
 
@@ -253,6 +253,8 @@ La popularidad (nº de reseñas, ventas visibles) **no puntúa como calidad**: s
 - No usar etiquetas ni avisos negativos o defensivos repetidos ("No probado", "Basado en ficha y opiniones"). La metodología global (`/metodologia/`) explica cómo se investigan los productos.
 - Redacción natural, con criterio experto. Evitar fichas demasiado simétricas, conclusiones repetidas, estructuras mecánicas, lenguaje comercial copiado y afirmaciones absolutas sin soporte.
 - Ningún párrafo visible debe empezar con signos huérfanos (`:`, `-`, `·`); los primeros párrafos de las fichas son frases completas.
+- **Revisión editorial con `humanizer-sergi` (decisión 28/10/2026):** redactar para lectores, no como salida de una ficha técnica. Cada ficha habla del modelo propio, de su uso y limitaciones; las comparaciones directas entre productos van principalmente en la tabla o en apartados explícitos de comparación. Evitar repeticiones, frases defensivas y metacomentarios editoriales sobre cómo se verificaron datos o por qué se retiró información. Las fuentes se enlazan sin introducir notas obsoletas en el texto público. Mantener la trazabilidad de discrepancias y derivaciones técnicas en documentos internos.
+
 
 ## 8.4 Estructura de una comparativa
 
@@ -366,6 +368,8 @@ No usar el nombre del producto cuando el contexto ya sea inequívoco. Los CTA no
 - La página `404.html` utiliza también el footer global desde el 04/10/2026.
 - **Contenido dentro de `<main>`:** nada después de `</html>`; bloques como "Cómo analizamos" van dentro de `<main>`.
 - No compactar `hero-v5.css` ni `intro-v1.css` sin una regresión visual completa de toda la web.
+- **Cierre de navegación con tarjetas hero clicables (aprobación de estilo 28/10/2026):** el formato preparado en la comparativa de gatos de botella, PR #75, utiliza un párrafo breve seguido de dos tarjetas con sus propias imágenes hero; cada tarjeta entera funciona como enlace, sin botones separados. Presentación de dos columnas en escritorio y una en móvil. **Plan:** una vez publicada y validada esta página, revisar y extender el patrón al resto de páginas donde existan dos destinos internos relevantes; no crear tarjetas sin utilidad editorial ni afirmar que este cambio ya está aplicado a toda la web.
+
 
 ---
 
@@ -409,7 +413,8 @@ Contenido y SEO cerrados; hero específico; imagen de tarjeta si aparece en hub/
 |---|---|---|
 | General | `/`, `/sobre-nosotros/`, `/metodologia/`, `/aviso-legal/` | Inicio e institucionales |
 | Herramientas | `/herramientas/` | Hub |
-| | `/herramientas/gatos-hidraulicos/` y `/mejores-gatos-hidraulicos-para-coche/` | Guía y comparativa |
+| | `/herramientas/gatos-hidraulicos/` y `/mejores-gatos-hidraulicos-para-coche/` | Guía y comparativa de carretilla |
+| | `/herramientas/gatos-hidraulicos/mejores-gatos-hidraulicos-botella/` | Comparativa de gatos de botella 2–6 t (28/10/2026) |
 | | `/herramientas/taladros-a-bateria/` y `/mejores-taladros-a-bateria/` | Guía y comparativa |
 | | `/herramientas/llaves-de-impacto/` | Comparativa |
 | | `/herramientas/amoladoras-a-bateria/` | Comparativa |
@@ -423,6 +428,15 @@ Contenido y SEO cerrados; hero específico; imagen de tarjeta si aparece en hub/
 | | `/impresion-3d/accesorios-3d/` | Guía |
 
 Las ocho comparativas anteriores a PLA y la propia PLA comparten el sistema visual de las secciones 8 y 10. Diseño V1 está cerrado y publicado (auditoría responsive final: 88/88 comprobaciones sin incidencias antes del merge). La unificación incluyó breadcrumbs integrados sobre el hero, menús sin enlaces duplicados, footer único y recursos locales (sin CSS remoto ni imágenes de fondo con dominio absoluto).
+
+## 12.1.1 Gatos hidráulicos de botella · publicación aprobada (28/10/2026)
+
+- URL: `/herramientas/gatos-hidraulicos/mejores-gatos-hidraulicos-botella/`; PR #75 de `content/gatos-botella-20261028` a `main` (squash).
+- Seis modelos y ASIN verificados manualmente en Amazon.es por Sergio el 28/10/2026: Bahco BH4G2 `B0DS64V5V3`, KS Tools 160.0351 `B001NYWYBK`, Michelin 009559 `B0099R28RS`, KS Tools 160.0352 `B001NYVDKS`, SIXTOL SX1147 `B0CVBD954Z` y SIXTOL SX3080 Premium `B0DYTZ4Y5L`. Tracking `ccc-gatohid-21`.
+- Revisión con `humanizer-sergi`: textos centrados en el uso de cada modelo, sin notas editoriales defensivas en el HTML. Fotografías WebP individuales y hero contextual; la tabla muestra dimensiones, recorrido, tornillo y peso. Trazabilidad de cifras y discrepancias en `.github/content-drafts/gatos-botella-investigacion-20261028.md`.
+- Enlaces internos incorporados a la navegación global, el hub Herramientas, la guía de gatos hidráulicos y la comparativa de carretilla; nueva URL en sitemap. Menú global `submenuData` actualizado y versión JS actualizada en páginas actuales. Más enlaces contextuales se revisarán al humanizar otras páginas.
+- Cierre editorial: párrafo corto y dos tarjetas con sus respectivos heroes clicables que llevan a la guía y a la comparativa de carretilla. **Patrón aprobado** para extenderlo después, cuando exista una pareja de destinos internos pertinentes.
+- QA previo a publicación: `PR build` correcto, `Optimizar imágenes` correcto y auditoría responsive 108/108 correcta; aprobación visual y autorización expresa de publicación confirmadas por el usuario.
 
 ## 12.2 Comparativas antiguas (revisión técnica cerrada el 30/09/2026)
 
@@ -528,7 +542,7 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 ## Contenido
 
 - [ ] Continuar la keyword research del cluster Herramientas y validar por SERP las nuevas URLs antes de producirlas.
-- [ ] Ejecutar el primer bloque de expansión por intención diferenciada: `deshumidificadores para secar ropa` ya está publicada; por la señal de GSC del 23/10/2026 PLA vs TPU queda completada; siguiente orden: gatos de botella → taladros percutores a batería → deshumidificadores silenciosos/dormitorio. Validar cada URL por SERP antes de producirla.
+- [ ] Continuar el bloque de expansión por intención diferenciada: `deshumidificadores para secar ropa`, PLA vs TPU y gatos hidráulicos de botella completadas. Siguiente orden de estudio: taladros percutores a batería → deshumidificadores silenciosos/dormitorio. Validar cada nueva URL por SERP antes de producirla.
 - [ ] Investigar plataformas de herramientas/baterías 18 V (hub estratégico para elegir ecosistema de batería, no para duplicar comparativas existentes) y analizar el encaje arquitectónico de hidrolimpiadoras para coche.
 - [ ] Definir progresivamente las primeras 20-30 URLs de alta calidad. No crear variantes por simples keywords/modificadores si la intención ya queda cubierta por una URL existente.
 
