@@ -26,10 +26,10 @@ Capacidad, altura min/máx en mm, recorrido hidráulico, husillo (mm) y masa del
 |---|---:|---:|---:|---:|---:|---:|---|
 | Bahco BH4G2 | 2 t | 181 | 344 | 115 | 48 | 2,4 | Manual Bahco BH4G/BH4B |
 | KS Tools 160.0351 | 3 t | 194 | 372 | 118 | 60 | 2,8 | Ficha KS Tools actual |
-| Michelin 009559 | 3 t | 195 | 385 | 130† (calculado) | 60† (calculado) | ≈3,0 kg (Stock24); Norauto 3,4 kg; fabricante sin cifra neta confirmada | Extremos de manual Michelin + dato intermedio 325 mm aportado por usuario |
+| Michelin 009559 | 3 t | 195 | 385 | 130 | 60 | 3,0 | Altura intermedia 325 mm aportada por usuario y peso según Stock24 |
 | KS Tools 160.0352 | 5 t | 216 | 413 | 127 | 70 | 3,7 | Ficha KS Tools actual |
-| SIXTOL SX1147 | 6 t | 200 | 385 | N/D | 60 | 4,0 | Ficha SIXTOL oficial |
-| SIXTOL SX3080 Premium | 6 t | 215 | 435 | N/D | 60 | 4,15 | Ficha SIXTOL oficial |
+| SIXTOL SX1147 | 6 t | 200 | 385 | 125 | 60 | 4,0 | Datos de alturas y tornillo de ficha SIXTOL |
+| SIXTOL SX3080 Premium | 6 t | 215 | 435 | 160 | 60 | 4,15 | Datos de alturas y tornillo de ficha SIXTOL |
 
 Importante: peso del Bahco BH4G4 es 3,2 kg en manual pero 2,9 kg en ficha web, por eso no se ha elegido como principal. KS Tools catálogo de 2015 indica masas superiores a fichas actuales: usar ficha vigente, no sumar embalaje. Michelin 009559: Stock24 identifica 3 kg de peso de producto (https://stock24.es/product/michelin-9559-gato-botella-bleu-michelin/); Norauto indica 3,4 kg (https://www.norauto.fr/p/cric-bouteille-michelin-3t-2860628.html). Mantener ≈3 kg con asterisco de fuente y discrepancia. Recorrido total: 385 − 195 = 190 mm. Dato aportado: 325 mm sin desenroscar. Carrera hidráulica calculada: 325 − 195 = 130 mm; extensión roscada calculada: 385 − 325 = 60 mm. † No constan como desglose verificado por fabricante: si se publican, etiquetar como calculados a partir de altura intermedia informada por usuario.
 
@@ -80,3 +80,5 @@ Enlaces finales solo tras revisión del usuario, formato https://www.amazon.es/d
 - Al integrar HTML real: actualizar menú desktop de todas las páginas, submenuData JS, versión de cache, breadcrumb, sitemap, imágenes exactas individuales aportadas por usuario, hero propio, OG, Article/BreadcrumbList/FAQPage visible, controles site-audit y responsive-audit; check build verde.
 - Workflow: rama → PR → check build → previsualización y aprobación del usuario → squash merge → main; actualizar MASTER tras publicación (no actualizarlo prematuramente).
 - NO PUBLICAR HASTA contar con seis imágenes exactas, validación manual de los seis ASIN/variantes y aprobación visual explícita.
+
+**Trazabilidad interna, excluida del texto web:** SIXTOL declara las alturas mínima y máxima y la longitud del tornillo, pero no separa la carrera hidráulica. Si la altura final incluye la extensión del tornillo, los recorridos son SX1147: 385 - 200 - 60 = 125 mm y SX3080: 435 - 215 - 60 = 160 mm. El usuario pidió esos valores sin etiquetas de cálculo en la presentación pública. Para Michelin, 325 - 195 = 130 mm y 385 - 325 = 60 mm. En la comparativa se usan 3 kg según Stock24 por decisión editorial del usuario; Norauto indica 3,4 kg y esta discrepancia queda registrada en la investigación.
