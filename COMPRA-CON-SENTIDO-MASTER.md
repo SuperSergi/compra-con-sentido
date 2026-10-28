@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 28/10/2026 17:30
+**Última actualización:** 28/10/2026 18:02
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -242,7 +242,7 @@ Se trabaja en dos capas:
 - **Datos objetivos:** fabricante, manual, ficha técnica, variante exacta, accesorios, compatibilidades, contenido del paquete, seguridad y magnitudes **solo cuando sean comparables**.
 - **Uso real:** opiniones verificables de propietarios y profesionales, pruebas independientes, análisis especializados, foros técnicos cuando aporten casos concretos, reseñas de retailers fiables y vídeos prácticos.
 
-Reglas de uso real: buscar el modelo exacto sin extrapolar de otra variante; buscar experiencias positivas y negativas; identificar patrones repetidos y distinguir incidencias aisladas de problemas recurrentes; dar más peso a experiencias detalladas; no convertir percepciones subjetivas en datos técnicos; contrastar afirmaciones importantes con más de una fuente; si la base es insuficiente, no inventar conclusiones ni usar esa característica como argumento de compra. La capa de uso real enriquece **toda la ficha**, no solo los bloques finales.
+Reglas de uso real: buscar el modelo exacto sin extrapolar de otra variante; buscar experiencias positivas y negativas; identificar patrones repetidos y distinguir incidencias aisladas de problemas recurrentes; dar más peso a experiencias detalladas; no convertir percepciones subjetivas en datos técnicos; contrastar afirmaciones importantes con más de una fuente; si la base es insuficiente, no inventar conclusiones ni usar esa característica como argumento de compra. La capa de uso real enriquece **toda la ficha**, no solo los bloques finales. Cada opinión o prueba de terceros citada públicamente necesita una fuente concreta enlazada y atribución al modelo exacto; si no se puede documentar, retirar el juicio. No sustituirlo por una experiencia propia supuesta.
 
 La popularidad (nº de reseñas, ventas visibles) **no puntúa como calidad**: solo informa de la cantidad de experiencia acumulada y de la confianza de la valoración.
 
@@ -420,7 +420,7 @@ Contenido y SEO cerrados; hero específico; imagen de tarjeta si aparece en hub/
 
 ## 11.5 Segundo lote de humanización y enlazado interno · PR #77 (28/10/2026)
 
-**Estado:** en revisión, rama `editorial/humanizar-siguiente-10-20261028`, PR #77 en borrador; no fusionada con `main`. El usuario solicitó aplicar íntegramente los criterios de la primera y segunda pasada del lote anterior.
+**Estado:** PR #77 fusionada en main mediante squash `5410fdb5`. El usuario solicitó aplicar íntegramente los criterios de la primera y segunda pasada del lote anterior. La auditoría consolidada posterior identifica correcciones de contenido que se preparan en el lote B.
 
 **Alcance (10 URLs existentes):**
 - Aspiradoras: guía de aspiradoras y comparativa de robots aspiradores.
@@ -429,7 +429,7 @@ Contenido y SEO cerrados; hero específico; imagen de tarjeta si aparece en hub/
 
 **Trabajo:** humanización de introducciones, perfiles y fichas, especialmente seis robots y seis impresoras; retirada de «Cómo analizamos», «En uso real», selección por puntuación y bloques de metodología redundantes. Enlace interno con 20 tarjetas hero usando `css/related-heroes-v1.css` y los heroes ya existentes, dos por página. Se preservan comparativas, productos, información técnica, datos estructurados y enlaces Amazon. Actualizados `dateModified`, las fechas visibles donde existen y el `lastmod` de las diez URLs. Corregido un cierre `</section>` sobrante previo en PLA vs TPU.
 
-**Control:** revisión estructural local del HTML y JSON-LD: diez H1 únicos, tablas y enlaces comerciales conservados, imágenes enlazadas a destinos existentes y sin restos de los textos editoriales señalados. Pendientes checks automáticos finales y aprobación visual/editorial del lote por Sergio. No fusionar sin aprobación explícita.
+**Control:** revisión estructural local del HTML y JSON-LD: diez H1 únicos, tablas y enlaces comerciales conservados, imágenes enlazadas a destinos existentes y sin restos de los textos editoriales señalados. La publicación de esta tanda se cerró; las nuevas correcciones de la auditoría consolidada se revisan en su propia PR.
 
 ---
 
@@ -500,7 +500,7 @@ Productos y ASIN: Bosch GKS 18V-57-2 GX (`06016C1001`, con L-BOXX, sin batería)
 
 Tres elecciones: cortes guiados y precisos → Bosch; uso general compacto → Makita; empezar desde cero con batería y cargador → WORX.
 
-Cautelas: Einhell 44 mm a 45° (el 41 mm del copy es una inconsistencia); Makita con carril mediante adaptador `196953-0`, no compatibilidad directa; WORX bisel 50° y nomenclatura PowerShare "20 V Max" explicada, no escrita como "18 V" sin contexto; Bosch Stop Control no es un "freno eléctrico"; DeWalt sin compatibilidad dedicada con carril. Reservas: Ryobi R18CS-0 (inconsistencia de denominación en Amazon), Milwaukee M18 FCS552-0 (ficha/ASIN no confirmados), HiKOKI C1806DA.
+Cautelas: Einhell 44 mm a 45° ya aparece en la ficha y tabla; la nota interna de discrepancia se retira del contenido en el lote B; Makita con carril mediante adaptador `196953-0`, no compatibilidad directa; WORX bisel 50° y nomenclatura PowerShare "20 V Max" explicada, no escrita como "18 V" sin contexto; Bosch Stop Control no es un "freno eléctrico"; DeWalt sin compatibilidad dedicada con carril. Reservas: Ryobi R18CS-0 (inconsistencia de denominación en Amazon), Milwaukee M18 FCS552-0 (ficha/ASIN no confirmados), HiKOKI C1806DA.
 
 ## 12.6 Mejores filamentos PLA · cerrada y publicada (04/10/2026)
 
@@ -521,13 +521,13 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 
 **Criterio AMS:** referencia Bambu Lab para AMS/AMS 2 Pro: ancho 50-68 mm, diámetro 197-202 mm, bobina plástica recomendada y adaptador para cartón. ✅ uso directo; ⚠️ compatible con precauciones; ❌ no compatible directamente. El símbolo se asigna a la bobina exacta de la referencia, no a la marca. En la tabla va el símbolo con etiqueta visible y leyenda; la explicación concreta va en la ficha.
 
-**Columnas de la tabla:** Modelo · Tipo · Tolerancia · Boquilla · Velocidad fabricante · AMS · Mejor para · Valoración técnica · CTA. Sin columna de peso ni de precio. Tolerancia solo con dato oficial (Winkle: `No declarada` hasta tener fuente primaria; los distribuidores discrepan entre ±0,02 y ±0,03 mm). Velocidad solo si el fabricante la publica (ELEGOO: 30-70 mm/s); si no se puede verificar, `—`. La velocidad es siempre una declaración del fabricante: 600 mm/s de SUNLU es un máximo declarado, no un rendimiento garantizado.
+**Columnas de la tabla:** Modelo · Tipo · Tolerancia · Temperatura de boquilla · Velocidad fabricante · AMS · Mejor para · CTA. El nombre completo de temperatura está preparado en el lote B. Sin columna de peso ni de precio. Tolerancia solo con dato oficial (Winkle: `No declarada` hasta tener fuente primaria; los distribuidores discrepan entre ±0,02 y ±0,03 mm). Velocidad solo si el fabricante la publica (ELEGOO: 30-70 mm/s); si no se puede verificar, `—`. La velocidad es siempre una declaración del fabricante: 600 mm/s de SUNLU es un máximo declarado, no un rendimiento garantizado.
 
-**Valoración técnica:** sustituye a la antigua nota de calidad-precio y **no incluye precio**. Componentes: calidad y acabado, fiabilidad y experiencia real, facilidad y prestaciones para el uso objetivo. Cada ficha muestra una barra HTML/CSS por componente (sin librerías ni JavaScript) y la nota con un decimal. Se explica una sola vez, en un bloque discreto al final de la página con enlace a `/metodologia/`. No hay estrellas. Es una valoración editorial, no un ensayo propio: no afirmar que se han probado físicamente. Se mantiene internamente una señal de confianza (Alta / Media-Alta) según volumen y calidad de la evidencia: Alta para ELEGOO, eSUN y OVERTURE; Media-Alta para SUNLU (feedback más polarizado), JAYO (variantes históricas de bobina) y Winkle (muestra menor pero muy favorable). Notas de trabajo v2 (calidad / fiabilidad / facilidad / prestaciones): JAYO 7,8 / 7,4 / 8,1 / 7,5; OVERTURE 8,5 / 8,2 / 8,0 / 8,6; ELEGOO 8,2 / 8,2 / 8,9 / 7,5; eSUN 8,4 / 8,4 / 8,3 / 8,5; SUNLU 8,4 / 7,6 / 7,9 / 9,4; Winkle 8,7 / 8,6 / 8,3 / 8,0. La fuente de las cifras publicadas es la página, no esta tabla.
+**Valoración técnica:** las puntuaciones y barras descritas en versiones anteriores del MASTER ya no aparecen en main. No restaurarlas ni aludir a una nota de fiabilidad inexistente. El lote B retira esas referencias residuales y los juicios de opiniones sin fuente; las decisiones de compra se apoyan en las prestaciones y límites explicados. El histórico de notas se conserva en Git, sin presentarlo como ensayo propio ni valoración pública vigente.
 
-**Packs:** la tabla compara siempre una bobina individual. En cada ficha, el bloque "Si compras más cantidad" explica de forma cualitativa cuándo compensa un pack (sin importes ni cupones) y los botones de pack son secundarios. JAYO es el caso donde la unidad puede salir mejor por kilo que sus packs.
+**Packs:** la tabla compara siempre una bobina individual. En cada ficha, el bloque "Si compras más cantidad" explica de forma cualitativa cuándo compensa un pack (sin importes ni cupones) y los botones de pack son secundarios. No afirmar que un pack o una bobina es más barato por kilo sin un dato actual mantenido. El lote B sustituye conclusiones históricas de precio por comprobación de formato, peso total y precio actual.
 
-**Orden de ficha PLA:** el canónico de la sección 8.7 con "Nuestra valoración" y "Si compras más cantidad" antes del CTA. El orden visual se fija con `order` CSS (los bloques PLA personalizados deben llevarlo asignado). Hero con una sola capa verde (se neutraliza `.ccs-hero::before` en esta página para no tapar la imagen).
+**Orden de ficha PLA:** el canónico de la sección 8.7 con "Si compras más cantidad" antes del CTA, sin bloque de puntuación actualmente publicado. El orden visual se fija con `order` CSS (los bloques PLA personalizados deben llevarlo asignado). Hero con una sola capa verde (se neutraliza `.ccs-hero::before` en esta página para no tapar la imagen).
 **Ajuste visual 04/10/2026:** la comparativa PLA carga `comparison-opening-v1.css?v=20261004-2`, igual que las otras comparativas. Se cerró así la incidencia de caché por la que los CTA de las tres elecciones podían verse como simples enlaces en producción. Verificado visualmente por el usuario tras el despliegue.
 
 ---
@@ -553,13 +553,31 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 ## Auditoría consolidada: decisiones aprobadas el 28/10/2026
 
 - Base revisada: 27 URLs en sitemap y 49 imágenes sin alguna dimensión declarada. Aceptadas las correcciones P1 y P2 del plan consolidado.
-- Literal de decisión aprobado: «Encaja si…» (§8.7). Su aplicación a las fichas queda para el lote editorial.
+- Literal de decisión aprobado: «Encaja si…» (§8.7). Aplicado a las once comparativas en la rama del lote B; pendiente revisión y publicación de esa PR.
 - Tipografía aprobada: pila de sistema común. Nombres aprobados: «Sobre nosotros» y «Aviso legal, privacidad y afiliación»; el bloque selectivo del footer se llamará «Guías destacadas». Aplicación pendiente en sus lotes, sin cambios de URL.
 - Se mantienen el CTA compacto de tabla de §9.3 y el desplazamiento de la tabla completa sin columna fija. Autoría personal, revisión legal y rediseño de portada se tratan aparte.
 - Una PR por lote, siempre contra main. Tras publicar, entregar textos y archivos concretos que comprobar en producción.
 - El usuario autoriza corregir ya el enlace de «Cuántos litros» y sustituir la imagen defectuosa de Cecotec por la imagen existente del mismo modelo/ASIN usada en «Secar ropa». Se añade la leyenda «–: no declarado en la ficha española» bajo la tabla de amoladoras, sin atribuir ni negar AFT a Makita.
-- Lote A preparado: enlace absoluto correcto, sustitución de la referencia de Cecotec y leyenda de amoladoras; el auditor del build comprueba referencias internas y anclas en las 27 páginas y 404. Pendientes checks remotos, merge y comprobación de producción.
-- Antes del lote de imágenes y rendimiento (srcset, dimensiones, precargas o fotos de amoladoras/llaves), esperar las mediciones iniciales del usuario en portada, amoladoras y gatos para coche. Esta espera no afecta a la sustitución puntual del Cecotec.
+- **Lote A cerrado:** PR #83 fusionada contra main mediante squash `e995b626908534fc218bed6f2bd1e8b415018e47`. Build, optimización y Cloudflare correctos; responsive 108/108. Enlace de litros, Cecotec y leyenda de amoladoras comprobados en producción por el usuario el 28/10/2026.
+- Antes del lote de imágenes y rendimiento (srcset, dimensiones, precargas o fotos de amoladoras/llaves), esperar los datos de LCP/CLS de PageSpeed que aporta Sergi. Los pesos iniciales ya están registrados abajo. La sustitución puntual del Cecotec está cerrada.
+
+### Lote B de contenido en preparación
+
+Rama `editorial/auditoria-lote-b`, basada en main tras #83. El usuario autoriza preparar el contenido; no se fusiona ni publica todavía. Incluye «Encaja si…», retirada de atribuciones de opiniones/pruebas sin fuente, notas internas y ASIN visibles de amoladoras, perfiles sin numeración, limpieza de precio en taladros/PLA, coherencia de FAQ y metadatos, y enlaces primarios junto a afirmaciones verificadas. Se conserva la leyenda y la incertidumbre técnica de Makita.
+
+Las imágenes, dimensiones, srcset, CSS, tipografía, precargas y JavaScript no se modifican en este lote. Los nombres globales de navegación se aplicarán en el lote correspondiente. La revisión de autoría, obligaciones legales y portada sigue separada.
+
+Pendientes técnicos: correspondencia ASIN/referencia y Wi-Fi de Midea; comparación acústica con condiciones homogéneas; base de peso de sierras; verificación completa de las variantes de gatos, taladros, PLA y Lefant. La vinculación De'Longhi de la guía de litros se concreta como DDSX220WFA y 21 L/24 h a 32 °C/80 % HR según la hoja técnica enlazada; la discrepancia con otros materiales comerciales de 30 °C se conserva como cautela interna. No se trasladan rangos ni prestaciones de otra variante por inferencia.
+
+### Referencia inicial móvil aportada por el usuario (28/10/2026)
+
+| Página | Primera pantalla | Página completa |
+| --- | ---: | ---: |
+| Portada | 224 KB | 1.666 KB |
+| Amoladoras | 156 KB | 753 KB |
+| Gatos para coche | 124 KB | 1.537 KB |
+
+HTML, CSS y JS: entre 24 y 36 KB según página. El usuario observa 0 saltos de diseño en las tres. Esto no sustituye una medición CLS de PageSpeed. LCP/CLS de PageSpeed pendientes de Sergi desde su navegador. No constan aún dispositivo, caché o condiciones de red; comparar antes/después con las mismas condiciones. Registro detallado en `.github/measurement/mobile-baseline-20261028.md`.
 
 ## Pendientes inmediatos
 
@@ -602,7 +620,7 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 
 ## Publicación editorial y UX del 28/10/2026
 
-- **Publicadas y fusionadas en `main` con autorización expresa del usuario:** PR #77 (10 páginas humanizadas, squash `5410fdb5`), PR #78 (últimas páginas y bibliotecas visuales de categorías, squash `da91a1f`) y PR #79 (FAQ, guías y coherencia UX, squash `dd99eef`). Este bloque sustituye el estado de borrador previo de esas PR. No hay nuevas URLs por esta fase.
+- **Estado de integración comprobado:** PR #77 llegó a main mediante squash `5410fdb5`. Las fusiones iniciales de #78 y #79 fueron a ramas intermedias; sus cambios llegaron efectivamente a main mediante la PR correctiva #82 (`43db213ae468db21896ab3b88553d4b44616afc8`). No equiparar fusión de una PR con publicación en producción. No hubo nuevas URLs por esta fase.
 - Patrón visual final de FAQ: título «Preguntas frecuentes» independiente de la caja contenedora, preguntas individuales en `<details>/<summary>`, CSS compartido `css/faq-standard-v1.css`. Se ha retirado la tarjeta envolvente en la actualización final de PR #79.
 - Pruebas de PR #79: 108/108 controles responsive automatizados correctos en 27 páginas y cuatro viewports (360, 390, 768, 1440 px) para el commit funcional `575d599`; cambios posteriores en CSS y documentación se integraron en la misma PR. En la revisión de `main` posterior a las tres fusiones se confirmaron los checks `build` y `Cloudflare Pages` satisfactorios. No equiparar esta auditoría automática a una revisión visual humana exhaustiva.
 - **Revisión posterior en producción pendiente del usuario.** Se prevé contrastar la web con un informe de otra IA y abrir nuevas PR para correcciones detectadas. Mantener como tareas separadas las imágenes intermedias, la profundidad de fichas de llaves de impacto y la revisión editorial de deshumidificadores.
