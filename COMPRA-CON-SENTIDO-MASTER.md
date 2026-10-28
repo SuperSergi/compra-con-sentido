@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 28/10/2026 19:25
+**Última actualización:** 28/10/2026
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -679,3 +679,20 @@ Lote D integrado por autorización del usuario, PR #85. Commit de main aa51c5985
 El lote C queda aparcado por decisión de Sergi. Las imágenes actuales son provisionales hasta disponer del acceso a la API de Amazon, que el usuario prevé desbloquear tras diez ventas. No sustituir imágenes ahora. Cuando la API esté disponible, sustituir todas las imágenes de producto por las oficiales obtenidas de Amazon y retirar la etiqueta «Imagen ilustrativa» de cada imagen sustituida. Antes de implementar esa integración se comprobarán el acceso y las condiciones técnicas vigentes; no se implementa la API en este lote.
 
 Lote E: etiqueta «Imagen ilustrativa» en las seis llaves y las escenas ambiente activas de gatos para coche, taladros, robots y deshumidificadores, usando el componente de nota ya existente. Las amoladoras conservan su etiqueta. Sin cambios de archivos ni URLs de imágenes. Se aplican los nombres aprobados «Sobre nosotros», «Aviso legal, privacidad y afiliación» y «Guías destacadas» en el pie, manteniendo destinos. Retirados los restos editoriales enumerados y la primera persona singular de la guía de amoladoras. El peso 2,95 kg mantiene su cifra sin añadir una base de medición no verificada. Autoría, parte legal y rediseño de portada siguen aparte.
+
+
+## Cierre D/E y preparación D2 (28/10/2026)
+
+D y E cerrados por Sergi tras comprobar producción y repetir PageSpeed móvil. D: PR #85, aa51c59. E: PR #86, 7508613. Todos los controles correctos. SEO 100 y accesibilidad 100 en las tres páginas de referencia; rendimiento 98/99/99 y LCP 1,1 s. CSS bloqueante 420/550/420 ms; Speed Index 3,8/3,7/3,7 s. Detalle y cautelas en .github/measurement/mobile-post-de-20261028.md. No constan nuevos CLS ni TBT.
+
+D2 se prepara en PR en borrador, sin publicar. Alcance:
+
+- main-v4.js con defer en los 28 HTML, sin cambiar el contenido de JS. Menú, banner, persistencia de consentimiento y amazon_click verificados con producción simulada, eventos interceptados y previews sin analítica. Auditoría funcional en .github/scripts/interactions-audit.mjs, ejecutada por CI. No se envían eventos reales en las pruebas.
+- Una hoja CSS minificada por página, incluida la 404. Se incorpora style-v4.css y se conserva el orden de las reglas. Los antiguos bloques style se extraen a css/pages/; esas hojas son fuentes editables. Se sustituye la separación en base y bundles del lote D. css/compiled/ es generado; .github/css-bundles.json registra el orden de fuentes de cada salida. No editar las salidas a mano.
+- Instalar .github/requirements-css.txt y ejecutar build-css.py tras cambiar fuentes o referencias. --check en CI verifica la reproducibilidad. Minificación sintáctica con rcssmin 1.2.2, sin eliminar reglas ni cambiar su orden. Una hoja por página implica que el CSS base deja de tener caché independiente al navegar; comprobar el resultado real antes de publicar.
+- Solo portada: variantes WebP de 400 y 800 px con srcset y sizes para categoria-sierras-circulares-a-bateria, categoria-hogar, categoria-impresion-3d, categoria-herramientas y guia-impresoras-3d. Se conservan originales, encuadre y contenido; no se modifican imágenes de producto. El recurso de mayor resolución anunciado en estas cinco tarjetas es 800 px.
+- Texto de portada simplificado y retirada la explicación de GitHub/Cloudflare en el apartado de privacidad del aviso legal. No se cambian tratamientos de datos ni los restantes apartados legales.
+
+Lote C sigue aparcado: fotos de producto provisionales hasta disponer de API de Amazon. Sustituir por las oficiales obtenidas mediante esa API y retirar las etiquetas de las imágenes sustituidas cuando se implemente. Sin cambios de fotos de producto en D2.
+
+Validación de D2: .github/measurement/lote-d2-validation-20261028.md. 112/112 comparaciones de cascada iguales y 108/108 comprobaciones responsive locales correctas. Pendiente revisión del borrador y medición tras una futura publicación.

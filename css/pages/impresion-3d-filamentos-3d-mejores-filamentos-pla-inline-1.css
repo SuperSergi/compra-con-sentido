@@ -1,0 +1,26 @@
+.pla-shell{width:min(1160px,calc(100% - 32px));margin-inline:auto}
+    .ccs-comparison-v3 .ccs-hero{
+      --ccs-hero-image:url('/images/filamentos-pla/hero-mejores-filamentos-pla-v2.webp');
+      background:
+        linear-gradient(90deg,rgba(6,61,38,.88) 0%,rgba(6,61,38,.72) 38%,rgba(6,61,38,.34) 67%,rgba(6,61,38,.12) 100%),
+        var(--ccs-hero-image) 50% 50%/cover no-repeat!important;
+    }
+    .ccs-comparison-v3 .ccs-hero::before{background:transparent!important}
+    .pla-section{padding:64px 0 0}
+    .pla-section h2{margin:0 0 14px;color:#26382e;font-size:clamp(28px,4vw,40px)}
+    .pla-section>p,.pla-copy{color:#4d5a53;line-height:1.7}
+    .pla-table-note,.pla-fineprint{font-size:13px;color:#657269;line-height:1.6}
+    .pla-pack{margin-top:18px;padding:18px 20px;border-radius:14px;background:#f2f8f4;color:#355243;line-height:1.65}
+    .pla-pack strong{color:#063d26}
+    .ccs-product-content>.pla-pack{order:76}
+    .ccs-product-content>.pla-cta-row{order:80}
+    .pla-cta-row{display:flex!important;flex-wrap:wrap!important;justify-content:flex-start!important;gap:10px!important;margin-top:18px!important}
+    .pla-cta-row .amazon-btn{width:auto!important;margin:0!important;background:linear-gradient(180deg,#ffd814,#f7ca00)!important;border:1px solid #d5a900!important;color:#18120a!important;box-shadow:0 5px 12px rgba(0,0,0,.10)!important}
+    .pla-cta-row .amazon-btn:hover{transform:translateY(-2px);box-shadow:0 9px 20px rgba(0,0,0,.15)!important}
+    .pla-faq details{border-bottom:1px solid #e1e8e4;padding:16px 0}
+    .pla-faq summary{cursor:pointer;font-weight:800;color:#26382e}
+    .pla-faq details p{color:#4d5a53;line-height:1.7}
+    @media(max-width:680px){
+      .pla-shell{width:min(100% - 24px,1160px)}
+      .pla-cta-row .amazon-btn{width:100%!important}
+    }

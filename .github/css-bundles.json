@@ -1,16 +1,26 @@
 {
-  "version": 1,
+  "version": 2,
+  "minifier": "rcssmin==1.2.2",
   "bundles": {
-    "ccs-06c3f73f57fe": {
+    "ccs-f0743a4d1d6e": {
       "sources": [
+        "css/style-v4.css",
+        "css/pages/404-inline-1.css"
+      ],
+      "output": "css/compiled/ccs-f0743a4d1d6e-d12889cc0462.min.css"
+    },
+    "ccs-1cd902b49d35": {
+      "sources": [
+        "css/style-v4.css",
         "css/legal.css",
         "css/hero-v5.css",
         "css/intro-v1.css"
       ],
-      "output": "css/compiled/ccs-06c3f73f57fe-f4a177236e44.css"
+      "output": "css/compiled/ccs-1cd902b49d35-72322fff614f.min.css"
     },
-    "ccs-d285423c873d": {
+    "ccs-4493ae2084f8": {
       "sources": [
+        "css/style-v4.css",
         "css/amoladoras-bateria.css",
         "css/comparativas-v3.css",
         "css/hero-v5.css",
@@ -21,44 +31,61 @@
         "css/faq-standard-v1.css",
         "css/guide-consistency-v1.css"
       ],
-      "output": "css/compiled/ccs-d285423c873d-af14fc9e93a5.css"
+      "output": "css/compiled/ccs-4493ae2084f8-6f407b19dcef.min.css"
     },
-    "ccs-967ef3a1c1db": {
+    "ccs-659d3badae47": {
       "sources": [
+        "css/style-v4.css",
+        "css/pages/herramientas-gatos-hidraulicos-inline-1.css",
         "css/hero-v5.css",
         "css/intro-v1.css",
         "css/related-heroes-v1.css"
       ],
-      "output": "css/compiled/ccs-967ef3a1c1db-4023f54d74ff.css"
+      "output": "css/compiled/ccs-659d3badae47-a823522a9638.min.css"
     },
-    "ccs-b1951a3eb5e8": {
+    "ccs-cfc83b873b49": {
       "sources": [
+        "css/style-v4.css",
+        "css/pages/herramientas-gatos-hidraulicos-mejores-gatos-hidraulicos-botella-inline-1.css",
         "css/comparativas-v3.css",
         "css/hero-v5.css",
         "css/product-cards-v1.css",
         "css/intro-v1.css",
-        "css/comparison-opening-v1.css"
+        "css/comparison-opening-v1.css",
+        "css/pages/herramientas-gatos-hidraulicos-mejores-gatos-hidraulicos-botella-inline-2.css",
+        "css/pages/herramientas-gatos-hidraulicos-mejores-gatos-hidraulicos-botella-inline-3.css",
+        "css/faq-standard-v1.css"
       ],
-      "output": "css/compiled/ccs-b1951a3eb5e8-45aab05d3398.css"
+      "output": "css/compiled/ccs-cfc83b873b49-4f2df3f31bf9.min.css"
     },
-    "ccs-b5be30402389": {
+    "ccs-9e007c87fe61": {
       "sources": [
+        "css/style-v4.css",
+        "css/pages/herramientas-gatos-hidraulicos-mejores-gatos-hidraulicos-para-coche-inline-1.css",
+        "css/comparativas-v3.css",
+        "css/hero-v5.css",
+        "css/product-cards-v1.css",
+        "css/intro-v1.css",
+        "css/comparison-opening-v1.css",
+        "css/pages/herramientas-gatos-hidraulicos-mejores-gatos-hidraulicos-para-coche-inline-2.css",
         "css/related-heroes-v1.css",
         "css/faq-standard-v1.css"
       ],
-      "output": "css/compiled/ccs-b5be30402389-a952b2d3c3ec.css"
+      "output": "css/compiled/ccs-9e007c87fe61-a00b8236a61b.min.css"
     },
-    "ccs-16ac3ddfaa91": {
+    "ccs-d295502d7ad4": {
       "sources": [
+        "css/style-v4.css",
         "css/herramientas.css",
         "css/hero-v5.css",
         "css/intro-v1.css",
         "css/category-library-v1.css"
       ],
-      "output": "css/compiled/ccs-16ac3ddfaa91-b7b944d69fe6.css"
+      "output": "css/compiled/ccs-d295502d7ad4-008a10db2519.min.css"
     },
-    "ccs-fcd597550ca4": {
+    "ccs-40e084268851": {
       "sources": [
+        "css/style-v4.css",
         "css/llaves-impacto.css",
         "css/comparativas-v3.css",
         "css/hero-v5.css",
@@ -68,10 +95,11 @@
         "css/related-heroes-v1.css",
         "css/faq-standard-v1.css"
       ],
-      "output": "css/compiled/ccs-fcd597550ca4-e1eb7540b204.css"
+      "output": "css/compiled/ccs-40e084268851-a756c076f031.min.css"
     },
-    "ccs-f45aa3198058": {
+    "ccs-94756d4ceced": {
       "sources": [
+        "css/style-v4.css",
         "css/hero-v5.css",
         "css/intro-v1.css",
         "css/comparison-opening-v1.css",
@@ -82,19 +110,22 @@
         "css/faq-standard-v1.css",
         "css/guide-consistency-v1.css"
       ],
-      "output": "css/compiled/ccs-f45aa3198058-c5f9f0275d40.css"
+      "output": "css/compiled/ccs-94756d4ceced-927ae3c5e772.min.css"
     },
-    "ccs-0e7da31fb70b": {
+    "ccs-72e2e27c4ca0": {
       "sources": [
+        "css/style-v4.css",
         "css/taladros.css",
         "css/hero-v5.css",
         "css/intro-v1.css",
         "css/related-heroes-v1.css"
       ],
-      "output": "css/compiled/ccs-0e7da31fb70b-882dc1902b12.css"
+      "output": "css/compiled/ccs-72e2e27c4ca0-e966c2a97bfe.min.css"
     },
-    "ccs-182cace8d04f": {
+    "ccs-60ee14a4aedd": {
       "sources": [
+        "css/style-v4.css",
+        "css/pages/herramientas-taladros-a-bateria-mejores-taladros-a-bateria-inline-1.css",
         "css/comparativas-v3.css",
         "css/hero-v5.css",
         "css/product-cards-v1.css",
@@ -103,19 +134,21 @@
         "css/related-heroes-v1.css",
         "css/faq-standard-v1.css"
       ],
-      "output": "css/compiled/ccs-182cace8d04f-0c0f382cf1c3.css"
+      "output": "css/compiled/ccs-60ee14a4aedd-bd4724928b73.min.css"
     },
-    "ccs-0f02f923d900": {
+    "ccs-6576d419cd6c": {
       "sources": [
+        "css/style-v4.css",
         "css/aspiradoras.css",
         "css/hero-v5.css",
         "css/intro-v1.css",
         "css/related-heroes-v1.css"
       ],
-      "output": "css/compiled/ccs-0f02f923d900-ee63b7070913.css"
+      "output": "css/compiled/ccs-6576d419cd6c-ea73cdf65cd8.min.css"
     },
-    "ccs-6a0eb9497ca4": {
+    "ccs-40915a416234": {
       "sources": [
+        "css/style-v4.css",
         "css/robots-aspiradores.css",
         "css/comparativas-v3.css",
         "css/hero-v5.css",
@@ -125,18 +158,23 @@
         "css/related-heroes-v1.css",
         "css/faq-standard-v1.css"
       ],
-      "output": "css/compiled/ccs-6a0eb9497ca4-9c5a974a5774.css"
+      "output": "css/compiled/ccs-40915a416234-b32feecf4af4.min.css"
     },
-    "ccs-ea0bddc6066b": {
+    "ccs-496d7783b820": {
       "sources": [
+        "css/style-v4.css",
         "css/deshumidificador-capacidad.css",
         "css/hero-v5.css",
-        "css/intro-v1.css"
+        "css/intro-v1.css",
+        "css/pages/hogar-deshumidificadores-cuantos-litros-deshumidificador-metros-cuadrados-inline-1.css",
+        "css/related-heroes-v1.css",
+        "css/faq-standard-v1.css"
       ],
-      "output": "css/compiled/ccs-ea0bddc6066b-57ed95964a6f.css"
+      "output": "css/compiled/ccs-496d7783b820-5b5ba62199ed.min.css"
     },
-    "ccs-242c44178772": {
+    "ccs-68438ce88798": {
       "sources": [
+        "css/style-v4.css",
         "css/comparativa-deshumidificadores.css",
         "css/comparativas-v3.css",
         "css/hero-v5.css",
@@ -146,20 +184,22 @@
         "css/related-heroes-v1.css",
         "css/faq-standard-v1.css"
       ],
-      "output": "css/compiled/ccs-242c44178772-5589142bca27.css"
+      "output": "css/compiled/ccs-68438ce88798-5283fbdc3fcb.min.css"
     },
-    "ccs-9584529e160d": {
+    "ccs-30e9a3a7656b": {
       "sources": [
+        "css/style-v4.css",
         "css/deshumidificadores.css",
         "css/hero-v5.css",
         "css/intro-v1.css",
         "css/related-heroes-v1.css",
         "css/faq-standard-v1.css"
       ],
-      "output": "css/compiled/ccs-9584529e160d-73b3daeae450.css"
+      "output": "css/compiled/ccs-30e9a3a7656b-570a48b8ab5e.min.css"
     },
-    "ccs-210e4bef3294": {
+    "ccs-cee5ebdc110e": {
       "sources": [
+        "css/style-v4.css",
         "css/comparativa-deshumidificadores.css",
         "css/comparativas-v3.css",
         "css/hero-v5.css",
@@ -169,49 +209,124 @@
         "css/related-heroes-v1.css",
         "css/guide-consistency-v1.css"
       ],
-      "output": "css/compiled/ccs-210e4bef3294-d966866dc059.css"
+      "output": "css/compiled/ccs-cee5ebdc110e-8b328ccdd5c2.min.css"
     },
-    "ccs-cc550ded71c3": {
+    "ccs-57bc9db399d7": {
       "sources": [
+        "css/style-v4.css",
         "css/hogar.css",
         "css/hero-v5.css",
         "css/intro-v1.css",
         "css/category-library-v1.css"
       ],
-      "output": "css/compiled/ccs-cc550ded71c3-74d16d12900e.css"
+      "output": "css/compiled/ccs-57bc9db399d7-1eadc716552d.min.css"
     },
-    "ccs-17a009de8fc4": {
+    "ccs-bde8e9ed552a": {
       "sources": [
+        "css/style-v4.css",
+        "css/pages/impresion-3d-accesorios-3d-inline-1.css",
+        "css/hero-v5.css",
+        "css/intro-v1.css",
+        "css/related-heroes-v1.css"
+      ],
+      "output": "css/compiled/ccs-bde8e9ed552a-a68579459e26.min.css"
+    },
+    "ccs-6d25168b634f": {
+      "sources": [
+        "css/style-v4.css",
+        "css/pages/impresion-3d-filamentos-3d-inline-1.css",
+        "css/hero-v5.css",
+        "css/intro-v1.css",
+        "css/related-heroes-v1.css"
+      ],
+      "output": "css/compiled/ccs-6d25168b634f-a269e3586673.min.css"
+    },
+    "ccs-f7c44fbdefa7": {
+      "sources": [
+        "css/style-v4.css",
         "css/hero-v5.css",
         "css/intro-v1.css",
         "css/comparison-opening-v1.css",
         "css/comparativas-v3.css",
-        "css/product-cards-v1.css"
+        "css/product-cards-v1.css",
+        "css/pages/impresion-3d-filamentos-3d-mejores-filamentos-pla-inline-1.css",
+        "css/related-heroes-v1.css",
+        "css/faq-standard-v1.css"
       ],
-      "output": "css/compiled/ccs-17a009de8fc4-65396d2faa13.css"
+      "output": "css/compiled/ccs-f7c44fbdefa7-cffeffff67bd.min.css"
     },
-    "ccs-570c2a4da68e": {
+    "ccs-5e8e2e8f2dc6": {
       "sources": [
+        "css/style-v4.css",
         "css/hero-v5.css",
-        "css/intro-v1.css"
+        "css/intro-v1.css",
+        "css/pages/impresion-3d-filamentos-3d-pla-vs-tpu-inline-1.css",
+        "css/related-heroes-v1.css",
+        "css/faq-standard-v1.css"
       ],
-      "output": "css/compiled/ccs-570c2a4da68e-f9e63c216ee2.css"
+      "output": "css/compiled/ccs-5e8e2e8f2dc6-6a95ceb8ea78.min.css"
     },
-    "ccs-0f73d7d762bf": {
+    "ccs-953c47be4c15": {
       "sources": [
+        "css/style-v4.css",
+        "css/pages/impresion-3d-impresoras-3d-inline-1.css",
+        "css/hero-v5.css",
+        "css/intro-v1.css",
+        "css/related-heroes-v1.css"
+      ],
+      "output": "css/compiled/ccs-953c47be4c15-2477aa4c9ed6.min.css"
+    },
+    "ccs-3029c5d031ad": {
+      "sources": [
+        "css/style-v4.css",
+        "css/pages/impresion-3d-impresoras-3d-mejores-impresoras-3d-inline-1.css",
+        "css/comparativas-v3.css",
+        "css/hero-v5.css",
+        "css/product-cards-v1.css",
+        "css/intro-v1.css",
+        "css/comparison-opening-v1.css",
+        "css/related-heroes-v1.css",
+        "css/faq-standard-v1.css"
+      ],
+      "output": "css/compiled/ccs-3029c5d031ad-fc70e5bff6aa.min.css"
+    },
+    "ccs-94a9ec27a014": {
+      "sources": [
+        "css/style-v4.css",
+        "css/pages/impresion-3d-inline-1.css",
+        "css/hero-v5.css",
+        "css/intro-v1.css",
+        "css/pages/impresion-3d-inline-2.css",
+        "css/category-library-v1.css"
+      ],
+      "output": "css/compiled/ccs-94a9ec27a014-03c156334f09.min.css"
+    },
+    "ccs-efe17b77fa84": {
+      "sources": [
+        "css/style-v4.css",
+        "css/hero-v5.css",
+        "css/intro-v1.css",
+        "css/related-heroes-v1.css"
+      ],
+      "output": "css/compiled/ccs-efe17b77fa84-ded694d58e6e.min.css"
+    },
+    "ccs-c6d73bcae594": {
+      "sources": [
+        "css/style-v4.css",
         "css/metodologia.css",
         "css/intro-v1.css",
         "css/related-heroes-v1.css"
       ],
-      "output": "css/compiled/ccs-0f73d7d762bf-de6ed284d93a.css"
+      "output": "css/compiled/ccs-c6d73bcae594-9490243af56f.min.css"
     },
-    "ccs-48b62b0723bc": {
+    "ccs-749232e0794b": {
       "sources": [
+        "css/style-v4.css",
         "css/about.css",
         "css/intro-v1.css",
         "css/related-heroes-v1.css"
       ],
-      "output": "css/compiled/ccs-48b62b0723bc-383202f8a955.css"
+      "output": "css/compiled/ccs-749232e0794b-8d5c466f1a23.min.css"
     }
   }
 }

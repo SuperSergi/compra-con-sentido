@@ -1,7 +1,7 @@
-"""Agrupa CSS por orden de carga, sin cruzar estilos inline ni usar @import.
+"""Genera un CSS minificado por página conservando el orden de todas las fuentes.
 
-Fuentes: css/*.css. Ejecutar tras editarlas; --check valida los assets versionados.
-El CSS base sigue separado para reutilizar su caché al navegar entre páginas.
+Fuentes: css/**/*.css. Ejecutar tras editarlas; --check valida los assets versionados.
+Los antiguos estilos inline están en css/pages/. No editar css/compiled/ a mano.
 """
 from __future__ import annotations
 
@@ -9,6 +9,7 @@ import argparse
 import hashlib
 import json
 import re
+from rcssmin import cssmin
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
@@ -59,49 +60,18 @@ def build(check: bool = False) -> None:
     bundles: dict[str, dict] = {}
     outputs: dict[Path, str] = {}
     html_changes: dict[Path, str] = {}
-    counts: list[tuple[str, int, int]] = []
-
+    counts = []
     for path in sorted(ROOT.rglob("*.html")):
         if any(part in {".git", ".github", "node_modules"} for part in path.relative_to(ROOT).parts):
             continue
         text = path.read_text(encoding="utf-8")
-        head_end = text.lower().find("</head>")
-        if head_end < 0:
-            raise ValueError(f"Falta </head>: {path}")
-        head = text[:head_end]
-        # Enmascarar comentarios manteniendo offsets para no editar ejemplos.
-        masked = re.sub(r"<!--.*?-->", lambda m: " " * len(m.group(0)), head, flags=re.S)
-        replacements: list[tuple[int, int, str]] = []
-        group: list[tuple[re.Match, list[str]]] = []
-        before, after = 0, 0
-
-        def flush() -> None:
-            nonlocal after
-            if not group:
-                return
-            sources = [source for _, source_list in group for source in source_list]
-            if len(sources) == 1:
-                after += 1
-                group.clear()
-                return
-            bundle_id = "ccs-" + digest("\n".join(sources))
-            content = "\n".join(f"/* Fuente: {source} */\n{source_content(source)}" for source in sources) + "\n"
-            filename = f"{bundle_id}-{digest(content)}.css"
-            output_path = OUTPUT / filename
-            bundles[bundle_id] = {"sources": sources, "output": output_path.relative_to(ROOT).as_posix()}
-            outputs[output_path] = content
-            first = group[0][0]
-            replacements.append((first.start(), first.end(), f'<link rel="stylesheet" href="/css/compiled/{filename}" data-css-bundle="{bundle_id}">'))
-            for token, _ in group[1:]:
-                replacements.append((token.start(), token.end(), ""))
-            after += 1
-            group.clear()
-
+        masked = re.sub(r"<!--.*?-->", lambda m: " " * len(m.group(0)), text, flags=re.S)
+        tokens = []
+        sources = []
         for token in TOKENS.finditer(masked):
-            tag = head[token.start():token.end()]
+            tag = text[token.start():token.end()]
             if tag.lower().startswith("<style"):
-                flush()
-                continue
+                raise ValueError(f"Mover nuevo estilo inline a css/pages/ en su orden de cascada: {path}")
             if (attr(tag, "rel") or "").lower() != "stylesheet":
                 continue
             if attr(tag, "media") not in {None, "all"} or attr(tag, "integrity"):
@@ -110,35 +80,37 @@ def build(check: bool = False) -> None:
             if bundle_id:
                 if bundle_id not in previous["bundles"]:
                     raise ValueError(f"Bundle sin manifiesto: {bundle_id}")
-                sources = previous["bundles"][bundle_id]["sources"]
+                sources.extend(previous["bundles"][bundle_id]["sources"])
             else:
-                sources = [source_path(attr(tag, "href") or "")]
-            before += len(sources)
-            if sources == ["css/style-v4.css"]:
-                flush()
-                version = digest((ROOT / sources[0]).read_text(encoding="utf-8"))
-                replacements.append((token.start(), token.end(), f'<link rel="stylesheet" href="/css/style-v4.css?v={version}">'))
-                after += 1
-            else:
-                group.append((token, sources))
-        flush()
-        for start, end, replacement in sorted(replacements, reverse=True):
+                sources.append(source_path(attr(tag, "href") or ""))
+            tokens.append(token)
+        if not tokens:
+            raise ValueError(f"Página sin CSS: {path}")
+        if tokens[0].start() > text.lower().find("</head>"):
+            raise ValueError(f"El primer CSS debe estar en head: {path}")
+        # Syntactic minification only: no rule merging, pruning or reordering.
+        content = cssmin("\n".join(source_content(source) for source in sources), keep_bang_comments=True) + "\n"
+        bundle_id = "ccs-" + digest("\n".join(sources))
+        output_path = OUTPUT / f"{bundle_id}-{digest(content)}.min.css"
+        bundles[bundle_id] = {"sources": sources, "output": output_path.relative_to(ROOT).as_posix()}
+        outputs[output_path] = content
+        replacements = [(t.start(), t.end(), "") for t in tokens]
+        replacements[0] = (tokens[0].start(), tokens[0].end(), f'<link rel="stylesheet" href="/{output_path.relative_to(ROOT).as_posix()}" data-css-bundle="{bundle_id}">')
+        for start, end, replacement in reversed(replacements):
             text = text[:start] + replacement + text[end:]
-        new_head_end = text.lower().find("</head>")
-        text = re.sub(r"[ \t]+$", "", text[:new_head_end], flags=re.M) + text[new_head_end:]
+        text = re.sub(r"[ \t]+$", "", text, flags=re.M)
         if text != path.read_text(encoding="utf-8"):
             html_changes[path] = text
-        counts.append((path.relative_to(ROOT).as_posix(), before, after))
-
-    manifest = json.dumps({"version": 1, "bundles": bundles}, ensure_ascii=False, indent=2) + "\n"
-    stale = [(p, content) for p, content in outputs.items() if not p.exists() or p.read_text(encoding="utf-8") != content]
+        counts.append((path.relative_to(ROOT).as_posix(), len(tokens)))
+    manifest = json.dumps({"version": 2, "minifier": "rcssmin==1.2.2", "bundles": bundles}, ensure_ascii=False, indent=2) + "\n"
+    stale = [(p, c) for p, c in outputs.items() if not p.exists() or p.read_text(encoding="utf-8") != c]
     old_outputs = {ROOT / data["output"] for data in previous["bundles"].values()}
     obsolete = old_outputs - set(outputs)
     manifest_changed = not MANIFEST.exists() or MANIFEST.read_text(encoding="utf-8") != manifest
     if check:
         if html_changes or stale or obsolete or manifest_changed:
             raise SystemExit("CSS_BUNDLES_STALE: ejecutar python3 .github/scripts/build-css.py y guardar HTML, manifiesto y CSS generado")
-        print(f"OK: {len(outputs)} bundles CSS reproducibles; orden y fuentes comprobados en {len(counts)} páginas")
+        print(f"OK: {len(outputs)} bundles CSS minificados reproducibles; una hoja en {len(counts)} páginas")
         return
     OUTPUT.mkdir(parents=True, exist_ok=True)
     for path, content in outputs.items():
@@ -151,9 +123,7 @@ def build(check: bool = False) -> None:
         if path.is_file():
             path.unlink()
     MANIFEST.write_text(manifest, encoding="utf-8", newline="\n")
-    print(f"Generados {len(outputs)} bundles; base compartida y estilos inline conservados")
-    for path, before, after in counts:
-        print(f"{path}: {before} -> {after} peticiones CSS")
+    print(f"Generados {len(outputs)} bundles minificados para {len(counts)} páginas; orden conservado")
 
 
 if __name__ == "__main__":

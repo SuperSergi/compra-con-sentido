@@ -85,6 +85,10 @@ class LocalReferences(HTMLParser):
         key = "href" if tag in {"a", "link"} else "src" if tag in {"img", "script", "source"} else None
         if key and attrs.get(key):
             self.references.append(attrs[key])
+        if tag in {"img", "source"} and attrs.get("srcset") and not attrs["srcset"].startswith("data:"):
+            for candidate in attrs["srcset"].split(","):
+                if candidate.strip():
+                    self.references.append(candidate.strip().split()[0])
 
     def handle_data(self, data: str) -> None:
         if self.in_details:
@@ -124,6 +128,10 @@ def read_references(path: Path) -> LocalReferences:
 
 
 def check_local_references(path: Path, url_path: str) -> None:
+    source = path.read_text(encoding="utf-8")
+    main_scripts = [tag for tag in tags(source, "script") if "/js/main-v4.js" in (attr(tag, "src") or "")]
+    if len(main_scripts) != 1 or not re.search(r"\bdefer(?:\s|=|>)", main_scripts[0]) or re.search(r"\basync(?:\s|=|>)", main_scripts[0]):
+        fail(f"{path}: main-v4.js debe cargarse una vez, con defer y sin async")
     for reference in read_references(path).references:
         absolute = urlparse(urljoin(DOMAIN + url_path, unescape(reference)))
         if absolute.scheme not in {"http", "https"} or absolute.netloc != urlparse(DOMAIN).netloc:

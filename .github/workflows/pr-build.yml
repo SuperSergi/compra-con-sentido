@@ -18,6 +18,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
       - name: Static sanity checks
         shell: bash
         run: |
@@ -27,5 +32,6 @@ jobs:
           test -f css/style-v4.css
           test -f COMPRA-CON-SENTIDO-MASTER.md
           test -f .github/scripts/site-audit.py
+          python3 -m pip install -r .github/requirements-css.txt
           python3 .github/scripts/build-css.py --check
           python3 .github/scripts/site-audit.py
