@@ -11,7 +11,7 @@
 
 Un gato de botella ocupa poco en el maletero y puede levantar mucha carga, pero eso no significa que sea adecuado para cualquier coche. Antes de comprar hay que comprobar que cabe bajo el punto de elevación, que alcanza la altura necesaria para despegar la rueda del suelo y que se puede colocar sobre una superficie firme y nivelada. El peso de la herramienta también importa: no es lo mismo guardarla de forma permanente en un garaje que transportarla por si surge un pinchazo.
 
-Esta comparativa reúne seis modelos de 2 a 6 toneladas, con diferentes alturas de entrada, recorridos y masas. La selección se basa en documentación de fabricantes, manuales y datos contrastados de distribuidores para los atributos que el fabricante no publica. Las características se refieren a modelos concretos, nunca a todos los gatos de una capacidad.
+Aquí encontrarás seis modelos de 2 a 6 toneladas. Las medidas y el peso de cada uno te ayudarán a ver cuál puede encajar mejor con tu vehículo, sin quedarte solo con el número de toneladas.
 
 ## Tres elecciones según el uso
 
@@ -42,81 +42,83 @@ Esta comparativa reúne seis modelos de 2 a 6 toneladas, con diferentes alturas 
 | SIXTOL SX1147 | 6 t | 200 mm | 385 mm | No declarado | 60 mm | 4,0 kg |
 | SIXTOL SX3080 Premium | 6 t | 215 mm | 435 mm | No declarado | 60 mm | 4,15 kg |
 
-*Los máximos reflejan las cotas de cada fabricante. † Para Michelin, las medidas de carrera y tornillo se derivan de la altura intermedia de 325 mm sin desenroscar aportada durante la revisión, no de un desglose oficial. No deducir automáticamente el recorrido hidráulico restando solo los extremos. La tabla se presenta deslizable en móviles.*
+*El recorrido de Michelin está calculado a partir de los 325 mm sin desenroscar el tornillo. Su peso es orientativo: Stock24 indica 3 kg y Norauto 3,4 kg.*
 
 ## Análisis de los modelos
 
-### Bahco BH4G2: 2 toneladas y 2,4 kg para llevarlo sin demasiado peso
+### Bahco BH4G2: ligero y cómodo de guardar
 
-La razón para elegir el BH4G2 es su combinación documentada de 2 toneladas, 181 mm de altura mínima, 344 mm de elevación máxima y 2,4 kg de peso neto. Bahco desglosa además 115 mm de carrera hidráulica y 48 mm de extensión roscada. Para un usuario que ocasionalmente necesita mover el gato o guardarlo en el coche, ese peso puede ser más relevante que comprar una capacidad innecesariamente alta.
+El Bahco BH4G2 es una opción interesante si buscas un gato para tener a mano sin cargar con demasiado peso. Sus 2,4 kg hacen que sea cómodo de mover y guardar. Antes de elegirlo, comprueba que los 181 mm de altura mínima caben bajo el punto de apoyo, incluso si la rueda está desinflada.
 
-La contrapartida es el alcance: 344 mm pueden ser insuficientes si la suspensión tarda mucho en descargarse o si el punto de apoyo exige elevar más. También debe confirmarse que la altura disponible bajo el coche es superior a 181 mm y que se puede bombear la palanca sin interferencias.
+Llega hasta los 344 mm. El pistón tiene 115 mm de recorrido y el tornillo se puede extender otros 48 mm, pero en un vehículo alto quizá necesites más elevación.
 
-**Lo que destaca:** masa contenida y datos completos del fabricante.  
-**A tener en cuenta:** elevación máxima de 344 mm y capacidad de 2 toneladas, sujetas a compatibilidad con el vehículo.  
-**Lo elegiría si:** buscas la opción más ligera de esta selección y el manual del vehículo y las medidas reales confirman que resulta suficiente.
+**Lo que destaca:** Pesa 2,4 kg y resulta fácil de transportar para un uso ocasional.  
+**A tener en cuenta:** Su altura máxima de 344 mm puede quedarse corta en vehículos con mucho recorrido de suspensión.  
+**Lo elegiría si:** Quieres un gato ligero para un uso puntual y has comprobado que entra y levanta lo suficiente.
 
-[Ver precio en Amazon](https://www.amazon.es/dp/B0DS64V5V3?tag=ccc-gatohid-21) (ASIN aportado por el usuario; requiere comprobación final).
+[Ver precio en Amazon](https://www.amazon.es/dp/B0DS64V5V3?tag=ccc-gatohid-21) (enlace pendiente de revisión comercial definitiva).
 
-### KS Tools 160.0351: 3 toneladas, medidas de base y recorrido conocidos
+### KS Tools 160.0351: 3 toneladas en un formato manejable
 
-KS Tools declara 3 toneladas, 194–372 mm, una carrera de 118 mm, tornillo de 60 mm, 2,8 kg de peso y base de 92 × 100 mm. Destaca por la posibilidad de comprobar casi todas las dimensiones relevantes antes de comprar. Es una elección racional si la altura de entrada de 194 mm encaja con el vehículo y no se necesita un recorrido mayor.
+Con sus 2,8 kg, el KS Tools 160.0351 no resulta especialmente pesado para moverlo por el garaje o llevarlo en el coche. Tiene una base de 92 × 100 mm y puede levantar hasta 372 mm, siempre que el punto de elevación sea adecuado y el suelo esté firme y nivelado.
 
-Frente al Bahco de 2 toneladas soporta mayor carga nominal, pero necesita 13 mm más de altura para introducirlo y alcanza 28 mm más de altura final. Esos milímetros pueden ser determinantes, en ambas direcciones, según el coche.
+Necesita 194 mm de espacio para colocarlo. Una vez situado, cuenta con 118 mm de carrera hidráulica y 60 mm de tornillo para ajustar la altura de contacto.
 
-**Lo que destaca:** información técnica completa y peso moderado.  
-**A tener en cuenta:** requiere 194 mm bajo el punto de elevación.  
-**Lo elegiría si:** quieres un 3 t con cotas de base, husillo y carrera fáciles de verificar y 372 mm de altura máxima bastan.
+**Lo que destaca:** Combina 3 toneladas de capacidad con un peso propio de 2,8 kg.  
+**A tener en cuenta:** Con 194 mm de altura recogido, no cabe bajo todos los turismos, especialmente con un pinchazo.  
+**Lo elegiría si:** Necesitas 3 toneladas y prefieres un gato manejable, siempre que tengas esos 194 mm de altura libre.
 
-[Ver precio en Amazon](https://www.amazon.es/dp/B001NYWYBK?tag=ccc-gatohid-21) (ASIN candidato, revisión manual obligatoria).
+[Ver precio en Amazon](https://www.amazon.es/dp/B001NYWYBK?tag=ccc-gatohid-21) (enlace pendiente de revisión comercial definitiva).
 
-### Michelin 009559: 3 toneladas con 385 mm de altura final
+### Michelin 009559: 3 toneladas y 385 mm de altura
 
-El Michelin 009559 tiene un rango de 195 a 385 mm y capacidad nominal de 3 toneladas, confirmados en su manual. Frente al KS Tools de 3 toneladas, ofrece 13 mm más de altura final con una altura de entrada prácticamente igual (195 frente a 194 mm). El peso declarado por Stock24 es de 3 kg, mientras que Norauto indica 3,4 kg. Por eso se utiliza aproximadamente 3 kg, atribuido a Stock24, sin considerarlo peso neto oficial. Durante la revisión se aportó la altura intermedia de 325 mm sin desenroscar el tornillo. Por diferencia se calculan 325 − 195 = 130 mm de carrera hidráulica y 385 − 325 = 60 mm de rosca extensible. Son magnitudes calculadas a partir de un dato facilitado durante la revisión, no cifras del recorrido desglosadas en el manual Michelin.
+El Michelin 009559 levanta hasta 385 mm y puede venirte bien si necesitas trabajar con un punto de apoyo relativamente alto. Eso sí, recogido mide 195 mm: conviene comprobar el espacio disponible antes de comprarlo, sobre todo si piensas llevarlo para cambiar una rueda.
 
-La cifra que más interesa aquí son los 385 mm de altura máxima. Es una alternativa para quien busca un gato de 3 toneladas con algo más de altura, aunque sigue siendo imprescindible comprobar acceso y recorrido en el vehículo real.
+Con el tornillo recogido llega a 325 mm; al extenderlo, alcanza los 385 mm. De ahí salen 130 mm de recorrido hidráulico y 60 mm de tornillo. Su peso ronda los 3 kg, aunque no todas las tiendas indican la misma cifra.
 
-**Lo que destaca:** 385 mm de elevación máxima en un gato de 3 toneladas.  
-**A tener en cuenta:** 195 mm de entrada; cifra de peso no confirmada directamente por Michelin.  
-**Lo elegiría si:** tu vehículo admite ese tamaño y necesitas un poco más de altura que en el KS Tools 160.0351, sin subir a 5 o 6 toneladas.
+*Para el peso, Stock24 indica 3 kg y Norauto, 3,4 kg. Los recorridos se calculan a partir de la altura intermedia de 325 mm sin desenroscar facilitada durante la revisión.*
 
-[Ver precio en Amazon](https://www.amazon.es/dp/B0099R28RS?tag=ccc-gatohid-21) (ASIN candidato, revisión manual obligatoria).
+**Lo que destaca:** Alcanza 385 mm de altura en un modelo de 3 toneladas.  
+**A tener en cuenta:** Necesita 195 mm de espacio para entrar y hay diferencias entre tiendas sobre su peso.  
+**Lo elegiría si:** Buscas un gato de 3 toneladas que llegue a 385 mm y tienes sitio suficiente para colocarlo.
 
-### KS Tools 160.0352: 5 toneladas con recorrido desglosado
+[Ver precio en Amazon](https://www.amazon.es/dp/B0099R28RS?tag=ccc-gatohid-21) (enlace pendiente de revisión comercial definitiva).
 
-Este modelo aporta 5 toneladas, 216–413 mm, carrera hidráulica de 127 mm y tornillo extensible de 70 mm. La masa indicada en la ficha actual es 3,7 kg y la base, 96 × 112 mm. Frente al KS Tools de 3 toneladas aumenta 41 mm la altura final y 22 mm la altura de entrada; también pesa 0,9 kg más.
+### KS Tools 160.0352: 5 toneladas y 413 mm de elevación
 
-Aquí la elección debe depender de la geometría y carga del vehículo: el hecho de ofrecer 5 t no lo convierte automáticamente en mejor para un turismo. Los 216 mm de altura mínima pueden impedir colocarlo donde un modelo menor sí entra.
+El KS Tools 160.0352 puede ser una buena elección si tu vehículo necesita un gato de 5 toneladas y tienes espacio para colocarlo. Alcanza 413 mm de altura y su tornillo extensible de 70 mm permite acercar el apoyo al vehículo antes de empezar a bombear.
 
-**Lo que destaca:** 413 mm de elevación con dimensiones detalladas y 5 t de capacidad nominal.  
-**A tener en cuenta:** necesita 216 mm de acceso y no tiene sentido pagar por capacidad inutilizable.  
-**Lo elegiría si:** necesitas la combinación de mayor capacidad y 413 mm de altura final, con puntos de elevación accesibles y adecuados.
+Pesa 3,7 kg y tiene una base de 96 × 112 mm. Lo más importante es comprobar la entrada: recogido mide 216 mm, una altura que puede resultar excesiva para algunos turismos.
 
-[Ver precio en Amazon](https://www.amazon.es/dp/B001NYVDKS?tag=ccc-gatohid-21) (ASIN candidato, revisión manual obligatoria).
+**Lo que destaca:** Llega a 413 mm y dispone de 70 mm de ajuste mediante tornillo.  
+**A tener en cuenta:** Necesita 216 mm de espacio libre bajo el punto de elevación.  
+**Lo elegiría si:** Necesitas la capacidad de 5 toneladas y tu vehículo admite los 216 mm de altura inicial.
 
-### SIXTOL SX1147: 6 toneladas sin subir demasiado de peso
+[Ver precio en Amazon](https://www.amazon.es/dp/B001NYVDKS?tag=ccc-gatohid-21) (enlace pendiente de revisión comercial definitiva).
 
-El SX1147 estándar de SIXTOL declara 6 toneladas, 200–385 mm, tornillo ajustable de 60 mm y 4 kg de peso del gato (4,3 kg con paquete en la ficha). Aunque su capacidad es muy superior a la del Michelin de 3 toneladas, los dos tienen la misma altura máxima de 385 mm. Esto ilustra por qué más toneladas no equivalen a más elevación.
+### SIXTOL SX1147: 6 toneladas y 4 kg de peso
 
-Puede resultar adecuado para un usuario que necesita esa carga y puede introducir 200 mm de altura mínima, pero sus 385 mm de altura final lo limitan frente a algunos vehículos de suspensión alta. La construcción es de acero y el fabricante lo orienta a usos en garaje y desplazamientos.
+El SIXTOL SX1147 soporta hasta 6 toneladas y pesa 4 kg. Puede encajar si tienes un vehículo pesado y buscas un gato de botella que puedas sacar y guardar sin demasiadas complicaciones.
 
-**Lo que destaca:** capacidad de 6 toneladas con 4 kg de peso propio y 200 mm de entrada.  
-**A tener en cuenta:** la altura máxima de 385 mm es igual a la del Michelin de 3 toneladas.  
-**Lo elegiría si:** buscas 6 t para un vehículo compatible y no necesitas más de 385 mm de elevación.
+Para introducirlo necesitas 200 mm de espacio y puede elevar hasta 385 mm. Tiene un tornillo extensible de 60 mm para ajustar el contacto. Comprueba que la altura final sea suficiente: aunque tenga capacidad de sobra, puede quedarse corto para despegar una rueda en vehículos con mucho recorrido de suspensión.
 
-[Ver precio en Amazon](https://www.amazon.es/dp/B0CVBD954Z?tag=ccc-gatohid-21) (ASIN candidato, revisión manual obligatoria).
+**Lo que destaca:** Ofrece 6 toneladas de capacidad con 4 kg de peso propio.  
+**A tener en cuenta:** Los 385 mm de altura máxima pueden no bastar en vehículos altos.  
+**Lo elegiría si:** Tu vehículo requiere esa capacidad, tiene 200 mm de entrada y puedes levantarlo con 385 mm de altura máxima.
 
-### SIXTOL SX3080 Premium: 6 toneladas y hasta 435 mm de elevación
+[Ver precio en Amazon](https://www.amazon.es/dp/B0CVBD954Z?tag=ccc-gatohid-21) (enlace pendiente de revisión comercial definitiva).
 
-El SX3080 mantiene las 6 toneladas nominales, con 215 mm de entrada y 435 mm de elevación máxima. Pesa 4,15 kg y dispone de un tornillo superior de 60 mm. SIXTOL describe su serie Premium con construcción completamente soldada, pensada para mejorar la resistencia a fugas, pero no interpretamos esto como garantía de duración ni como prueba propia.
+### SIXTOL SX3080 Premium: para llegar más alto
 
-Comparado con el SIXTOL estándar SX1147, su principal ventaja medible es conseguir 50 mm adicionales de altura final a costa de necesitar 15 mm más de entrada. Si el vehículo no permite meter 215 mm o no requiere la elevación adicional, la versión estándar puede tener más sentido.
+El SIXTOL SX3080 Premium alcanza 435 mm, una altura que puede resultar útil en SUV y furgonetas con puntos de apoyo elevados. Cuenta con un tornillo extensible de 60 mm y un cuerpo soldado.
 
-**Lo que destaca:** 435 mm de elevación máxima en un formato de 4,15 kg.  
-**A tener en cuenta:** mayor altura de entrada que el estándar; no elegirlo solo por llevar 'Premium'.  
-**Lo elegiría si:** necesitas altura final y la geometría del vehículo admite sus 215 mm mínimos.
+Pesa 4,15 kg, pero lo primero es asegurarse de que cabe debajo del vehículo. Con el gato recogido necesitas 215 mm de espacio libre. Si no dispones de ese hueco, no podrás colocarlo aunque su altura máxima sea suficiente.
 
-[Ver precio en Amazon](https://www.amazon.es/dp/B0DYTZ4Y5L?tag=ccc-gatohid-21) (ASIN candidato, revisión manual obligatoria).
+**Lo que destaca:** Alcanza 435 mm, una altura útil para determinados vehículos altos.  
+**A tener en cuenta:** Sus 215 mm de altura mínima dificultan su uso en coches bajos o con una rueda pinchada.  
+**Lo elegiría si:** Necesitas llegar a 435 mm y tienes al menos 215 mm de espacio bajo el punto de apoyo.
+
+[Ver precio en Amazon](https://www.amazon.es/dp/B0DYTZ4Y5L?tag=ccc-gatohid-21) (enlace pendiente de revisión comercial definitiva).
 
 ## ¿Cuándo compensa uno de carretilla?
 
@@ -160,9 +162,9 @@ Antes de comprar, toma las medidas del vehículo y consulta su manual. El mejor 
 
 ---
 
-## Integración pendiente (no publicar este documento como HTML sin estos pasos)
+## Estado de publicación y comprobaciones pendientes
 - Confirmar modelo, ASIN, oferta y variante directamente en las seis fichas Amazon.es (el usuario revisa manualmente).
-- Incorporar foto individual real de cada modelo, optimizada y aportada por el usuario. Hero ilustrativo propio (IA, sin marcas ni modelo exacto) en WebP.
-- Convertir los enlaces del borrador a CTA correctos rel="nofollow sponsored" y actualizar schema Article/BreadcrumbList/FAQPage visible.
-- Diseñar tabla responsive con aviso horizontal, tres tarjetas superiores y seis fichas completas; menú global y submenuData, enlaces desde hub y comparativa general, sitemap y audit.
+- Las seis fotografías WebP y el hero están integrados en la rama de la PR #75.
+- La versión HTML ya incorpora CTA con rel="nofollow sponsored" y schema Article/BreadcrumbList/FAQPage.
+- Tabla responsive, perfiles, seis fichas, navegación, sitemap y enlazado interno implantados en la PR #75. Revisión visual y comercial pendientes.
 - Prohibido publicar cifras de precios, ratings o afirmar que hemos probado los modelos.
