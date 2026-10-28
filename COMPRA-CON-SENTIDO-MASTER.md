@@ -451,6 +451,26 @@ Contenido y SEO cerrados; hero específico; imagen de tarjeta si aparece en hub/
 
 ---
 
+## 11.7 Normalización visual transversal · revisión del usuario (28/10/2026)
+
+**Estado:** nueva rama `ux/normalizar-faq-guias-comparativas-20261028`, basada en la PR #78 (que a su vez depende de PR #77). **No publicar ni fusionar sin aprobación del usuario.** Las PR previas siguen en borrador.
+
+**Decisiones UI de la revisión de 10 páginas ya publicadas y del bloque siguiente:**
+- **Eliminar duplicaciones:** se retira el recuadro «¿Prefieres ir directamente a los modelos?» en la guía de gatos y la tarjeta intermedia repetida de comparativa en la guía de taladros. Los heroes finales y enlaces contextuales quedan disponibles.
+- **Preguntas frecuentes:** un solo título `Preguntas frecuentes` y desplegables HTML `<details><summary>` con CSS compartido `css/faq-standard-v1.css`. Se convierten las FAQ existentes en tarjetas o texto normal, sin modificar las respuestas ni fabricar FAQ nuevas. Validar coincidencia del schema `FAQPage` con el contenido visible.
+- **Guías de compra y selecciones rápidas:** se elimina `grinder-use` y `saw-choose` por repetir las recomendaciones de producto; la guía de compra de amoladoras y sierras comparte `css/guide-consistency-v1.css`, manteniendo el contenido técnico.
+- **Tabla de deshumidificadores:** la columna descriptiva «Tiene sentido para…» no debe ir íntegramente en negrita. Se corrige con CSS y se retira la etiqueta repetida `En uso real:` sin borrar el contenido.
+- **PLA:** las seis fichas mantienen pros, contras y argumentos, pero se retiran **las puntuaciones numéricas aisladas** (tabla y barras, antes presentes solo en esta categoría) y una microselección repetitiva; no inventar puntuaciones equivalentes en otras categorías. Las notas históricas de valoración se conservan en el MASTER como trazabilidad de la versión anterior; esta decisión UX queda pendiente de aprobación editorial.
+- **PLA vs TPU:** se retiran la microconclusión y la sección visible «Fuentes técnicas consultadas»; las fuentes se conservan en la documentación de investigación y en la página institucional /metodologia/. Se alinea `og:image`, `twitter:image` y la imagen de `Article` con el hero real. Se corrigen las tarjetas que enlazan a PLA vs TPU para usar su hero (no la infografía secundaria).
+- **Gatos de botella:** se retira el bloque visible de fichas técnicas y manuales; la documentación permanece en las notas de investigación del proyecto.
+- **Enlaces de cierre:** se mantiene una selección **estática y contextual** de dos enlaces relevantes, en HTML con `<a href>` y texto descriptivo. No se introduce aleatoriedad por carga ni JavaScript de rotación: aumenta variabilidad, puede ocultar enlaces importantes al rastreador y compromete estabilidad/performance. Carrusel solo si los enlaces están en HTML estático y tiene beneficio UX demostrado.
+- **Imágenes intermedias:** pendiente de preparar activos adecuados para perfiles de aspiradoras, guía de capacidad de deshumidificadores, secado de ropa, accesorios de impresión 3D y materiales PLA/PETG/ASA/TPU. No insertar imágenes de relleno ni duplicar fotos de productos como si representasen usos reales. Cada imagen requiere función informativa, alt y WebP optimizado.
+- **Fichas de llaves de impacto y afirmaciones de experiencia en deshumidificadores:** pendiente de revisión de fuentes/modelos exactos antes de ampliar contenido. No añadir frases para llenar huecos ni inferir pruebas físicas.
+
+**QA previo a merge:** revisar HTML, H1, navegación, schema FAQPage, enlaces Amazon y tablas inalterados; ejecutar build, imágenes y responsive audit. Crear PR separada de revisión y esperar autorización expresa.
+
+---
+
 # 12. Estado del sitio
 
 ## 12.1 Páginas publicadas
