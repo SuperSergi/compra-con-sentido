@@ -2,9 +2,11 @@ from __future__ import annotations
 
 import json
 import re
+from html import unescape
+from html.parser import HTMLParser
 from datetime import date
 from pathlib import Path
-from urllib.parse import urljoin, urlparse
+from urllib.parse import unquote, urljoin, urlparse
 import xml.etree.ElementTree as ET
 
 DOMAIN = "https://compraconsentido.es"
@@ -53,6 +55,56 @@ def file_to_url(path: Path) -> str:
     if rel == "index.html":
         return "/"
     return "/" + rel.removesuffix("index.html")
+
+
+class LocalReferences(HTMLParser):
+    """Lee referencias e identificadores como HTML, sin confundir comentarios."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.references: list[str] = []
+        self.ids: set[str] = set()
+
+    def handle_starttag(self, tag: str, attributes: list[tuple[str, str | None]]) -> None:
+        attrs = dict(attributes)
+        if attrs.get("id"):
+            self.ids.add(attrs["id"])
+        if tag == "a" and attrs.get("name"):
+            self.ids.add(attrs["name"])
+        key = "href" if tag in {"a", "link"} else "src" if tag in {"img", "script", "source"} else None
+        if key and attrs.get(key):
+            self.references.append(attrs[key])
+
+
+reference_cache: dict[Path, LocalReferences] = {}
+
+
+def read_references(path: Path) -> LocalReferences:
+    if path not in reference_cache:
+        parsed = LocalReferences()
+        parsed.feed(path.read_text(encoding="utf-8"))
+        reference_cache[path] = parsed
+    return reference_cache[path]
+
+
+def check_local_references(path: Path, url_path: str) -> None:
+    for reference in read_references(path).references:
+        absolute = urlparse(urljoin(DOMAIN + url_path, unescape(reference)))
+        if absolute.scheme not in {"http", "https"} or absolute.netloc != urlparse(DOMAIN).netloc:
+            continue
+        relative = unquote(absolute.path).lstrip("/")
+        target = ROOT / relative
+        if not relative or absolute.path.endswith("/") or target.is_dir():
+            target = target / "index.html"
+        if not target.resolve().is_relative_to(ROOT.resolve()) or not target.is_file():
+            fail(f"{path}: referencia interna sin archivo: {reference}")
+            continue
+        if absolute.fragment and target.suffix.lower() == ".html":
+            fragment = unquote(absolute.fragment)
+            # Los fragmentos de texto los interpreta el navegador; no son IDs.
+            fragment = fragment.split(":~:text=", 1)[0]
+            if fragment and fragment not in read_references(target).ids:
+                fail(f"{path}: ancla interna inexistente: {reference}")
 
 tree = ET.parse(SITEMAP)
 ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
@@ -249,6 +301,12 @@ for url_path, path in sorted(public_urls.items()):
             reference_menu_path = str(path)
         elif menu != reference_menu:
             fail(f"{path}: menú distinto del patrón de {reference_menu_path}")
+
+# Incluye la 404 sin exigir que sea una URL del sitemap.
+for reference_path in [*public_files, ROOT / "404.html"]:
+    if reference_path.is_file():
+        reference_url = file_to_url(reference_path) if reference_path.name == "index.html" else "/404.html"
+        check_local_references(reference_path, reference_url)
 
 for image in ROOT.joinpath("images").rglob("*"):
     if not image.is_file() or image.suffix.lower() not in RASTER_EXTS:

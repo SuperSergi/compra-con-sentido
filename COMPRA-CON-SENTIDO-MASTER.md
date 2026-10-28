@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 28/10/2026 16:25
+**Última actualización:** 28/10/2026 17:30
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -291,15 +291,15 @@ Los CTA de estas tres tarjetas usan un componente visual común: botón Amazon a
 
 Orden canónico (referencia: sierras circulares y PLA):
 
-`Imagen + badge/perfil → H3 y subtítulo → especificaciones → texto editorial → "Lo que destaca" / "A tener en cuenta" → "La elegiría si…" → [valoración y formatos si aplica] → CTA`
+`Imagen + badge/perfil → H3 y subtítulo → especificaciones → texto editorial → "Lo que destaca" / "A tener en cuenta" → "Encaja si…" → [valoración y formatos si aplica] → CTA`
 
 Cada ficha responde: qué diferencia al modelo, para quién tiene sentido, cuál es su ventaja concreta, cuál es su limitación real y cuándo compensa frente a otro.
 
-- **"La elegiría si…"**: debe responder "¿qué tiene este modelo que puede hacer que lo compre antes que otro?". No repite el subtítulo ni los bloques anteriores. El ecosistema de batería es un criterio secundario salvo que no haya diferencias más importantes.
+- **"Encaja si…"**: debe responder "¿qué tiene este modelo que puede hacer que lo compre antes que otro?". No repite el subtítulo ni los bloques anteriores. El ecosistema de batería es un criterio secundario salvo que no haya diferencias más importantes.
 - **"Lo que destaca"**: la ventaja práctica más relevante, apoyada en experiencia real cuando exista.
 - **"A tener en cuenta"**: una contrapartida real de compra o uso, no una especificación ya explicada.
 - Los tres bloques no se repiten entre sí ni duplican el texto principal. Las conclusiones de uso real se reparten por la ficha.
-- Los bloques "La elegiría si…" usan fondo azul suave, borde azul y texto azul (`product-cards-v1.css`).
+- Los bloques "Encaja si…" usan fondo azul suave, borde azul y texto azul (`product-cards-v1.css`).
 
 ## 8.8 Imágenes
 
@@ -547,8 +547,19 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 ## Decisiones abiertas
 
 1. **Autoría:** organización como autor (actual), autor personal con Compra con Sentido como publisher, o sistema mixto por categoría. Debe decidirse a nivel de marca (privacidad, escalabilidad por categorías, efecto en Sobre nosotros y schema, experiencia práctica que mostrar junto al nombre). Si cambia, se aplica a todo el sitio a la vez, en contenido visible, Sobre nosotros y schema. No hay evidencia medida de SERP o conversión que lo respalde todavía.
-2. **Topes de precio en títulos** (por ejemplo, "menos de 200 €" en taladros): no son un precio mostrado, pero envejecen. Decidir si se permiten con revisión en cada actualización y, en su caso, declararlo como excepción del control de residuos.
+2. **Topes de precio en títulos:** el usuario aprobó el 28/10/2026 retirar «por menos de 200 €» de title, enlaces y botón de taladros. Aplicación pendiente en el lote editorial; revisar también la promesa «calidad-precio» de PLA.
 3. **Ponderación de la Valoración técnica de PLA:** documentar en el MASTER la ponderación aplicada tras retirar el precio.
+
+## Auditoría consolidada: decisiones aprobadas el 28/10/2026
+
+- Base revisada: 27 URLs en sitemap y 49 imágenes sin alguna dimensión declarada. Aceptadas las correcciones P1 y P2 del plan consolidado.
+- Literal de decisión aprobado: «Encaja si…» (§8.7). Su aplicación a las fichas queda para el lote editorial.
+- Tipografía aprobada: pila de sistema común. Nombres aprobados: «Sobre nosotros» y «Aviso legal, privacidad y afiliación»; el bloque selectivo del footer se llamará «Guías destacadas». Aplicación pendiente en sus lotes, sin cambios de URL.
+- Se mantienen el CTA compacto de tabla de §9.3 y el desplazamiento de la tabla completa sin columna fija. Autoría personal, revisión legal y rediseño de portada se tratan aparte.
+- Una PR por lote, siempre contra main. Tras publicar, entregar textos y archivos concretos que comprobar en producción.
+- El usuario autoriza corregir ya el enlace de «Cuántos litros» y sustituir la imagen defectuosa de Cecotec por la imagen existente del mismo modelo/ASIN usada en «Secar ropa». Se añade la leyenda «–: no declarado en la ficha española» bajo la tabla de amoladoras, sin atribuir ni negar AFT a Makita.
+- Lote A preparado: enlace absoluto correcto, sustitución de la referencia de Cecotec y leyenda de amoladoras; el auditor del build comprueba referencias internas y anclas en las 27 páginas y 404. Pendientes checks remotos, merge y comprobación de producción.
+- Antes del lote de imágenes y rendimiento (srcset, dimensiones, precargas o fotos de amoladoras/llaves), esperar las mediciones iniciales del usuario en portada, amoladoras y gatos para coche. Esta espera no afecta a la sustitución puntual del Cecotec.
 
 ## Pendientes inmediatos
 
