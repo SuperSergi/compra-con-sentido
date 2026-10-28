@@ -226,7 +226,7 @@ for (const vp of viewports) {
     if (!sharedStyleQA.bodyFont.startsWith("system-ui")) issues.push("non-system-body-font=" + sharedStyleQA.bodyFont);
     if (sharedStyleQA.fontMismatches.length) issues.push("inconsistent-fonts=" + sharedStyleQA.fontMismatches.length);
     if (sharedStyleQA.lowContrastLabels.length) issues.push("spec-label-contrast=" + sharedStyleQA.minSpecContrast.toFixed(3));
-    if (sharedStyleQA.stylesheets > 3) issues.push("css-request-count=" + sharedStyleQA.stylesheets);
+    if (sharedStyleQA.stylesheets !== 1) issues.push("css-request-count=" + sharedStyleQA.stylesheets);
     if (!response || response.status() !== 200) issues.push("HTTP " + (response?.status() ?? "no-response"));
     if (data.h1Count !== 1) issues.push("H1=" + data.h1Count);
     if (path === "/" ? data.breadcrumbCount !== 0 : data.breadcrumbCount !== 1) issues.push("breadcrumbs=" + data.breadcrumbCount);
