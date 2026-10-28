@@ -133,15 +133,7 @@
    ========================================================= */
 
 .ccs-intro-card{
-  font-family:
-    Inter,
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Arial,
-    sans-serif!important;
+  font-family:var(--font-sans)!important;
   font-size:17px!important;
   line-height:1.6!important;
   color:var(--ink,#20352a)!important;
@@ -159,15 +151,7 @@
   border:0!important;
   border-radius:0!important;
   color:var(--green-700,#138250)!important;
-  font-family:
-    Inter,
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Arial,
-    sans-serif!important;
+  font-family:var(--font-sans)!important;
   font-size:13px!important;
   line-height:1!important;
   font-weight:700!important;
@@ -178,15 +162,7 @@
 .ccs-intro-card h2{
   margin:10px 0 0!important;
   color:var(--green-950,#063d26)!important;
-  font-family:
-    Inter,
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Arial,
-    sans-serif!important;
+  font-family:var(--font-sans)!important;
   font-size:clamp(30px,3vw,42px)!important;
   line-height:1.16!important;
   font-weight:800!important;
@@ -205,15 +181,7 @@
 .ccs-intro-copy p,
 .ccs-intro-card > p.ccs-intro-copy{
   color:var(--muted,#5f6d65)!important;
-  font-family:
-    Inter,
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Arial,
-    sans-serif!important;
+  font-family:var(--font-sans)!important;
   font-size:17px!important;
   line-height:1.6!important;
   font-weight:400!important;

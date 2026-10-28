@@ -723,7 +723,7 @@ document.addEventListener("DOMContentLoaded", () => {
         Usamos Google Analytics únicamente si aceptas las cookies de analítica.
         Nos ayuda a saber qué páginas funcionan y qué enlaces de Amazon reciben clics.
         Puedes aceptar o rechazar con la misma facilidad y cambiar tu decisión después.
-        <a href="${BASE}aviso-legal/#cookies">Más información</a>.
+        <a href="${BASE}aviso-legal/#cookies">Más información sobre cookies</a>.
       </p>
       <div class="ccc-cookie-actions">
         <button class="ccc-cookie-btn" type="button" data-consent="denied">

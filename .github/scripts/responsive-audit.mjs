@@ -193,6 +193,40 @@ for (const vp of viewports) {
     });
 
     const issues = [];
+    const sharedStyleQA = await page.evaluate(() => {
+      const bodyFont = getComputedStyle(document.body).fontFamily;
+      const visible = el => el.getBoundingClientRect().width > 0 && el.getBoundingClientRect().height > 0;
+      const fontMismatches = [...document.querySelectorAll("h1,h2,h3,.logo,.brand,.ccs-product-card,.ccs-intro-card,.ccs-comparison-profile")]
+        .filter(visible).filter(el => getComputedStyle(el).fontFamily !== bodyFont)
+        .map(el => ({tag: el.tagName, text: el.textContent.trim().slice(0,60), font: getComputedStyle(el).fontFamily}));
+      const rgb = value => (value.match(/[\d.]+/g) || []).map(Number);
+      const luminance = values => values.slice(0,3).map(v => v / 255).map(v => v <= 0.04045 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4)
+        .reduce((sum,v,i) => sum + v * [0.2126,0.7152,0.0722][i], 0);
+      const labels = [...document.querySelectorAll(".ccs-product-specs small,.ccs-product-specs span")].filter(visible);
+      const contrasts = labels.map(el => {
+        let ancestor = el, background;
+        while (ancestor) {
+          const value = rgb(getComputedStyle(ancestor).backgroundColor);
+          if (value.length === 3 || value[3] === 1) { background = value; break; }
+          ancestor = ancestor.parentElement;
+        }
+        background ||= [255,255,255];
+        const foreground = rgb(getComputedStyle(el).color);
+        const [low,high] = [luminance(background),luminance(foreground)].sort((a,b) => a-b);
+        return {text: el.textContent.trim(),ratio: (high+0.05)/(low+0.05)};
+      });
+      return {
+        bodyFont, fontMismatches,
+        minSpecContrast: contrasts.length ? Math.min(...contrasts.map(c => c.ratio)) : null,
+        lowContrastLabels: contrasts.filter(c => c.ratio < 4.5),
+        stylesheets: document.querySelectorAll('link[rel="stylesheet"]').length
+      };
+    });
+    data.sharedStyleQA = sharedStyleQA;
+    if (!sharedStyleQA.bodyFont.startsWith("system-ui")) issues.push("non-system-body-font=" + sharedStyleQA.bodyFont);
+    if (sharedStyleQA.fontMismatches.length) issues.push("inconsistent-fonts=" + sharedStyleQA.fontMismatches.length);
+    if (sharedStyleQA.lowContrastLabels.length) issues.push("spec-label-contrast=" + sharedStyleQA.minSpecContrast.toFixed(3));
+    if (sharedStyleQA.stylesheets > 3) issues.push("css-request-count=" + sharedStyleQA.stylesheets);
     if (!response || response.status() !== 200) issues.push("HTTP " + (response?.status() ?? "no-response"));
     if (data.h1Count !== 1) issues.push("H1=" + data.h1Count);
     if (path === "/" ? data.breadcrumbCount !== 0 : data.breadcrumbCount !== 1) issues.push("breadcrumbs=" + data.breadcrumbCount);

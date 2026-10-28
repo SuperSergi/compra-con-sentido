@@ -1,0 +1,284 @@
+/* Fuente: css/metodologia.css */
+/* Compra con Sentido · Metodología */
+.method-page{padding-top:76px;background:#fff}
+.method-hero{position:relative;padding:86px 0 78px;color:#fff;background:linear-gradient(135deg,#063d26 0%,#0a653c 100%);overflow:hidden}
+.method-hero::after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;right:-120px;top:-180px;background:rgba(255,255,255,.06)}
+.method-hero-inner{position:relative;z-index:2;max-width:920px}
+.method-kicker{display:inline-block;padding:9px 12px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(255,255,255,.08);color:#d9f3e5;font-size:12px;font-weight:850;letter-spacing:.09em;text-transform:uppercase}
+.method-hero h1{max-width:900px;margin:19px 0 18px;color:#fff;font-size:clamp(42px,5.8vw,68px);line-height:1.04;letter-spacing:-.04em}
+.method-hero p{max-width:800px;margin:0;color:rgba(255,255,255,.88);font-size:20px;line-height:1.65}
+.method-section{padding:76px 0}
+.method-soft{background:var(--green-050)}
+.method-intro,.method-heading{display:grid;grid-template-columns:1fr .85fr;gap:54px;align-items:end;margin-bottom:34px}
+.method-intro h2,.method-heading h2,.method-closing h2{margin:10px 0 0;color:var(--green-950);font-size:clamp(30px,3.2vw,44px);line-height:1.12;letter-spacing:-.03em}
+.method-intro>p,.method-heading>p{margin:0;color:var(--muted);max-width:610px;justify-self:end}
+.method-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.method-card{padding:28px;border:1px solid var(--line);border-radius:var(--radius-lg);background:#fff;box-shadow:var(--shadow-soft)}
+.method-card>span{display:grid;place-items:center;width:42px;height:42px;margin-bottom:18px;border-radius:12px;background:var(--green-100);color:var(--green-900);font-size:13px;font-weight:900}
+.method-card h3{margin:0 0 10px;color:var(--green-950);font-size:23px;line-height:1.25}
+.method-card p{margin:0;color:var(--muted)}
+.source-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.source-steps article{padding:24px;border:1px solid var(--line);border-radius:18px;background:#fff}
+.source-steps strong{display:block;margin-bottom:9px;color:var(--green-900);font-size:18px}
+.source-steps p{margin:0;color:var(--muted);font-size:15px}
+.method-note{margin-top:20px;padding:22px 24px;border-left:4px solid var(--green-700);border-radius:14px;background:#fff;color:var(--muted)}
+.method-note strong{color:var(--green-950)}
+.method-copy{max-width:900px}
+.method-copy p{margin:0 0 16px;color:var(--muted);font-size:18px}
+.method-copy p:last-child{margin-bottom:0}
+.method-link{margin:24px 0 0;color:var(--muted)}
+.method-link a{color:var(--green-800);font-weight:800;text-underline-offset:3px}
+.method-closing{display:grid;grid-template-columns:1fr .8fr;gap:54px;align-items:center;padding:38px 42px;border-radius:var(--radius-xl);background:linear-gradient(135deg,var(--green-900),var(--green-700));box-shadow:var(--shadow)}
+.method-closing .section-kicker{color:#d6f2e2}
+.method-closing h2{color:#fff}
+.method-closing p{margin:0;color:rgba(255,255,255,.86);font-size:18px}
+@media(max-width:900px){.source-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.method-page{padding-top:64px}.method-hero{padding:64px 0 58px}.method-hero p{font-size:18px}.method-section{padding:58px 0}.method-intro,.method-heading,.method-closing{grid-template-columns:1fr;gap:18px}.method-grid,.source-steps{grid-template-columns:1fr}.method-intro>p,.method-heading>p{justify-self:start}.method-closing{padding:30px 26px}}
+/* Fuente: css/intro-v1.css */
+/* =========================================================
+   COMPRA CON SENTIDO · INTRO OVERLAP V1
+   Bloque común inmediatamente después del hero.
+   ========================================================= */
+
+.ccs-intro-overlap{
+  position:relative;
+  z-index:4;
+  margin-top:-46px!important;
+  padding:0 0 48px!important;
+}
+
+.ccs-intro-card{
+  display:grid!important;
+  grid-template-columns:.9fr 1.1fr!important;
+  gap:56px!important;
+  width:100%!important;
+  margin:0!important;
+  padding:44px 48px!important;
+  background:#fff!important;
+  border:1px solid rgba(13,86,50,.08)!important;
+  border-radius:var(--radius-xl,26px)!important;
+  box-shadow:var(--shadow,0 18px 45px rgba(22,60,39,.10))!important;
+}
+
+.ccs-intro-heading{
+  min-width:0;
+}
+
+.ccs-intro-heading .section-kicker,
+.ccs-intro-heading [class*="kicker"],
+.ccs-intro-heading [class*="eyebrow"]{
+  display:inline-block;
+  margin:0;
+}
+
+.ccs-intro-card h2{
+  margin:10px 0 0!important;
+  color:var(--green-950,#063d26)!important;
+  font-size:clamp(30px,3vw,42px)!important;
+  line-height:1.16!important;
+  letter-spacing:-.025em!important;
+}
+
+.ccs-intro-copy{
+  min-width:0;
+  align-self:center!important;
+  justify-self:stretch;
+  text-align:left!important;
+}
+
+.ccs-intro-card > p.ccs-intro-copy{
+  margin:0!important;
+  align-self:center!important;
+  color:var(--muted,#5f6d65)!important;
+  align-self:center;
+}
+
+.ccs-intro-copy p{
+  margin:0 0 16px!important;
+  color:var(--muted,#5f6d65)!important;
+}
+
+.ccs-intro-copy p:last-child{
+  margin-bottom:0!important;
+}
+
+.ccs-intro-copy a{
+  color:var(--green-800,#0a653c);
+  font-weight:750;
+  text-underline-offset:3px;
+}
+
+/* Compatibilidad con bloques rápidos de comparativas */
+.ccs-intro-card > aside{
+  align-self:stretch;
+}
+
+/* Evita dobles solapes de los estilos antiguos */
+.intro-section.ccs-intro-overlap,
+.tools-intro.ccs-intro-overlap,
+.home-intro.ccs-intro-overlap,
+.drill-intro.ccs-intro-overlap,
+.vacuum-intro.ccs-intro-overlap,
+.dehum-intro.ccs-intro-overlap,
+.intro-wrap.ccs-intro-overlap{
+  margin-top:-46px!important;
+}
+
+@media(max-width:900px){
+  .ccs-intro-card{
+    grid-template-columns:1fr!important;
+    gap:24px!important;
+  }
+}
+
+@media(max-width:760px){
+  .ccs-intro-overlap{
+    margin-top:-32px!important;
+    padding-bottom:38px!important;
+  }
+
+  .ccs-intro-card{
+    gap:22px!important;
+    padding:30px 25px!important;
+    border-radius:20px!important;
+  }
+
+  .ccs-intro-card h2{
+    font-size:clamp(28px,8vw,36px)!important;
+  }
+}
+
+
+/* Integración con páginas antiguas que añadían padding antes del primer bloque */
+.ccs-has-intro-overlap{
+  padding-top:0!important;
+}
+
+.opening.ccs-intro-overlap{
+  max-width:none!important;
+  color:inherit!important;
+  font-size:inherit!important;
+  line-height:inherit!important;
+}
+
+
+/* =========================================================
+   INTRO V1.1 · TIPOGRAFÍA Y COLOR CANÓNICOS
+   La tarjeta debe verse idéntica en cualquier sección,
+   aunque la página conserve CSS o estilos inline antiguos.
+   Referencia visual: Inicio / Herramientas.
+   ========================================================= */
+
+.ccs-intro-card{
+  font-family:var(--font-sans)!important;
+  font-size:17px!important;
+  line-height:1.6!important;
+  color:var(--ink,#20352a)!important;
+  -webkit-font-smoothing:antialiased;
+}
+
+.ccs-intro-heading .section-kicker,
+.ccs-intro-heading .hero-kicker,
+.ccs-intro-heading [class*="kicker"],
+.ccs-intro-heading [class*="eyebrow"]{
+  display:inline-block!important;
+  margin:0!important;
+  padding:0!important;
+  background:transparent!important;
+  border:0!important;
+  border-radius:0!important;
+  color:var(--green-700,#138250)!important;
+  font-family:var(--font-sans)!important;
+  font-size:13px!important;
+  line-height:1!important;
+  font-weight:700!important;
+  letter-spacing:.10em!important;
+  text-transform:uppercase!important;
+}
+
+.ccs-intro-card h2{
+  margin:10px 0 0!important;
+  color:var(--green-950,#063d26)!important;
+  font-family:var(--font-sans)!important;
+  font-size:clamp(30px,3vw,42px)!important;
+  line-height:1.16!important;
+  font-weight:800!important;
+  letter-spacing:-.025em!important;
+}
+
+.ccs-intro-copy{
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:center!important;
+  align-self:stretch!important;
+  text-align:left!important;
+}
+
+.ccs-intro-copy,
+.ccs-intro-copy p,
+.ccs-intro-card > p.ccs-intro-copy{
+  color:var(--muted,#5f6d65)!important;
+  font-family:var(--font-sans)!important;
+  font-size:17px!important;
+  line-height:1.6!important;
+  font-weight:400!important;
+  letter-spacing:normal!important;
+}
+
+.ccs-intro-copy strong{
+  color:var(--ink,#20352a)!important;
+  font-weight:750!important;
+}
+
+@media(max-width:760px){
+  .ccs-intro-heading .section-kicker,
+  .ccs-intro-heading .hero-kicker,
+  .ccs-intro-heading [class*="kicker"],
+  .ccs-intro-heading [class*="eyebrow"]{
+    font-size:12px!important;
+  }
+
+  .ccs-intro-card h2{
+    font-size:clamp(28px,8vw,36px)!important;
+  }
+
+  .ccs-intro-copy,
+  .ccs-intro-copy p,
+  .ccs-intro-card > p.ccs-intro-copy{
+    font-size:16px!important;
+  }
+}
+
+
+/* Móvil · más aire cuando el hero incluye botones/acciones */
+@media(max-width:760px){
+  .hero-actions,
+  .tools-hero-actions,
+  .drill-hero-actions,
+  .home-hero-actions,
+  .vacuum-hero-actions,
+  .dehum-hero-actions{
+    margin-bottom:18px!important;
+  }
+}
+
+/* Fuente: css/related-heroes-v1.css */
+/* Tarjetas de navegación interna con imagen hero.
+   Solo se aplica dentro de .ccs-hero-links para no afectar tarjetas ni footer existentes. */
+.ccs-hero-links{width:min(1160px,calc(100% - 36px));margin:56px auto 68px;box-sizing:border-box}
+.ccs-hero-links *{box-sizing:border-box}
+.ccs-hero-links h2{margin:0 0 12px;color:#063d26;font-size:clamp(26px,3vw,36px);font-weight:800;line-height:1.18}
+.ccs-hero-links > p{margin:0 0 24px;max-width:820px;color:#52645b;font-size:16px;line-height:1.65}
+.ccs-hero-links__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.ccs-hero-links__card{position:relative;isolation:isolate;display:block;min-width:0;overflow:hidden;border-radius:20px;border:1px solid #dfe7e2;background:#063d26;box-shadow:0 12px 28px rgba(0,36,21,.1);color:#fff!important;text-decoration:none!important;transition:transform .18s ease,box-shadow .18s ease}
+.ccs-hero-links__card:hover,.ccs-hero-links__card:focus-visible{transform:translateY(-3px);box-shadow:0 16px 32px rgba(0,36,21,.18)}
+.ccs-hero-links__card:focus-visible{outline:3px solid #f7ca00;outline-offset:3px}
+.ccs-hero-links__card img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;transition:transform .2s ease}
+.ccs-hero-links__card:hover img{transform:scale(1.025)}
+.ccs-hero-links__card:after{position:absolute;inset:25% 0 0;z-index:0;content:"";background:linear-gradient(180deg,transparent 0%,rgba(0,29,17,.91) 100%);pointer-events:none}
+.ccs-hero-links__copy{position:absolute;inset:auto 0 0;z-index:1;padding:20px 22px 21px}
+.ccs-hero-links__copy span{display:block;margin-bottom:7px;color:#dcefe4;font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+.ccs-hero-links__copy strong{display:block;color:#fff;font-size:clamp(19px,2.2vw,25px);font-weight:800;line-height:1.22}
+@media(max-width:700px){.ccs-hero-links{width:min(100% - 24px,1160px);margin:40px auto 52px}.ccs-hero-links__grid{grid-template-columns:1fr;gap:16px}.ccs-hero-links__copy{padding:17px 19px 20px}}
+@media(prefers-reduced-motion:reduce){.ccs-hero-links__card,.ccs-hero-links__card img{transition:none}.ccs-hero-links__card:hover,.ccs-hero-links__card:focus-visible{transform:none}.ccs-hero-links__card:hover img{transform:none}}
+

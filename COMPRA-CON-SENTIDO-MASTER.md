@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 28/10/2026 18:32
+**Última actualización:** 28/10/2026 19:25
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -563,7 +563,7 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 
 ### Lote B de contenido · PR #84
 
-Rama `editorial/auditoria-lote-b`, basada en main tras #83. El usuario ha revisado la PR #84 comparándola con main y autoriza publicarla tras corregir la duplicación de Lefant y los destacados genéricos. Las correcciones y la revisión transversal de destacados están incorporadas en la misma PR. La integración exige controles correctos; la comprobación personal en producción queda pendiente del usuario tras el despliegue. Incluye «Encaja si…», retirada de atribuciones de opiniones/pruebas sin fuente, notas internas y ASIN visibles de amoladoras, perfiles sin numeración, limpieza de precio en taladros/PLA, coherencia de FAQ y metadatos, y enlaces primarios junto a afirmaciones verificadas. Se conserva la leyenda y la incertidumbre técnica de Makita.
+Rama `editorial/auditoria-lote-b`, basada en main tras #83. El usuario ha revisado la PR #84 comparándola con main y autoriza publicarla tras corregir la duplicación de Lefant y los destacados genéricos. Las correcciones y la revisión transversal de destacados están incorporadas en la misma PR. Integrado en main y comprobado por el usuario en producción: los seis puntos están correctos. Incluye «Encaja si…», retirada de atribuciones de opiniones/pruebas sin fuente, notas internas y ASIN visibles de amoladoras, perfiles sin numeración, limpieza de precio en taladros/PLA, coherencia de FAQ y metadatos, y enlaces primarios junto a afirmaciones verificadas. Se conserva la leyenda y la incertidumbre técnica de Makita.
 
 Los seis destacados de PLA explican diferencias de tolerancia, formulación, bobina, velocidad declarada, cantidad y origen de fabricación. Los destacados de otras comparativas sustituidos por opiniones se han revisado también; no se convierten en instrucciones genéricas de comprobación. Los restos «Selección actual», «Peso*», «2,95 kg producto», «Manitas», «Para nosotros» y «Tabla comparable» se reservan para el lote E por indicación del usuario.
 
@@ -655,3 +655,18 @@ Cuando una tarea deba continuar en otro chat, entregar en la misma respuesta un 
 ## 15.4 Mantenimiento y versionado del MASTER
 
 Actualizar este documento cuando cambie infraestructura, se contrate algo, se publique una URL, se cierre una decisión SEO o una comparativa, aparezca un problema importante, se complete una tarea, cambie una norma, se incorpore una herramienta o se modifique la arquitectura. Cada actualización lleva fecha y hora local (`DD/MM/YYYY HH:MM`) en la cabecera. Al integrar información nueva, **sustituir** el texto afectado en lugar de añadir un bloque contradictorio al final.
+
+## Lote D: preparación en borrador (28/10/2026)
+
+El usuario autoriza preparar una PR contra main y mantenerla en borrador. Pendiente de revisión y publicación. El lote B ya está comprobado en producción por el usuario.
+
+- CSS: base compartida y versionada; agrupar el resto por orden sin cruzar estilos inline. Portada 4 a 2 solicitudes, amoladoras 10 a 2 y gatos para coche 8 a 3. Fuentes editables en css/, salidas generadas en css/compiled/ y mapa en .github/css-bundles.json. No editar salidas a mano. Tras cambiar fuentes o referencias ejecutar `python3 .github/scripts/build-css.py`; antes de subir, `python3 .github/scripts/build-css.py --check` y site-audit.py. No usar @import ni un bundle global para todas las categorías.
+- Etiquetas de ficha: #5f6d65 sobre #f7faf8, contraste 5,175:1. Validación computada añadida a la auditoría responsive.
+- Banner global: «Más información sobre cookies», mismo destino y consentimiento. Todas las referencias de main-v4.js llevan SHA-256 truncado a 12 caracteres del texto UTF-8 con saltos normalizados; site-audit.py verifica su vigencia.
+- Tipografía: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif mediante --font-sans. Sin declaraciones Arial locales ni Inter en los componentes compartidos.
+
+Validación detallada: .github/measurement/lote-d-validation-20261028.md. La reducción de solicitudes no acredita una mejora medida de Speed Index. El usuario repetirá PageSpeed móvil tras publicar; mantener la referencia inicial. No se modifican imágenes, dimensiones, srcset ni precargas.
+
+Lote C pendiente de decisión con Sergi: inventario de 12 fichas y cabecera de llaves, más 23 escenas ambiente de procedencia por confirmar. Preferir foto real del modelo exacto con permiso documentado o recurso genérico sin marca aprobado. No sustituir todavía.
+
+Lote E después del D: «Selección actual», «Peso*», «2,95 kg producto», «Manitas», «Para nosotros», «Tabla comparable», nombres de navegación aprobados y «No elegiría una amoladora únicamente por este punto» a «No conviene elegir una amoladora únicamente por este punto…». Autoría, parte legal y rediseño de portada siguen aparte.
