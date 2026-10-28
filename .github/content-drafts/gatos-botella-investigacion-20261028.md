@@ -26,12 +26,12 @@ Capacidad, altura min/máx en mm, recorrido hidráulico, husillo (mm) y masa del
 |---|---:|---:|---:|---:|---:|---:|---|
 | Bahco BH4G2 | 2 t | 181 | 344 | 115 | 48 | 2,4 | Manual Bahco BH4G/BH4B |
 | KS Tools 160.0351 | 3 t | 194 | 372 | 118 | 60 | 2,8 | Ficha KS Tools actual |
-| Michelin 009559 | 3 t | 195 | 385 | N/D | N/D | 3,0 kg en retailer, **no confirmado por fabricante** | Manual Michelin + distribuidor |
+| Michelin 009559 | 3 t | 195 | 385 | N/D | N/D | ≈3,0 kg (Stock24); Norauto 3,4 kg; fabricante sin cifra neta confirmada | Manual Michelin + distribuidor |
 | KS Tools 160.0352 | 5 t | 216 | 413 | 127 | 70 | 3,7 | Ficha KS Tools actual |
 | SIXTOL SX1147 | 6 t | 200 | 385 | N/D | 60 | 4,0 | Ficha SIXTOL oficial |
 | SIXTOL SX3080 Premium | 6 t | 215 | 435 | N/D | 60 | 4,15 | Ficha SIXTOL oficial |
 
-Importante: peso del Bahco BH4G4 es 3,2 kg en manual pero 2,9 kg en ficha web, por eso no se ha elegido como principal. KS Tools catálogo de 2015 indica masas superiores a fichas actuales: usar ficha vigente, no sumar embalaje. En Michelin Galaxus afirma 3,0 kg para 009559 y 3,29 kg con embalaje; mostrar el peso como 'aprox. 3 kg, ficha de distribuidor' solo si se mantiene claramente su origen, o 'no declarado por fabricante'.
+Importante: peso del Bahco BH4G4 es 3,2 kg en manual pero 2,9 kg en ficha web, por eso no se ha elegido como principal. KS Tools catálogo de 2015 indica masas superiores a fichas actuales: usar ficha vigente, no sumar embalaje. Michelin 009559: Stock24 identifica 3 kg de peso de producto (https://stock24.es/product/michelin-9559-gato-botella-bleu-michelin/); Norauto indica 3,4 kg (https://www.norauto.fr/p/cric-bouteille-michelin-3t-2860628.html). Mantener ≈3 kg con asterisco de fuente y discrepancia. Diferencia total 385-195=190 mm, que incluye carrera hidráulica y extensión roscada. Fabricante sin desglose: no inventar carrera ni extensión.
 
 **Fuentes oficiales:**
 - Bahco https://www.bahco.com/es_es/gatos-hidraulicos-de-botella-pb_bh4g_.html
