@@ -17,6 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
           href:
             base +
             "herramientas/gatos-hidraulicos/mejores-gatos-hidraulicos-para-coche/"
+        },
+        {
+          label: "Gatos de botella comparados",
+          href:
+            base +
+            "herramientas/gatos-hidraulicos/mejores-gatos-hidraulicos-botella/"
         }
       ]
     },
