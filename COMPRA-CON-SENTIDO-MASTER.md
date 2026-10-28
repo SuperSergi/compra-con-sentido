@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 28/10/2026 09:11
+**Última actualización:** 28/10/2026 11:27
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -253,6 +253,8 @@ La popularidad (nº de reseñas, ventas visibles) **no puntúa como calidad**: s
 - No usar etiquetas ni avisos negativos o defensivos repetidos ("No probado", "Basado en ficha y opiniones"). La metodología global (`/metodologia/`) explica cómo se investigan los productos.
 - Redacción natural, con criterio experto. Evitar fichas demasiado simétricas, conclusiones repetidas, estructuras mecánicas, lenguaje comercial copiado y afirmaciones absolutas sin soporte.
 - Ningún párrafo visible debe empezar con signos huérfanos (`:`, `-`, `·`); los primeros párrafos de las fichas son frases completas.
+- **Revisión editorial con `humanizer-sergi` (decisión 28/10/2026):** redactar para lectores, no como salida de una ficha técnica. Cada ficha habla del modelo propio, de su uso y limitaciones; las comparaciones directas entre productos van principalmente en la tabla o en apartados explícitos de comparación. Evitar repeticiones, frases defensivas y metacomentarios editoriales sobre cómo se verificaron datos o por qué se retiró información. Las fuentes se enlazan sin introducir notas obsoletas en el texto público. Mantener la trazabilidad de discrepancias y derivaciones técnicas en documentos internos.
+
 
 ## 8.4 Estructura de una comparativa
 
@@ -366,6 +368,8 @@ No usar el nombre del producto cuando el contexto ya sea inequívoco. Los CTA no
 - La página `404.html` utiliza también el footer global desde el 04/10/2026.
 - **Contenido dentro de `<main>`:** nada después de `</html>`; bloques como "Cómo analizamos" van dentro de `<main>`.
 - No compactar `hero-v5.css` ni `intro-v1.css` sin una regresión visual completa de toda la web.
+- **Cierre de navegación con tarjetas hero clicables (aprobación de estilo 28/10/2026):** el formato preparado en la comparativa de gatos de botella, PR #75, utiliza un párrafo breve seguido de dos tarjetas con sus propias imágenes hero; cada tarjeta entera funciona como enlace, sin botones separados. Presentación de dos columnas en escritorio y una en móvil. **Plan:** una vez publicada y validada esta página, revisar y extender el patrón al resto de páginas donde existan dos destinos internos relevantes; no crear tarjetas sin utilidad editorial ni afirmar que este cambio ya está aplicado a toda la web.
+
 
 ---
 
