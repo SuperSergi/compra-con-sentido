@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 28/10/2026 08:56
+**Última actualización:** 28/10/2026 09:11
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -129,7 +129,7 @@ Toda página pública mantiene:
 - **GA4 mediante Windsor.ai:** 01/10-27/10/2026: 30 sesiones, 10 usuarios activos, 275 vistas y 13 eventos `amazon_click` en toda la propiedad. Separando por hostname: producción `compraconsentido.es` 27 sesiones, 8 usuarios activos y 11 eventos; previews 3 sesiones, 2 usuarios activos y 2 eventos. En producción, salidas registradas: deshumidificadores para secar ropa 5, comparativa general de deshumidificadores 4, llaves de impacto 2. Los resultados pueden incluir visitas internas propias y no prueban compras.
 - **Dimensiones de GA4:** configuración declarada realizada por el usuario (`product_name`, `asin`, `affiliate_tag`, ámbito Evento) y `amazon_click` como evento clave. Aún no aparecen verificadas en el listado de campos del conector y podrían tardar en procesarse; no confundir declaración de configuración con validación técnica.
 - **Herramientas sin cuota:** decisión del usuario de **no pagar suscripciones de analítica/SEO**. Windsor.ai está en `Trial` (el 28/10 el usuario informó de 5 días restantes); tras finalizar, comprobar los límites reales del plan gratuito antes de contar con acceso simultáneo a Search Console y GA4. Priorizar Search Console y usar la interfaz gratuita de GA4 directamente si el conector deja de permitir ambas fuentes. Google no depende de Windsor.ai para guardar las mediciones. No dar por garantizado el acceso futuro ni adquirir planes de pago.
-- **Próximo trabajo:** validar eventos post-PR #72 y dimensiones personalizadas en GA4, comprobar cómo queda Windsor.ai tras la prueba y hacer investigación SERP de `Mejores gatos hidráulicos de botella para coche` antes de aprobar una nueva URL.
+- **Próximo trabajo:** validar eventos post-PR #72 y dimensiones personalizadas en GA4, comprobar Windsor.ai al finalizar la prueba, optimizar con criterio páginas con impresiones y pasar las candidatas SEO de la investigación 28/10/2026 (sección 7.3) por verificación final de SERP, productos, fabricante y ASIN antes de publicar. No contratar herramientas de pago.
 
 ## Estado de indexación y primeras señales SEO (actualizado 23/10/2026)
 
@@ -177,6 +177,41 @@ No crear una URL por una simple variación de keyword. No inventar volúmenes de
 5. `Mejores deshumidificadores silenciosos para dormitorio` — criterios de ruido, modo noche y uso prolongado distintos de la comparativa general.
 
 La lista es una prioridad de investigación, no una autorización automática para publicar sin completar el proceso de la sección 7.1.
+
+### Investigación comercial SEO del 28/10/2026
+
+**Objetivo:** acelerar el tráfico útil con coste cero, sin generar páginas por simples variaciones de keyword. Fuentes: Search Console (28/09-25/10: 634 impresiones, 8 clics), sitemap de main y muestreo de buscador en español. El muestreo de resultados no sustituye una SERP geolocalizada exhaustiva de Google ni mide volumen mensual. Prioridades editoriales cualitativas; no autoriza publicar sin validación completa.
+
+| Oportunidad | SERP y potencial | Decisión |
+| --- | --- | --- |
+| Secadores de filamento 3D | Comparativas de Criterio Tech y TodoImpresión3D; decisión comercial por temperatura, bobinas, AMS | **Prioridad 1**; cluster impresión 3D, canibalización baja |
+| Gatos hidráulicos de botella para vehículos altos | Motor16 y Zona Taller cubren también carretilla y botella; compra concreta | **Prioridad 2**; diferenciar SUV/furgonetas y altura; solape medio con gatos actual |
+| Compresores portátiles para coche | El Maletero compara 12 V y batería; compra clara | **Prioridad 3**; exige decidir cluster automoción antes |
+| Deshumidificadores para baño sin ventana | InteriorSano y EspacioSeco; búsqueda por problema | **Prioridad 4**; explicar ventilación, Peltier y seguridad, no exagerar extracción |
+| Mejores filamentos PETG | 3DJake y Compara3D; compras de bobinas específicas | **Prioridad 5**; distinguir del PLA, hub y guía de materiales |
+| Cargadores/mantenedores batería coche/moto | El Maletero; compatibilidad por química de batería | Candidata secundaria, futuro cluster automoción |
+| Arrancadores portátiles de batería | La Vanguardia y sitios especializados; competencia fuerte | Posponer por dificultad |
+| Lectores OBD2 Bluetooth | OBD2Scan y Rankin; compatibilidad de coche/apps | Candidata secundaria para automoción |
+| Niveles láser autonivelantes 360 | TallerPreciso y Rankin; precisión y alcance | Candidata secundaria en herramientas |
+| Lijadoras orbitales a batería | RadarOfertas y GuíaHerramientas | Candidata secundaria; distinguir orbital y rotorbital |
+| Taladros percutores a batería | Rankin y comparadores; compra específica | Riesgo medio-alto con página de taladros actual, no aprobar todavía |
+| Deshumidificadores silenciosos para dormitorio | InteriorSano y varias comparativas | Riesgo alto: contenido de ruido ya en comparativa principal; optimizar esta primero |
+| Higrómetros digitales para casa | InteriorSano y CasaKWh; tickets inferiores | Secundaria de apoyo al cluster humedad |
+| Kits de almacenamiento de filamento | 3DJake y Criterio Tech | Integrar en accesorios; valorar URL solo con intención propia |
+| PLA vs PETG | Varias guías y comparativas de servicios 3D | Informacional, competencia numerosa; postergar |
+| Impresoras 3D cerradas | Criterio Tech y FindMy3DPrinter | Riesgo alto con comparativa de impresoras existente |
+| Filamentos TPU 95A | Productos por Shore/compatibilidad | Solape parcial con PLA vs TPU; investigar antes de URL comercial |
+| Deshumidificadores de bajo consumo | Comparativas de consumo especializadas | Riesgo alto con la comparativa general: integrar consumo allí |
+| Deshumidificadores desecantes para frío | Intención técnica por temperatura de uso | SERP y productos insuficientemente contrastados, no aprobar |
+| Llaves dinamométricas para ruedas | Complemento comercial de herramientas y vehículo | SERP/productos insuficientemente contrastados, no aprobar |
+
+**Referencias SERP consultadas:** https://criteriotech.es/impresion-3d/mejor-secador-filamento/ ; https://todoimpresion3d.com/mejores-secadores-de-filamento-2026/ ; https://www.motor16.com/comparativas/mejor-gato-hidraulico-para-coche/ ; https://zonataller.com/blogs/taller/gato-hidraulico-para-coche-perfil-bajo-botella-carretilla-y-2t-3t ; https://elmaletero.es/mejores-compresores-de-aire-portatiles/ ; https://espacioseco.com/mejor-deshumidificador-bano/ ; https://compara3d.com/filamentos-petg/
+
+**Enlazado si se aprueban:** secadores desde accesorios 3D, hub filamentos y PLA vs TPU; gatos de botella desde hub de gatos y comparativa de gatos; baños desde hub deshumidificadores, guía litros y comparativa; PETG desde hub de filamentos y comparativa PLA. Compresores requiere antes arquitectura de automoción, no crear URL huérfana.
+
+**Trabajo paralelo en páginas existentes:** revisar consultas, CTR, intención y enlazado para gatos hidráulicos (38 impresiones, posición media 8,37), comparativa PLA (37, 10,49), deshumidificadores (37, 11,70), llaves de impacto (32, 16,56) y guía de litros (17, 6,82), periodo 28/09-25/10/2026. Son medias de URL, no ranking de keyword. No hacer cambios sin SERP y tendencia.
+
+**Antes de publicar:** confirmar SERP actual, canibalización, marca/modelo exacto, especificaciones en fabricante/manual, ficha activa de Amazon.es, ASIN y variante/kit, tracking y enlaces internos, menú, sitemap, schema, build y responsive. No se ha verificado aún disponibilidad Amazon de las candidatas ni volúmenes mensuales; este estudio no implica publicación automática.
 
 ## 7.4 Enlazado interno y navegación
 
