@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 28/10/2026
+**Última actualización:** 28/10/2026 16:25
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -585,6 +585,16 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 - [ ] Comprobar la renovación automática del dominio.
 - [ ] Mantener HSTS desactivado hasta nueva decisión y vigilar las reglas de bots de Cloudflare.
 - [ ] Reintentar la Creators API cuando se cumpla el mínimo de pedidos adscritos.
+
+---
+
+
+## Publicación editorial y UX del 28/10/2026
+
+- **Publicadas y fusionadas en `main` con autorización expresa del usuario:** PR #77 (10 páginas humanizadas, squash `5410fdb5`), PR #78 (últimas páginas y bibliotecas visuales de categorías, squash `da91a1f`) y PR #79 (FAQ, guías y coherencia UX, squash `dd99eef`). Este bloque sustituye el estado de borrador previo de esas PR. No hay nuevas URLs por esta fase.
+- Patrón visual final de FAQ: título «Preguntas frecuentes» independiente de la caja contenedora, preguntas individuales en `<details>/<summary>`, CSS compartido `css/faq-standard-v1.css`. Se ha retirado la tarjeta envolvente en la actualización final de PR #79.
+- Pruebas de PR #79: 108/108 controles responsive automatizados correctos en 27 páginas y cuatro viewports (360, 390, 768, 1440 px) para el commit funcional `575d599`; cambios posteriores en CSS y documentación se integraron en la misma PR. En la revisión de `main` posterior a las tres fusiones se confirmaron los checks `build` y `Cloudflare Pages` satisfactorios. No equiparar esta auditoría automática a una revisión visual humana exhaustiva.
+- **Revisión posterior en producción pendiente del usuario.** Se prevé contrastar la web con un informe de otra IA y abrir nuevas PR para correcciones detectadas. Mantener como tareas separadas las imágenes intermedias, la profundidad de fichas de llaves de impacto y la revisión editorial de deshumidificadores.
 
 ---
 
