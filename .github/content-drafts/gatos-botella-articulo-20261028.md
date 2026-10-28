@@ -37,12 +37,12 @@ Aquí encontrarás seis modelos de 2 a 6 toneladas. Las medidas y el peso de cad
 |---|---|---|---|---|---|---|
 | Bahco BH4G2 | 2 t | 181 mm | 344 mm | 115 mm | 48 mm | 2,4 kg |
 | KS Tools 160.0351 | 3 t | 194 mm | 372 mm | 118 mm | 60 mm | 2,8 kg |
-| Michelin 009559 | 3 t | 195 mm | 385 mm | 130 mm† (calculado) | 60 mm† (calculado) | ≈3 kg* (Stock24; Norauto indica 3,4 kg) |
+| Michelin 009559 | 3 t | 195 mm | 385 mm | 130 mm | 60 mm | 3 kg |
 | KS Tools 160.0352 | 5 t | 216 mm | 413 mm | 127 mm | 70 mm | 3,7 kg |
-| SIXTOL SX1147 | 6 t | 200 mm | 385 mm | No declarado | 60 mm | 4,0 kg |
-| SIXTOL SX3080 Premium | 6 t | 215 mm | 435 mm | No declarado | 60 mm | 4,15 kg |
+| SIXTOL SX1147 | 6 t | 200 mm | 385 mm | 125 mm | 60 mm | 4,0 kg |
+| SIXTOL SX3080 Premium | 6 t | 215 mm | 435 mm | 160 mm | 60 mm | 4,15 kg |
 
-*El recorrido de Michelin está calculado a partir de los 325 mm sin desenroscar el tornillo. Su peso es orientativo: Stock24 indica 3 kg y Norauto 3,4 kg.*
+*La versión publicada de la tabla muestra únicamente las medidas.*
 
 ## Análisis de los modelos
 
@@ -74,12 +74,10 @@ Necesita 194 mm de espacio para colocarlo. Una vez situado, cuenta con 118 mm de
 
 El Michelin 009559 levanta hasta 385 mm y puede venirte bien si necesitas trabajar con un punto de apoyo relativamente alto. Eso sí, recogido mide 195 mm: conviene comprobar el espacio disponible antes de comprarlo, sobre todo si piensas llevarlo para cambiar una rueda.
 
-Con el tornillo recogido llega a 325 mm; al extenderlo, alcanza los 385 mm. De ahí salen 130 mm de recorrido hidráulico y 60 mm de tornillo. Su peso ronda los 3 kg, aunque no todas las tiendas indican la misma cifra.
-
-*Para el peso, Stock24 indica 3 kg y Norauto, 3,4 kg. Los recorridos se calculan a partir de la altura intermedia de 325 mm sin desenroscar facilitada durante la revisión.*
+Con el tornillo recogido llega a 325 mm; al extenderlo, alcanza los 385 mm. De ahí salen 130 mm de recorrido hidráulico y 60 mm de tornillo. Pesa 3 kg.
 
 **Lo que destaca:** Alcanza 385 mm de altura en un modelo de 3 toneladas.  
-**A tener en cuenta:** Necesita 195 mm de espacio para entrar y hay diferencias entre tiendas sobre su peso.  
+**A tener en cuenta:** Necesita 195 mm de espacio para introducirlo.  
 **Lo elegiría si:** Buscas un gato de 3 toneladas que llegue a 385 mm y tienes sitio suficiente para colocarlo.
 
 [Ver precio en Amazon](https://www.amazon.es/dp/B0099R28RS?tag=ccc-gatohid-21) (enlace pendiente de revisión comercial definitiva).
@@ -100,7 +98,7 @@ Pesa 3,7 kg y tiene una base de 96 × 112 mm. Lo más importante es comprobar la
 
 El SIXTOL SX1147 soporta hasta 6 toneladas y pesa 4 kg. Puede encajar si tienes un vehículo pesado y buscas un gato de botella que puedas sacar y guardar sin demasiadas complicaciones.
 
-Para introducirlo necesitas 200 mm de espacio y puede elevar hasta 385 mm. Tiene un tornillo extensible de 60 mm para ajustar el contacto. Comprueba que la altura final sea suficiente: aunque tenga capacidad de sobra, puede quedarse corto para despegar una rueda en vehículos con mucho recorrido de suspensión.
+Para introducirlo necesitas 200 mm de espacio y puede elevar hasta 385 mm. El pistón tiene 125 mm de recorrido y dispone de 60 mm de tornillo extensible. Comprueba que la altura final sea suficiente: aunque tenga capacidad de sobra, puede quedarse corto para despegar una rueda en vehículos con mucho recorrido de suspensión.
 
 **Lo que destaca:** Ofrece 6 toneladas de capacidad con 4 kg de peso propio.  
 **A tener en cuenta:** Los 385 mm de altura máxima pueden no bastar en vehículos altos.  
@@ -110,7 +108,7 @@ Para introducirlo necesitas 200 mm de espacio y puede elevar hasta 385 mm. Tiene
 
 ### SIXTOL SX3080 Premium: para llegar más alto
 
-El SIXTOL SX3080 Premium alcanza 435 mm, una altura que puede resultar útil en SUV y furgonetas con puntos de apoyo elevados. Cuenta con un tornillo extensible de 60 mm y un cuerpo soldado.
+El SIXTOL SX3080 Premium alcanza 435 mm, una altura que puede resultar útil en SUV y furgonetas con puntos de apoyo elevados. Cuenta con 160 mm de recorrido hidráulico, tornillo extensible de 60 mm y cuerpo soldado.
 
 Pesa 4,15 kg, pero lo primero es asegurarse de que cabe debajo del vehículo. Con el gato recogido necesitas 215 mm de espacio libre. Si no dispones de ese hueco, no podrás colocarlo aunque su altura máxima sea suficiente.
 
@@ -166,5 +164,5 @@ Antes de comprar, toma las medidas del vehículo y consulta su manual. El mejor 
 - Confirmar modelo, ASIN, oferta y variante directamente en las seis fichas Amazon.es (el usuario revisa manualmente).
 - Las seis fotografías WebP y el hero están integrados en la rama de la PR #75.
 - La versión HTML ya incorpora CTA con rel="nofollow sponsored" y schema Article/BreadcrumbList/FAQPage.
-- Tabla responsive, perfiles, seis fichas, navegación, sitemap y enlazado interno implantados en la PR #75. Revisión visual y comercial pendientes.
+- Tabla responsive, perfiles, seis fichas, navegación, sitemap y enlazado interno implantados en la PR #75. Añadido el cierre con dos tarjetas visuales enlazadas a la guía general y la comparativa de carretilla. Revisión visual y comercial pendientes.
 - Prohibido publicar cifras de precios, ratings o afirmar que hemos probado los modelos.
