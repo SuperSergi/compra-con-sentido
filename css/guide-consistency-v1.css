@@ -1,0 +1,18 @@
+/* Guías de compra: un solo patrón visual sin alterar la información técnica. */
+.ccs-guide-unified{width:min(1160px,calc(100% - 32px));margin:54px auto 48px;padding:clamp(22px,3.5vw,38px);box-sizing:border-box;border:1px solid #dce6df;border-radius:21px;background:#f7faf8;box-shadow:0 8px 24px rgba(0,40,24,.045)}
+.ccs-guide-unified *{box-sizing:border-box}
+.ccs-guide-unified>h2{margin:3px 0 21px;color:#083b28;font-size:clamp(25px,3vw,34px);line-height:1.2}
+.ccs-guide-unified>span:first-child{display:block;margin-bottom:8px;color:#23754c;font-weight:800;font-size:12px;letter-spacing:.07em;text-transform:uppercase}
+.ccs-guide-unified h3{color:#124a31;font-size:19px;line-height:1.35}
+.ccs-guide-unified p,.ccs-guide-unified li{color:#3e5447;line-height:1.72}
+.ccs-guide-unified a{color:#0d7145}
+.ccs-guide-unified .grinder-guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.ccs-guide-unified .grinder-guide-grid article{background:#fff;border:1px solid #e1e9e3;border-radius:15px;padding:20px}
+.ccs-guide-unified .grinder-guide-grid article h3{margin:0 0 9px}
+.ccs-guide-unified .grinder-guide-grid article p{margin:0}
+.ccs-guide-unified.saw-guide>h3{margin:22px 0 10px;padding-top:18px;border-top:1px solid #e0eae3}
+.ccs-guide-unified.saw-guide>h2+h3{padding-top:0;border-top:0}
+.ccs-guide-unified.saw-guide>p{margin:10px 0}
+@media(max-width:760px){.ccs-guide-unified{width:calc(100% - 24px);padding:22px 17px;margin:36px auto}.ccs-guide-unified .grinder-guide-grid{grid-template-columns:1fr}}
+/* Tablas: valores descriptivos en peso normal, sin bloquear encabezados o datos numéricos. */
+.compare-dehum-page .ccs-table td.compare-fit{font-weight:400!important;color:#384e41;line-height:1.5}

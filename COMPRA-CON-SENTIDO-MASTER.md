@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 28/10/2026
+**Última actualización:** 28/10/2026 16:00
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -231,6 +231,9 @@ El contenido debe aportar más que una ficha de producto. Priorizar comparacione
 
 Compra con Sentido no es otra lista de "los 10 mejores": su diferenciación es explicar para quién tiene sentido cada producto, qué cambia frente a otro, qué limitación puede importar y qué información está respaldada.
 
+
+**Criterio visual FAQ aprobado (28/10/2026):** seguir la presentación de PLA vs TPU: encabezado «Preguntas frecuentes» fuera de cualquier tarjeta grande y una tarjeta independiente por cada pregunta desplegable. Las secciones FAQ no deben tener fondo, borde, sombra ni relleno de tarjeta envolvente. Aplicado mediante `css/faq-standard-v1.css` en la rama UX de la PR #79; pendiente de validación visual, sin publicar.
+
 ## 8.2 Metodología de investigación
 
 Para cualquier dato que pueda influir en la compra:
@@ -448,6 +451,26 @@ Contenido y SEO cerrados; hero específico; imagen de tarjeta si aparece en hub/
 **Otros hallazgos de UX del usuario pendientes de materializar y validar antes de cerrar PR #77/#78:** añadir imágenes contextuales donde reducen densidad textual (guía de aspiradoras y perfiles de uso, capacidad de deshumidificadores, tramo final de secar ropa, accesorios 3D y tipos de filamentos); unificar el título «Preguntas frecuentes» y el componente desplegable; retirar secciones visibles «Fuentes técnicas consultadas» y similares sin eliminar la trazabilidad interna; revisar microconclusiones redundantes (especialmente PLA vs TPU) y otros enlaces duplicados (guía de impresoras). No meter imágenes genéricas de relleno ni reutilizar la misma imagen en tarjetas contiguas.
 
 **Comprobaciones de trabajo:** siete H1 únicos, HTML equilibrado, JSON-LD parseable, canonicals y title conservados. Se conservan seis enlaces hero (portada, Sobre nosotros y Metodología) y se añaden tres bibliotecas visuales con 20 tarjetas de imagen a destinos distintos: Herramientas 8, Hogar 6 e Impresión 3D 6. Todas las URLs e imágenes WebP se han contrastado en GitHub. Sitemap con lastmod 28/10/2026 para las seis URLs inicialmente revisadas. Cero enlaces de afiliado modificados. Para activar el CI se apunta temporalmente la PR #78 a `main`; una vez ejecutados los checks se devuelve a la rama base de PR #77. Build y optimización de imágenes completados con éxito; después del rediseño de categorías, auditoría responsive del commit `d01fe94cc05aa99a2dd415175a0e84b827c30622` superada con 108/108 comprobaciones sin incidencias, ver ejecución `40701827794`. La rama se devuelve a base PR #77 tras los checks; el último cambio de este MASTER solo actualiza la documentación. Pendiente aprobación visual/editorial del usuario y verificación de la vista previa de Cloudflare. No fusionar ni publicar PR #77 ni PR #78 sin autorización del usuario. En el momento de publicar, fusionar primero PR #77 y después retargetar PR #78 a main (o realizar los merges en orden conservando historial de cambios).
+
+---
+
+## 11.7 Normalización visual transversal · revisión del usuario (28/10/2026)
+
+**Estado:** nueva rama `ux/normalizar-faq-guias-comparativas-20261028`, basada en la PR #78 (que a su vez depende de PR #77). **No publicar ni fusionar sin aprobación del usuario.** Las PR previas siguen en borrador.
+
+**Decisiones UI de la revisión de 10 páginas ya publicadas y del bloque siguiente:**
+- **Eliminar duplicaciones:** se retira el recuadro «¿Prefieres ir directamente a los modelos?» en la guía de gatos y la tarjeta intermedia repetida de comparativa en la guía de taladros. Los heroes finales y enlaces contextuales quedan disponibles.
+- **Preguntas frecuentes:** un solo título `Preguntas frecuentes` y desplegables HTML `<details><summary>` con CSS compartido `css/faq-standard-v1.css`. Se convierten las FAQ existentes en tarjetas o texto normal, sin modificar las respuestas ni fabricar FAQ nuevas. Validar coincidencia del schema `FAQPage` con el contenido visible.
+- **Guías de compra y selecciones rápidas:** se elimina `grinder-use` y `saw-choose` por repetir las recomendaciones de producto; la guía de compra de amoladoras y sierras comparte `css/guide-consistency-v1.css`, manteniendo el contenido técnico.
+- **Tabla de deshumidificadores:** la columna descriptiva «Tiene sentido para…» no debe ir íntegramente en negrita. Se corrige con CSS y se retira la etiqueta repetida `En uso real:` sin borrar el contenido.
+- **PLA:** las seis fichas mantienen pros, contras y argumentos, pero se retiran **las puntuaciones numéricas aisladas** (tabla y barras, antes presentes solo en esta categoría) y una microselección repetitiva; no inventar puntuaciones equivalentes en otras categorías. Las notas históricas de valoración se conservan en el MASTER como trazabilidad de la versión anterior; esta decisión UX queda pendiente de aprobación editorial.
+- **PLA vs TPU:** se retiran la microconclusión y la sección visible «Fuentes técnicas consultadas»; las fuentes se conservan en la documentación de investigación y en la página institucional /metodologia/. Se alinea `og:image`, `twitter:image` y la imagen de `Article` con el hero real. Se corrigen las tarjetas que enlazan a PLA vs TPU para usar su hero (no la infografía secundaria).
+- **Gatos de botella:** se retira el bloque visible de fichas técnicas y manuales; la documentación permanece en las notas de investigación del proyecto.
+- **Enlaces de cierre:** se mantiene una selección **estática y contextual** de dos enlaces relevantes, en HTML con `<a href>` y texto descriptivo. No se introduce aleatoriedad por carga ni JavaScript de rotación: aumenta variabilidad, puede ocultar enlaces importantes al rastreador y compromete estabilidad/performance. Carrusel solo si los enlaces están en HTML estático y tiene beneficio UX demostrado.
+- **Imágenes intermedias:** pendiente de preparar activos adecuados para perfiles de aspiradoras, guía de capacidad de deshumidificadores, secado de ropa, accesorios de impresión 3D y materiales PLA/PETG/ASA/TPU. No insertar imágenes de relleno ni duplicar fotos de productos como si representasen usos reales. Cada imagen requiere función informativa, alt y WebP optimizado.
+- **Fichas de llaves de impacto y afirmaciones de experiencia en deshumidificadores:** pendiente de revisión de fuentes/modelos exactos antes de ampliar contenido. No añadir frases para llenar huecos ni inferir pruebas físicas.
+
+**QA completado (PR #79):** tras normalizar FAQ y recortar duplicidades se verificaron HTML equilibrado, H1 único, JSON-LD parseable, tablas y enlaces Amazon inalterados en las páginas modificadas. `PR build` correcto, `Optimizar imágenes` correcto y `Responsive audit` **108/108 sin incidencias** (run `40707973778`), en commit `575d599723faa3e2f5e5f6bdc892cf42150f5ea2`. El último cambio posterior únicamente documenta estos resultados en MASTER. PR #79 sigue en borrador apilada sobre #78 y #77. **No fusionar sin aprobación expresa.**
 
 ---
 
