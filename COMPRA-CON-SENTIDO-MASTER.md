@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 24/10/2026 17:45
+**Última actualización:** 28/10/2026 09:15
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -120,7 +120,7 @@ Toda página pública mantiene:
 
 - **Search Console:** propiedad de dominio `compraconsentido.es`, verificada por DNS mediante Cloudflare. Se eliminaron las propiedades antiguas de Google Sites y GitHub Pages. Es la fuente principal de datos SEO reales.
 - **Bing Webmaster Tools:** pendiente de configurar.
-- **Analítica:** Search Console y Cloudflare Web Analytics. Valorar GA4 más adelante.
+- **Analítica:** Search Console, Cloudflare Web Analytics y GA4 (`G-WQ9KB0DDP7`) con consentimiento previo; el evento `amazon_click` registra las salidas a Amazon. GA4 accesible vía Windsor.ai (`googleanalytics4`, propiedad `535630166`). La medición GA4 se limita al hostname de producción `compraconsentido.es` tras publicar la PR correspondiente. Las vistas previas de Cloudflare Pages quedan excluidas; los datos anteriores conservan tráfico de pruebas. Queda pendiente registrar dimensiones personalizadas `product_name`, `asin`, `affiliate_tag` en la interfaz GA4, decidir si marcar `amazon_click` como evento clave y verificar la recogida tras despliegue.
 - **Conector operativo para Search Console:** Windsor.ai sobre `sc-domain:compraconsentido.es`. Permite consultar rendimiento por fecha, página y consulta (clics, impresiones, CTR y posición), además del estado básico del sitemap. Search Console sigue siendo la fuente principal y Windsor.ai solo actúa como vía de acceso a esos datos. El antiguo GSC Wizard sigue sin ser fiable para este proyecto (`payment_required`).
 
 ## Estado de indexación y primeras señales SEO (actualizado 23/10/2026)

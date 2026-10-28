@@ -425,6 +425,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const MEASUREMENT_ID =
     "G-WQ9KB0DDP7";
 
+  // Excluir previews de Cloudflare y dominios de desarrollo de GA4.
+  const IS_PRODUCTION =
+    window.location.hostname === "compraconsentido.es";
+
   const STORAGE_KEY =
     "ccc_analytics_consent";
 
@@ -468,6 +472,8 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const loadAnalytics = () => {
+
+    if (!IS_PRODUCTION) return;
 
     if (
       window.__cccAnalyticsLoaded
@@ -818,6 +824,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.cccAnalyticsGranted =
     () =>
+      IS_PRODUCTION &&
       getConsent() ===
       "granted";
 
