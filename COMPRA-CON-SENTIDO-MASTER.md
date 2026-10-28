@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 28/10/2026 18:13
+**Última actualización:** 28/10/2026 18:32
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -504,7 +504,7 @@ Cautelas: Einhell 44 mm a 45° ya aparece en la ficha y tabla; la nota interna d
 
 ## 12.6 Mejores filamentos PLA · cerrada y publicada (04/10/2026)
 
-URL `/impresion-3d/filamentos-3d/mejores-filamentos-pla/`; keyword `mejores filamentos PLA`; title `Mejores filamentos PLA calidad-precio: 6 opciones según el uso`; H1 `Mejores filamentos PLA: cuál comprar según lo que vas a imprimir`; tracking `ccc-filam3d-21`; schema `Article`, `BreadcrumbList` y `FAQPage` (8 FAQ visibles); hero `/images/filamentos-pla/hero-mejores-filamentos-pla-v2.webp` y OG `og-mejores-filamentos-pla.webp`. Enlazada desde Inicio, `/impresion-3d/` y `/impresion-3d/filamentos-3d/`. La guía de filamentos sigue siendo informacional (qué material elegir); esta responde qué PLA concreto comprar.
+URL `/impresion-3d/filamentos-3d/mejores-filamentos-pla/`; keyword `mejores filamentos PLA`; title `Mejores filamentos PLA: 6 opciones según el uso`; H1 `Mejores filamentos PLA: cuál comprar según lo que vas a imprimir`; tracking `ccc-filam3d-21`; schema `Article`, `BreadcrumbList` y `FAQPage` (8 FAQ visibles); hero `/images/filamentos-pla/hero-mejores-filamentos-pla-v2.webp` y OG `og-mejores-filamentos-pla.webp`. Enlazada desde Inicio, `/impresion-3d/` y `/impresion-3d/filamentos-3d/`. La guía de filamentos sigue siendo informacional (qué material elegir); esta responde qué PLA concreto comprar.
 
 **Selección (una bobina individual por producto, 1,75 mm, comparada en tabla):**
 
@@ -521,7 +521,7 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 
 **Criterio AMS:** referencia Bambu Lab para AMS/AMS 2 Pro: ancho 50-68 mm, diámetro 197-202 mm, bobina plástica recomendada y adaptador para cartón. ✅ uso directo; ⚠️ compatible con precauciones; ❌ no compatible directamente. El símbolo se asigna a la bobina exacta de la referencia, no a la marca. En la tabla va el símbolo con etiqueta visible y leyenda; la explicación concreta va en la ficha.
 
-**Columnas de la tabla:** Modelo · Tipo · Tolerancia · Temperatura de boquilla · Velocidad fabricante · AMS · Mejor para · CTA. El nombre completo de temperatura está preparado en el lote B. Sin columna de peso ni de precio. Tolerancia solo con dato oficial (Winkle: `No declarada` hasta tener fuente primaria; los distribuidores discrepan entre ±0,02 y ±0,03 mm). Velocidad solo si el fabricante la publica (ELEGOO: 30-70 mm/s); si no se puede verificar, `—`. La velocidad es siempre una declaración del fabricante: 600 mm/s de SUNLU es un máximo declarado, no un rendimiento garantizado.
+**Columnas de la tabla:** Modelo · Tipo · Tolerancia · Temperatura de boquilla · Velocidad fabricante · AMS · Mejor para · CTA. El nombre completo de temperatura se aplica en el lote B. Sin columna de peso ni de precio. Tolerancia solo con dato oficial (Winkle: `No declarada` hasta tener fuente primaria; los distribuidores discrepan entre ±0,02 y ±0,03 mm). Velocidad solo si el fabricante la publica (ELEGOO: 30-70 mm/s); si no se puede verificar, `—`. La velocidad es siempre una declaración del fabricante: 600 mm/s de SUNLU es un máximo declarado, no un rendimiento garantizado.
 
 **Valoración técnica:** las puntuaciones y barras descritas en versiones anteriores del MASTER ya no aparecen en main. No restaurarlas ni aludir a una nota de fiabilidad inexistente. El lote B retira esas referencias residuales y los juicios de opiniones sin fuente; las decisiones de compra se apoyan en las prestaciones y límites explicados. El histórico de notas se conserva en Git, sin presentarlo como ensayo propio ni valoración pública vigente.
 
@@ -547,13 +547,13 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 ## Decisiones abiertas
 
 1. **Autoría:** organización como autor (actual), autor personal con Compra con Sentido como publisher, o sistema mixto por categoría. Debe decidirse a nivel de marca (privacidad, escalabilidad por categorías, efecto en Sobre nosotros y schema, experiencia práctica que mostrar junto al nombre). Si cambia, se aplica a todo el sitio a la vez, en contenido visible, Sobre nosotros y schema. No hay evidencia medida de SERP o conversión que lo respalde todavía.
-2. **Topes de precio en títulos:** el usuario aprobó el 28/10/2026 retirar «por menos de 200 €» de title, enlaces y botón de taladros. Aplicación pendiente en el lote editorial; revisar también la promesa «calidad-precio» de PLA.
+2. **Topes de precio en títulos:** el usuario aprobó el 28/10/2026 retirar «por menos de 200 €» de title, enlaces y botón de taladros. Aplicado en el lote B, junto con la retirada de la promesa «calidad-precio» de PLA.
 3. **Ponderación de la Valoración técnica de PLA:** documentar en el MASTER la ponderación aplicada tras retirar el precio.
 
 ## Auditoría consolidada: decisiones aprobadas el 28/10/2026
 
 - Base revisada: 27 URLs en sitemap y 49 imágenes sin alguna dimensión declarada. Aceptadas las correcciones P1 y P2 del plan consolidado.
-- Literal de decisión aprobado: «Encaja si…» (§8.7). Aplicado a las once comparativas en la rama del lote B; pendiente revisión y publicación de esa PR.
+- Literal de decisión aprobado: «Encaja si…» (§8.7). Aplicado a las once comparativas mediante el lote B, PR #84, con revisión del usuario y publicación autorizadas el 28/10/2026 tras las correcciones finales.
 - Tipografía aprobada: pila de sistema común. Nombres aprobados: «Sobre nosotros» y «Aviso legal, privacidad y afiliación»; el bloque selectivo del footer se llamará «Guías destacadas». Aplicación pendiente en sus lotes, sin cambios de URL.
 - Se mantienen el CTA compacto de tabla de §9.3 y el desplazamiento de la tabla completa sin columna fija. Autoría personal, revisión legal y rediseño de portada se tratan aparte.
 - Una PR por lote, siempre contra main. Tras publicar, entregar textos y archivos concretos que comprobar en producción.
@@ -561,9 +561,11 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 - **Lote A cerrado:** PR #83 fusionada contra main mediante squash `e995b626908534fc218bed6f2bd1e8b415018e47`. Build, optimización y Cloudflare correctos; responsive 108/108. Enlace de litros, Cecotec y leyenda de amoladoras comprobados en producción por el usuario el 28/10/2026.
 - Datos iniciales de PageSpeed móvil recibidos (28/10/2026, 17:54-17:58). El lote de rendimiento se prepara por separado del contenido y prioriza CSS bloqueante, contraste de fichas y texto descriptivo de cookies; srcset y precargas son secundarios. La sustitución puntual del Cecotec está cerrada.
 
-### Lote B de contenido en preparación
+### Lote B de contenido · PR #84
 
-Rama `editorial/auditoria-lote-b`, basada en main tras #83. El usuario autoriza preparar el contenido; no se fusiona ni publica todavía. Incluye «Encaja si…», retirada de atribuciones de opiniones/pruebas sin fuente, notas internas y ASIN visibles de amoladoras, perfiles sin numeración, limpieza de precio en taladros/PLA, coherencia de FAQ y metadatos, y enlaces primarios junto a afirmaciones verificadas. Se conserva la leyenda y la incertidumbre técnica de Makita.
+Rama `editorial/auditoria-lote-b`, basada en main tras #83. El usuario ha revisado la PR #84 comparándola con main y autoriza publicarla tras corregir la duplicación de Lefant y los destacados genéricos. Las correcciones y la revisión transversal de destacados están incorporadas en la misma PR. La integración exige controles correctos; la comprobación personal en producción queda pendiente del usuario tras el despliegue. Incluye «Encaja si…», retirada de atribuciones de opiniones/pruebas sin fuente, notas internas y ASIN visibles de amoladoras, perfiles sin numeración, limpieza de precio en taladros/PLA, coherencia de FAQ y metadatos, y enlaces primarios junto a afirmaciones verificadas. Se conserva la leyenda y la incertidumbre técnica de Makita.
+
+Los seis destacados de PLA explican diferencias de tolerancia, formulación, bobina, velocidad declarada, cantidad y origen de fabricación. Los destacados de otras comparativas sustituidos por opiniones se han revisado también; no se convierten en instrucciones genéricas de comprobación. Los restos «Selección actual», «Peso*», «2,95 kg producto», «Manitas», «Para nosotros» y «Tabla comparable» se reservan para el lote E por indicación del usuario.
 
 Las imágenes, dimensiones, srcset, CSS, tipografía, precargas y JavaScript no se modifican en este lote. Los nombres globales de navegación se aplicarán en el lote correspondiente. La revisión de autoría, obligaciones legales y portada sigue separada.
 

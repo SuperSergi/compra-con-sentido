@@ -1,6 +1,6 @@
 # Lote B: contenido para revisión
 
-Base: main tras la PR #83, commit e995b626908534fc218bed6f2bd1e8b415018e47. Rama: editorial/auditoria-lote-b. Estado: preparado para revisar, sin autorización de publicación en este turno.
+Base: main tras la PR #83, commit e995b626908534fc218bed6f2bd1e8b415018e47. Rama: editorial/auditoria-lote-b. Estado: revisado por el usuario, con publicación autorizada tras las correcciones finales y controles correctos. La PR #84 permanece en borrador hasta cerrar esas comprobaciones.
 
 ## Cambios
 
@@ -59,3 +59,12 @@ La antigua ruta polymaker.com/product/polylite-pla/ redirige actualmente a PLA-C
 Auditor estático de 27 páginas correcto, con control de referencias internas, JSON-LD válido y correspondencia FAQPage/FAQ visible. Pruebas negativas: desincronizar una respuesta de FAQ, recuperar el literal de decisión antiguo e introducir una nota retirada en JSON-LD deben fallar.
 
 Se ha comprobado que los destinos Amazon, canonical, etiquetas img y estilos inline coinciden con main. El lote conserva 66 fichas y sus CTA. Checks de PR y revisión visual se registran al terminar la preparación; no confundir preview desplegada con publicación en producción.
+
+
+## Revisión final solicitada por el usuario
+
+- Lefant M3L: una sola viñeta de destacado, sin repetir mopas, estación ni Wi-Fi en las dos siguientes.
+- PLA: seis destacados concretos, basados en tolerancia declarada, formulación, bobina, compatibilidad AMS, velocidad declarada, 1,1 kg y fabricación española. Se distinguen ventajas y límites sin atribuir resultados de impresión propios.
+- Revisión transversal: destacados de gatos de carretilla, taladros, llaves, sierras y robots expresan datos y diferencias ya publicados. Se retiran invitaciones genéricas a comprobar y el resto de «uso real» que presentaba una experiencia no documentada en el destacado de DeWalt taladros.
+- Se mantienen para el lote E los restos menores indicados expresamente por el usuario: «Selección actual», «Peso*», «2,95 kg producto», «Manitas», «Para nosotros» y «Tabla comparable».
+- El usuario autoriza publicar esta misma PR después de las correcciones y la revisión final. La comprobación personal en producción se hará tras el despliegue.
