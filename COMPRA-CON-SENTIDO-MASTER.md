@@ -467,7 +467,7 @@ Contenido y SEO cerrados; hero específico; imagen de tarjeta si aparece en hub/
 - **Imágenes intermedias:** pendiente de preparar activos adecuados para perfiles de aspiradoras, guía de capacidad de deshumidificadores, secado de ropa, accesorios de impresión 3D y materiales PLA/PETG/ASA/TPU. No insertar imágenes de relleno ni duplicar fotos de productos como si representasen usos reales. Cada imagen requiere función informativa, alt y WebP optimizado.
 - **Fichas de llaves de impacto y afirmaciones de experiencia en deshumidificadores:** pendiente de revisión de fuentes/modelos exactos antes de ampliar contenido. No añadir frases para llenar huecos ni inferir pruebas físicas.
 
-**QA previo a merge:** revisar HTML, H1, navegación, schema FAQPage, enlaces Amazon y tablas inalterados; ejecutar build, imágenes y responsive audit. Crear PR separada de revisión y esperar autorización expresa.
+**QA completado (PR #79):** tras normalizar FAQ y recortar duplicidades se verificaron HTML equilibrado, H1 único, JSON-LD parseable, tablas y enlaces Amazon inalterados en las páginas modificadas. `PR build` correcto, `Optimizar imágenes` correcto y `Responsive audit` **108/108 sin incidencias** (run `40707973778`), en commit `575d599723faa3e2f5e5f6bdc892cf42150f5ea2`. El último cambio posterior únicamente documenta estos resultados en MASTER. PR #79 sigue en borrador apilada sobre #78 y #77. **No fusionar sin aprobación expresa.**
 
 ---
 
