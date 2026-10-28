@@ -64,9 +64,19 @@ class LocalReferences(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.references: list[str] = []
         self.ids: set[str] = set()
+        self.faq_pairs: list[tuple[str, str]] = []
+        self.in_details = False
+        self.in_summary = False
+        self.question: list[str] = []
+        self.answer: list[str] = []
 
     def handle_starttag(self, tag: str, attributes: list[tuple[str, str | None]]) -> None:
         attrs = dict(attributes)
+        if tag == "details":
+            self.in_details = True
+            self.question, self.answer = [], []
+        elif tag == "summary" and self.in_details:
+            self.in_summary = True
         if attrs.get("id"):
             self.ids.add(attrs["id"])
         if tag == "a" and attrs.get("name"):
@@ -74,6 +84,31 @@ class LocalReferences(HTMLParser):
         key = "href" if tag in {"a", "link"} else "src" if tag in {"img", "script", "source"} else None
         if key and attrs.get(key):
             self.references.append(attrs[key])
+
+    def handle_data(self, data: str) -> None:
+        if self.in_details:
+            (self.question if self.in_summary else self.answer).append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "summary":
+            self.in_summary = False
+        elif tag == "details" and self.in_details:
+            self.faq_pairs.append((normalize_text(" ".join(self.question)), normalize_text(" ".join(self.answer))))
+            self.in_details = False
+
+
+def normalize_text(value: str) -> str:
+    return re.sub(r"\s+", " ", unescape(value)).strip()
+
+
+def schema_nodes(value):
+    if isinstance(value, dict):
+        yield value
+        for item in value.values():
+            yield from schema_nodes(item)
+    elif isinstance(value, list):
+        for item in value:
+            yield from schema_nodes(item)
 
 
 reference_cache: dict[Path, LocalReferences] = {}
@@ -238,10 +273,38 @@ for url_path, path in sorted(public_urls.items()):
         "comercialmente útil",
         "utilizaremos",
         "inconsistencia ya resuelta",
+        "en nuestra observación",
+        "su nota de fiabilidad",
+        "regla editorial de compra con sentido",
+        "sin convertirlo en un ranking",
+        "por menos de 200 €",
     )
     for residue in editorial_residues:
         if residue in visible_text:
             fail(f"{path}: residuo editorial visible: {residue!r}")
+
+    if re.search(r"<(?:strong|b)\b[^>]*>\s*(?:La|Lo) elegiría si", html, re.I):
+        fail(f"{path}: bloque de decisión antiguo; usar Encaja si…")
+    if "ccs-product-badge" in html and re.search(r">\s*Opción [1-6]\s*</span>", html):
+        fail(f"{path}: ficha de producto numerada como Opción N")
+
+    schema_faq_pairs: list[tuple[str, str]] = []
+    has_faq_schema = False
+    for script_body in re.findall(r'<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>(.*?)</script>', html, re.I | re.S):
+        try:
+            data = json.loads(script_body)
+        except json.JSONDecodeError as exc:
+            fail(f"{path}: JSON-LD inválido: {exc.msg}")
+            continue
+        for node in schema_nodes(data):
+            if node.get("@type") == "FAQPage":
+                has_faq_schema = True
+                for question in node.get("mainEntity", []):
+                    schema_faq_pairs.append((normalize_text(question.get("name", "")), normalize_text(question.get("acceptedAnswer", {}).get("text", ""))))
+    if has_faq_schema and schema_faq_pairs != read_references(path).faq_pairs:
+        fail(f"{path}: FAQPage no coincide con las preguntas y respuestas visibles")
+    if any(residue in lower for residue in ("en nuestra observación", "su nota de fiabilidad", "por menos de 200 €")):
+        fail(f"{path}: afirmación retirada permanece en HTML o metadatos")
 
     if re.search(r'data-amazon-validation\s*=\s*["\']review-before-merge["\']', html, re.I):
         fail(f"{path}: atributo interno de prepublicación review-before-merge")
