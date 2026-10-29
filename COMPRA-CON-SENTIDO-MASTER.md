@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 28/10/2026
+**Última actualización:** 29/10/2026 07:43
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -111,7 +111,7 @@ Toda página pública mantiene:
 ## robots.txt y sitemap
 
 - `robots.txt`: `User-agent: *`, `Allow: /` y referencia a `https://compraconsentido.es/sitemap.xml`. Cloudflare puede añadir su bloque de Content Signals.
-- `sitemap.xml` usa el dominio definitivo y debe contener toda URL pública. A 04/10/2026 contiene aproximadamente 24 URLs (verificar en `main`). `lastmod` se actualiza solo cuando cambia contenido sustancial de la URL, no por cambios técnicos o de navegación global.
+- `sitemap.xml` usa el dominio definitivo y contiene **27 URLs públicas**, comprobadas en `main` el 29/10/2026. `lastmod` se actualiza solo cuando cambia contenido sustancial de la URL, no por cambios técnicos o de navegación global.
 - No modificar ni reenviar el sitemap sin una razón concreta si Google puede obtenerlo correctamente.
 
 ---
@@ -120,22 +120,27 @@ Toda página pública mantiene:
 
 - **Search Console:** propiedad de dominio `compraconsentido.es`, verificada por DNS mediante Cloudflare. Se eliminaron las propiedades antiguas de Google Sites y GitHub Pages. Es la fuente principal de datos SEO reales.
 - **Bing Webmaster Tools:** pendiente de configurar.
-- **Analítica:** Search Console, Cloudflare Web Analytics y GA4 (`G-WQ9KB0DDP7`), con consentimiento previo. `js/main-v4.js` carga GA4 y permite emitir `amazon_click` exclusivamente en el hostname `compraconsentido.es` desde la PR #72, fusionada en `main` el 28/10/2026 (`d9848d62d17c3f339a36a46f743e15263f65be24`). Las versiones de prueba de Cloudflare Pages quedan excluidas de la nueva medición; los datos históricos de GA4 siguen incluyendo visitas de prueba. GA4 accesible mediante Windsor.ai (`googleanalytics4`, propiedad `535630166`, nombre mostrado `Compra con criterio`). El evento `amazon_click` registra ruta, título, producto, ASIN, Tracking ID y enlace. El usuario confirmó el 28/10/2026 que creó en GA4 las dimensiones de ámbito Evento `product_name`, `asin`, `affiliate_tag` y marcó `amazon_click` como evento clave; aún falta verificar su disponibilidad en informes y su estado en la administración de GA4. No deducir compras o ingresos de estos clics.
-- **Conector operativo para Search Console:** Windsor.ai sobre `sc-domain:compraconsentido.es`. Permite consultar rendimiento por fecha, página y consulta (clics, impresiones, CTR y posición), además del estado básico del sitemap. Search Console sigue siendo la fuente principal y Windsor.ai solo actúa como vía de acceso a esos datos. El antiguo GSC Wizard sigue sin ser fiable para este proyecto (`payment_required`).
+- **GA4:** propiedad `535630166` (nombre heredado mostrado: `Compra con criterio`), ID `G-WQ9KB0DDP7`, con consentimiento previo. `js/main-v4.js` carga GA4 y registra `amazon_click` solo en `compraconsentido.es` desde la PR #72 (28/10/2026, `d9848d62`); las previews dejaron de emitir eventos nuevos, aunque el histórico conserva los anteriores. El evento contempla ruta, título, producto, ASIN, tag y destino; no equivale a una compra.
+- **Conector de lectura:** Windsor.ai `searchconsole` sobre `sc-domain:compraconsentido.es` y `googleanalytics4` sobre `535630166`. Windsor es una vía de acceso a los datos, no su fuente original. GSC Wizard no es operativo de forma fiable en este proyecto (`payment_required`).
 
-## Revisión de medición y decisión de coste (28/10/2026)
+## Última revisión de Search Console y GA4 (29/10/2026)
 
-- **Search Console mediante Windsor.ai:** ventana 28/09-25/10/2026: 634 impresiones, 8 clics, CTR 1,26 % y posición media global 51,54. Entre quincenas consecutivas, impresiones 165 → 469; clics 4 → 4. Datos de dominio, no sumar consultas visibles para reconstruir el total, por la ocultación de consultas de bajo volumen.
-- **GA4 mediante Windsor.ai:** 01/10-27/10/2026: 30 sesiones, 10 usuarios activos, 275 vistas y 13 eventos `amazon_click` en toda la propiedad. Separando por hostname: producción `compraconsentido.es` 27 sesiones, 8 usuarios activos y 11 eventos; previews 3 sesiones, 2 usuarios activos y 2 eventos. En producción, salidas registradas: deshumidificadores para secar ropa 5, comparativa general de deshumidificadores 4, llaves de impacto 2. Los resultados pueden incluir visitas internas propias y no prueban compras.
-- **Dimensiones de GA4:** configuración declarada realizada por el usuario (`product_name`, `asin`, `affiliate_tag`, ámbito Evento) y `amazon_click` como evento clave. Aún no aparecen verificadas en el listado de campos del conector y podrían tardar en procesarse; no confundir declaración de configuración con validación técnica.
-- **Herramientas sin cuota:** decisión del usuario de **no pagar suscripciones de analítica/SEO**. Windsor.ai está en `Trial` (el 28/10 el usuario informó de 5 días restantes); tras finalizar, comprobar los límites reales del plan gratuito antes de contar con acceso simultáneo a Search Console y GA4. Priorizar Search Console y usar la interfaz gratuita de GA4 directamente si el conector deja de permitir ambas fuentes. Google no depende de Windsor.ai para guardar las mediciones. No dar por garantizado el acceso futuro ni adquirir planes de pago.
-- **Próximo trabajo:** validar eventos post-PR #72 y dimensiones personalizadas en GA4, comprobar Windsor.ai al finalizar la prueba, optimizar con criterio páginas con impresiones y pasar las candidatas SEO de la investigación 28/10/2026 (sección 7.3) por verificación final de SERP, productos, fabricante y ASIN antes de publicar. No contratar herramientas de pago.
+**Ventanas y cautelas:** lectura realizada el 29/10/2026; los registros finalizados disponibles llegaban al **26/10/2026**. La consulta de datos recientes/no finalizados devolvía 3 impresiones el 27/10 y 0 el 28/10, cifras que no deben tratarse como cierres diarios. No sumar consultas visibles para reconstruir totales de dominio: Google oculta consultas de volumen bajo.
 
-## Estado de indexación y primeras señales SEO (actualizado 23/10/2026)
+- **Search Console, dominio, 28/09-26/10/2026:** **661 impresiones, 8 clics y CTR 1,21 %**. La revisión anterior (hasta 25/10) registraba 634 impresiones y 8 clics: incremento neto de 27 impresiones el 26/10, sin clics adicionales. Semana 13-19/10: 243 impresiones; semana 20-26/10: 232 (variación -4,5 %). No atribuir las variaciones de estos volúmenes pequeños a un cambio técnico concreto sin más observaciones.
+- **Páginas con oportunidad SEO, 01/10-26/10 (impresiones / clics / posición media por URL):** gatos hidráulicos para coche 41 / 3 / 9,85; mejores deshumidificadores 38 / 2 / 11,47; llaves de impacto 31 / 1 / 16,29; mejores filamentos PLA 40 / 0 / 10,03; guía de litros por m² 17 / 0 / 6,82. En el tramo 20-26/10, deshumidificadores obtuvo 15 impresiones y posición media 6,13; llaves 8 y 4,75. Las posiciones agregadas por página **no son rankings de una keyword concreta**. Vigilar estas páginas, sin reescrituras precipitadas tras la humanización de 28/10.
+- **Páginas con impresiones pero posición media aún baja, 01/10-26/10:** guía de filamentos 116 / 76,33; accesorios 3D 91 / 59,64; mejores impresoras 3D 85 / 63,19; robots aspiradores 53 / 65,15. Son impresiones / posición media, con 0 clics en este desglose. Las consultas visibles `filamento tpu vs pla` (29 impresiones, posición 69,10) y `pla vs tpu` (16, posición 72,44) no justifican modificar todavía la nueva URL PLA vs TPU: faltan datos suficientes de su rendimiento propio.
+- **GA4, 01/10-28/10 (últimos eventos visibles 26/10):** toda la propiedad: **30 sesiones, 275 vistas y 13 eventos `amazon_click`**. Hostname de producción `compraconsentido.es`: **27 sesiones, 95 vistas y 11 `amazon_click`**; preview antigua: 3 sesiones, 180 vistas y 2 `amazon_click`. Los 11 clics de producción proceden de secar ropa (5), comparativa general de deshumidificadores (4) y llaves de impacto (2), ocurridos del 19 al 26/10. Incluyen posibles pruebas internas; no implican pedidos ni comisiones.
+- **Origen de las 27 sesiones de producción:** 11 `Referral` procedentes de previews de Cloudflare (navegación desde páginas de prueba), 8 clasificadas como `Organic Search` (4 `google / organic`, 4 `search.google.com / referral`), 4 `AI Assistant` atribuidas a `chatgpt.com` y 4 `Direct`. Las 4 de `search.google.com` no deben darse por usuarios externos procedentes de la SERP sin más evidencia. La muestra es demasiado pequeña y está contaminada por visitas del propio proyecto.
+- **Dimensiones personalizadas de GA4:** Windsor ya expone `customevent_product_name`, `customevent_asin` y `customevent_affiliate_tag`, correspondientes a las tres dimensiones de evento configuradas por Sergio el 28/10. Sin embargo, en todos los `amazon_click` históricos consultados los valores aparecen como `(not set)`; no hay todavía un evento nuevo que valide la captura de valores por producto. `conversions` devolvió 0 para esos eventos, pese a que Sergio declaró haber marcado `amazon_click` como evento clave. **Pendiente:** verificar administración de GA4 y generar/inspeccionar un evento posterior al cambio, con consentimiento, sin confundirlo con una conversión comercial.
+- **Sitemap:** `main` contiene **27 URLs** (29/10). Windsor/Google informaba **26 enviadas**, con **0 errores y 0 warnings**, y última descarga el 27/10/2026 a las 14:02 UTC. La diferencia temporal es compatible con la publicación de gatos de botella del 28/10; comprobar la próxima descarga antes de considerarla incidencia. El `indexed=0` del resumen de sitemap vía Windsor **no es un recuento de indexación fiable** y no permite afirmar que no haya páginas indexadas.
+- **Coste:** Windsor continúa en `Trial` el 29/10. **No contratar herramientas de SEO/analítica de pago** por ahora. Al acabar la prueba, revisar límites reales del plan gratuito; usar GSC y GA4 nativos si Windsor restringe las lecturas. Las mediciones originales permanecen en Google.
 
-El sitemap mantiene 24 URLs enviadas, sin warnings ni errores en las últimas lecturas, y Google lo sigue descargando con normalidad. Las cuatro URLs que el 09/10/2026 estaban como `Descubierta: actualmente sin indexar` (`/hogar/deshumidificadores/mejores-deshumidificadores/`, `/impresion-3d/accesorios-3d/`, `/impresion-3d/filamentos-3d/` y `/impresion-3d/impresoras-3d/`) recibieron solicitud manual de indexación y posteriormente empezaron a generar impresiones; la indexación ya no se considera el principal cuello de botella.
+## Indexación y prioridades de seguimiento
 
-En ventana de 28 días consultada el 23/10/2026, las señales principales son: comparativa de gatos hidráulicos 36 impresiones / 3 clics / posición media 8,5; PLA 29 / 0 / 11,0; llaves de impacto 26 / 1 / 19,35; deshumidificadores 24 / 1 / 15,67; guía de litros 8 / 0 / 7,38. Search Console oculta parte de las consultas de bajo volumen por privacidad, por lo que no se debe inferir el reparto de impresiones entre queries no visibles.
+Las cuatro URLs que figuraban como `Descubierta: actualmente sin indexar` el 09/10 recibieron solicitudes manuales y después empezaron a registrar impresiones. El hecho de tener impresiones demuestra visibilidad de páginas en Google, **pero no sustituye la inspección de URL ni el informe de páginas indexadas de Search Console**.
+
+**Acciones siguientes:** (1) revisar el rendimiento móvil tras el despliegue D2, comparándolo con la referencia posterior a D/E; (2) validar las dimensiones y el estado de `amazon_click` en GA4 con datos nuevos y la configuración de eventos clave; (3) confirmar la siguiente descarga del sitemap y el estado de la nueva URL de gatos de botella y PLA vs TPU; (4) seguir las URLs con posiciones aproximadas 8-20 antes de modificar sus títulos o contenido; (5) contrastar la siguiente oportunidad comercial de la sección 7.3 con SERP, fabricantes, ASIN y enlazado antes de crear una página.
 
 ---
 
@@ -304,7 +309,7 @@ Cada ficha responde: qué diferencia al modelo, para quién tiene sentido, cuál
 ## 8.8 Imágenes
 
 - No usar Google Drive como servidor permanente: las imágenes viven en el proyecto, preferiblemente WebP (AVIF si compensa), con dimensiones y peso adecuados, lazy loading y alt útil. Texto importante en HTML, no incrustado en la imagen.
-- **Producto:** imagen individual por producto, sin collages. Las imágenes de modelos exactos **no se generan con IA**: Sergio las obtiene en su revisión manual de Amazon.es, ChatGPT las normaliza (recorte, fondo, WebP, nombre, ruta) y Sergio las sube a la rama.
+- **Producto:** imagen individual por producto, sin collages ni imágenes IA que pretendan representar un modelo exacto. Las fotografías actuales alojadas localmente se consideran **provisionales** y las escenas ilustrativas se etiquetan como tales (lote E, PR #86). **Lote C aparcado por decisión de Sergio:** no sustituir imágenes ahora. Cuando exista acceso elegible a la API de Amazon, comprobar sus condiciones de uso y obtener/mostrar imágenes oficiales de forma permitida, sin asumir derecho a almacenarlas; retirar la etiqueta «Imagen ilustrativa» solo de las imágenes exactas que realmente se sustituyan. Para cualquier fotografía alojada localmente, verificar antes los derechos de reproducción.
 - **Hero y tarjeta de página nueva:** imagen propia generada con IA, ilustrativa, sin marcas ni modelo exacto, con nombre `/images/<tema>/hero-<keyword>.webp`. Hace falta también imagen de tarjeta si la página aparece en un hub o en Inicio, y imagen OG si corresponde. No publicar con la imagen genérica de la categoría si ya existe una propia.
 - Las imágenes generadas por IA son ilustrativas y no se presentan como reproducción exacta de un modelo.
 - Límite de QA para imágenes raster: 350.000 bytes. Cuando se sustituye un archivo defectuoso, subirlo con nombre nuevo para evitar caché/CDN (caso `hero-mejores-filamentos-pla-v2.webp`; el archivo anterior sin `-v2` no debe referenciarse).
@@ -437,6 +442,8 @@ Contenido y SEO cerrados; hero específico; imagen de tarjeta si aparece en hub/
 
 ## 12.1 Páginas publicadas
 
+**Estado del sitemap comprobado en `main` el 29/10/2026: 27 URLs públicas.** Las rutas abreviadas de la tabla se interpretan dentro del cluster correspondiente; el sitemap contiene las rutas canónicas completas.
+
 | Cluster | URL | Tipo |
 |---|---|---|
 | General | `/`, `/sobre-nosotros/`, `/metodologia/`, `/aviso-legal/` | Inicio e institucionales |
@@ -450,9 +457,11 @@ Contenido y SEO cerrados; hero específico; imagen de tarjeta si aparece en hub/
 | Hogar | `/hogar/` | Hub |
 | | `/hogar/aspiradoras/` y `/mejores-robots-aspiradores/` | Guía y comparativa |
 | | `/hogar/deshumidificadores/`, `/cuantos-litros-deshumidificador-metros-cuadrados/` y `/mejores-deshumidificadores/` | Guía, guía de capacidad y comparativa |
+| | `/hogar/deshumidificadores/deshumidificadores-para-secar-ropa/` | Comparativa de secado de ropa (23/10/2026) |
 | Impresión 3D | `/impresion-3d/` | Hub |
 | | `/impresion-3d/impresoras-3d/` y `/mejores-impresoras-3d/` | Guía y comparativa |
 | | `/impresion-3d/filamentos-3d/` y `/mejores-filamentos-pla/` | Guía y comparativa |
+| | `/impresion-3d/filamentos-3d/pla-vs-tpu/` | Guía comparativa informacional (24/10/2026) |
 | | `/impresion-3d/accesorios-3d/` | Guía |
 
 Las ocho comparativas anteriores a PLA y la propia PLA comparten el sistema visual de las secciones 8 y 10. Diseño V1 está cerrado y publicado (auditoría responsive final: 88/88 comprobaciones sin incidencias antes del merge). La unificación incluyó breadcrumbs integrados sobre el hero, menús sin enlaces duplicados, footer único y recursos locales (sin CSS remoto ni imágenes de fondo con dominio absoluto).
@@ -546,20 +555,21 @@ Reserva: Creality Hyper PLA RFID negro `B0DJXMLW6P`. Descartados: Polymaker/Panc
 
 ## Decisiones abiertas
 
-1. **Autoría:** organización como autor (actual), autor personal con Compra con Sentido como publisher, o sistema mixto por categoría. Debe decidirse a nivel de marca (privacidad, escalabilidad por categorías, efecto en Sobre nosotros y schema, experiencia práctica que mostrar junto al nombre). Si cambia, se aplica a todo el sitio a la vez, en contenido visible, Sobre nosotros y schema. No hay evidencia medida de SERP o conversión que lo respalde todavía.
-2. **Topes de precio en títulos:** el usuario aprobó el 28/10/2026 retirar «por menos de 200 €» de title, enlaces y botón de taladros. Aplicado en el lote B, junto con la retirada de la promesa «calidad-precio» de PLA.
-3. **Ponderación de la Valoración técnica de PLA:** documentar en el MASTER la ponderación aplicada tras retirar el precio.
+1. **Autoría:** organización como autor (actual), autor personal con Compra con Sentido como publisher o sistema mixto por categoría. Decisión transversal pendiente; evaluar privacidad, coherencia editorial y schema. No hay datos sólidos que justifiquen cambiarla ahora.
+2. **Valoración técnica de PLA:** documentar/verificar la ponderación vigente tras retirar el precio, sin reintroducir puntuaciones subjetivas por defecto.
+
+**Decisiones ya ejecutadas:** retirada del tope de 200 € de la comparativa de taladros (lote B, PR #84) y de la promesa «calidad-precio» en PLA. Tipografía de sistema, nombres de menú/pie y etiquetas de fotos ilustrativas aplicados mediante D/E (#85/#86); no tratarlos como pendientes.
 
 ## Auditoría consolidada: decisiones aprobadas el 28/10/2026
 
 - Base revisada: 27 URLs en sitemap y 49 imágenes sin alguna dimensión declarada. Aceptadas las correcciones P1 y P2 del plan consolidado.
 - Literal de decisión aprobado: «Encaja si…» (§8.7). Aplicado a las once comparativas mediante el lote B, PR #84, con revisión del usuario y publicación autorizadas el 28/10/2026 tras las correcciones finales.
-- Tipografía aprobada: pila de sistema común. Nombres aprobados: «Sobre nosotros» y «Aviso legal, privacidad y afiliación»; el bloque selectivo del footer se llamará «Guías destacadas». Aplicación pendiente en sus lotes, sin cambios de URL.
+- Tipografía de sistema común y nombres «Sobre nosotros», «Aviso legal, privacidad y afiliación» y «Guías destacadas»: **aplicados en producción** mediante lotes D y E (PR #85 y #86), sin cambios de URL.
 - Se mantienen el CTA compacto de tabla de §9.3 y el desplazamiento de la tabla completa sin columna fija. Autoría personal, revisión legal y rediseño de portada se tratan aparte.
 - Una PR por lote, siempre contra main. Tras publicar, entregar textos y archivos concretos que comprobar en producción.
 - El usuario autoriza corregir ya el enlace de «Cuántos litros» y sustituir la imagen defectuosa de Cecotec por la imagen existente del mismo modelo/ASIN usada en «Secar ropa». Se añade la leyenda «–: no declarado en la ficha española» bajo la tabla de amoladoras, sin atribuir ni negar AFT a Makita.
 - **Lote A cerrado:** PR #83 fusionada contra main mediante squash `e995b626908534fc218bed6f2bd1e8b415018e47`. Build, optimización y Cloudflare correctos; responsive 108/108. Enlace de litros, Cecotec y leyenda de amoladoras comprobados en producción por el usuario el 28/10/2026.
-- Datos iniciales de PageSpeed móvil recibidos (28/10/2026, 17:54-17:58). El lote de rendimiento se prepara por separado del contenido y prioriza CSS bloqueante, contraste de fichas y texto descriptivo de cookies; srcset y precargas son secundarios. La sustitución puntual del Cecotec está cerrada.
+- Datos iniciales de PageSpeed móvil recibidos el 28/10/2026 y contrastados tras D/E (ver registro de medición). El lote D2 de CSS/JS/portada también se publicó el 28/10, pero **su PageSpeed de producción aún no se ha medido**. La sustitución puntual del Cecotec está cerrada.
 
 ### Lote B de contenido · PR #84
 
@@ -589,12 +599,14 @@ No constan aún dispositivo, caché o condiciones de red; comparar antes/despué
 
 ## Pendientes inmediatos
 
-- [x] CTA de la comparativa PLA alineados el 04/10/2026 con la sección 9.3: fichas en `Ver precio en Amazon` y packs en `Ver precio del pack de N en Amazon`; la tabla conserva `Ver en Amazon`.
-
-- [ ] Confirmar visualmente en producción que el menú muestra `Sobre nosotros` → `/sobre-nosotros/` y que `404.html` carga el footer global. La comparativa PLA ya ha sido verificada visualmente tras el despliegue con sus CTA de las tres elecciones renderizados como botones y con `comparison-opening-v1.css?v=20261004-2` activo.
-- [ ] Confirmar en el contrato de Amazon Afiliados qué exige sobre el aviso de afiliación antes de mantener la política de no repetirlo en cabecera.
-- [ ] Usar Search Console para decidir qué tres acciones o contenidos van en el primer pantallazo de Inicio (el titular y el peso visual de la home se revisarán con SEO, arquitectura y datos reales).
-- [ ] Revisar con los criterios actuales las páginas no incluidas en la auditoría externa: filamentos 3D (guía), accesorios 3D, aspiradoras, deshumidificadores (guía y comparativa de litros), `/metodologia/` y `/aviso-legal/`.
+- [x] CTA PLA alineados con el estándar (04/10/2026); correcciones editoriales y de UX de PR #76 a #86 integradas, incluidos los lotes A/B/D/E.
+- [x] D2 (#87) fusionado en `main` y desplegado correctamente en Cloudflare el 28/10/2026; pendiente solamente de medición y revisión visual final.
+- [ ] **Comparar PageSpeed móvil post-D2** en portada, amoladoras y gatos para coche con la referencia D/E del 28/10; verificar navegación/cookies/clics sin interferir con métricas reales.
+- [ ] **Validar GA4:** `amazon_click` como evento clave y dimensiones `product_name`, `asin`, `affiliate_tag` con eventos nuevos; confirmar que no salen eventos de previews.
+- [ ] **Revisar indexación concreta:** confirmar que Google recarga el sitemap de 27 URLs y observar gatos de botella y PLA vs TPU; no interpretar `indexed=0` del conector como verdad.
+- [ ] Confirmar manualmente el menú «Sobre nosotros» y el footer de `404.html` en producción; no repetir verificaciones ya documentadas sin motivo.
+- [ ] Revisar el aviso de afiliación frente a las condiciones vigentes de Amazon y la estructura legal de privacidad/cookies. Autoría e información institucional requieren decisión editorial aparte.
+- [ ] Mantener el lote C de imágenes aparcado hasta contar con elegibilidad, acceso y derechos de uso de las fotografías oficiales.
 
 ## SEO / Search Console
 
@@ -631,7 +643,7 @@ No constan aún dispositivo, caché o condiciones de red; comparar antes/despué
 - **Estado de integración comprobado:** PR #77 llegó a main mediante squash `5410fdb5`. Las fusiones iniciales de #78 y #79 fueron a ramas intermedias; sus cambios llegaron efectivamente a main mediante la PR correctiva #82 (`43db213ae468db21896ab3b88553d4b44616afc8`). No equiparar fusión de una PR con publicación en producción. No hubo nuevas URLs por esta fase.
 - Patrón visual final de FAQ: título «Preguntas frecuentes» independiente de la caja contenedora, preguntas individuales en `<details>/<summary>`, CSS compartido `css/faq-standard-v1.css`. Se ha retirado la tarjeta envolvente en la actualización final de PR #79.
 - Pruebas de PR #79: 108/108 controles responsive automatizados correctos en 27 páginas y cuatro viewports (360, 390, 768, 1440 px) para el commit funcional `575d599`; cambios posteriores en CSS y documentación se integraron en la misma PR. En la revisión de `main` posterior a las tres fusiones se confirmaron los checks `build` y `Cloudflare Pages` satisfactorios. No equiparar esta auditoría automática a una revisión visual humana exhaustiva.
-- **Revisión posterior en producción pendiente del usuario.** Se prevé contrastar la web con un informe de otra IA y abrir nuevas PR para correcciones detectadas. Mantener como tareas separadas las imágenes intermedias, la profundidad de fichas de llaves de impacto y la revisión editorial de deshumidificadores.
+- **Estado posterior:** las correcciones A/B/D/E ya fueron integradas y comprobadas en producción en sus respectivos cierres; D2 también está desplegado y solo requiere medición/inspección final. Mantener separadas y sin reapertura automática las imágenes intermedias de guías densas, la profundidad de fichas de llaves de impacto y la revisión de afirmaciones sobre experiencia de uso de deshumidificadores.
 
 ---
 
@@ -656,43 +668,23 @@ Cuando una tarea deba continuar en otro chat, entregar en la misma respuesta un 
 
 Actualizar este documento cuando cambie infraestructura, se contrate algo, se publique una URL, se cierre una decisión SEO o una comparativa, aparezca un problema importante, se complete una tarea, cambie una norma, se incorpore una herramienta o se modifique la arquitectura. Cada actualización lleva fecha y hora local (`DD/MM/YYYY HH:MM`) en la cabecera. Al integrar información nueva, **sustituir** el texto afectado en lugar de añadir un bloque contradictorio al final.
 
-## Lote D: preparación en borrador (28/10/2026)
+## Estado vigente de rendimiento, editorial e imágenes (29/10/2026)
 
-El usuario autoriza preparar una PR contra main y mantenerla en borrador. Pendiente de revisión y publicación. El lote B ya está comprobado en producción por el usuario.
+**Lotes completados y publicados en `main`:**
+- **D (#85; `aa51c598`):** CSS agrupado, tipografía de sistema, contraste de etiquetas y banner «Más información sobre cookies». Build, optimización, Cloudflare y responsive 108/108 correctos.
+- **E (#86; `75086134`):** restos editoriales retirados, nombres globales corregidos y 29 nuevas etiquetas «Imagen ilustrativa» en fichas con escenas ambiente. Sin sustitución de imágenes ni de destinos de Amazon.
+- **D2 (#87; `2009b1683987052e1e5c005fd540cdebc6d78c79`):** fusionado en `main` el **28/10/2026 a las 21:31, hora peninsular**, y confirmado en Cloudflare Pages (despliegue de producción `9e5bb869-8fc8-427b-b517-b07399e301ab`, etapa `deploy` con estado `success`; commit de despliegue igual a `main`). No queda pendiente fusionar esa PR.
 
-- CSS: base compartida y versionada; agrupar el resto por orden sin cruzar estilos inline. Portada 4 a 2 solicitudes, amoladoras 10 a 2 y gatos para coche 8 a 3. Fuentes editables en css/, salidas generadas en css/compiled/ y mapa en .github/css-bundles.json. No editar salidas a mano. Tras cambiar fuentes o referencias ejecutar `python3 .github/scripts/build-css.py`; antes de subir, `python3 .github/scripts/build-css.py --check` y site-audit.py. No usar @import ni un bundle global para todas las categorías.
-- Etiquetas de ficha: #5f6d65 sobre #f7faf8, contraste 5,175:1. Validación computada añadida a la auditoría responsive.
-- Banner global: «Más información sobre cookies», mismo destino y consentimiento. Todas las referencias de main-v4.js llevan SHA-256 truncado a 12 caracteres del texto UTF-8 con saltos normalizados; site-audit.py verifica su vigencia.
-- Tipografía: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif mediante --font-sans. Sin declaraciones Arial locales ni Inter en los componentes compartidos.
+**Detalles técnicos activos tras D2:**
+- `main-v4.js` cargado con `defer` en 28 HTML; pruebas funcionales locales de menú, consentimiento y evento `amazon_click` con red interceptada. En preview no se envía GA4. Referencia de auditoría: `.github/scripts/interactions-audit.mjs`.
+- Una única hoja CSS minificada por página, incluida 404. Fuentes editables bajo `css/` y `css/pages/`; compilados generados bajo `css/compiled/`; manifiesto `.github/css-bundles.json`. Usar `.github/requirements-css.txt`, `python3 .github/scripts/build-css.py` y `--check` antes del build. No editar CSS compilado a mano. `rcssmin==1.2.2` conserva el orden de las reglas. El CSS base deja de tener caché independiente entre páginas: evaluar comportamiento real al navegar.
+- Cinco tarjetas de portada con `srcset`/`sizes` y variantes WebP de 400/800 px: sierras a batería, Hogar, Impresión 3D, Herramientas y guía de impresoras 3D. Originales conservados; sin cambios en fotos de producto. Texto de portada simplificado y explicación de GitHub/Cloudflare retirada de privacidad, sin variar los tratamientos de datos.
+- Validación local del lote D2: **112/112** comparaciones de estilos y geometría equivalentes a `main` anterior y **108/108** controles responsive correctos a 360, 390, 768 y 1440 px. Registro: `.github/measurement/lote-d2-validation-20261028.md`. Estas pruebas no prueban una mejora de PageSpeed real.
 
-Validación detallada: .github/measurement/lote-d-validation-20261028.md. La reducción de solicitudes no acredita una mejora medida de Speed Index. El usuario repetirá PageSpeed móvil tras publicar; mantener la referencia inicial. No se modifican imágenes, dimensiones, srcset ni precargas.
+**Referencia de rendimiento antes de D2 (medición D/E del usuario, 28/10/2026):** portada, amoladoras, gatos: rendimiento móvil 98/99/99; LCP 1,1 s en las tres; SEO 100 y accesibilidad 100. CSS bloqueante 420/550/420 ms; Speed Index 3,8/3,7/3,7 s. Ver `.github/measurement/mobile-post-de-20261028.md`. No atribuir estos resultados a D2.
 
-Lote C pendiente de decisión con Sergi: inventario de 12 fichas y cabecera de llaves, más 23 escenas ambiente de procedencia por confirmar. Preferir foto real del modelo exacto con permiso documentado o recurso genérico sin marca aprobado. No sustituir todavía.
+**Lote C (imágenes):** **aparcado por decisión de Sergio**. Fotos de producto locales provisionales hasta disponer de la elegibilidad de Amazon Creators API y confirmar condiciones de reproducción/almacenamiento. No sustituirlas por ahora ni retirar etiquetas ilustrativas sin reemplazo exacto válido. Comprobar autorización antes de alojar fotografías de terceros.
 
-Lote E después del D: «Selección actual», «Peso*», «2,95 kg producto», «Manitas», «Para nosotros», «Tabla comparable», nombres de navegación aprobados y «No elegiría una amoladora únicamente por este punto» a «No conviene elegir una amoladora únicamente por este punto…». Autoría, parte legal y rediseño de portada siguen aparte.
+**Pendientes editoriales independientes:** considerar imágenes explicativas concretas para guías densas si aportan comprensión; revisar profundidad de fichas de llaves de impacto y afirmaciones de uso en deshumidificadores a partir de fuentes verificables. Revisar también correspondencia ASIN/variante de Midea, Lefant, gatos, taladros y PLA, base de peso de sierras y condiciones de comparación acústica. No convertir tareas de verificación en datos inventados.
 
-
-## Publicación de lotes D y E y decisión sobre imágenes (28/10/2026)
-
-Lote D integrado por autorización del usuario, PR #85. Commit de main aa51c5985570a5fe2d9df101ba6cd8ba0e0c87a3. Build, optimización, Cloudflare y 108/108 comprobaciones responsive correctos. Pendiente repetición de PageSpeed por Sergi.
-
-El lote C queda aparcado por decisión de Sergi. Las imágenes actuales son provisionales hasta disponer del acceso a la API de Amazon, que el usuario prevé desbloquear tras diez ventas. No sustituir imágenes ahora. Cuando la API esté disponible, sustituir todas las imágenes de producto por las oficiales obtenidas de Amazon y retirar la etiqueta «Imagen ilustrativa» de cada imagen sustituida. Antes de implementar esa integración se comprobarán el acceso y las condiciones técnicas vigentes; no se implementa la API en este lote.
-
-Lote E: etiqueta «Imagen ilustrativa» en las seis llaves y las escenas ambiente activas de gatos para coche, taladros, robots y deshumidificadores, usando el componente de nota ya existente. Las amoladoras conservan su etiqueta. Sin cambios de archivos ni URLs de imágenes. Se aplican los nombres aprobados «Sobre nosotros», «Aviso legal, privacidad y afiliación» y «Guías destacadas» en el pie, manteniendo destinos. Retirados los restos editoriales enumerados y la primera persona singular de la guía de amoladoras. El peso 2,95 kg mantiene su cifra sin añadir una base de medición no verificada. Autoría, parte legal y rediseño de portada siguen aparte.
-
-
-## Cierre D/E y preparación D2 (28/10/2026)
-
-D y E cerrados por Sergi tras comprobar producción y repetir PageSpeed móvil. D: PR #85, aa51c59. E: PR #86, 7508613. Todos los controles correctos. SEO 100 y accesibilidad 100 en las tres páginas de referencia; rendimiento 98/99/99 y LCP 1,1 s. CSS bloqueante 420/550/420 ms; Speed Index 3,8/3,7/3,7 s. Detalle y cautelas en .github/measurement/mobile-post-de-20261028.md. No constan nuevos CLS ni TBT.
-
-D2 se prepara en PR en borrador, sin publicar. Alcance:
-
-- main-v4.js con defer en los 28 HTML, sin cambiar el contenido de JS. Menú, banner, persistencia de consentimiento y amazon_click verificados con producción simulada, eventos interceptados y previews sin analítica. Auditoría funcional en .github/scripts/interactions-audit.mjs, ejecutada por CI. No se envían eventos reales en las pruebas.
-- Una hoja CSS minificada por página, incluida la 404. Se incorpora style-v4.css y se conserva el orden de las reglas. Los antiguos bloques style se extraen a css/pages/; esas hojas son fuentes editables. Se sustituye la separación en base y bundles del lote D. css/compiled/ es generado; .github/css-bundles.json registra el orden de fuentes de cada salida. No editar las salidas a mano.
-- Instalar .github/requirements-css.txt y ejecutar build-css.py tras cambiar fuentes o referencias. --check en CI verifica la reproducibilidad. Minificación sintáctica con rcssmin 1.2.2, sin eliminar reglas ni cambiar su orden. Una hoja por página implica que el CSS base deja de tener caché independiente al navegar; comprobar el resultado real antes de publicar.
-- Solo portada: variantes WebP de 400 y 800 px con srcset y sizes para categoria-sierras-circulares-a-bateria, categoria-hogar, categoria-impresion-3d, categoria-herramientas y guia-impresoras-3d. Se conservan originales, encuadre y contenido; no se modifican imágenes de producto. El recurso de mayor resolución anunciado en estas cinco tarjetas es 800 px.
-- Texto de portada simplificado y retirada la explicación de GitHub/Cloudflare en el apartado de privacidad del aviso legal. No se cambian tratamientos de datos ni los restantes apartados legales.
-
-Lote C sigue aparcado: fotos de producto provisionales hasta disponer de API de Amazon. Sustituir por las oficiales obtenidas mediante esa API y retirar las etiquetas de las imágenes sustituidas cuando se implemente. Sin cambios de fotos de producto en D2.
-
-Validación de D2: .github/measurement/lote-d2-validation-20261028.md. 112/112 comparaciones de cascada iguales y 108/108 comprobaciones responsive locales correctas. Pendiente revisión del borrador y medición tras una futura publicación.
+**Siguiente control:** PageSpeed móvil post-D2, verificación de GA4 con eventos nuevos, seguimiento de indexación y SERP antes de modificar contenidos. Sin suscripciones SEO de pago.
