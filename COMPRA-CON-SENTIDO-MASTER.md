@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 29/10/2026 07:43
+**Última actualización:** 29/10/2026 19:12
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -601,7 +601,8 @@ No constan aún dispositivo, caché o condiciones de red; comparar antes/despué
 
 - [x] CTA PLA alineados con el estándar (04/10/2026); correcciones editoriales y de UX de PR #76 a #86 integradas, incluidos los lotes A/B/D/E.
 - [x] D2 (#87) fusionado en `main` y desplegado correctamente en Cloudflare el 28/10/2026; pendiente solamente de medición y revisión visual final.
-- [ ] **Comparar PageSpeed móvil post-D2** en portada, amoladoras y gatos para coche con la referencia D/E del 28/10; verificar navegación/cookies/clics sin interferir con métricas reales.
+- [x] **PageSpeed móvil post-D2: amoladoras y gatos de carretilla** medidos por el usuario el 29/10/2026: ambas páginas mantienen rendimiento 99, accesibilidad 100, buenas prácticas 100, SEO 100 y LCP <= 1,1 s. Ver sección «PageSpeed móvil después de D2».
+- [ ] **PageSpeed móvil post-D2: falta la portada** y comprobación visual/funcional final de la web. No rehacer optimizaciones generales por un punto Lighthouse; comprobar navegación y consentimiento sin contaminar GA4.
 - [ ] **Validar GA4:** `amazon_click` como evento clave y dimensiones `product_name`, `asin`, `affiliate_tag` con eventos nuevos; confirmar que no salen eventos de previews.
 - [ ] **Revisar indexación concreta:** confirmar que Google recarga el sitemap de 27 URLs y observar gatos de botella y PLA vs TPU; no interpretar `indexed=0` del conector como verdad.
 - [ ] Confirmar manualmente el menú «Sobre nosotros» y el footer de `404.html` en producción; no repetir verificaciones ya documentadas sin motivo.
@@ -683,8 +684,25 @@ Actualizar este documento cuando cambie infraestructura, se contrate algo, se pu
 
 **Referencia de rendimiento antes de D2 (medición D/E del usuario, 28/10/2026):** portada, amoladoras, gatos: rendimiento móvil 98/99/99; LCP 1,1 s en las tres; SEO 100 y accesibilidad 100. CSS bloqueante 420/550/420 ms; Speed Index 3,8/3,7/3,7 s. Ver `.github/measurement/mobile-post-de-20261028.md`. No atribuir estos resultados a D2.
 
+### PageSpeed móvil después de D2 (29/10/2026, resultados facilitados por el usuario)
+
+Mediciones Lighthouse 13.5.0 en PageSpeed Insights con Moto G Power emulado, navegación inicial, red 4G lenta y Chromium 153. **Sin datos de campo suficientes de usuarios reales (CrUX)**. No confundir las puntuaciones de laboratorio con el rendimiento observado por usuarios, ni atribuir necesariamente las pequeñas diferencias a D2.
+
+| URL | Medición CET | Rendimiento | Accesibilidad | Buenas prácticas | SEO | Navegación agéntica | FCP | LCP | TBT | CLS | Speed Index |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `/herramientas/amoladoras-a-bateria/` | 29/10 19:10 | 99 | 100 | 100 | 100 | 2/2 | 0,9 s | 1,0 s | 0 ms | 0 | 3,6 s |
+| `/herramientas/gatos-hidraulicos/mejores-gatos-hidraulicos-para-coche/` | 29/10 19:12 | 99 | 100 | 100 | 100 | 2/2 | 0,9 s | 1,1 s | 0 ms | 0 | 3,6 s |
+
+Comparación con D/E del 28/10: amoladoras mantiene 99 puntos; LCP pasa de 1,1 a 1,0 s y Speed Index de 3,7 a 3,6 s. Gatos mantiene 99 puntos y LCP 1,1 s; Speed Index de 3,7 a 3,6 s. **No está aún medida la portada tras D2.**
+
+**Oportunidades técnicas no urgentes, sin cambios de código acordados:**
+- Amoladoras: imagen `/images/amoladoras/bosch-gws-18v-11-s.webp` 1200 × 1200 usada a unos 385 × 385 px, 51,3 KiB; Lighthouse estima 46 KiB de ahorro potencial con dimensiones adaptables. CSS minificado único de 13,57 KiB, 150 ms de recurso bloqueante; latencia de ruta crítica máx. 232 ms.
+- Gatos para coche: `/images/gatos/tarpofix-3t-ambiente-v2.webp` 1536 × 1024 usada a unos 578 × 385 px, 205,5 KiB; ahorro estimado 176,4 KiB con versión responsive. CSS minificado de 13,48 KiB, 150 ms de recurso bloqueante; ahorro potencial de renderizado estimado en 80 ms. 501 nodos DOM, profundidad máxima 10; sin incidencia crítica detectada.
+- En ambas páginas Lighthouse señala descubrimiento/preferencia de carga para el hero, mostrado con imagen de fondo CSS mediante variable `--ccs-hero-image`. Si se estudia una optimización, medir primero la carga efectiva del LCP y valorar preload con `fetchpriority` compatible con este patrón, evitando cambios automáticos de prioridad de imágenes. Lighthouse no identificó orígenes externos útiles para preconnect.
+- Resultado actual **99/100** y métricas excelentes; no crear una PR de CSS, JavaScript o imágenes solo por estas advertencias, y **mantener el lote C de fotos de producto aparcado** según decisión previa.
+
 **Lote C (imágenes):** **aparcado por decisión de Sergio**. Fotos de producto locales provisionales hasta disponer de la elegibilidad de Amazon Creators API y confirmar condiciones de reproducción/almacenamiento. No sustituirlas por ahora ni retirar etiquetas ilustrativas sin reemplazo exacto válido. Comprobar autorización antes de alojar fotografías de terceros.
 
 **Pendientes editoriales independientes:** considerar imágenes explicativas concretas para guías densas si aportan comprensión; revisar profundidad de fichas de llaves de impacto y afirmaciones de uso en deshumidificadores a partir de fuentes verificables. Revisar también correspondencia ASIN/variante de Midea, Lefant, gatos, taladros y PLA, base de peso de sierras y condiciones de comparación acústica. No convertir tareas de verificación en datos inventados.
 
-**Siguiente control:** PageSpeed móvil post-D2, verificación de GA4 con eventos nuevos, seguimiento de indexación y SERP antes de modificar contenidos. Sin suscripciones SEO de pago.
+**Siguiente control:** PageSpeed móvil de la **portada** post-D2 y revisión visual/funcional final; después, verificación de GA4 con eventos nuevos, seguimiento de indexación y SERP antes de modificar contenidos. Sin suscripciones SEO de pago.
