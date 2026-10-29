@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 29/10/2026 19:13
+**Última actualización:** 29/10/2026 19:48
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -217,6 +217,29 @@ La lista es una prioridad de investigación, no una autorización automática pa
 **Trabajo paralelo en páginas existentes:** revisar consultas, CTR, intención y enlazado para gatos hidráulicos (38 impresiones, posición media 8,37), comparativa PLA (37, 10,49), deshumidificadores (37, 11,70), llaves de impacto (32, 16,56) y guía de litros (17, 6,82), periodo 28/09-25/10/2026. Son medias de URL, no ranking de keyword. No hacer cambios sin SERP y tendencia.
 
 **Antes de publicar:** confirmar SERP actual, canibalización, marca/modelo exacto, especificaciones en fabricante/manual, ficha activa de Amazon.es, ASIN y variante/kit, tracking y enlaces internos, menú, sitemap, schema, build y responsive. No se ha verificado aún disponibilidad Amazon de las candidatas ni volúmenes mensuales; este estudio no implica publicación automática.
+
+### Secadores de filamento: selección y protocolo cerrados (29/10/2026)
+
+**Decisión cerrada por Sergi:** secadores de filamento será la próxima comparativa; **PETG se mantiene como segunda comparativa futura**. La selección y el protocolo quedan aprobados. La prueba aún no se ha realizado y la comparativa no se publica ahora.
+
+| Selección principal | Perfil | ASIN Amazon.es |
+| --- | --- | --- |
+| SUNLU S2 | 1 bobina | `B09XHVVPX8` |
+| Creality Space Pi Plus | 2 bobinas | `B0CXDNBKHT` |
+| SUNLU S4 | 4 bobinas, hasta 70 °C | `B0CPLNR989` |
+| SUNLU S4 Pro | Hasta 85 °C, 2 zonas independientes | `B0H6X1JXPG` |
+
+**S4 Pro cerrado:** referencia del fabricante `AWDE-FD-S4PRO-BK-EU`, versión europea confirmada por Sergi en Amazon.es, título «S4 Pro», vendido por SUNLU-EU. No reabrir la selección ni sustituirlo por una referencia de Amazon US.
+
+**Alternativas:** Creality Space Pi `B0CX6MV1BM`, Creality X4 `B0F9FP4C6G` y Sovol SH03 `B0FRS5JZ8Q`. No sustituir el X4 por `B0GL8L8ZLM` (no disponible en la comprobación de Sergi) ni por `B0FKMVGCSC` (vendedor externo). Las verificaciones de Amazon aportadas por Sergi son un registro de esa comprobación; antes de publicar se revisarán disponibilidad, variante, enchufe y ficha oficial. El perfil principal de 85 °C ya está resuelto con S4 Pro.
+
+**Fase 1 aprobada, solo con AMS 2 Pro:** usar PETG húmedo y seguir la secuencia imprimir antes → pesar la bobina → secar en AMS 2 Pro → volver a pesar → imprimir después. Mantener condiciones de impresión comparables y registrar material, ajustes, duración y temperatura de secado, fotos propias del antes/después, humedad indicada por el AMS y pesos antes/después con la diferencia en gramos. La báscula será de cocina, con **resolución de 1 g**. Una diferencia de **0-1 g se registra como medición**, sin concluir que la bobina ya estaba seca: la resolución de la báscula y las condiciones de medida limitan esa interpretación. La humedad mostrada por el AMS tampoco equivale a medir directamente el contenido de agua del filamento.
+
+**Equipo de Sergi, actualizado según su comprobación a 29/10/2026:** Bambu Lab P2S con firmware `01.03.00.00`, AMS 2 Pro `05.00.22.22` y Filament Buffer for P2 `01.01.16.19`. **Pendiente comprobar en una impresión real si permite imprimir mientras seca** y aportar captura. Hasta entonces, describir esa capacidad como «según Bambu Lab y la versión de firmware del equipo probado», sin presentarla como observación propia. No publicar números de serie en fotos ni capturas.
+
+**Alcance y evidencia:** esta fase basta para preparar la sección «¿Necesito un secador si tengo AMS 2 Pro?». La comparación práctica con un secador externo depende de que Sergi compre uno; si lo hace, será de 85 °C para poder probar ABS o TPU. Utilizar fotos propias y no emplear «Probado por nosotros» hasta realizar la prueba; cualquier afirmación de experiencia se limitará al equipo y a las condiciones realmente probados.
+
+**Próximo paso, a cargo de Sergi:** completar la fase 1, comprobar la impresión mientras seca y aportar fotos y datos. Después se redactará la comparativa **en borrador**, sin publicación automática. Esta actualización integra únicamente documentación en el MASTER.
 
 ## 7.4 Enlazado interno y navegación
 
