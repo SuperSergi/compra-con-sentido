@@ -1,3 +1,15 @@
+# Plantillas de página
+
+## Sistema de diseño (obligatorio desde el 31/10/2026)
+
+- `pagina-comparativa.html` y `pagina-informacional.html` son el punto de partida de toda página nueva. Están construidas solo con CSS común: **una página nueva no lleva CSS propio**. Si falta una pieza, se añade a `css/content-v1.css` usando variables de `css/tokens-v1.css`.
+- Orden de los `<link>`: `tokens-v1.css` el primero, `cta-v1.css` (si hay enlaces a Amazon) y `type-v1.css` los últimos. `build-css.py` los sustituye por el bundle.
+- Bloques de contenido: `.ccs-content` › `.ccs-section` › `.ccs-section-head` (`.ccs-kicker`, `h2`, entradilla), `.ccs-cards` › `.ccs-card`, `.ccs-list`, `.ccs-note`, `.ccs-callout` (`.is-aviso` para avisos en ámbar).
+- Navegación y footer: copiarlos de una página publicada (el `site-audit` comprueba que el menú sea el global).
+- Antes de la PR: `build-css.py`, `site-audit.py` y `design-audit.py` en verde.
+
+---
+
 # Plantilla de análisis individual
 
 Esta plantilla es la base para futuras páginas de producto de Compra con Sentido.

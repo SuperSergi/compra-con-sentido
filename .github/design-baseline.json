@@ -60,7 +60,7 @@
     "colores_sueltos": 4,
     "font_size_px": 2,
     "important": 74,
-    "pesos_fuera_de_escala": 2
+    "pesos_fuera_de_escala": 0
   },
   "css/deshumidificador-capacidad.css": {
     "anchos_fijos": 0,
@@ -312,6 +312,6 @@
     "colores_sueltos": 0,
     "font_size_px": 0,
     "important": 12,
-    "pesos_fuera_de_escala": 3
+    "pesos_fuera_de_escala": 0
   }
 }

@@ -1,72 +1,169 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- PLANTILLA INTERNA · NO PUBLICAR TAL CUAL -->
+  <!-- PLANTILLA INTERNA · NO PUBLICAR TAL CUAL
+       Comparativa con el sistema de diseño común (tokens-v1, 31/10/2026).
+       Orden: hero → tarjeta de apertura → 3 elecciones → contenido específico
+       → tabla → fichas → guía/FAQ → enlaces relacionados.
+       No crear CSS de página: si falta una pieza, añadirla a css/content-v1.css.
+       Al publicar, ejecutar build-css.py: sustituye estos <link> por el bundle. -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>{{TITLE}}</title>
-  <meta name="description" content="{{META_DESCRIPTION}}">
-  <link rel="canonical" href="https://compraconsentido.es/{{URL}}/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}} | Compra con Sentido</title>
+  <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#063d26">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="canonical" href="https://compraconsentido.es/{{URL}}/">
+  <!-- CSS en este orden: tokens primero, cta y type al final -->
+  <link rel="stylesheet" href="/css/tokens-v1.css">
   <link rel="stylesheet" href="/css/style-v4.css">
   <link rel="stylesheet" href="/css/hero-v5.css">
   <link rel="stylesheet" href="/css/intro-v1.css">
   <link rel="stylesheet" href="/css/comparison-opening-v1.css">
   <link rel="stylesheet" href="/css/comparativas-v3.css">
   <link rel="stylesheet" href="/css/product-cards-v1.css">
+  <link rel="stylesheet" href="/css/content-v1.css">
+  <link rel="stylesheet" href="/css/guide-consistency-v1.css">
+  <link rel="stylesheet" href="/css/faq-standard-v1.css">
+  <link rel="stylesheet" href="/css/related-heroes-v1.css">
+  <link rel="stylesheet" href="/css/cta-v1.css">
+  <link rel="stylesheet" href="/css/type-v1.css">
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <link rel="icon" type="image/svg+xml" href="https://compraconsentido.es/favicon.svg">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="Compra con Sentido">
+  <meta property="og:title" content="{{OG_TITLE}}">
+  <meta property="og:description" content="{{META_DESCRIPTION}}">
+  <meta property="og:url" content="https://compraconsentido.es/{{URL}}/">
+  <meta property="og:image" content="https://compraconsentido.es/images/{{TEMA}}/hero-{{KEYWORD}}.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{OG_TITLE}}">
+  <meta name="twitter:description" content="{{META_DESCRIPTION}}">
+  <meta name="twitter:image" content="https://compraconsentido.es/images/{{TEMA}}/hero-{{KEYWORD}}.webp">
+  <!-- JSON-LD: Article + BreadcrumbList (@graph) y FAQPage, como en las comparativas publicadas -->
+  <script type="application/ld+json">{{JSONLD_ARTICLE_BREADCRUMBS}}</script>
+  <script type="application/ld+json">{{JSONLD_FAQ}}</script>
 </head>
 <body class="ccs-comparison-v3">
-  <!-- Reutilizar navegación global vigente -->
 
-  <header class="ccs-hero">
-    <div class="ccs-hero-shell ccs-hero-copy">
-      <span class="ccs-hero-kicker">{{KICKER}}</span>
-      <h1>{{H1}}</h1>
-      <p class="ccs-hero-lead">{{LEAD}}</p>
+<header class="ccs-hero" style="--ccs-hero-image:url('/images/{{TEMA}}/hero-{{KEYWORD}}.webp')">
+  <!-- Copiar aquí la navegación global (div.topbar.shell) de una página publicada -->
+  <div class="ccs-hero-shell ccs-hero-copy">
+    <span class="ccs-hero-kicker">Comparativa · {{TEMA_CORTO}}</span>
+    <h1>{{H1}}</h1>
+    <p class="ccs-hero-lead">{{LEAD}}</p>
+    <div class="article-byline"><span>Publicado por</span>
+      <a href="/sobre-nosotros/">Compra con Sentido</a>
+      <span>· Actualizado el {{FECHA_LARGA}}</span>
     </div>
-  </header>
+    <div class="ccs-hero-meta"><span>{{N}} modelos</span><span>{{DATO_CLAVE_1}}</span><span>{{DATO_CLAVE_2}}</span></div>
+  </div>
+</header>
 
-  <nav class="site-breadcrumbs" aria-label="Migas de pan">
-    <div class="shell">{{BREADCRUMBS}}</div>
-  </nav>
+<nav class="site-breadcrumbs" aria-label="Migas de pan"><div class="shell"><a href="/">Inicio</a><span aria-hidden="true">›</span><a href="/{{CATEGORIA}}/">{{CATEGORIA_NOMBRE}}</a><span aria-hidden="true">›</span><a href="/{{CATEGORIA}}/{{SUBCATEGORIA}}/">{{SUBCATEGORIA_NOMBRE}}</a><span aria-hidden="true">›</span><span aria-current="page">Comparativa</span></div></nav>
 
-  <main class="ccs-comparison-main">
-    <section class="ccs-comparison-opening ccs-intro-overlap">
-      <div class="ccs-comparison-opening-card ccs-intro-card">
-        <div class="ccs-intro-heading">
-          <span class="section-kicker">{{INTRO_KICKER}}</span>
-          <h2>{{INTRO_H2}}</h2>
-        </div>
-        <div class="ccs-comparison-opening-copy ccs-intro-copy">
-          <p>{{INTRO_COPY}}</p>
-        </div>
+<main class="ccs-comparison-main">
+
+  <!-- Tarjeta de apertura: dos párrafos como máximo -->
+  <section class="ccs-comparison-opening ccs-intro-overlap">
+    <div class="ccs-comparison-opening-card ccs-intro-card">
+      <div class="ccs-intro-heading">
+        <span class="section-kicker">{{INTRO_KICKER}}</span>
+        <h2>{{INTRO_H2}}</h2>
+      </div>
+      <div class="ccs-comparison-opening-copy ccs-intro-copy">
+        <p>{{INTRO_P1}}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exactamente 3 elecciones según necesidad, sin numerar -->
+  <section class="ccs-comparison-profiles" aria-label="3 elecciones según necesidad">
+    <article class="ccs-comparison-profile"><span>{{NECESIDAD_1}}</span><h3>{{MODELO_1}}</h3><p>{{POR_QUE_1}}</p><p><strong>A tener en cuenta:</strong> {{LIMITE_1}}</p><a class="amazon-btn ccs-product-cta-button" href="https://www.amazon.es/dp/{{ASIN_1}}?tag={{TRACKING_ID}}" rel="nofollow sponsored noopener noreferrer" target="_blank">🛒 Ver precio en Amazon</a></article>
+    <article class="ccs-comparison-profile"><span>{{NECESIDAD_2}}</span><h3>{{MODELO_2}}</h3><p>{{POR_QUE_2}}</p><p><strong>A tener en cuenta:</strong> {{LIMITE_2}}</p><a class="amazon-btn ccs-product-cta-button" href="https://www.amazon.es/dp/{{ASIN_2}}?tag={{TRACKING_ID}}" rel="nofollow sponsored noopener noreferrer" target="_blank">🛒 Ver precio en Amazon</a></article>
+    <article class="ccs-comparison-profile"><span>{{NECESIDAD_3}}</span><h3>{{MODELO_3}}</h3><p>{{POR_QUE_3}}</p><p><strong>A tener en cuenta:</strong> {{LIMITE_3}}</p><a class="amazon-btn ccs-product-cta-button" href="https://www.amazon.es/dp/{{ASIN_3}}?tag={{TRACKING_ID}}" rel="nofollow sponsored noopener noreferrer" target="_blank">🛒 Ver precio en Amazon</a></article>
+  </section>
+
+  <div class="ccs-content">
+
+    <!-- Contenido específico: datos que deciden la compra -->
+    <section class="ccs-section">
+      <header class="ccs-section-head">
+        <span class="ccs-kicker">Antes de comparar</span>
+        <h2>{{CRITERIOS_H2}}</h2>
+        <p>{{CRITERIOS_ENTRADILLA}}</p>
+      </header>
+      <div class="ccs-cards">
+        <article class="ccs-card"><span class="ccs-kicker">{{CRITERIO_1_ETIQUETA}}</span><h3>{{CRITERIO_1}}</h3><p>{{CRITERIO_1_TEXTO}}</p></article>
+        <article class="ccs-card"><span class="ccs-kicker">{{CRITERIO_2_ETIQUETA}}</span><h3>{{CRITERIO_2}}</h3><p>{{CRITERIO_2_TEXTO}}</p></article>
+        <article class="ccs-card"><span class="ccs-kicker">{{CRITERIO_3_ETIQUETA}}</span><h3>{{CRITERIO_3}}</h3><p>{{CRITERIO_3_TEXTO}}</p></article>
       </div>
     </section>
 
-    <section class="ccs-comparison-profiles" aria-label="Perfiles de uso">
-      <article class="ccs-comparison-profile"><span>{{PROFILE_1_KICKER}}</span><h3>{{PROFILE_1_H3}}</h3><p>{{PROFILE_1_COPY}}</p></article>
-      <article class="ccs-comparison-profile"><span>{{PROFILE_2_KICKER}}</span><h3>{{PROFILE_2_H3}}</h3><p>{{PROFILE_2_COPY}}</p></article>
-      <article class="ccs-comparison-profile"><span>{{PROFILE_3_KICKER}}</span><h3>{{PROFILE_3_H3}}</h3><p>{{PROFILE_3_COPY}}</p></article>
+    <!-- Tabla: solo columnas que diferencian; dato sin fuente = "–" -->
+    <section class="ccs-section">
+      <header class="ccs-section-head">
+        <span class="ccs-kicker">Comparativa</span>
+        <h2>{{TABLA_H2}}</h2>
+        <p>{{TABLA_ENTRADILLA}}</p>
+      </header>
+      <div>
+        <p class="table-scroll-hint" aria-hidden="true">← Desliza la tabla para ver todas las columnas →</p>
+        <div class="ccs-table-wrap"><table class="ccs-table">
+          <caption class="table-caption-a11y">{{TABLA_CAPTION}}</caption>
+          <thead><tr><th scope="col">Modelo</th><th scope="col">{{COLUMNA_1}}</th><th scope="col">{{COLUMNA_2}}</th><th scope="col">{{COLUMNA_3}}</th><th scope="col">Mejor para</th><th scope="col"><span class="table-caption-a11y">Comprar</span></th></tr></thead>
+          <tbody>
+            <!-- Una fila por modelo, en el mismo orden que las fichas -->
+            <tr><td><strong>{{MODELO_A}}</strong></td><td>{{DATO}}</td><td>{{DATO}}</td><td>{{DATO}}</td><td>{{USO}}</td><td><a class="ccs-table-amazon" href="https://www.amazon.es/dp/{{ASIN_A}}?tag={{TRACKING_ID}}" rel="nofollow sponsored noopener noreferrer" target="_blank">🛒 Ver en Amazon</a></td></tr>
+          </tbody>
+        </table></div>
+        <p class="ccs-note">{{NOTA_DE_LA_TABLA}}</p>
+      </div>
     </section>
 
-    <!--
-      CTA de tabla: usar siempre el componente compartido
-      class="amazon-mini ccs-table-amazon"
-      y el texto exacto "🛒 Ver en Amazon".
-      El CTA principal de ficha mantiene "Ver precio en Amazon".
-    -->
+    <!-- Fichas: una por modelo -->
+    <section class="ccs-section">
+      <header class="ccs-section-head">
+        <h2>{{FICHAS_H2}}</h2>
+      </header>
+      <div class="products-list ccs-products-list">
+        <article class="product-card ccs-product-card" id="{{ANCLA_MODELO_A}}">
+          <div class="product-media ccs-product-media">
+            <span class="product-badge ccs-product-badge">{{ETIQUETA_CORTA}}</span>
+            <img src="/images/{{TEMA}}/{{MODELO_A_SLUG}}.webp" alt="{{MODELO_A}}" width="800" height="600" loading="lazy" decoding="async"><small class="image-note">Imagen ilustrativa</small>
+          </div>
+          <div class="product-body ccs-product-content">
+            <div class="product-head"><h3>{{MODELO_A}}</h3><p class="ccs-product-subtitle">{{PARA_QUIEN}}</p></div>
+            <div class="spec-grid ccs-product-specs">
+              <div class="spec"><small>{{DATO_1_NOMBRE}}</small><strong>{{DATO_1}}</strong></div>
+              <div class="spec"><small>{{DATO_2_NOMBRE}}</small><strong>{{DATO_2}}</strong></div>
+              <div class="spec"><small>{{DATO_3_NOMBRE}}</small><strong>{{DATO_3}}</strong></div>
+            </div>
+            <div class="product-copy ccs-product-copy"><p>{{DESARROLLO}}</p></div>
+            <div class="pros-cons ccs-product-proscons">
+              <div class="pros"><strong>Lo que destaca</strong><p>{{LO_QUE_DESTACA}}</p></div><div class="cons"><strong>A tener en cuenta</strong><p>{{A_TENER_EN_CUENTA}}</p></div>
+            </div>
+            <div class="fit-box ccs-decision ccs-product-decision"><strong>Encaja si…</strong> {{ENCAJA_SI}}</div>
+            <div class="buy-row ccs-product-cta"><a class="amazon-btn ccs-product-cta-button" href="https://www.amazon.es/dp/{{ASIN_A}}?tag={{TRACKING_ID}}" target="_blank" rel="nofollow sponsored noopener noreferrer">🛒 Ver precio en Amazon</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    <!--
-      Las tablas deben mantener HTML estructural válido:
-      <thead>...</thead>, <tbody>...</tbody>, <caption> accesible
-      y scope="col" / scope="row" en los <th>.
-      No modificar etiquetas estructurales mediante reemplazos parciales.
-    -->
-    <!-- Contenido específico / tabla / fichas -->
-    {{CONTENT}}
-  </main>
+  </div>
 
-  <!-- Reutilizar footer global vigente -->
+  <section class="ccs-faq-standard">
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq-list">
+      <details><summary>{{PREGUNTA_1}}</summary><p>{{RESPUESTA_1}}</p></details>
+      <details><summary>{{PREGUNTA_2}}</summary><p>{{RESPUESTA_2}}</p></details>
+    </div>
+  </section>
+
+  <!-- Cierre: dos destinos internos con su imagen hero; toda la tarjeta es el enlace -->
+  <section class="ccs-hero-links" aria-label="Más guías y comparativas relacionadas"><h2>{{CIERRE_H2}}</h2><p>{{CIERRE_TEXTO}}</p><div class="ccs-hero-links__grid"><a class="ccs-hero-links__card" href="/{{DESTINO_1}}/"><img src="/images/{{HERO_DESTINO_1}}.webp" alt="{{DESTINO_1_NOMBRE}}, imagen de la página" loading="lazy" decoding="async" width="800" height="450"><div class="ccs-hero-links__copy"><span>Guía</span><strong>{{DESTINO_1_NOMBRE}}</strong></div></a><a class="ccs-hero-links__card" href="/{{DESTINO_2}}/"><img src="/images/{{HERO_DESTINO_2}}.webp" alt="{{DESTINO_2_NOMBRE}}, imagen de la página" loading="lazy" decoding="async" width="800" height="450"><div class="ccs-hero-links__copy"><span>Comparativa</span><strong>{{DESTINO_2_NOMBRE}}</strong></div></a></div></section>
+</main>
+
+<!-- Copiar aquí el footer global (footer.site-footer) y los scripts de una página publicada -->
 </body>
 </html>

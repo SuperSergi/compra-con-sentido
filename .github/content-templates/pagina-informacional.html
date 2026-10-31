@@ -1,52 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- PLANTILLA INTERNA · NO PUBLICAR TAL CUAL -->
+  <!-- PLANTILLA INTERNA · NO PUBLICAR TAL CUAL
+       Guía o página informacional con el sistema de diseño común (tokens-v1, 31/10/2026).
+       Orden: hero → tarjeta de apertura → bloques de contenido → FAQ → enlaces relacionados.
+       No crear CSS de página: si falta una pieza, añadirla a css/content-v1.css.
+       Si la guía incluye enlaces a Amazon, añadir /css/cta-v1.css antes de type-v1.css. -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>{{TITLE}}</title>
-  <meta name="description" content="{{META_DESCRIPTION}}">
-  <link rel="canonical" href="https://compraconsentido.es/{{URL}}/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}} | Compra con Sentido</title>
+  <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#063d26">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="canonical" href="https://compraconsentido.es/{{URL}}/">
+  <!-- CSS en este orden: tokens primero, type al final -->
+  <link rel="stylesheet" href="/css/tokens-v1.css">
   <link rel="stylesheet" href="/css/style-v4.css">
   <link rel="stylesheet" href="/css/hero-v5.css">
   <link rel="stylesheet" href="/css/intro-v1.css">
+  <link rel="stylesheet" href="/css/comparativas-v3.css">
+  <link rel="stylesheet" href="/css/content-v1.css">
+  <link rel="stylesheet" href="/css/faq-standard-v1.css">
+  <link rel="stylesheet" href="/css/related-heroes-v1.css">
+  <link rel="stylesheet" href="/css/type-v1.css">
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <link rel="icon" type="image/svg+xml" href="https://compraconsentido.es/favicon.svg">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="Compra con Sentido">
+  <meta property="og:title" content="{{OG_TITLE}}">
+  <meta property="og:description" content="{{META_DESCRIPTION}}">
+  <meta property="og:url" content="https://compraconsentido.es/{{URL}}/">
+  <meta property="og:image" content="https://compraconsentido.es/images/{{TEMA}}/hero-{{KEYWORD}}.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{OG_TITLE}}">
+  <meta name="twitter:description" content="{{META_DESCRIPTION}}">
+  <meta name="twitter:image" content="https://compraconsentido.es/images/{{TEMA}}/hero-{{KEYWORD}}.webp">
+  <script type="application/ld+json">{{JSONLD_ARTICLE_BREADCRUMBS}}</script>
+  <script type="application/ld+json">{{JSONLD_FAQ}}</script>
 </head>
-<body>
-  <!-- Reutilizar navegación global vigente -->
+<body class="ccs-comparison-v3">
 
-  <header class="ccs-hero">
-    <div class="ccs-hero-shell ccs-hero-copy">
-      <span class="ccs-hero-kicker">{{KICKER}}</span>
-      <h1>{{H1}}</h1>
-      <p class="ccs-hero-lead">{{LEAD}}</p>
+<header class="ccs-hero" style="--ccs-hero-image:url('/images/{{TEMA}}/hero-{{KEYWORD}}.webp')">
+  <!-- Copiar aquí la navegación global (div.topbar.shell) de una página publicada -->
+  <div class="ccs-hero-shell ccs-hero-copy">
+    <span class="ccs-hero-kicker">Guía · {{TEMA_CORTO}}</span>
+    <h1>{{H1}}</h1>
+    <p class="ccs-hero-lead">{{LEAD}}</p>
+    <div class="article-byline"><span>Publicado por</span>
+      <a href="/sobre-nosotros/">Compra con Sentido</a>
+      <span>· Actualizado el {{FECHA_LARGA}}</span>
     </div>
-  </header>
+  </div>
+</header>
 
-  <nav class="site-breadcrumbs" aria-label="Migas de pan">
-    <div class="shell">{{BREADCRUMBS}}</div>
-  </nav>
+<nav class="site-breadcrumbs" aria-label="Migas de pan"><div class="shell"><a href="/">Inicio</a><span aria-hidden="true">›</span><a href="/{{CATEGORIA}}/">{{CATEGORIA_NOMBRE}}</a><span aria-hidden="true">›</span><span aria-current="page">{{PAGINA_NOMBRE}}</span></div></nav>
 
-  <main>
-    <section class="ccs-intro-overlap">
-      <div class="shell">
-        <div class="ccs-intro-card">
-          <div class="ccs-intro-heading">
-            <span class="section-kicker">{{INTRO_KICKER}}</span>
-            <h2>{{INTRO_H2}}</h2>
-          </div>
-          <div class="ccs-intro-copy">
-            <p>{{INTRO_COPY}}</p>
-          </div>
-        </div>
+<main>
+
+  <!-- Tarjeta de apertura: dos párrafos como máximo -->
+  <section class="ccs-intro-overlap ccs-intro-standard">
+    <div class="ccs-intro-card">
+      <div class="ccs-intro-heading">
+        <span class="section-kicker">{{INTRO_KICKER}}</span>
+        <h2>{{INTRO_H2}}</h2>
+      </div>
+      <div class="ccs-intro-copy">
+        <p>{{INTRO_P1}}</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="ccs-content">
+
+    <!-- Bloque con tarjetas: criterios, tipos, factores… -->
+    <section class="ccs-section">
+      <header class="ccs-section-head">
+        <span class="ccs-kicker">{{BLOQUE_1_KICKER}}</span>
+        <h2>{{BLOQUE_1_H2}}</h2>
+        <p>{{BLOQUE_1_ENTRADILLA}}</p>
+      </header>
+      <div class="ccs-cards">
+        <article class="ccs-card"><h3>{{TARJETA_1}}</h3><p>{{TARJETA_1_TEXTO}}</p></article>
+        <article class="ccs-card"><h3>{{TARJETA_2}}</h3><p>{{TARJETA_2_TEXTO}}</p></article>
+        <article class="ccs-card"><h3>{{TARJETA_3}}</h3><p>{{TARJETA_3_TEXTO}}</p></article>
       </div>
     </section>
 
-    <!-- Contenido editorial específico -->
-    {{CONTENT}}
-  </main>
+    <!-- Bloque de texto con lista y recuadro -->
+    <section class="ccs-section">
+      <header class="ccs-section-head">
+        <h2>{{BLOQUE_2_H2}}</h2>
+      </header>
+      <p>{{BLOQUE_2_PARRAFO}}</p>
+      <ul class="ccs-list">
+        <li>{{PUNTO_1}}</li>
+        <li>{{PUNTO_2}}</li>
+      </ul>
+      <!-- Aviso importante (seguridad, compatibilidad): añadir la clase is-aviso -->
+      <div class="ccs-callout is-aviso"><strong>{{AVISO_TITULO}}</strong> {{AVISO_TEXTO}}</div>
+      <p class="ccs-note">{{FUENTE_O_NOTA}}</p>
+    </section>
 
-  <!-- Reutilizar footer global vigente -->
+  </div>
+
+  <section class="ccs-faq-standard">
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq-list">
+      <details><summary>{{PREGUNTA_1}}</summary><p>{{RESPUESTA_1}}</p></details>
+      <details><summary>{{PREGUNTA_2}}</summary><p>{{RESPUESTA_2}}</p></details>
+    </div>
+  </section>
+
+  <!-- Cierre: dos destinos internos con su imagen hero -->
+  <section class="ccs-hero-links" aria-label="Más guías y comparativas relacionadas"><h2>{{CIERRE_H2}}</h2><p>{{CIERRE_TEXTO}}</p><div class="ccs-hero-links__grid"><a class="ccs-hero-links__card" href="/{{DESTINO_1}}/"><img src="/images/{{HERO_DESTINO_1}}.webp" alt="{{DESTINO_1_NOMBRE}}, imagen de la página" loading="lazy" decoding="async" width="800" height="450"><div class="ccs-hero-links__copy"><span>Comparativa</span><strong>{{DESTINO_1_NOMBRE}}</strong></div></a><a class="ccs-hero-links__card" href="/{{DESTINO_2}}/"><img src="/images/{{HERO_DESTINO_2}}.webp" alt="{{DESTINO_2_NOMBRE}}, imagen de la página" loading="lazy" decoding="async" width="800" height="450"><div class="ccs-hero-links__copy"><span>Guía</span><strong>{{DESTINO_2_NOMBRE}}</strong></div></a></div></section>
+</main>
+
+<!-- Copiar aquí el footer global (footer.site-footer) y los scripts de una página publicada -->
 </body>
 </html>

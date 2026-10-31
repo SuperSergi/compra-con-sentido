@@ -37,7 +37,7 @@ METRICS = {
     "colores_sueltos": re.compile(r"#[0-9a-fA-F]{3,8}\b|\brgba?\(\s*\d"),
     "important": re.compile(r"!\s*important", re.I),
     "font_size_px": re.compile(r"font-size\s*:\s*\d+(?:\.\d+)?px", re.I),
-    "pesos_fuera_de_escala": re.compile(r"font-weight\s*:\s*(?!(?:400|700|800|normal|bold|inherit|var\()\b)[^;}!]+", re.I),
+    "pesos_fuera_de_escala": re.compile(r"font-weight\s*:\s*(?!(?:(?:400|700|800|normal|bold|inherit)\b|var\())[^;}!]+", re.I),
     "anchos_fijos": re.compile(r"\b1[0-3]\d\dpx\b|calc\(\s*100%\s*-\s*\d+px\s*\)"),
 }
 LABELS = {
