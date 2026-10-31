@@ -2,25 +2,27 @@
   "version": 2,
   "minifier": "rcssmin==1.2.2",
   "bundles": {
-    "ccs-0729ced4cc89": {
+    "ccs-3b8312f98a1a": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
-        "css/pages/404-inline-1.css"
+        "css/pages/404-inline-1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-0729ced4cc89-6a62a0114af5.min.css"
+      "output": "css/compiled/ccs-3b8312f98a1a-dcec25103ab3.min.css"
     },
-    "ccs-9cb5797ebf30": {
+    "ccs-d8eb4f56dc36": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
         "css/legal.css",
         "css/hero-v5.css",
-        "css/intro-v1.css"
+        "css/intro-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-9cb5797ebf30-4a5b6728e449.min.css"
+      "output": "css/compiled/ccs-d8eb4f56dc36-48720292a234.min.css"
     },
-    "ccs-f1b24052563c": {
+    "ccs-133378096366": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -33,22 +35,24 @@
         "css/related-heroes-v1.css",
         "css/faq-standard-v1.css",
         "css/guide-consistency-v1.css",
-        "css/cta-v1.css"
+        "css/cta-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-f1b24052563c-f82a93058e4d.min.css"
+      "output": "css/compiled/ccs-133378096366-0ce7498987e9.min.css"
     },
-    "ccs-c97e157e87d9": {
+    "ccs-aadbdaf2b492": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
         "css/pages/herramientas-gatos-hidraulicos-inline-1.css",
         "css/hero-v5.css",
         "css/intro-v1.css",
-        "css/related-heroes-v1.css"
+        "css/related-heroes-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-c97e157e87d9-715356049c5d.min.css"
+      "output": "css/compiled/ccs-aadbdaf2b492-7f8c305503cb.min.css"
     },
-    "ccs-feb56ff9dc0c": {
+    "ccs-d0df0977807e": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -61,11 +65,12 @@
         "css/pages/herramientas-gatos-hidraulicos-mejores-gatos-hidraulicos-botella-inline-2.css",
         "css/pages/herramientas-gatos-hidraulicos-mejores-gatos-hidraulicos-botella-inline-3.css",
         "css/faq-standard-v1.css",
-        "css/cta-v1.css"
+        "css/cta-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-feb56ff9dc0c-6892cb6826b6.min.css"
+      "output": "css/compiled/ccs-d0df0977807e-50b52fddc41c.min.css"
     },
-    "ccs-65cf7fb698d6": {
+    "ccs-ea8c4e0d49de": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -78,22 +83,24 @@
         "css/pages/herramientas-gatos-hidraulicos-mejores-gatos-hidraulicos-para-coche-inline-2.css",
         "css/related-heroes-v1.css",
         "css/faq-standard-v1.css",
-        "css/cta-v1.css"
+        "css/cta-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-65cf7fb698d6-c796100b561b.min.css"
+      "output": "css/compiled/ccs-ea8c4e0d49de-23fd303be661.min.css"
     },
-    "ccs-a2fc84b2650a": {
+    "ccs-e58e0e18b31d": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
         "css/herramientas.css",
         "css/hero-v5.css",
         "css/intro-v1.css",
-        "css/category-library-v1.css"
+        "css/category-library-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-a2fc84b2650a-5edefd6a2f25.min.css"
+      "output": "css/compiled/ccs-e58e0e18b31d-a3cf6555e597.min.css"
     },
-    "ccs-0d88d44ce205": {
+    "ccs-02d44296bce3": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -105,11 +112,12 @@
         "css/comparison-opening-v1.css",
         "css/related-heroes-v1.css",
         "css/faq-standard-v1.css",
-        "css/cta-v1.css"
+        "css/cta-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-0d88d44ce205-45c6ec1dcad5.min.css"
+      "output": "css/compiled/ccs-02d44296bce3-177cb356c7de.min.css"
     },
-    "ccs-38285fc2c1d3": {
+    "ccs-e0efbda897fa": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -122,22 +130,24 @@
         "css/related-heroes-v1.css",
         "css/faq-standard-v1.css",
         "css/guide-consistency-v1.css",
-        "css/cta-v1.css"
+        "css/cta-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-38285fc2c1d3-16694781b4df.min.css"
+      "output": "css/compiled/ccs-e0efbda897fa-8aa4b1daf882.min.css"
     },
-    "ccs-96f0775028cc": {
+    "ccs-a63b36093808": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
         "css/taladros.css",
         "css/hero-v5.css",
         "css/intro-v1.css",
-        "css/related-heroes-v1.css"
+        "css/related-heroes-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-96f0775028cc-01a0c8a35604.min.css"
+      "output": "css/compiled/ccs-a63b36093808-8734b15fe296.min.css"
     },
-    "ccs-5af47173bb7d": {
+    "ccs-09579c8a0dec": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -149,22 +159,24 @@
         "css/comparison-opening-v1.css",
         "css/related-heroes-v1.css",
         "css/faq-standard-v1.css",
-        "css/cta-v1.css"
+        "css/cta-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-5af47173bb7d-c5d352bc2588.min.css"
+      "output": "css/compiled/ccs-09579c8a0dec-f5c5babf1eca.min.css"
     },
-    "ccs-11673797b3af": {
+    "ccs-60b4de3ea880": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
         "css/aspiradoras.css",
         "css/hero-v5.css",
         "css/intro-v1.css",
-        "css/related-heroes-v1.css"
+        "css/related-heroes-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-11673797b3af-0c706b4f6f13.min.css"
+      "output": "css/compiled/ccs-60b4de3ea880-4180f1a9a919.min.css"
     },
-    "ccs-093b56ae9b62": {
+    "ccs-b220394cd6db": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -176,11 +188,12 @@
         "css/comparison-opening-v1.css",
         "css/related-heroes-v1.css",
         "css/faq-standard-v1.css",
-        "css/cta-v1.css"
+        "css/cta-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-093b56ae9b62-50c6d6709696.min.css"
+      "output": "css/compiled/ccs-b220394cd6db-d576215cc875.min.css"
     },
-    "ccs-b935324bd8e0": {
+    "ccs-b89203d8fe0e": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -189,11 +202,12 @@
         "css/intro-v1.css",
         "css/pages/hogar-deshumidificadores-cuantos-litros-deshumidificador-metros-cuadrados-inline-1.css",
         "css/related-heroes-v1.css",
-        "css/faq-standard-v1.css"
+        "css/faq-standard-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-b935324bd8e0-a239017ea0a9.min.css"
+      "output": "css/compiled/ccs-b89203d8fe0e-99eab19a0838.min.css"
     },
-    "ccs-2868e3c572ac": {
+    "ccs-14612fdc71ea": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -205,11 +219,12 @@
         "css/comparison-opening-v1.css",
         "css/related-heroes-v1.css",
         "css/faq-standard-v1.css",
-        "css/cta-v1.css"
+        "css/cta-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-2868e3c572ac-7857f5335a98.min.css"
+      "output": "css/compiled/ccs-14612fdc71ea-2643d0d9841d.min.css"
     },
-    "ccs-b8f2e8972b2a": {
+    "ccs-689fbf04bb64": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -217,11 +232,12 @@
         "css/hero-v5.css",
         "css/intro-v1.css",
         "css/related-heroes-v1.css",
-        "css/faq-standard-v1.css"
+        "css/faq-standard-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-b8f2e8972b2a-a835a0e27264.min.css"
+      "output": "css/compiled/ccs-689fbf04bb64-ca911a17ea52.min.css"
     },
-    "ccs-25cc61907a26": {
+    "ccs-3c9293896d22": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -233,44 +249,48 @@
         "css/comparison-opening-v1.css",
         "css/related-heroes-v1.css",
         "css/guide-consistency-v1.css",
-        "css/cta-v1.css"
+        "css/cta-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-25cc61907a26-9d3c610dda24.min.css"
+      "output": "css/compiled/ccs-3c9293896d22-36b84e117bf2.min.css"
     },
-    "ccs-1b6e28be9164": {
+    "ccs-2bf92ea5f15b": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
         "css/hogar.css",
         "css/hero-v5.css",
         "css/intro-v1.css",
-        "css/category-library-v1.css"
+        "css/category-library-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-1b6e28be9164-ccd21d6288a9.min.css"
+      "output": "css/compiled/ccs-2bf92ea5f15b-0635d170d8d9.min.css"
     },
-    "ccs-e124286ebcf8": {
+    "ccs-10f12cc03d46": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
         "css/pages/impresion-3d-accesorios-3d-inline-1.css",
         "css/hero-v5.css",
         "css/intro-v1.css",
-        "css/related-heroes-v1.css"
+        "css/related-heroes-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-e124286ebcf8-f1c0136e2401.min.css"
+      "output": "css/compiled/ccs-10f12cc03d46-98a8222b5f7e.min.css"
     },
-    "ccs-9fcbacd4caf9": {
+    "ccs-c763dfd42d4a": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
         "css/pages/impresion-3d-filamentos-3d-inline-1.css",
         "css/hero-v5.css",
         "css/intro-v1.css",
-        "css/related-heroes-v1.css"
+        "css/related-heroes-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-9fcbacd4caf9-b40f3022016e.min.css"
+      "output": "css/compiled/ccs-c763dfd42d4a-031811a109e0.min.css"
     },
-    "ccs-e07f3436f98b": {
+    "ccs-2a54cd5fcb8e": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -282,11 +302,12 @@
         "css/pages/impresion-3d-filamentos-3d-mejores-filamentos-pla-inline-1.css",
         "css/related-heroes-v1.css",
         "css/faq-standard-v1.css",
-        "css/cta-v1.css"
+        "css/cta-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-e07f3436f98b-78fcc7e94fa9.min.css"
+      "output": "css/compiled/ccs-2a54cd5fcb8e-e05dac129585.min.css"
     },
-    "ccs-30a168fccd9e": {
+    "ccs-2b5bee3d361b": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -294,22 +315,24 @@
         "css/intro-v1.css",
         "css/pages/impresion-3d-filamentos-3d-pla-vs-tpu-inline-1.css",
         "css/related-heroes-v1.css",
-        "css/faq-standard-v1.css"
+        "css/faq-standard-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-30a168fccd9e-42c6bc8bba84.min.css"
+      "output": "css/compiled/ccs-2b5bee3d361b-24b6796009b6.min.css"
     },
-    "ccs-ffa734f39610": {
+    "ccs-30f7d3ad4caf": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
         "css/pages/impresion-3d-impresoras-3d-inline-1.css",
         "css/hero-v5.css",
         "css/intro-v1.css",
-        "css/related-heroes-v1.css"
+        "css/related-heroes-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-ffa734f39610-c7f38a4f6107.min.css"
+      "output": "css/compiled/ccs-30f7d3ad4caf-ec29edf2db64.min.css"
     },
-    "ccs-8627fc412bb8": {
+    "ccs-059a56e4fc51": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -321,11 +344,12 @@
         "css/comparison-opening-v1.css",
         "css/related-heroes-v1.css",
         "css/faq-standard-v1.css",
-        "css/cta-v1.css"
+        "css/cta-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-8627fc412bb8-72635dacbb2f.min.css"
+      "output": "css/compiled/ccs-059a56e4fc51-42a0ced40825.min.css"
     },
-    "ccs-72f11a935f2b": {
+    "ccs-6e78d142def2": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -333,39 +357,43 @@
         "css/hero-v5.css",
         "css/intro-v1.css",
         "css/pages/impresion-3d-inline-2.css",
-        "css/category-library-v1.css"
+        "css/category-library-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-72f11a935f2b-dae057b91e62.min.css"
+      "output": "css/compiled/ccs-6e78d142def2-e210cc2bc6b0.min.css"
     },
-    "ccs-46957c3bdba1": {
+    "ccs-ccb917034806": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
         "css/hero-v5.css",
         "css/intro-v1.css",
-        "css/related-heroes-v1.css"
+        "css/related-heroes-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-46957c3bdba1-8d0a23f467d8.min.css"
+      "output": "css/compiled/ccs-ccb917034806-f02668aaffdb.min.css"
     },
-    "ccs-8a3b935839a1": {
+    "ccs-0a73d65cb5d2": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
         "css/metodologia.css",
         "css/intro-v1.css",
-        "css/related-heroes-v1.css"
+        "css/related-heroes-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-8a3b935839a1-7aaba383d73b.min.css"
+      "output": "css/compiled/ccs-0a73d65cb5d2-4f5365d224f9.min.css"
     },
-    "ccs-9266b89fa3be": {
+    "ccs-6e625dbbd1e6": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
         "css/about.css",
         "css/intro-v1.css",
-        "css/related-heroes-v1.css"
+        "css/related-heroes-v1.css",
+        "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-9266b89fa3be-8483b2151a52.min.css"
+      "output": "css/compiled/ccs-6e625dbbd1e6-cc7f2b0376b9.min.css"
     }
   }
 }
