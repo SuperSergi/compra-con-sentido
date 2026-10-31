@@ -3,8 +3,8 @@
 .ccs-comparison-v3 .ccs-hero{color:#fff;background:linear-gradient(90deg,rgba(6,61,38,.97) 0%,rgba(6,61,38,.91) 38%,rgba(6,61,38,.62) 64%,rgba(6,61,38,.40) 100%),var(--ccs-hero-image) var(--ccs-hero-position,58% 48%)/cover no-repeat}
 .ccs-comparison-v3 .ccs-hero .topbar{border-bottom:1px solid rgba(255,255,255,.18)}
 .ccs-comparison-v3 .ccs-hero .brand,.ccs-comparison-v3 .ccs-hero .main-nav>a,.ccs-comparison-v3 .ccs-hero .nav-group>a,.ccs-comparison-v3 .ccs-hero .menu-toggle{color:#fff}
-.ccs-hero-shell{width:min(1160px,calc(100% - 36px));margin:auto}
-.ccs-hero-copy{padding:132px 0 76px;max-width:880px;margin-left:max(18px,calc((100% - 1160px)/2))}
+.ccs-hero-shell{width:var(--ccs-ancho);margin:auto}
+.ccs-hero-copy{padding:132px 0 76px;max-width:880px;margin-left:max(var(--ccs-gutter),calc((100% - var(--ccs-shell))/2))}
 .ccs-hero-kicker{display:inline-block;padding:8px 12px;border:1px solid rgba(255,255,255,.22);border-radius:999px;background:rgba(255,255,255,.1);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
 .ccs-comparison-v3 .ccs-hero-copy h1{margin:18px 0;font-size:clamp(38px,6vw,68px);line-height:1.02;color:#fff;letter-spacing:-.035em}
 .ccs-comparison-v3 .ccs-hero-lead{margin:0 0 18px;font-size:clamp(18px,2vw,22px);line-height:1.55;color:rgba(255,255,255,.92)}

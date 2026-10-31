@@ -10,7 +10,7 @@
 
 
 
-.robot-shell{width:min(1160px,calc(100% - 36px));margin-inline:auto}
+.robot-shell{width:var(--ccs-ancho);margin-inline:auto}
 .robot-main-content{padding:46px 0 84px}
 
 

@@ -1,5 +1,5 @@
 /* Preguntas frecuentes uniformes: componente nativo, sin JS. */
-.ccs-faq-standard{width:min(1160px,calc(100% - 32px));margin:50px auto 58px;padding:0;box-sizing:border-box}
+.ccs-faq-standard{width:var(--ccs-ancho);margin:50px auto 58px;padding:0;box-sizing:border-box}
 .ccs-faq-standard *{box-sizing:border-box}
 .ccs-faq-standard h2{margin:0 0 22px;color:#083e29;font-size:clamp(26px,3.2vw,35px);line-height:1.2;font-weight:800}
 .ccs-faq-standard details{border:1px solid #dce6df!important;border-radius:13px!important;margin:0 0 10px!important;background:#fff!important;box-shadow:0 3px 12px rgba(0,40,24,.035);padding:0!important}
@@ -11,7 +11,7 @@
 .ccs-faq-standard details>p,.ccs-faq-standard details>div{margin:0!important;padding:16px 20px 20px!important;color:#455b4e!important;font-size:15px;line-height:1.75}
 .ccs-faq-standard details>p+p{padding-top:0!important}
 .ccs-faq-standard summary:focus-visible{outline:3px solid #ecc748;outline-offset:2px;border-radius:12px}
-@media(max-width:700px){.ccs-faq-standard{width:calc(100% - 24px);margin:38px auto 45px}.ccs-faq-standard summary{padding:17px 42px 17px 16px!important;font-size:15px!important}.ccs-faq-standard details>p{padding:15px 16px 18px!important}}
+@media(max-width:700px){.ccs-faq-standard{width:var(--ccs-ancho);margin:38px auto 45px}.ccs-faq-standard summary{padding:17px 42px 17px 16px!important;font-size:15px!important}.ccs-faq-standard details>p{padding:15px 16px 18px!important}}
 
 /* Patrón aprobado: título fuera y tarjetas independientes, sin tarjeta envolvente. */
 .ccs-faq-standard{background:transparent!important;border:0!important;box-shadow:none!important;border-radius:0!important;padding:0!important}

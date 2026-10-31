@@ -63,7 +63,7 @@
   z-index:2!important;
   display:inline-flex!important;
   align-items:center!important;
-  max-width:calc(100% - 36px)!important;
+  max-width:calc(100% - 2 * var(--ccs-gutter))!important;
   margin:0!important;
   padding:8px 11px!important;
   border:0!important;

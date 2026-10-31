@@ -1,5 +1,5 @@
 .saw-page{background:#fff}
-.saw-shell{width:min(1160px,calc(100% - 36px));margin:0 auto}
+.saw-shell{width:var(--ccs-ancho);margin:0 auto}
 .saw-eyebrow{display:inline-block;margin:0 0 10px;color:var(--green-700);font-size:12px;font-weight:850;letter-spacing:.07em;text-transform:uppercase}
 .saw-shell section>h2{margin:0 0 18px;color:var(--green-950)}
 .saw-shell section>p{color:var(--muted);line-height:1.72}
@@ -24,4 +24,4 @@
 .amazon-btn{position:relative;overflow:hidden;border:1px solid #d5a900;background:linear-gradient(180deg,#ffd814,#f7ca00);color:#18120a!important;text-decoration:none;box-shadow:0 7px 16px rgba(0,0,0,.10)}
 .amazon-btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(0,0,0,.14)}
 @media(max-width:900px){.saw-choose ul{grid-template-columns:1fr}.saw-related-grid{grid-template-columns:1fr}}
-@media(max-width:760px){.saw-shell{width:min(100% - 24px,1160px)}.saw-choose li{padding:15px}.saw-guide h3{font-size:20px}.saw-related-grid{gap:12px}}
+@media(max-width:760px){.saw-shell{width:var(--ccs-ancho)}.saw-choose li{padding:15px}.saw-guide h3{font-size:20px}.saw-related-grid{gap:12px}}

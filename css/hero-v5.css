@@ -5,7 +5,7 @@
    ========================================================= */
 
 :root{
-  --ccs-hero-shell:1240px;
+  --ccs-hero-shell:var(--ccs-shell);
   --ccs-hero-green:var(--ccs-verde-900);
   --ccs-hero-overlay:linear-gradient(90deg,rgba(5,49,30,.94) 0%,rgba(6,61,38,.86) 36%,rgba(6,61,38,.58) 66%,rgba(6,61,38,.30) 100%);
 }
@@ -115,7 +115,7 @@
   z-index:2!important;
   display:flex!important;
   flex-direction:column!important;
-  width:min(var(--ccs-hero-shell),calc(100% - 40px))!important;
+  width:var(--ccs-ancho)!important;
   max-width:none!important;
   min-height:580px!important;
   margin:0 auto!important;
@@ -333,7 +333,7 @@
   font-size:13px!important;
 }
 .site-breadcrumbs .shell{
-  width:min(var(--ccs-hero-shell),calc(100% - 40px))!important;
+  width:var(--ccs-ancho)!important;
   max-width:none!important;
   margin:0 auto!important;
   padding:0!important;
@@ -389,7 +389,7 @@
   .dehum-hero-content,
   .cap-hero-copy,
   .legal-hero-content{
-    width:min(100% - 24px,var(--ccs-hero-shell))!important;
+    width:var(--ccs-ancho)!important;
     min-height:520px!important;
     padding:82px 0 46px!important;
     justify-content:flex-start!important;
@@ -429,7 +429,7 @@
   .legal-hero-content > p{font-size:18px!important}
 
   .site-breadcrumbs{top:70px!important;padding-top:10px!important;font-size:12px!important}
-  .site-breadcrumbs .shell{width:min(100% - 24px,var(--ccs-hero-shell))!important}
+  .site-breadcrumbs .shell{width:var(--ccs-ancho)!important}
 }
 
 
