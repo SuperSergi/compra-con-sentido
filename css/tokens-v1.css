@@ -1,0 +1,75 @@
+/* =========================================================
+   COMPRA CON SENTIDO · VARIABLES COMUNES (tokens v1)
+   Sistema de diseño aprobado el 31/10/2026.
+   Se carga la primera en todas las páginas. Es la única
+   fuente de colores, tipografía, espacios, radios y sombras:
+   los CSS de página usan estas variables y no definen
+   colores ni tamaños sueltos.
+   ========================================================= */
+
+:root{
+
+  /* --- Color · marca --- */
+  --ccs-verde-900:#063d26;   /* títulos, pie, cabecera */
+  --ccs-verde-800:#0a653c;   /* enlaces y estado activo */
+  --ccs-verde-700:#0f7a49;   /* kickers, iconos, bordes de acento */
+  --ccs-verde-100:#e9f5ee;   /* etiquetas, "Encaja si…" */
+  --ccs-verde-050:#f5faf7;   /* fondo de secciones alternas */
+
+  /* --- Color · neutros --- */
+  --ccs-tinta:#17231d;       /* texto principal */
+  --ccs-gris:#5f6d65;        /* texto secundario (5,4:1 sobre blanco) */
+  --ccs-linea:#dfe8e2;       /* bordes y separadores, nunca texto */
+  --ccs-blanco:#ffffff;
+
+  /* --- Color · compra (solo botón de Amazon) --- */
+  --ccs-cta-1:#ffd814;
+  --ccs-cta-2:#f7ca00;
+  --ccs-cta-borde:#d5a900;
+  --ccs-cta-texto:#18120a;
+
+  /* --- Color · aviso ("A tener en cuenta") --- */
+  --ccs-ambar-fondo:#fff7e0;
+  --ccs-ambar-borde:#e3b23c;
+  --ccs-ambar-titulo:#7a4b00;
+
+  /* --- Tipografía --- */
+  --ccs-fuente:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --ccs-fs-h1:clamp(36px,4.4vw,58px);
+  --ccs-fs-h2:clamp(28px,3vw,40px);
+  --ccs-fs-ficha:clamp(26px,2.4vw,30px);   /* nombre de producto en ficha */
+  --ccs-fs-h3:clamp(19px,1.6vw,21px);      /* título de tarjeta */
+  --ccs-fs-lead:clamp(18px,1.5vw,19px);
+  --ccs-fs-body:clamp(16px,1.3vw,17px);
+  --ccs-fs-small:15px;                     /* mínimo para párrafos */
+  --ccs-fs-kicker:13px;                    /* solo etiquetas en mayúsculas */
+  --ccs-fw-normal:400;
+  --ccs-fw-bold:700;
+  --ccs-fw-heavy:800;
+
+  /* --- Espaciado --- */
+  --ccs-space-1:8px;
+  --ccs-space-2:12px;
+  --ccs-space-3:16px;
+  --ccs-space-4:24px;
+  --ccs-space-5:32px;
+  --ccs-space-6:48px;
+  --ccs-space-7:64px;
+  --ccs-space-8:80px;
+
+  /* --- Contenedor --- */
+  --ccs-shell:1160px;
+  --ccs-gutter:16px;                       /* margen lateral en móvil */
+
+  /* --- Radios --- */
+  --ccs-r-pill:999px;
+  --ccs-r-sm:10px;
+  --ccs-r-md:14px;                         /* botones y cajas */
+  --ccs-r-lg:20px;                         /* tarjetas */
+  --ccs-r-xl:26px;                         /* fichas y tarjeta de apertura */
+
+  /* --- Sombras --- */
+  --ccs-sombra:0 10px 28px rgba(22,60,39,.08);
+  --ccs-sombra-alta:0 18px 45px rgba(22,60,39,.10);
+
+}

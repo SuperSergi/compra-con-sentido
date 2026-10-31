@@ -1,15 +1,15 @@
 :root{
-      --cc-green:#063d26;
+      --cc-green:var(--ccs-verde-900);
       --cc-green-2:#0b5b39;
       --cc-green-soft:#eef7f2;
       --cc-text:#1f2924;
       --cc-muted:#647069;
       --cc-line:#dfe7e2;
       --cc-bg:#f6f8f7;
-      --cc-white:#fff;
-      --cc-amazon-1:#ffd814;
-      --cc-amazon-2:#f7ca00;
-      --cc-amazon-border:#d5a900;
+      --cc-white:var(--ccs-blanco);
+      --cc-amazon-1:var(--ccs-cta-1);
+      --cc-amazon-2:var(--ccs-cta-2);
+      --cc-amazon-border:var(--ccs-cta-borde);
       --cc-shadow:0 14px 35px rgba(18,55,39,.08);
       --cc-warning:#fff8dd;
       --cc-danger:#fff3f1;

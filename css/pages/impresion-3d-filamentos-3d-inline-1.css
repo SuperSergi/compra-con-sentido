@@ -1,13 +1,13 @@
 :root{
-      --cc-green:#063d26;
+      --cc-green:var(--ccs-verde-900);
       --cc-green-2:#0b5b39;
       --cc-green-soft:#eef7f2;
       --cc-text:#1f2924;
       --cc-muted:#647069;
       --cc-line:#dfe7e2;
       --cc-bg:#f6f8f7;
-      --cc-white:#fff;
-      --cc-yellow:#ffd814;
+      --cc-white:var(--ccs-blanco);
+      --cc-yellow:var(--ccs-cta-1);
       --cc-shadow:0 14px 35px rgba(18,55,39,.08);
     }
 

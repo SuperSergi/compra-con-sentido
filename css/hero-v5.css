@@ -6,7 +6,7 @@
 
 :root{
   --ccs-hero-shell:1240px;
-  --ccs-hero-green:#063d26;
+  --ccs-hero-green:var(--ccs-verde-900);
   --ccs-hero-overlay:linear-gradient(90deg,rgba(5,49,30,.94) 0%,rgba(6,61,38,.86) 36%,rgba(6,61,38,.58) 66%,rgba(6,61,38,.30) 100%);
 }
 

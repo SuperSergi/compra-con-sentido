@@ -1,12 +1,12 @@
 :root{
-      --jack-green:#063d26;
+      --jack-green:var(--ccs-verde-900);
       --jack-green-2:#0b6b3f;
       --jack-green-soft:#eef7f2;
       --jack-ink:#1f2924;
       --jack-muted:#647069;
       --jack-line:#dfe7e2;
       --jack-bg:#f6f8f7;
-      --jack-white:#fff;
+      --jack-white:var(--ccs-blanco);
       --jack-warning:#fff8dd;
       --jack-warning-line:#b8860b;
       --jack-shadow:0 14px 35px rgba(18,55,39,.08);

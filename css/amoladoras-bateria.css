@@ -1,6 +1,6 @@
 :root{
-  --g:#063d26;--g2:#0b5b39;--soft:#eef7f2;--text:#1f2924;--muted:#647069;
-  --line:#dfe7e2;--bg:#f6f8f7;--a1:#ffd814;--a2:#f7ca00;--ab:#d5a900;
+  --g:var(--ccs-verde-900);--g2:#0b5b39;--soft:#eef7f2;--text:#1f2924;--muted:#647069;
+  --line:#dfe7e2;--bg:#f6f8f7;--a1:var(--ccs-cta-1);--a2:var(--ccs-cta-2);--ab:var(--ccs-cta-borde);
   --shadow:0 14px 35px rgba(18,55,39,.08)
 }
 *{box-sizing:border-box}
