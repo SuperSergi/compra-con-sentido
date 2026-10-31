@@ -6,7 +6,7 @@
 
 .product-review-hero{
   padding:58px 0 50px;
-  background:linear-gradient(145deg,#eef7f2,#ffffff);
+  background:linear-gradient(145deg,#eef7f2,var(--ccs-blanco));
   border-bottom:1px solid var(--line);
 }
 
@@ -60,7 +60,7 @@
   padding:17px 18px;
   border-left:4px solid var(--green-700);
   border-radius:0 14px 14px 0;
-  background:#fff;
+  background:var(--ccs-blanco);
   box-shadow:var(--shadow-soft);
 }
 
@@ -75,7 +75,7 @@
   padding:24px;
   border:1px solid var(--line);
   border-radius:24px;
-  background:#fff;
+  background:var(--ccs-blanco);
   box-shadow:var(--shadow);
 }
 
@@ -122,7 +122,7 @@
   padding:24px;
   border:1px solid var(--line);
   border-radius:18px;
-  background:#fff;
+  background:var(--ccs-blanco);
   box-shadow:var(--shadow-soft);
 }
 
@@ -141,7 +141,7 @@
   padding:18px;
   border:1px solid var(--line);
   border-radius:16px;
-  background:#fff;
+  background:var(--ccs-blanco);
 }
 
 .product-review-spec small{
@@ -180,7 +180,7 @@
   padding:28px;
   border:1px solid var(--line);
   border-radius:22px;
-  background:#fff;
+  background:var(--ccs-blanco);
   box-shadow:var(--shadow);
 }
 
@@ -195,10 +195,10 @@
   justify-content:center;
   min-height:50px;
   padding:13px 22px;
-  border:1px solid #d5a900;
+  border:1px solid var(--ccs-cta-borde);
   border-radius:12px;
-  background:linear-gradient(180deg,#ffd814,#f7ca00);
-  color:#18120a!important;
+  background:linear-gradient(180deg,var(--ccs-cta-1),var(--ccs-cta-2));
+  color:var(--ccs-cta-texto)!important;
   font-weight:900;
   text-decoration:none;
   box-shadow:0 5px 12px rgba(0,0,0,.11);

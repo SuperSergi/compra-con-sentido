@@ -96,7 +96,7 @@
       overflow-x:auto;
       border:1px solid var(--cc-line);
       border-radius:18px;
-      background:#fff;
+      background:var(--ccs-blanco);
       box-shadow:0 8px 24px rgba(18,55,39,.045);
     }
 
@@ -109,7 +109,7 @@
     .compare-table th{
       padding:14px 15px;
       background:var(--cc-green);
-      color:#fff;
+      color:var(--ccs-blanco);
       text-align:left;
       font-size:13px;
     }
@@ -133,7 +133,7 @@
       overflow:hidden;
       border:1px solid var(--cc-line);
       border-radius:24px;
-      background:#fff;
+      background:var(--ccs-blanco);
       box-shadow:var(--cc-shadow);
     }
 
@@ -162,7 +162,7 @@
       padding:8px 11px;
       border-radius:999px;
       background:var(--cc-green);
-      color:#fff;
+      color:var(--ccs-blanco);
       font-size:12px;
       font-weight:800;
     }
@@ -274,7 +274,7 @@
       border:1px solid var(--cc-amazon-border);
       border-radius:12px;
       background:linear-gradient(180deg,var(--cc-amazon-1),var(--cc-amazon-2));
-      color:#18120a!important;
+      color:var(--ccs-cta-texto)!important;
       font-size:15px;
       font-weight:900;
       text-decoration:none;
@@ -315,7 +315,7 @@
       padding:23px;
       border:1px solid var(--cc-line);
       border-radius:18px;
-      background:#fff;
+      background:var(--ccs-blanco);
     }
 
     .guide-number{
@@ -361,7 +361,7 @@
       padding:20px 22px;
       border:1px solid var(--cc-line);
       border-radius:16px;
-      background:#fff;
+      background:var(--ccs-blanco);
     }
 
     .faq-item h3{

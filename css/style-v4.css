@@ -81,7 +81,7 @@ body{
 
   color:var(--ink);
 
-  background:#fff;
+  background:var(--ccs-blanco);
 
   font-size:17px;
 
@@ -335,7 +335,7 @@ button{
 .nav-group>a:hover,
 .main-nav .active{
 
-  color:#fff;
+  color:var(--ccs-blanco);
 
 }
 
@@ -363,7 +363,7 @@ button{
 
   border-radius:999px;
 
-  background:#fff;
+  background:var(--ccs-blanco);
 
 }
 
@@ -454,7 +454,7 @@ button{
     1px solid
     rgba(255,255,255,.35);
 
-  color:#fff;
+  color:var(--ccs-blanco);
 
   background:
     rgba(255,255,255,.09);
@@ -549,7 +549,7 @@ button{
 
   max-width:700px;
 
-  color:#fff;
+  color:var(--ccs-blanco);
 
   font-size:
     clamp(
@@ -638,7 +638,7 @@ button{
 
 .btn-primary{
 
-  background:#fff;
+  background:var(--ccs-blanco);
 
   color:
     var(--green-900);
@@ -652,7 +652,7 @@ button{
 
 .btn-ghost{
 
-  color:#fff;
+  color:var(--ccs-blanco);
 
   border:
     1px solid
@@ -669,7 +669,7 @@ button{
 
 .btn-light{
 
-  background:#fff;
+  background:var(--ccs-blanco);
 
   color:
     var(--green-900);
@@ -706,7 +706,7 @@ button{
 
   gap:62px;
 
-  background:#fff;
+  background:var(--ccs-blanco);
 
   border:
     1px solid
@@ -837,7 +837,7 @@ button{
 .guide-card,
 .criteria-card{
 
-  background:#fff;
+  background:var(--ccs-blanco);
 
   border:
     1px solid
@@ -1182,7 +1182,7 @@ button{
 
   border-radius:14px;
 
-  color:#fff;
+  color:var(--ccs-blanco);
 
   background:
     var(--green-800);
@@ -1239,7 +1239,7 @@ button{
   border-radius:
     var(--radius-xl);
 
-  color:#fff;
+  color:var(--ccs-blanco);
 
   background:
 
@@ -1270,7 +1270,7 @@ button{
 
 .closing-card h2{
 
-  color:#fff;
+  color:var(--ccs-blanco);
 
 }
 
@@ -1297,7 +1297,7 @@ button{
   background:
     var(--green-950);
 
-  color:#fff;
+  color:var(--ccs-blanco);
 
   padding:
     54px 0 34px;
@@ -1322,7 +1322,7 @@ button{
 
 .footer-grid h2{
 
-  color:#fff;
+  color:var(--ccs-blanco);
 
   font-size:21px;
 
@@ -1363,7 +1363,7 @@ button{
 
 .footer-grid a:hover{
 
-  color:#fff;
+  color:var(--ccs-blanco);
 
   text-decoration:underline;
 
@@ -1531,7 +1531,7 @@ button{
     background:
       rgba(0,0,0,.12);
 
-    color:#fff;
+    color:var(--ccs-blanco);
 
     border-radius:9px;
 
@@ -1664,7 +1664,7 @@ button{
 
   .dropdown a:hover{
 
-    color:#fff;
+    color:var(--ccs-blanco);
 
     background:transparent;
 
@@ -1948,7 +1948,7 @@ button{
 
   .submenu-toggle:hover,
   .submenu-toggle:focus-visible{
-    color:#fff;
+    color:var(--ccs-blanco);
     background:rgba(255,255,255,.14);
   }
 
@@ -1974,7 +1974,7 @@ button{
   }
 
   .dropdown-submenu a:hover{
-    color:#fff;
+    color:var(--ccs-blanco);
     background:transparent;
   }
 
@@ -2074,7 +2074,7 @@ button{
   overflow:hidden;
   border:1px solid var(--line);
   border-radius:20px;
-  background:#fff;
+  background:var(--ccs-blanco);
   box-shadow:var(--shadow-soft);
   text-decoration:none;
   transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
@@ -2205,7 +2205,7 @@ button{
   flex-wrap:wrap;
 }
 .site-breadcrumbs a{
-  color:#fff;
+  color:var(--ccs-blanco);
   font-weight:700;
   text-decoration:none;
   pointer-events:auto;
@@ -2222,7 +2222,7 @@ button{
 
 
 /* Aviso de desplazamiento horizontal para tablas comparativas en móvil */
-.table-scroll-hint{display:none;margin:8px 0 10px;font-size:13px;font-weight:750;color:#0a653c}
+.table-scroll-hint{display:none;margin:8px 0 10px;font-size:13px;font-weight:750;color:var(--ccs-verde-800)}
 @media(max-width:760px){.table-scroll-hint{display:block}}
 
 
@@ -2383,7 +2383,7 @@ main{
 
 .site-footer .footer-grid h2{
   margin:0 0 18px!important;
-  color:#fff!important;
+  color:var(--ccs-blanco)!important;
   font-size:21px!important;
   line-height:1.25!important;
   letter-spacing:0!important;
@@ -2400,7 +2400,7 @@ main{
 @media (max-width:760px){
   .main-nav .dropdown a.active,
   .main-nav .dropdown-submenu a.active{
-    color:#fff!important;
+    color:var(--ccs-blanco)!important;
     background:rgba(255,255,255,.10);
   }
 }
