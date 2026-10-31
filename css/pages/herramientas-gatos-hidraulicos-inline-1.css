@@ -53,7 +53,7 @@
     .jacks-hero-inner{
       position:relative;
       z-index:2;
-      width:min(1160px,calc(100% - 36px));
+      width:var(--ccs-ancho);
       margin:0 auto;
       padding:78px 0 72px;
     }
@@ -117,7 +117,7 @@
     }
 
     .article-shell{
-      width:min(1160px,calc(100% - 36px));
+      width:var(--ccs-ancho);
       margin:0 auto;
     }
 
@@ -439,8 +439,8 @@
     @media (max-width:760px){
       .jacks-main{padding-top:64px}
       .jacks-hero{min-height:430px}
-      .jacks-hero-inner{width:min(100% - 24px,1160px);padding:62px 0 56px}
-      .article-shell{width:min(100% - 24px,1160px)}
+      .jacks-hero-inner{width:var(--ccs-ancho);padding:62px 0 56px}
+      .article-shell{width:var(--ccs-ancho)}
       .guide-cta-top{align-items:stretch;flex-direction:column}
       .green-btn{width:100%}
       .section-title{align-items:start;flex-direction:column}

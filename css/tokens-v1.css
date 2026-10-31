@@ -61,7 +61,8 @@
 
   /* --- Contenedor --- */
   --ccs-shell:1160px;
-  --ccs-gutter:16px;                       /* margen lateral en móvil */
+  --ccs-gutter:clamp(16px,2.5vw,20px);     /* margen lateral: 16 px en móvil, 20 px desde tableta */
+  --ccs-ancho:min(var(--ccs-shell),calc(100% - 2 * var(--ccs-gutter)));  /* ancho de todo contenedor */
 
   /* --- Radios --- */
   --ccs-r-pill:999px;

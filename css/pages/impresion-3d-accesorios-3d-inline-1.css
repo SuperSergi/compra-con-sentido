@@ -26,7 +26,7 @@
     }
 
     .accessories-shell{
-      width:min(1160px,calc(100% - 36px));
+      width:var(--ccs-ancho);
       margin:0 auto;
     }
 
@@ -413,7 +413,7 @@
       }
 
       .accessories-shell{
-        width:min(100% - 24px,1160px);
+        width:var(--ccs-ancho);
       }
 
       .accessories-hero{

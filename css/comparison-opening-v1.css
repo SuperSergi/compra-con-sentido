@@ -5,7 +5,7 @@
    ========================================================= */
 
 .ccs-comparison-opening{
-  width:min(1160px,calc(100% - 36px))!important;
+  width:var(--ccs-ancho)!important;
   margin-left:auto!important;
   margin-right:auto!important;
 }
@@ -15,7 +15,7 @@
   display:grid!important;
   grid-template-columns:repeat(3,minmax(0,1fr))!important;
   gap:16px!important;
-  width:min(1160px,calc(100% - 36px));
+  width:var(--ccs-ancho);
   margin:0 auto 46px!important;
 }
 
@@ -121,11 +121,11 @@
 
 @media(max-width:760px){
   .ccs-comparison-opening{
-    width:min(100% - 24px,1160px)!important;
+    width:var(--ccs-ancho)!important;
   }
 
   .ccs-comparison-profiles{
-    width:min(100% - 24px,1160px);
+    width:var(--ccs-ancho);
     margin-bottom:34px!important;
     gap:12px!important;
   }

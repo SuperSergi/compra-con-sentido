@@ -2,7 +2,7 @@
 
 .product-review-page{background:#f7f9f8}
 .product-review-main{padding-top:76px}
-.product-review-shell{width:min(1120px,calc(100% - 36px));margin-inline:auto}
+.product-review-shell{width:var(--ccs-ancho);margin-inline:auto}
 
 .product-review-hero{
   padding:58px 0 50px;

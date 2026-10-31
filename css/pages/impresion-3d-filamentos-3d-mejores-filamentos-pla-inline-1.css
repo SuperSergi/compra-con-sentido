@@ -1,4 +1,4 @@
-.pla-shell{width:min(1160px,calc(100% - 32px));margin-inline:auto}
+.pla-shell{width:var(--ccs-ancho);margin-inline:auto}
     .ccs-comparison-v3 .ccs-hero{
       --ccs-hero-image:url('/images/filamentos-pla/hero-mejores-filamentos-pla-v2.webp');
       background:
@@ -21,6 +21,6 @@
     .pla-faq summary{cursor:pointer;font-weight:800;color:#26382e}
     .pla-faq details p{color:#4d5a53;line-height:1.7}
     @media(max-width:680px){
-      .pla-shell{width:min(100% - 24px,1160px)}
+      .pla-shell{width:var(--ccs-ancho)}
       .pla-cta-row .amazon-btn{width:100%!important}
     }
