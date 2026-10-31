@@ -214,8 +214,8 @@
 }
 
 .ccs-product-card .ccs-product-proscons > div:first-child{
-  background:var(--ccs-verde-050)!important;
-  border:1px solid var(--ccs-verde-200)!important;
+  background:var(--ccs-verde-100)!important;
+  border:1px solid var(--ccs-verde-300)!important;
 }
 
 .ccs-product-card .ccs-product-proscons > div:nth-child(2){
@@ -274,7 +274,7 @@
   border:1px solid var(--ccs-verde-200)!important;
   border-left:4px solid var(--ccs-verde-700)!important;
   border-radius:var(--ccs-r-md)!important;
-  background:var(--ccs-verde-100)!important;
+  background:var(--ccs-verde-050)!important;
   color:var(--ccs-tinta)!important;
   line-height:1.55!important;
   text-align:left!important;
