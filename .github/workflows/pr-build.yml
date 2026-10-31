@@ -35,3 +35,4 @@ jobs:
           python3 -m pip install -r .github/requirements-css.txt
           python3 .github/scripts/build-css.py --check
           python3 .github/scripts/site-audit.py
+          python3 .github/scripts/design-audit.py
