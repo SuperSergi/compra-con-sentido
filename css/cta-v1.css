@@ -1,0 +1,189 @@
+/* =========================================================
+   COMPRA CON SENTIDO · BOTÓN DE AMAZON (cta v1)
+   Única definición del botón de compra. Se carga la última
+   en las páginas con enlaces a Amazon para sustituir las
+   variantes antiguas de cada página.
+   - Principal: perfiles y fichas, 48 px, ancho completo.
+   - Compacto: tablas, 36 px.
+   Los dos llevan el reflejo animado al pasar por encima.
+   ========================================================= */
+
+/* --- Principal --- */
+html .ccs-comparison-profile > a.ccs-product-cta-button,
+html .ccs-comparison-profile > a.amazon-btn,
+html .ccs-product-card .ccs-product-cta-button,
+html .ccs-product-card .ccs-product-cta a,
+html .ccs-product-card > .ccs-product-content > .amazon-btn,
+html a.robot-amazon,
+html a.btn-amazon{
+  position:relative!important;
+  overflow:hidden!important;
+  display:flex!important;
+  flex:0 0 auto!important;
+  align-items:center!important;
+  justify-content:center!important;
+  align-self:stretch!important;
+  gap:8px!important;
+  width:100%!important;
+  min-width:0!important;
+  max-width:100%!important;
+  min-height:48px!important;
+  height:auto!important;
+  margin-inline:0!important;
+  padding:12px 20px!important;
+  box-sizing:border-box!important;
+  border:1px solid var(--ccs-cta-borde)!important;
+  border-radius:var(--ccs-r-md)!important;
+  background:linear-gradient(180deg,var(--ccs-cta-1),var(--ccs-cta-2))!important;
+  color:var(--ccs-cta-texto)!important;
+  font-family:var(--ccs-fuente)!important;
+  font-size:15px!important;
+  font-weight:var(--ccs-fw-heavy)!important;
+  line-height:1.25!important;
+  text-align:center!important;
+  text-decoration:none!important;
+  box-shadow:0 5px 12px rgba(0,0,0,.11)!important;
+  filter:none!important;
+  transition:transform .18s ease,box-shadow .18s ease!important;
+}
+
+/* Las fichas con contenedor .product-actions también van a ancho completo */
+html .ccs-product-card .product-actions a.btn{
+  width:100%!important;
+  flex:0 0 auto!important;
+}
+
+/* --- Compacto (tablas) --- */
+html .ccs-comparison-v3 .ccs-table-amazon,
+html a.ccs-table-amazon,
+html a.amazon-mini{
+  position:relative!important;
+  overflow:hidden!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:auto!important;
+  min-width:max-content!important;
+  min-height:36px!important;
+  padding:7px 14px!important;
+  box-sizing:border-box!important;
+  border:1px solid var(--ccs-cta-borde)!important;
+  border-radius:var(--ccs-r-sm)!important;
+  background:linear-gradient(180deg,var(--ccs-cta-1),var(--ccs-cta-2))!important;
+  color:var(--ccs-cta-texto)!important;
+  font-family:var(--ccs-fuente)!important;
+  font-size:14px!important;
+  font-weight:var(--ccs-fw-heavy)!important;
+  line-height:1!important;
+  white-space:nowrap!important;
+  text-decoration:none!important;
+  box-shadow:0 4px 10px rgba(0,0,0,.09)!important;
+  filter:none!important;
+  transition:transform .18s ease,box-shadow .18s ease!important;
+}
+
+/* --- Reflejo (los dos tamaños) --- */
+html .ccs-comparison-profile > a.ccs-product-cta-button::after,
+html .ccs-comparison-profile > a.amazon-btn::after,
+html .ccs-product-card .ccs-product-cta-button::after,
+html .ccs-product-card .ccs-product-cta a::after,
+html .ccs-product-card > .ccs-product-content > .amazon-btn::after,
+html a.robot-amazon::after,
+html a.btn-amazon::after,
+html .ccs-comparison-v3 .ccs-table-amazon::after,
+html a.ccs-table-amazon::after,
+html a.amazon-mini::after{
+  content:""!important;
+  display:block!important;
+  position:absolute!important;
+  top:-40%!important;
+  left:-45%!important;
+  width:28%!important;
+  height:180%!important;
+  background:rgba(255,255,255,.48)!important;
+  transform:rotate(18deg)!important;
+  transition:left .48s ease!important;
+  pointer-events:none!important;
+}
+
+html .ccs-comparison-profile > a.ccs-product-cta-button:hover,
+html .ccs-comparison-profile > a.amazon-btn:hover,
+html .ccs-product-card .ccs-product-cta-button:hover,
+html .ccs-product-card .ccs-product-cta a:hover,
+html .ccs-product-card > .ccs-product-content > .amazon-btn:hover,
+html a.robot-amazon:hover,
+html a.btn-amazon:hover,
+html .ccs-comparison-v3 .ccs-table-amazon:hover,
+html a.ccs-table-amazon:hover,
+html a.amazon-mini:hover{
+  transform:translateY(-2px)!important;
+  box-shadow:0 9px 20px rgba(0,0,0,.15)!important;
+  text-decoration:none!important;
+}
+
+html .ccs-comparison-profile > a.ccs-product-cta-button:hover::after,
+html .ccs-comparison-profile > a.amazon-btn:hover::after,
+html .ccs-product-card .ccs-product-cta-button:hover::after,
+html .ccs-product-card .ccs-product-cta a:hover::after,
+html .ccs-product-card > .ccs-product-content > .amazon-btn:hover::after,
+html a.robot-amazon:hover::after,
+html a.btn-amazon:hover::after,
+html .ccs-comparison-v3 .ccs-table-amazon:hover::after,
+html a.ccs-table-amazon:hover::after,
+html a.amazon-mini:hover::after{
+  left:125%!important;
+}
+
+html .ccs-comparison-profile > a.ccs-product-cta-button:active,
+html .ccs-comparison-profile > a.amazon-btn:active,
+html .ccs-product-card .ccs-product-cta-button:active,
+html .ccs-product-card .ccs-product-cta a:active,
+html .ccs-product-card > .ccs-product-content > .amazon-btn:active,
+html a.robot-amazon:active,
+html a.btn-amazon:active,
+html .ccs-comparison-v3 .ccs-table-amazon:active,
+html a.ccs-table-amazon:active,
+html a.amazon-mini:active{
+  transform:translateY(0) scale(.99)!important;
+}
+
+html .ccs-comparison-profile > a.ccs-product-cta-button:focus-visible,
+html .ccs-comparison-profile > a.amazon-btn:focus-visible,
+html .ccs-product-card .ccs-product-cta-button:focus-visible,
+html .ccs-product-card .ccs-product-cta a:focus-visible,
+html .ccs-product-card > .ccs-product-content > .amazon-btn:focus-visible,
+html a.robot-amazon:focus-visible,
+html a.btn-amazon:focus-visible,
+html .ccs-comparison-v3 .ccs-table-amazon:focus-visible,
+html a.ccs-table-amazon:focus-visible,
+html a.amazon-mini:focus-visible{
+  outline:3px solid var(--ccs-verde-900)!important;
+  outline-offset:2px!important;
+}
+
+@media (prefers-reduced-motion:reduce){
+  html .ccs-comparison-profile > a.ccs-product-cta-button,
+  html .ccs-comparison-profile > a.amazon-btn,
+  html .ccs-product-card .ccs-product-cta-button,
+  html .ccs-product-card .ccs-product-cta a,
+  html .ccs-product-card > .ccs-product-content > .amazon-btn,
+  html a.robot-amazon,
+  html a.btn-amazon,
+  html .ccs-comparison-v3 .ccs-table-amazon,
+  html a.ccs-table-amazon,
+  html a.amazon-mini{
+    transition:none!important;
+  }
+  html .ccs-comparison-profile > a.ccs-product-cta-button::after,
+  html .ccs-comparison-profile > a.amazon-btn::after,
+  html .ccs-product-card .ccs-product-cta-button::after,
+  html .ccs-product-card .ccs-product-cta a::after,
+  html .ccs-product-card > .ccs-product-content > .amazon-btn::after,
+  html a.robot-amazon::after,
+  html a.btn-amazon::after,
+  html .ccs-comparison-v3 .ccs-table-amazon::after,
+  html a.ccs-table-amazon::after,
+  html a.amazon-mini::after{
+    display:none!important;
+  }
+}

@@ -20,7 +20,7 @@
       ],
       "output": "css/compiled/ccs-9cb5797ebf30-4a5b6728e449.min.css"
     },
-    "ccs-7900e9abd2d9": {
+    "ccs-f1b24052563c": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -32,9 +32,10 @@
         "css/comparison-opening-v1.css",
         "css/related-heroes-v1.css",
         "css/faq-standard-v1.css",
-        "css/guide-consistency-v1.css"
+        "css/guide-consistency-v1.css",
+        "css/cta-v1.css"
       ],
-      "output": "css/compiled/ccs-7900e9abd2d9-929fee071b47.min.css"
+      "output": "css/compiled/ccs-f1b24052563c-f82a93058e4d.min.css"
     },
     "ccs-c97e157e87d9": {
       "sources": [
@@ -47,7 +48,7 @@
       ],
       "output": "css/compiled/ccs-c97e157e87d9-715356049c5d.min.css"
     },
-    "ccs-39227bcb3059": {
+    "ccs-feb56ff9dc0c": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -59,11 +60,12 @@
         "css/comparison-opening-v1.css",
         "css/pages/herramientas-gatos-hidraulicos-mejores-gatos-hidraulicos-botella-inline-2.css",
         "css/pages/herramientas-gatos-hidraulicos-mejores-gatos-hidraulicos-botella-inline-3.css",
-        "css/faq-standard-v1.css"
+        "css/faq-standard-v1.css",
+        "css/cta-v1.css"
       ],
-      "output": "css/compiled/ccs-39227bcb3059-7f3e3eb04851.min.css"
+      "output": "css/compiled/ccs-feb56ff9dc0c-6892cb6826b6.min.css"
     },
-    "ccs-3b6cd4938a70": {
+    "ccs-65cf7fb698d6": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -75,9 +77,10 @@
         "css/comparison-opening-v1.css",
         "css/pages/herramientas-gatos-hidraulicos-mejores-gatos-hidraulicos-para-coche-inline-2.css",
         "css/related-heroes-v1.css",
-        "css/faq-standard-v1.css"
+        "css/faq-standard-v1.css",
+        "css/cta-v1.css"
       ],
-      "output": "css/compiled/ccs-3b6cd4938a70-bce4fa2d8930.min.css"
+      "output": "css/compiled/ccs-65cf7fb698d6-c796100b561b.min.css"
     },
     "ccs-a2fc84b2650a": {
       "sources": [
@@ -90,7 +93,7 @@
       ],
       "output": "css/compiled/ccs-a2fc84b2650a-5edefd6a2f25.min.css"
     },
-    "ccs-166e0885354f": {
+    "ccs-0d88d44ce205": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -101,11 +104,12 @@
         "css/intro-v1.css",
         "css/comparison-opening-v1.css",
         "css/related-heroes-v1.css",
-        "css/faq-standard-v1.css"
+        "css/faq-standard-v1.css",
+        "css/cta-v1.css"
       ],
-      "output": "css/compiled/ccs-166e0885354f-b9f96cb73d3b.min.css"
+      "output": "css/compiled/ccs-0d88d44ce205-45c6ec1dcad5.min.css"
     },
-    "ccs-606467b4c566": {
+    "ccs-38285fc2c1d3": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -117,9 +121,10 @@
         "css/sierras-circulares.css",
         "css/related-heroes-v1.css",
         "css/faq-standard-v1.css",
-        "css/guide-consistency-v1.css"
+        "css/guide-consistency-v1.css",
+        "css/cta-v1.css"
       ],
-      "output": "css/compiled/ccs-606467b4c566-c596e4e4f6d5.min.css"
+      "output": "css/compiled/ccs-38285fc2c1d3-16694781b4df.min.css"
     },
     "ccs-96f0775028cc": {
       "sources": [
@@ -132,7 +137,7 @@
       ],
       "output": "css/compiled/ccs-96f0775028cc-01a0c8a35604.min.css"
     },
-    "ccs-9bcdf2c16144": {
+    "ccs-5af47173bb7d": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -143,9 +148,10 @@
         "css/intro-v1.css",
         "css/comparison-opening-v1.css",
         "css/related-heroes-v1.css",
-        "css/faq-standard-v1.css"
+        "css/faq-standard-v1.css",
+        "css/cta-v1.css"
       ],
-      "output": "css/compiled/ccs-9bcdf2c16144-348bcc5575e2.min.css"
+      "output": "css/compiled/ccs-5af47173bb7d-c5d352bc2588.min.css"
     },
     "ccs-11673797b3af": {
       "sources": [
@@ -158,7 +164,7 @@
       ],
       "output": "css/compiled/ccs-11673797b3af-0c706b4f6f13.min.css"
     },
-    "ccs-51a2a32876e8": {
+    "ccs-093b56ae9b62": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -169,9 +175,10 @@
         "css/intro-v1.css",
         "css/comparison-opening-v1.css",
         "css/related-heroes-v1.css",
-        "css/faq-standard-v1.css"
+        "css/faq-standard-v1.css",
+        "css/cta-v1.css"
       ],
-      "output": "css/compiled/ccs-51a2a32876e8-b9d8d3df5708.min.css"
+      "output": "css/compiled/ccs-093b56ae9b62-50c6d6709696.min.css"
     },
     "ccs-b935324bd8e0": {
       "sources": [
@@ -186,7 +193,7 @@
       ],
       "output": "css/compiled/ccs-b935324bd8e0-a239017ea0a9.min.css"
     },
-    "ccs-e4bb224b331a": {
+    "ccs-2868e3c572ac": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -197,9 +204,10 @@
         "css/intro-v1.css",
         "css/comparison-opening-v1.css",
         "css/related-heroes-v1.css",
-        "css/faq-standard-v1.css"
+        "css/faq-standard-v1.css",
+        "css/cta-v1.css"
       ],
-      "output": "css/compiled/ccs-e4bb224b331a-8681e35e25a9.min.css"
+      "output": "css/compiled/ccs-2868e3c572ac-7857f5335a98.min.css"
     },
     "ccs-b8f2e8972b2a": {
       "sources": [
@@ -213,7 +221,7 @@
       ],
       "output": "css/compiled/ccs-b8f2e8972b2a-a835a0e27264.min.css"
     },
-    "ccs-45395340a618": {
+    "ccs-25cc61907a26": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -224,9 +232,10 @@
         "css/intro-v1.css",
         "css/comparison-opening-v1.css",
         "css/related-heroes-v1.css",
-        "css/guide-consistency-v1.css"
+        "css/guide-consistency-v1.css",
+        "css/cta-v1.css"
       ],
-      "output": "css/compiled/ccs-45395340a618-a835e8d79af0.min.css"
+      "output": "css/compiled/ccs-25cc61907a26-9d3c610dda24.min.css"
     },
     "ccs-1b6e28be9164": {
       "sources": [
@@ -261,7 +270,7 @@
       ],
       "output": "css/compiled/ccs-9fcbacd4caf9-b40f3022016e.min.css"
     },
-    "ccs-cd95d087e118": {
+    "ccs-e07f3436f98b": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -272,9 +281,10 @@
         "css/product-cards-v1.css",
         "css/pages/impresion-3d-filamentos-3d-mejores-filamentos-pla-inline-1.css",
         "css/related-heroes-v1.css",
-        "css/faq-standard-v1.css"
+        "css/faq-standard-v1.css",
+        "css/cta-v1.css"
       ],
-      "output": "css/compiled/ccs-cd95d087e118-7bac17bb38d8.min.css"
+      "output": "css/compiled/ccs-e07f3436f98b-78fcc7e94fa9.min.css"
     },
     "ccs-30a168fccd9e": {
       "sources": [
@@ -299,7 +309,7 @@
       ],
       "output": "css/compiled/ccs-ffa734f39610-c7f38a4f6107.min.css"
     },
-    "ccs-5310fe374e18": {
+    "ccs-8627fc412bb8": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -310,9 +320,10 @@
         "css/intro-v1.css",
         "css/comparison-opening-v1.css",
         "css/related-heroes-v1.css",
-        "css/faq-standard-v1.css"
+        "css/faq-standard-v1.css",
+        "css/cta-v1.css"
       ],
-      "output": "css/compiled/ccs-5310fe374e18-24ed6461b945.min.css"
+      "output": "css/compiled/ccs-8627fc412bb8-72635dacbb2f.min.css"
     },
     "ccs-72f11a935f2b": {
       "sources": [
