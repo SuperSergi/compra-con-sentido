@@ -1,0 +1,182 @@
+/* =========================================================
+   COMPRA CON SENTIDO · BLOQUES DE CONTENIDO (content v1)
+   Piezas comunes para el "contenido específico" de guías y
+   comparativas, para que una página nueva no necesite CSS
+   propio. Solo usa variables de tokens-v1.css.
+
+   Estructura:
+   <div class="ccs-content">                 contenedor único
+     <section class="ccs-section">           bloque con ritmo vertical
+       <header class="ccs-section-head">     kicker + h2 + entradilla
+         <span class="ccs-kicker">…</span><h2>…</h2><p>…</p>
+       </header>
+       <div class="ccs-cards">               rejilla de tarjetas
+         <article class="ccs-card"><span class="ccs-kicker">…</span><h3>…</h3><p>…</p></article>
+       </div>
+       <ul class="ccs-list">…</ul>           lista con viñeta verde
+       <p class="ccs-note">…</p>             nota o fuente (15 px)
+       <div class="ccs-callout">…</div>      recuadro de enlaces o aviso suave
+     </section>
+   </div>
+   ========================================================= */
+
+.ccs-content{
+  width:var(--ccs-ancho);
+  margin:var(--ccs-space-7) auto var(--ccs-space-8);
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:var(--ccs-space-7);
+}
+
+/* Tarjeta de apertura de guías: mismo ancho que el resto del contenido */
+.ccs-intro-standard{
+  width:var(--ccs-ancho);
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.ccs-section{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:var(--ccs-space-4);
+  min-width:0;
+}
+
+/* Los hijos de la rejilla no pueden ensancharla (tablas con scroll propio) */
+.ccs-section > *{
+  min-width:0;
+}
+
+.ccs-section-head{
+  display:grid;
+  gap:var(--ccs-space-2);
+  max-width:72ch;
+}
+
+.ccs-section-head h2{
+  margin:0;
+  color:var(--ccs-verde-900);
+}
+
+.ccs-section-head p{
+  margin:0;
+  color:var(--ccs-gris);
+  font-size:var(--ccs-fs-lead);
+  line-height:1.6;
+}
+
+.ccs-kicker{
+  display:block;
+  color:var(--ccs-verde-700);
+  font-size:var(--ccs-fs-kicker);
+  font-weight:var(--ccs-fw-heavy);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.ccs-section > p{
+  margin:0;
+  max-width:72ch;
+  color:var(--ccs-tinta);
+  font-size:var(--ccs-fs-body);
+  line-height:1.7;
+}
+
+.ccs-cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));
+  gap:var(--ccs-space-4);
+}
+
+.ccs-card{
+  display:flex;
+  flex-direction:column;
+  gap:var(--ccs-space-1);
+  min-width:0;
+  padding:var(--ccs-space-4);
+  border:1px solid var(--ccs-linea);
+  border-radius:var(--ccs-r-lg);
+  background:var(--ccs-blanco);
+  box-shadow:var(--ccs-sombra);
+}
+
+.ccs-card h3{
+  margin:0;
+  color:var(--ccs-verde-900);
+}
+
+.ccs-card p{
+  margin:0;
+  color:var(--ccs-gris);
+  font-size:var(--ccs-fs-small);
+  line-height:1.6;
+}
+
+.ccs-list{
+  display:grid;
+  gap:var(--ccs-space-2);
+  max-width:72ch;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+.ccs-list li{
+  position:relative;
+  padding-left:var(--ccs-space-4);
+  color:var(--ccs-tinta);
+  font-size:var(--ccs-fs-body);
+  line-height:1.6;
+}
+
+.ccs-list li::before{
+  content:"";
+  position:absolute;
+  left:var(--ccs-space-1);
+  top:.7em;
+  width:6px;
+  height:6px;
+  border-radius:var(--ccs-r-pill);
+  background:var(--ccs-verde-700);
+}
+
+.ccs-note{
+  margin:0;
+  color:var(--ccs-gris);
+  font-size:var(--ccs-fs-small);
+  line-height:1.55;
+}
+
+.ccs-callout{
+  max-width:72ch;
+  padding:var(--ccs-space-3) var(--ccs-space-4);
+  border:1px solid var(--ccs-verde-200);
+  border-left:4px solid var(--ccs-verde-700);
+  border-radius:var(--ccs-r-md);
+  background:var(--ccs-verde-050);
+  color:var(--ccs-tinta);
+  font-size:var(--ccs-fs-small);
+  line-height:1.6;
+}
+
+.ccs-callout a,
+.ccs-section > p a,
+.ccs-list a{
+  color:var(--ccs-verde-800);
+  font-weight:var(--ccs-fw-bold);
+}
+
+/* Aviso de seguridad o limitación importante: mismo ámbar que "A tener en cuenta" */
+.ccs-callout.is-aviso{
+  border-color:var(--ccs-ambar-borde);
+  background:var(--ccs-ambar-fondo);
+}
+
+.ccs-callout.is-aviso strong{
+  color:var(--ccs-ambar-titulo);
+}
+
+/* Contiene los textos ocultos de accesibilidad dentro del scroll de la tabla */
+.ccs-table-wrap{
+  position:relative;
+}
