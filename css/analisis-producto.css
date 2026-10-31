@@ -147,7 +147,7 @@
 .product-review-spec small{
   display:block;
   margin-bottom:5px;
-  color:#738078;
+  color:var(--ccs-gris);
   font-size:10px;
   font-weight:850;
   letter-spacing:.06em;

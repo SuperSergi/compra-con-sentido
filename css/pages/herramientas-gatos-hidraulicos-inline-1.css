@@ -2,8 +2,8 @@
       --jack-green:var(--ccs-verde-900);
       --jack-green-2:#0b6b3f;
       --jack-green-soft:#eef7f2;
-      --jack-ink:#1f2924;
-      --jack-muted:#647069;
+      --jack-ink:var(--ccs-tinta);
+      --jack-muted:var(--ccs-gris);
       --jack-line:#dfe7e2;
       --jack-bg:#f6f8f7;
       --jack-white:var(--ccs-blanco);

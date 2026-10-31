@@ -2,8 +2,8 @@
       --cc-green:var(--ccs-verde-900);
       --cc-green-2:#0b5b39;
       --cc-green-soft:#eef7f2;
-      --cc-text:#1f2924;
-      --cc-muted:#647069;
+      --cc-text:var(--ccs-tinta);
+      --cc-muted:var(--ccs-gris);
       --cc-line:#dfe7e2;
       --cc-bg:#f6f8f7;
       --cc-white:var(--ccs-blanco);

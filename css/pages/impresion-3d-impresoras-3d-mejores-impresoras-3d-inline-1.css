@@ -2,8 +2,8 @@
       --cc-green:var(--ccs-verde-900);
       --cc-green-2:#0b5b39;
       --cc-green-soft:#eef7f2;
-      --cc-text:#1f2924;
-      --cc-muted:#647069;
+      --cc-text:var(--ccs-tinta);
+      --cc-muted:var(--ccs-gris);
       --cc-line:#dfe7e2;
       --cc-bg:#f6f8f7;
       --cc-white:var(--ccs-blanco);
@@ -199,7 +199,7 @@
     .spec small{
       display:block;
       margin-bottom:3px;
-      color:#748078;
+      color:var(--ccs-gris);
       font-size:10px;
       text-transform:uppercase;
       letter-spacing:.05em;
@@ -232,9 +232,9 @@
     }
 
     .pros{background:#f2f9f5}
-    .cons{background:#fbf6f3}
+    .cons{background:var(--ccs-ambar-fondo)}
     .pros strong,.cons strong{display:block;margin-bottom:8px}
-    .cons>strong{color:#7b3e33}
+    .cons>strong{color:var(--ccs-ambar-titulo)}
 
     .pros ul,.cons ul{
       display:grid;

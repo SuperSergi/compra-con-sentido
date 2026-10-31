@@ -214,13 +214,13 @@
 }
 
 .ccs-product-card .ccs-product-proscons > div:first-child{
-  background:#eef7f1!important;
-  border:1px solid #cfe2d6!important;
+  background:var(--ccs-verde-050)!important;
+  border:1px solid var(--ccs-verde-200)!important;
 }
 
 .ccs-product-card .ccs-product-proscons > div:nth-child(2){
-  background:#fff3f2!important;
-  border:1px solid #f0cfcc!important;
+  background:var(--ccs-ambar-fondo)!important;
+  border:1px solid var(--ccs-ambar-borde)!important;
 }
 
 .ccs-product-card .ccs-product-proscons > div > strong{
@@ -231,11 +231,11 @@
 }
 
 .ccs-product-card .ccs-product-proscons > div:first-child > strong{
-  color:#0a653c!important;
+  color:var(--ccs-verde-800)!important;
 }
 
 .ccs-product-card .ccs-product-proscons > div:nth-child(2) > strong{
-  color:#9b2f2a!important;
+  color:var(--ccs-ambar-titulo)!important;
 }
 
 .ccs-product-card .ccs-product-proscons p,
@@ -251,13 +251,13 @@
 .ccs-product-card .ccs-product-proscons > div:first-child p,
 .ccs-product-card .ccs-product-proscons > div:first-child ul,
 .ccs-product-card .ccs-product-proscons > div:first-child li{
-  color:#355243!important;
+  color:var(--ccs-tinta)!important;
 }
 
 .ccs-product-card .ccs-product-proscons > div:nth-child(2) p,
 .ccs-product-card .ccs-product-proscons > div:nth-child(2) ul,
 .ccs-product-card .ccs-product-proscons > div:nth-child(2) li{
-  color:#7a3a36!important;
+  color:var(--ccs-tinta)!important;
 }
 
 .ccs-product-content > .ccs-product-decision{
@@ -271,16 +271,17 @@
   margin:16px 0 0!important;
   padding:16px 18px!important;
   box-sizing:border-box!important;
-  border:1px solid #bfd6f3!important;
-  border-radius:14px!important;
-  background:#eef5ff!important;
-  color:#315b87!important;
+  border:1px solid var(--ccs-verde-200)!important;
+  border-left:4px solid var(--ccs-verde-700)!important;
+  border-radius:var(--ccs-r-md)!important;
+  background:var(--ccs-verde-100)!important;
+  color:var(--ccs-tinta)!important;
   line-height:1.55!important;
   text-align:left!important;
 }
 
 .ccs-product-card .ccs-product-decision strong{
-  color:#173f6b!important;
+  color:var(--ccs-verde-900)!important;
 }
 
 .ccs-product-content > .ccs-product-cta,
