@@ -1,0 +1,47 @@
+/* =========================================================
+   COMPRA CON SENTIDO · ESCALA TIPOGRÁFICA (type v1)
+   Se carga la última en todas las páginas y fija los tamaños
+   de la escala común (tokens-v1.css):
+   - H2 de sección: 28-40 px, peso 800.
+   - Nombre de producto en ficha: 26-30 px, peso 800.
+   - H3 de tarjeta: 19-21 px, peso 700.
+   - Notas, pies de foto y textos de tarjetas: mínimo 15 px.
+   El prefijo :root:not(#ccs) da a estas reglas prioridad sobre
+   los estilos antiguos de cada página sin depender del orden.
+   El H1 del hero no se toca (hero-v5.css ya sigue la escala).
+   ========================================================= */
+
+/* --- H2 de sección --- */
+:root:not(#ccs) main h2:not(:is(.about-card, .about-wide, .cap-answer-card, .dehum-capacity-copy, .safety-box) h2){
+  font-size:var(--ccs-fs-h2)!important;
+  font-weight:var(--ccs-fw-heavy)!important;
+  line-height:1.15!important;
+  letter-spacing:-.01em!important;
+  text-wrap:balance;
+}
+
+/* --- Nombre de producto en ficha --- */
+:root:not(#ccs) main .ccs-product-card h3{
+  font-size:var(--ccs-fs-ficha)!important;
+  font-weight:var(--ccs-fw-heavy)!important;
+  line-height:1.2!important;
+  text-wrap:balance;
+}
+
+/* --- H3 de tarjeta --- */
+:root:not(#ccs) main h3:not(:is(.ccs-product-card, .dehum-visual-copy) h3){
+  font-size:var(--ccs-fs-h3)!important;
+  font-weight:var(--ccs-fw-bold)!important;
+  line-height:1.3!important;
+  text-wrap:balance;
+}
+
+/* --- Textos que bajaban de 15 px --- */
+:root:not(#ccs) main :is(.measure-card, .battery-card, .chooser-card, .orientation-card, .priority-item) p,
+:root:not(#ccs) main :is(.battery-note, .pla-fineprint, .pla-table-note, .cap-source-note),
+:root:not(#ccs) main figcaption,
+:root:not(#ccs) main td.compare-fit,
+:root:not(#ccs) main .ccs-product-card .ccs-product-proscons :is(p, li){
+  font-size:var(--ccs-fs-small)!important;
+  line-height:1.55!important;
+}
