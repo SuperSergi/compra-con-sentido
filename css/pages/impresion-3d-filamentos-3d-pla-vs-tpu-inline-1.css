@@ -1,4 +1,4 @@
-body.pla-tpu-page{margin:0;padding-top:76px;background:#f6f8f7;color:#1f2924;}
+body.pla-tpu-page{margin:0;padding-top:76px;background:#f6f8f7;color:var(--ccs-tinta);}
 .pt-shell{width:min(1100px,calc(100% - 32px));margin:auto}
 .pt-hero{background:linear-gradient(95deg,rgba(6,61,38,.94),rgba(6,61,38,.56)),url('/images/filamentos-3d/pla-vs-tpu/comparativa_de_filamentos_3d_r%C3%ADgidos_y_flexibles.webp') center/cover;min-height:440px;display:flex;align-items:center;color:white}
 .pt-hero-inner{padding:80px 0 100px}

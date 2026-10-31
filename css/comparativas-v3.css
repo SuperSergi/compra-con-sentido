@@ -1,5 +1,5 @@
 /* Comparativas v3 · estándar visual compartido */
-.ccs-comparison-v3{--ccs-green:#063d26;--ccs-green-2:#0b5b39;--ccs-muted:#647069;--ccs-line:#dfe7e2;--ccs-bg:#f6f8f7;--ccs-shadow:0 14px 35px rgba(18,55,39,.08)}
+.ccs-comparison-v3{--ccs-green:#063d26;--ccs-green-2:#0b5b39;--ccs-muted:var(--ccs-gris);--ccs-line:#dfe7e2;--ccs-bg:#f6f8f7;--ccs-shadow:0 14px 35px rgba(18,55,39,.08)}
 .ccs-comparison-v3 .ccs-hero{color:#fff;background:linear-gradient(90deg,rgba(6,61,38,.97) 0%,rgba(6,61,38,.91) 38%,rgba(6,61,38,.62) 64%,rgba(6,61,38,.40) 100%),var(--ccs-hero-image) var(--ccs-hero-position,58% 48%)/cover no-repeat}
 .ccs-comparison-v3 .ccs-hero .topbar{border-bottom:1px solid rgba(255,255,255,.18)}
 .ccs-comparison-v3 .ccs-hero .brand,.ccs-comparison-v3 .ccs-hero .main-nav>a,.ccs-comparison-v3 .ccs-hero .nav-group>a,.ccs-comparison-v3 .ccs-hero .menu-toggle{color:#fff}

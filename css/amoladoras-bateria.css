@@ -1,5 +1,5 @@
 :root{
-  --g:var(--ccs-verde-900);--g2:#0b5b39;--soft:#eef7f2;--text:#1f2924;--muted:#647069;
+  --g:var(--ccs-verde-900);--g2:#0b5b39;--soft:#eef7f2;--text:var(--ccs-tinta);--muted:var(--ccs-gris);
   --line:#dfe7e2;--bg:#f6f8f7;--a1:var(--ccs-cta-1);--a2:var(--ccs-cta-2);--ab:var(--ccs-cta-borde);
   --shadow:0 14px 35px rgba(18,55,39,.08)
 }
@@ -54,7 +54,7 @@
 .grinder-specs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:22px 0}
 .grinder-specs div{padding:15px;border:1px solid #e6ece8;border-radius:14px;background:#fbfdfc}
 .grinder-specs span,.grinder-specs strong{display:block}
-.grinder-specs span{font-size:12px;color:#748078}
+.grinder-specs span{font-size:12px;color:var(--ccs-gris)}
 .grinder-fit{margin:16px 0 18px;padding:14px 16px;border-left:4px solid #0f7a49;background:#f5faf7;border-radius:0 12px 12px 0!important;color:#33463b!important}
 .grinder-fit strong{color:#063d26}
 .grinder-pros{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}

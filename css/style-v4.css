@@ -2161,7 +2161,7 @@ button{
 
 .content-library-footnote{
   margin:18px 0 0;
-  color:#748078;
+  color:var(--ccs-gris);
   font-size:13px;
 }
 
