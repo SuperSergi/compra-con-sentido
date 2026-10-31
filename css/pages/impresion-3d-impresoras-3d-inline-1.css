@@ -40,7 +40,7 @@
       background:
         linear-gradient(90deg,rgba(6,61,38,.89),rgba(6,61,38,.48)),
         url("/images/guia-impresoras-3d.webp") center 48%/cover no-repeat;
-      color:#fff;
+      color:var(--ccs-blanco);
     }
 
     .printers-hero-content{
@@ -60,7 +60,7 @@
     }
 
     .breadcrumbs a{
-      color:#fff;
+      color:var(--ccs-blanco);
       text-decoration:none;
     }
 
@@ -70,7 +70,7 @@
       border:1px solid rgba(255,255,255,.22);
       border-radius:999px;
       background:rgba(255,255,255,.10);
-      color:#fff;
+      color:var(--ccs-blanco);
       font-size:13px;
       font-weight:800;
       letter-spacing:.06em;
@@ -80,7 +80,7 @@
     .printers-hero h1{
       margin:18px 0;
       max-width:790px;
-      color:#fff;
+      color:var(--ccs-blanco);
       font-size:clamp(40px,6vw,66px);
       line-height:1.03;
       letter-spacing:-.035em;
@@ -107,7 +107,7 @@
       padding:30px 32px;
       border:1px solid var(--cc-line);
       border-radius:22px;
-      background:#fff;
+      background:var(--ccs-blanco);
       box-shadow:var(--cc-shadow);
     }
 
@@ -174,7 +174,7 @@
       padding:25px;
       border:1px solid var(--cc-line);
       border-radius:18px;
-      background:#fff;
+      background:var(--ccs-blanco);
       box-shadow:0 8px 24px rgba(18,55,39,.055);
     }
 
@@ -215,7 +215,7 @@
       padding:25px;
       border:1px solid var(--cc-line);
       border-radius:20px;
-      background:#fff;
+      background:var(--ccs-blanco);
       box-shadow:0 8px 24px rgba(18,55,39,.055);
     }
 
@@ -280,7 +280,7 @@
       overflow:hidden;
       border:1px solid var(--cc-line);
       border-radius:24px;
-      background:#fff;
+      background:var(--ccs-blanco);
       box-shadow:var(--cc-shadow);
     }
 
@@ -331,7 +331,7 @@
       padding:13px 20px;
       border-radius:11px;
       background:var(--cc-green);
-      color:#fff!important;
+      color:var(--ccs-blanco)!important;
       font-weight:900;
       text-decoration:none;
       transition:transform .18s ease,box-shadow .18s ease;

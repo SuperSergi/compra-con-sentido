@@ -17,7 +17,7 @@
   width:100%!important;
   margin:0!important;
   padding:44px 48px!important;
-  background:#fff!important;
+  background:var(--ccs-blanco)!important;
   border:1px solid rgba(13,86,50,.08)!important;
   border-radius:var(--radius-xl,26px)!important;
   box-shadow:var(--shadow,0 18px 45px rgba(22,60,39,.10))!important;
@@ -36,7 +36,7 @@
 
 .ccs-intro-card h2{
   margin:10px 0 0!important;
-  color:var(--green-950,#063d26)!important;
+  color:var(--green-950,var(--ccs-verde-900))!important;
   font-size:clamp(30px,3vw,42px)!important;
   line-height:1.16!important;
   letter-spacing:-.025em!important;
@@ -52,13 +52,13 @@
 .ccs-intro-card > p.ccs-intro-copy{
   margin:0!important;
   align-self:center!important;
-  color:var(--muted,#5f6d65)!important;
+  color:var(--muted,var(--ccs-gris))!important;
   align-self:center;
 }
 
 .ccs-intro-copy p{
   margin:0 0 16px!important;
-  color:var(--muted,#5f6d65)!important;
+  color:var(--muted,var(--ccs-gris))!important;
 }
 
 .ccs-intro-copy p:last-child{
@@ -66,7 +66,7 @@
 }
 
 .ccs-intro-copy a{
-  color:var(--green-800,#0a653c);
+  color:var(--green-800,var(--ccs-verde-800));
   font-weight:750;
   text-underline-offset:3px;
 }
@@ -161,7 +161,7 @@
 
 .ccs-intro-card h2{
   margin:10px 0 0!important;
-  color:var(--green-950,#063d26)!important;
+  color:var(--green-950,var(--ccs-verde-900))!important;
   font-family:var(--font-sans)!important;
   font-size:clamp(30px,3vw,42px)!important;
   line-height:1.16!important;
@@ -180,7 +180,7 @@
 .ccs-intro-copy,
 .ccs-intro-copy p,
 .ccs-intro-card > p.ccs-intro-copy{
-  color:var(--muted,#5f6d65)!important;
+  color:var(--muted,var(--ccs-gris))!important;
   font-family:var(--font-sans)!important;
   font-size:17px!important;
   line-height:1.6!important;

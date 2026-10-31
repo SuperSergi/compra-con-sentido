@@ -11,11 +11,11 @@
     .pla-section>p,.pla-copy{color:#4d5a53;line-height:1.7}
     .pla-table-note,.pla-fineprint{font-size:13px;color:#657269;line-height:1.6}
     .pla-pack{margin-top:18px;padding:18px 20px;border-radius:14px;background:#f2f8f4;color:#355243;line-height:1.65}
-    .pla-pack strong{color:#063d26}
+    .pla-pack strong{color:var(--ccs-verde-900)}
     .ccs-product-content>.pla-pack{order:76}
     .ccs-product-content>.pla-cta-row{order:80}
     .pla-cta-row{display:flex!important;flex-wrap:wrap!important;justify-content:flex-start!important;gap:10px!important;margin-top:18px!important}
-    .pla-cta-row .amazon-btn{width:auto!important;margin:0!important;background:linear-gradient(180deg,#ffd814,#f7ca00)!important;border:1px solid #d5a900!important;color:#18120a!important;box-shadow:0 5px 12px rgba(0,0,0,.10)!important}
+    .pla-cta-row .amazon-btn{width:auto!important;margin:0!important;background:linear-gradient(180deg,var(--ccs-cta-1),var(--ccs-cta-2))!important;border:1px solid var(--ccs-cta-borde)!important;color:var(--ccs-cta-texto)!important;box-shadow:0 5px 12px rgba(0,0,0,.10)!important}
     .pla-cta-row .amazon-btn:hover{transform:translateY(-2px);box-shadow:0 9px 20px rgba(0,0,0,.15)!important}
     .pla-faq details{border-bottom:1px solid #e1e8e4;padding:16px 0}
     .pla-faq summary{cursor:pointer;font-weight:800;color:#26382e}

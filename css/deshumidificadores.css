@@ -6,13 +6,13 @@
 
 .dehum-page{
   padding-top:76px;
-  background:#fff;
+  background:var(--ccs-blanco);
 }
 
 .dehum-hero{
   position:relative;
   min-height:560px;
-  color:#fff;
+  color:var(--ccs-blanco);
   background:
     url("../images/deshumidificadores/deshumidificadores-hero.webp")
     center 52% / cover
@@ -68,7 +68,7 @@
 .dehum-hero h1{
   max-width:840px;
   margin:20px 0 17px;
-  color:#fff;
+  color:var(--ccs-blanco);
   font-size:clamp(46px,5.8vw,72px);
   line-height:1.02;
   letter-spacing:-.045em;
@@ -91,12 +91,12 @@
 
 .dehum-btn-primary{
   color:var(--green-900);
-  background:#fff;
+  background:var(--ccs-blanco);
   box-shadow:0 12px 24px rgba(0,0,0,.15);
 }
 
 .dehum-btn-ghost{
-  color:#fff;
+  color:var(--ccs-blanco);
   border:1px solid rgba(255,255,255,.40);
   background:rgba(255,255,255,.08);
   backdrop-filter:blur(7px);
@@ -114,7 +114,7 @@
   grid-template-columns:.88fr 1.12fr;
   gap:62px;
   padding:46px 50px;
-  background:#fff;
+  background:var(--ccs-blanco);
   border:1px solid rgba(13,86,50,.08);
   border-radius:var(--radius-xl);
   box-shadow:var(--shadow);
@@ -174,7 +174,7 @@
   padding:30px;
   border:1px solid var(--line);
   border-radius:var(--radius-lg);
-  background:#fff;
+  background:var(--ccs-blanco);
   box-shadow:0 8px 22px rgba(22,60,39,.04);
 }
 
@@ -226,7 +226,7 @@
 }
 
 .dehum-types{
-  background:#fff;
+  background:var(--ccs-blanco);
 }
 
 .dehum-types-grid{
@@ -255,7 +255,7 @@
   padding:28px;
   border:1px solid var(--line);
   border-radius:var(--radius-lg);
-  background:#fff;
+  background:var(--ccs-blanco);
 }
 
 .dehum-type-head{
@@ -329,7 +329,7 @@
   padding:22px 24px;
   border:1px solid var(--line);
   border-radius:17px;
-  background:#fff;
+  background:var(--ccs-blanco);
 }
 
 .dehum-capacity-item>span{
@@ -338,7 +338,7 @@
   width:44px;
   height:44px;
   border-radius:13px;
-  color:#fff;
+  color:var(--ccs-blanco);
   background:var(--green-800);
   font-weight:900;
 }
@@ -358,7 +358,7 @@
   padding:20px 22px;
   border-left:4px solid var(--green-700);
   border-radius:0 14px 14px 0;
-  background:#fff;
+  background:var(--ccs-blanco);
   color:var(--muted);
 }
 
@@ -367,7 +367,7 @@
 }
 
 .dehum-use{
-  background:#fff;
+  background:var(--ccs-blanco);
 }
 
 .dehum-use-layout{
@@ -488,7 +488,7 @@
   padding:22px;
   border:1px solid var(--line);
   border-radius:17px;
-  background:#fff;
+  background:var(--ccs-blanco);
 }
 
 .dehum-check-item>span{
@@ -497,7 +497,7 @@
   width:38px;
   height:38px;
   border-radius:11px;
-  color:#fff;
+  color:var(--ccs-blanco);
   background:var(--green-800);
   font-weight:900;
 }
@@ -513,7 +513,7 @@
 }
 
 .dehum-humidity{
-  background:#fff;
+  background:var(--ccs-blanco);
 }
 
 .dehum-range{
@@ -546,7 +546,7 @@
 
 .dehum-summary{
   padding:88px 0;
-  color:#fff;
+  color:var(--ccs-blanco);
   background:
     radial-gradient(
       circle at 84% 10%,
@@ -568,7 +568,7 @@
 }
 
 .dehum-summary h2{
-  color:#fff;
+  color:var(--ccs-blanco);
 }
 
 .dehum-summary p{
@@ -604,7 +604,7 @@
 
 .dehum-summary-list h3{
   margin:0 0 5px;
-  color:#fff;
+  color:var(--ccs-blanco);
   font-size:20px;
 }
 
@@ -614,7 +614,7 @@
 }
 
 .dehum-faq{
-  background:#fff;
+  background:var(--ccs-blanco);
 }
 
 .dehum-faq-list{
@@ -628,7 +628,7 @@
   padding:24px 26px;
   border:1px solid var(--line);
   border-radius:17px;
-  background:#fff;
+  background:var(--ccs-blanco);
 }
 
 .dehum-faq-item summary{
@@ -688,7 +688,7 @@
   color:var(--green-900);
   border:1px solid var(--line);
   border-radius:14px;
-  background:#fff;
+  background:var(--ccs-blanco);
   text-decoration:none;
   font-weight:750;
 }
@@ -712,7 +712,7 @@
   justify-content:space-between;
   gap:40px;
   padding:44px 48px;
-  color:#fff;
+  color:var(--ccs-blanco);
   border-radius:var(--radius-xl);
   background:
     radial-gradient(
@@ -729,7 +729,7 @@
 }
 
 .dehum-closing-card h2{
-  color:#fff;
+  color:var(--ccs-blanco);
 }
 
 .dehum-closing-card p{
@@ -741,7 +741,7 @@
 .dehum-btn-light{
   flex-shrink:0;
   color:var(--green-900);
-  background:#fff;
+  background:var(--ccs-blanco);
 }
 
 @media (max-width:1050px){
@@ -853,7 +853,7 @@
 
   .dehum-visual-media,
   .dehum-use-card-visual{
-    background:#fff;
+    background:var(--ccs-blanco);
   }
 
   .dehum-type-meta{

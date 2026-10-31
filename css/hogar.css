@@ -4,7 +4,7 @@
    ========================================================= */
 
 body.home-page{
-  background:#fff;
+  background:var(--ccs-blanco);
 }
 
 .home-hero{
@@ -14,7 +14,7 @@ body.home-page{
   display:flex;
   align-items:center;
   overflow:hidden;
-  color:#fff;
+  color:var(--ccs-blanco);
   background:
     url("../images/categoria-hogar.webp")
     center 52% / cover
@@ -60,7 +60,7 @@ body.home-page{
 }
 
 .home-kicker{
-  color:#fff;
+  color:var(--ccs-blanco);
   border:1px solid rgba(255,255,255,.28);
   background:rgba(255,255,255,.10);
 }
@@ -74,7 +74,7 @@ body.home-page{
 .home-hero h1{
   max-width:690px;
   margin:18px 0;
-  color:#fff;
+  color:var(--ccs-blanco);
   font-size:clamp(48px,6vw,76px);
   line-height:1.02;
   letter-spacing:-.045em;
@@ -96,13 +96,13 @@ body.home-page{
 }
 
 .home-btn-primary{
-  background:#fff;
+  background:var(--ccs-blanco);
   color:var(--green-900);
   box-shadow:0 12px 24px rgba(0,0,0,.15);
 }
 
 .home-btn-ghost{
-  color:#fff;
+  color:var(--ccs-blanco);
   border:1px solid rgba(255,255,255,.38);
   background:rgba(255,255,255,.08);
   backdrop-filter:blur(7px);
@@ -120,7 +120,7 @@ body.home-page{
   grid-template-columns:.9fr 1.1fr;
   gap:56px;
   padding:44px 48px;
-  background:#fff;
+  background:var(--ccs-blanco);
   border:1px solid rgba(13,86,50,.08);
   border-radius:var(--radius-xl);
   box-shadow:var(--shadow);
@@ -176,7 +176,7 @@ body.home-page{
   overflow:hidden;
   border:1px solid var(--line);
   border-radius:var(--radius-xl);
-  background:#fff;
+  background:var(--ccs-blanco);
   box-shadow:var(--shadow-soft);
 }
 
@@ -239,7 +239,7 @@ body.home-page{
 }
 
 .home-card-primary{
-  color:#fff;
+  color:var(--ccs-blanco);
   background:var(--green-800);
   box-shadow:0 9px 20px rgba(15,122,73,.16);
 }
@@ -247,7 +247,7 @@ body.home-page{
 .home-card-secondary{
   color:var(--green-900);
   border:1px solid var(--line);
-  background:#fff;
+  background:var(--ccs-blanco);
 }
 
 .home-card-primary:hover,
@@ -265,7 +265,7 @@ body.home-page{
 }
 
 .home-method{
-  background:#fff;
+  background:var(--ccs-blanco);
 }
 
 .home-method-grid{
@@ -297,7 +297,7 @@ body.home-page{
   padding:26px 28px;
   border:1px solid var(--line);
   border-radius:var(--radius-lg);
-  background:#fff;
+  background:var(--ccs-blanco);
 }
 
 .home-method-number{
@@ -306,7 +306,7 @@ body.home-page{
   width:52px;
   height:52px;
   border-radius:15px;
-  color:#fff;
+  color:var(--ccs-blanco);
   background:var(--green-800);
   font-weight:900;
   box-shadow:0 9px 20px rgba(15,122,73,.16);
@@ -335,7 +335,7 @@ body.home-page{
   gap:40px;
   padding:44px 48px;
   border-radius:var(--radius-xl);
-  color:#fff;
+  color:var(--ccs-blanco);
   background:
     radial-gradient(
       circle at 92% 18%,
@@ -351,7 +351,7 @@ body.home-page{
 }
 
 .home-closing-card h2{
-  color:#fff;
+  color:var(--ccs-blanco);
 }
 
 .home-closing-card p{
@@ -362,7 +362,7 @@ body.home-page{
 
 .home-btn-light{
   flex:0 0 auto;
-  background:#fff;
+  background:var(--ccs-blanco);
   color:var(--green-900);
 }
 

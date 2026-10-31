@@ -1,6 +1,6 @@
 body{
       padding-top:76px;
-      background:#f5faf7;
+      background:var(--ccs-verde-050);
     }
     .not-found{
       min-height:calc(100vh - 76px);
@@ -11,16 +11,16 @@ body{
     .not-found-card{
       width:min(720px,100%);
       padding:44px;
-      border:1px solid #dfe8e2;
+      border:1px solid var(--ccs-linea);
       border-radius:24px;
-      background:#fff;
+      background:var(--ccs-blanco);
       box-shadow:0 18px 45px rgba(22,60,39,.10);
       text-align:center;
     }
     .not-found-code{
       display:block;
       margin-bottom:8px;
-      color:#0f7a49;
+      color:var(--ccs-verde-700);
       font-size:14px;
       font-weight:800;
       letter-spacing:.12em;
@@ -28,14 +28,14 @@ body{
     }
     .not-found-card h1{
       margin:0 0 14px;
-      color:#063d26;
+      color:var(--ccs-verde-900);
       font-size:clamp(34px,6vw,54px);
       line-height:1.05;
     }
     .not-found-card p{
       margin:0 auto 24px;
       max-width:560px;
-      color:#5f6d65;
+      color:var(--ccs-gris);
     }
     @media(max-width:760px){
       body{padding-top:64px}

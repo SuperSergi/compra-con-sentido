@@ -29,7 +29,7 @@
   isolation:isolate;
   min-height:580px!important;
   overflow:hidden!important;
-  color:#fff!important;
+  color:var(--ccs-blanco)!important;
   background-position:center!important;
   background-size:cover!important;
   background-repeat:no-repeat!important;
@@ -158,7 +158,7 @@
   border:1px solid rgba(255,255,255,.28)!important;
   border-radius:999px!important;
   background:rgba(255,255,255,.10)!important;
-  color:#fff!important;
+  color:var(--ccs-blanco)!important;
   font-size:12px!important;
   font-weight:800!important;
   line-height:1.2!important;
@@ -184,7 +184,7 @@
   order:2!important;
   max-width:930px!important;
   margin:0!important;
-  color:#fff!important;
+  color:var(--ccs-blanco)!important;
   font-size:clamp(44px,4vw,64px)!important;
   font-weight:800!important;
   line-height:1.04!important;
@@ -249,7 +249,7 @@
 .vacuum-hero-content > .article-byline a,
 .dehum-hero-content > .article-byline a,
 .cap-hero-copy > .article-byline a{
-  color:#fff!important;
+  color:var(--ccs-blanco)!important;
   font-weight:800!important;
 }
 
@@ -279,7 +279,7 @@
   border:1px solid rgba(255,255,255,.22)!important;
   border-radius:999px!important;
   background:rgba(255,255,255,.10)!important;
-  color:#fff!important;
+  color:var(--ccs-blanco)!important;
   font-size:13px!important;
 }
 .tools-hero-actions,
@@ -306,9 +306,9 @@
   margin:24px 0 0!important;
   border-color:rgba(255,255,255,.22)!important;
   background:rgba(255,255,255,.09)!important;
-  color:#fff!important;
+  color:var(--ccs-blanco)!important;
 }
-.legal-contact-box a{color:#fff!important}
+.legal-contact-box a{color:var(--ccs-blanco)!important}
 .legal-updated{
   margin-top:18px!important;
   color:rgba(255,255,255,.72)!important;

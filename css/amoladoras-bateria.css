@@ -21,7 +21,7 @@
 .grinder-page main section{margin-top:54px}
 
 .grinder-quick>div,.grinder-method,.grinder-faq,.grinder-product,.grinder-guide,.grinder-use{
-  background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)
+  background:var(--ccs-blanco);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)
 }
 
 
@@ -30,7 +30,7 @@
 
 
 .grinder-page main h2{color:var(--g);letter-spacing:-.025em}
-.grinder-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:var(--shadow)}
+.grinder-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:18px;background:var(--ccs-blanco);box-shadow:var(--shadow)}
 .grinder-table{width:100%;min-width:900px;border-collapse:collapse}
 .grinder-table th,.grinder-table td{padding:12px 12px;border-bottom:1px solid #edf1ee;text-align:left;vertical-align:top;white-space:normal}
 .grinder-table th{background:#f0f6f2;color:var(--g);font-size:11px;text-transform:uppercase}
@@ -41,8 +41,8 @@
 .grinder-product{padding:28px}
 
 .grinder-product-visual{
-  position:relative;display:flex;align-items:center;justify-content:center;min-height:190px;padding:12px;border:1px solid #dfe8e2;border-radius:16px;
-  background:#fff;overflow:hidden
+  position:relative;display:flex;align-items:center;justify-content:center;min-height:190px;padding:12px;border:1px solid var(--ccs-linea);border-radius:16px;
+  background:var(--ccs-blanco);overflow:hidden
 }
 .grinder-product-visual img{display:block;width:100%;height:190px;object-fit:contain}
 .grinder-image-note{
@@ -55,15 +55,15 @@
 .grinder-specs div{padding:15px;border:1px solid #e6ece8;border-radius:14px;background:#fbfdfc}
 .grinder-specs span,.grinder-specs strong{display:block}
 .grinder-specs span{font-size:12px;color:var(--ccs-gris)}
-.grinder-fit{margin:16px 0 18px;padding:14px 16px;border-left:4px solid #0f7a49;background:#f5faf7;border-radius:0 12px 12px 0!important;color:#33463b!important}
-.grinder-fit strong{color:#063d26}
+.grinder-fit{margin:16px 0 18px;padding:14px 16px;border-left:4px solid var(--ccs-verde-700);background:var(--ccs-verde-050);border-radius:0 12px 12px 0!important;color:#33463b!important}
+.grinder-fit strong{color:var(--ccs-verde-900)}
 .grinder-pros{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}
 .grinder-pros div{padding:17px;border-radius:14px;background:#eff8f3}
 .grinder-pros div+div{background:#faf5ed}
 .grinder-pros p{margin-bottom:0}
 .amazon-mini,.amazon-btn{
   display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--ab);
-  background:linear-gradient(180deg,var(--a1),var(--a2));color:#18120a!important;text-decoration:none;font-weight:800;
+  background:linear-gradient(180deg,var(--a1),var(--a2));color:var(--ccs-cta-texto)!important;text-decoration:none;font-weight:800;
   box-shadow:0 5px 12px rgba(0,0,0,.08);transition:.18s
 }
 .amazon-mini{padding:9px 12px;border-radius:10px}
@@ -85,7 +85,7 @@
 .grinder-method p,.grinder-faq p{color:var(--muted);line-height:1.65}
 .grinder-related{padding:30px;border-radius:20px;background:#eaf5ef}
 .grinder-related>div{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.grinder-related a{padding:20px;border:1px solid #d7e6dd;border-radius:15px;background:#fff;color:var(--g);font-weight:800;text-decoration:none}
+.grinder-related a{padding:20px;border:1px solid #d7e6dd;border-radius:15px;background:var(--ccs-blanco);color:var(--g);font-weight:800;text-decoration:none}
 .grinder-faq details{border-top:1px solid var(--line)}
 .grinder-faq summary{cursor:pointer;padding:18px 0;font-weight:800;color:#244734}
 

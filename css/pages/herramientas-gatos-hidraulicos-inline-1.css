@@ -32,7 +32,7 @@
       display:flex;
       align-items:center;
       overflow:hidden;
-      color:#fff;
+      color:var(--ccs-blanco);
       background:
         linear-gradient(90deg,rgba(6,61,38,.78),rgba(6,61,38,.48)),
         url("/images/gatos-hidraulicos-guia-hero.webp") center 54%/cover no-repeat;
@@ -68,7 +68,7 @@
       font-size:14px;
     }
 
-    .breadcrumbs a{color:#fff;text-decoration:none}
+    .breadcrumbs a{color:var(--ccs-blanco);text-decoration:none}
 
     .hero-kicker{
       display:inline-flex;
@@ -86,7 +86,7 @@
     .jacks-hero h1{
       max-width:900px;
       margin:18px 0 16px;
-      color:#fff;
+      color:var(--ccs-blanco);
       font-size:clamp(38px,6vw,66px);
       line-height:1.03;
       letter-spacing:-.035em;
@@ -112,7 +112,7 @@
       border-radius:999px;
       background:rgba(255,255,255,.11);
       border:1px solid rgba(255,255,255,.18);
-      color:#fff;
+      color:var(--ccs-blanco);
       font-size:14px;
     }
 
@@ -162,7 +162,7 @@
       padding:12px 18px;
       border-radius:11px;
       background:var(--jack-green-2);
-      color:#fff !important;
+      color:var(--ccs-blanco) !important;
       font-weight:800;
       text-decoration:none;
       transition:transform .18s ease,box-shadow .18s ease;
@@ -217,7 +217,7 @@
       overflow:hidden;
       border:1px solid var(--jack-line);
       border-radius:20px;
-      background:#fff;
+      background:var(--ccs-blanco);
       box-shadow:var(--jack-shadow);
     }
 
@@ -237,7 +237,7 @@
       margin-bottom:12px;
       border-radius:50%;
       background:var(--jack-green-2);
-      color:#fff;
+      color:var(--ccs-blanco);
       font-weight:900;
     }
 
@@ -257,7 +257,7 @@
       padding:26px;
       border:1px solid var(--jack-line);
       border-radius:20px;
-      background:#fff;
+      background:var(--ccs-blanco);
       box-shadow:var(--jack-shadow);
     }
 
@@ -283,7 +283,7 @@
       padding:22px;
       border:1px solid var(--jack-line);
       border-radius:18px;
-      background:#fff;
+      background:var(--ccs-blanco);
       box-shadow:0 8px 24px rgba(18,55,39,.055);
     }
 
@@ -311,7 +311,7 @@
       padding:26px;
       border:1px solid var(--jack-line);
       border-radius:20px;
-      background:#fff;
+      background:var(--ccs-blanco);
       box-shadow:var(--jack-shadow);
     }
 
@@ -370,7 +370,7 @@
       overflow:hidden;
       border:1px solid var(--jack-line);
       border-radius:22px;
-      background:#fff;
+      background:var(--ccs-blanco);
       box-shadow:var(--jack-shadow);
     }
 
@@ -407,7 +407,7 @@
       padding:20px;
       border:1px solid var(--jack-line);
       border-radius:15px;
-      background:#fff;
+      background:var(--ccs-blanco);
       color:var(--jack-green) !important;
       font-weight:800;
       text-decoration:none;

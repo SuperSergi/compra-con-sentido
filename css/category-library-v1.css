@@ -7,7 +7,7 @@
 .ccs-library-v2 h2{margin:0 0 14px;color:#073b28;font-size:clamp(28px,3.3vw,39px);font-weight:800;line-height:1.17}
 .ccs-library-v2__intro{max-width:900px;margin:0 0 30px;color:#44584d;font-size:16px;line-height:1.75}
 .ccs-library-v2__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
-.ccs-library-v2__card{display:flex;min-width:0;flex-direction:column;overflow:hidden;border:1px solid #dce6df;border-radius:20px;background:#fff;color:#153e2a!important;text-decoration:none!important;box-shadow:0 10px 26px rgba(0,40,24,.07);transition:box-shadow .18s ease,transform .18s ease}
+.ccs-library-v2__card{display:flex;min-width:0;flex-direction:column;overflow:hidden;border:1px solid #dce6df;border-radius:20px;background:var(--ccs-blanco);color:#153e2a!important;text-decoration:none!important;box-shadow:0 10px 26px rgba(0,40,24,.07);transition:box-shadow .18s ease,transform .18s ease}
 .ccs-library-v2__card:hover,.ccs-library-v2__card:focus-visible{transform:translateY(-3px);box-shadow:0 15px 30px rgba(0,40,24,.15)}
 .ccs-library-v2__card:focus-visible{outline:3px solid #e6b323;outline-offset:3px}
 .ccs-library-v2__card img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:center;background:#e3ebe5}

@@ -7,7 +7,7 @@
 .ccs-guide-unified p,.ccs-guide-unified li{color:#3e5447;line-height:1.72}
 .ccs-guide-unified a{color:#0d7145}
 .ccs-guide-unified .grinder-guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-.ccs-guide-unified .grinder-guide-grid article{background:#fff;border:1px solid #e1e9e3;border-radius:15px;padding:20px}
+.ccs-guide-unified .grinder-guide-grid article{background:var(--ccs-blanco);border:1px solid #e1e9e3;border-radius:15px;padding:20px}
 .ccs-guide-unified .grinder-guide-grid article h3{margin:0 0 9px}
 .ccs-guide-unified .grinder-guide-grid article p{margin:0}
 .ccs-guide-unified.saw-guide>h3{margin:22px 0 10px;padding-top:18px;border-top:1px solid #e0eae3}

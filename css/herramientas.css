@@ -27,7 +27,7 @@
 
   min-height:520px;
 
-  color:#fff;
+  color:var(--ccs-blanco);
 
   background:
     url("../images/categoria-herramientas.webp")
@@ -127,7 +127,7 @@
   margin:
     20px 0 16px;
 
-  color:#fff;
+  color:var(--ccs-blanco);
 
   font-size:
     clamp(
@@ -174,7 +174,7 @@
 
 .tools-btn-primary{
 
-  background:#fff;
+  background:var(--ccs-blanco);
 
   color:
     var(--green-900);
@@ -188,7 +188,7 @@
 
 .tools-btn-ghost{
 
-  color:#fff;
+  color:var(--ccs-blanco);
 
   background:
     rgba(255,255,255,.08);
@@ -235,7 +235,7 @@
   padding:
     46px 50px;
 
-  background:#fff;
+  background:var(--ccs-blanco);
 
   border:
     1px solid
@@ -327,7 +327,7 @@
 
   overflow:hidden;
 
-  background:#fff;
+  background:var(--ccs-blanco);
 
   border:
     1px solid
@@ -491,7 +491,7 @@
 
 .tools-card-primary{
 
-  color:#fff;
+  color:var(--ccs-blanco);
 
   background:
     var(--green-800);
@@ -508,7 +508,7 @@
   color:
     var(--green-900);
 
-  background:#fff;
+  background:var(--ccs-blanco);
 
   border:
     1px solid
@@ -525,7 +525,7 @@
 
 .tools-comparisons{
 
-  background:#fff;
+  background:var(--ccs-blanco);
 
 }
 
@@ -554,7 +554,7 @@
 
   overflow:hidden;
 
-  background:#fff;
+  background:var(--ccs-blanco);
 
   border:
     1px solid
@@ -682,7 +682,7 @@
   padding:
     90px 0;
 
-  color:#fff;
+  color:var(--ccs-blanco);
 
   background:
 
@@ -727,7 +727,7 @@
   margin:
     13px 0 16px;
 
-  color:#fff;
+  color:var(--ccs-blanco);
 
   font-size:
     clamp(
@@ -867,7 +867,7 @@
   padding:
     44px 48px;
 
-  color:#fff;
+  color:var(--ccs-blanco);
 
   border-radius:
     var(--radius-xl);
@@ -899,7 +899,7 @@
 
   max-width:670px;
 
-  color:#fff;
+  color:var(--ccs-blanco);
 
   font-size:
     clamp(
@@ -939,7 +939,7 @@
 
 .tools-btn-light{
 
-  background:#fff;
+  background:var(--ccs-blanco);
 
   color:
     var(--green-900);

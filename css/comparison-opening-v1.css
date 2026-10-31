@@ -46,7 +46,7 @@
 
 .ccs-comparison-profile h3{
   margin:0 0 10px!important;
-  color:var(--green-950,#063d26)!important;
+  color:var(--green-950,var(--ccs-verde-900))!important;
   font-size:21px!important;
   line-height:1.25!important;
   font-weight:750!important;
@@ -55,13 +55,13 @@
 
 .ccs-comparison-profile p{
   margin:0!important;
-  color:var(--muted,#5f6d65)!important;
+  color:var(--muted,var(--ccs-gris))!important;
   font-size:15px!important;
   line-height:1.6!important;
 }
 
 .ccs-comparison-profile strong{
-  color:var(--green-950,#063d26)!important;
+  color:var(--green-950,var(--ccs-verde-900))!important;
 }
 
 /* CTA común de las tres elecciones: mismo aspecto y misma línea inferior */
@@ -82,10 +82,10 @@
   margin-top:auto!important;
   padding:13px 18px!important;
   box-sizing:border-box!important;
-  border:1px solid #d5a900!important;
+  border:1px solid var(--ccs-cta-borde)!important;
   border-radius:12px!important;
-  background:linear-gradient(180deg,#ffd814,#f7ca00)!important;
-  color:#18120a!important;
+  background:linear-gradient(180deg,var(--ccs-cta-1),var(--ccs-cta-2))!important;
+  color:var(--ccs-cta-texto)!important;
   font-family:var(--font-sans)!important;
   font-size:15px!important;
   line-height:1.25!important;

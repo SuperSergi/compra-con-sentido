@@ -1,4 +1,4 @@
-.saw-page{background:#fff}
+.saw-page{background:var(--ccs-blanco)}
 .saw-shell{width:var(--ccs-ancho);margin:0 auto}
 .saw-eyebrow{display:inline-block;margin:0 0 10px;color:var(--green-700);font-size:12px;font-weight:850;letter-spacing:.07em;text-transform:uppercase}
 .saw-shell section>h2{margin:0 0 18px;color:var(--green-950)}
@@ -17,11 +17,11 @@
 .saw-context-links a,.saw-related a{color:var(--green-800);font-weight:800}
 .saw-use p{margin:0 0 12px}
 .saw-related-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap-card)}
-.saw-related-grid a{display:flex;align-items:center;min-height:74px;padding:18px;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--shadow-soft);text-decoration:none}
-.saw-faq details{margin:0 0 12px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.saw-related-grid a{display:flex;align-items:center;min-height:74px;padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--ccs-blanco);box-shadow:var(--shadow-soft);text-decoration:none}
+.saw-faq details{margin:0 0 12px;border:1px solid var(--line);border-radius:14px;background:var(--ccs-blanco)}
 .saw-faq summary{cursor:pointer;padding:18px 20px;color:var(--green-950);font-weight:800}
 .saw-faq details p{margin:0;padding:0 20px 20px;color:var(--muted);line-height:1.65}
-.amazon-btn{position:relative;overflow:hidden;border:1px solid #d5a900;background:linear-gradient(180deg,#ffd814,#f7ca00);color:#18120a!important;text-decoration:none;box-shadow:0 7px 16px rgba(0,0,0,.10)}
+.amazon-btn{position:relative;overflow:hidden;border:1px solid var(--ccs-cta-borde);background:linear-gradient(180deg,var(--ccs-cta-1),var(--ccs-cta-2));color:var(--ccs-cta-texto)!important;text-decoration:none;box-shadow:0 7px 16px rgba(0,0,0,.10)}
 .amazon-btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(0,0,0,.14)}
 @media(max-width:900px){.saw-choose ul{grid-template-columns:1fr}.saw-related-grid{grid-template-columns:1fr}}
 @media(max-width:760px){.saw-shell{width:var(--ccs-ancho)}.saw-choose li{padding:15px}.saw-guide h3{font-size:20px}.saw-related-grid{gap:12px}}
