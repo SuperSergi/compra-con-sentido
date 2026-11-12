@@ -179,6 +179,7 @@ for (const vp of viewports) {
         profileRects,
         productRects,
         comparisonClass: document.body.classList.contains("ccs-comparison-v3"),
+        modelPage: document.body.classList.contains("ccs-modelo"),
         openingCardCount: document.querySelectorAll(".ccs-comparison-opening-card").length,
         profileCount: document.querySelectorAll(".ccs-comparison-profile").length,
         mobileHintVisible: [...document.querySelectorAll(".table-scroll-hint")].some(visible),
@@ -243,9 +244,12 @@ for (const vp of viewports) {
 
     if (data.comparisonClass) {
       if (!data.comparisonClass) issues.push("missing-comparison-class");
-      if (data.openingCardCount !== 1) issues.push("opening-cards=" + data.openingCardCount);
-      if (data.profileCount !== 3) issues.push("profiles=" + data.profileCount);
-      if (vp.width <= 390 && !data.mobileHintVisible) issues.push("mobile-table-hint-hidden");
+      // Las páginas de un solo modelo (body.ccs-modelo) no llevan apertura de comparativa, tres elecciones ni tabla.
+      if (!data.modelPage) {
+        if (data.openingCardCount !== 1) issues.push("opening-cards=" + data.openingCardCount);
+        if (data.profileCount !== 3) issues.push("profiles=" + data.profileCount);
+        if (vp.width <= 390 && !data.mobileHintVisible) issues.push("mobile-table-hint-hidden");
+      }
       if (data.tableResults.some(t => !t.wrapper)) issues.push("table-without-scroll-wrapper");
       if (data.tableResults.some(t => t.wrapper && !["auto","scroll"].includes(t.overflowX))) issues.push("table-wrapper-overflow-x=" + data.tableResults.map(t => t.overflowX).join(","));
       if (data.profileRects.some(r => r.left < -3 || r.right > vp.width + 3)) issues.push("profile-outside-viewport");
