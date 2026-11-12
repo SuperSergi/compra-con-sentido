@@ -195,7 +195,8 @@ if NAV_JS.exists():
     nav_js_text = NAV_JS.read_text(encoding="utf-8")
     for url_path in sorted(sitemap_entries):
         parts = [part for part in url_path.strip("/").split("/") if part]
-        if len(parts) < 3 or url_path in NAVIGATION_EXEMPT_CHILDREN:
+        # Las páginas de opiniones de un modelo se enlazan desde su comparativa, no desde el menú.
+        if len(parts) < 3 or url_path in NAVIGATION_EXEMPT_CHILDREN or url_path.endswith("-opiniones/"):
             continue
         nav_fragment = url_path.strip("/")
         if nav_fragment not in nav_js_text:
