@@ -1,7 +1,7 @@
 # COMPRA CON SENTIDO
 ## Documento MASTER
 
-**Última actualización:** 29/10/2026 19:48
+**Última actualización:** 12/11/2026 19:30
 **Mercado inicial:** España
 **Idioma principal:** Español
 **Dominio canónico:** `https://compraconsentido.es/`
@@ -679,9 +679,18 @@ No constan aún dispositivo, caché o condiciones de red; comparar antes/despué
 
 # 15. Organización del proyecto y reglas operativas
 
-## 15.1 Proyecto en ChatGPT
+## 15.1 Reparto de trabajo (desde el 12/11/2026)
 
-Proyecto **Compra con Sentido**, con estos chats: `00 - MASTER y dirección` (decisiones globales, estrategia, MASTER), `01 - Dominio + Cloudflare + GitHub` (infraestructura y publicación), `02 - SEO + Keywords + Arquitectura` (SERP, clusters, keywords), `03 - Diseño + Plantilla web` (diseño global, HTML, CSS, componentes, responsive), `04 - Migración páginas actuales` y `05 - Search Console + SEO real`. Avisar al usuario cuando convenga continuar una fase en otro chat.
+ChatGPT sale del proyecto. Claude investiga, redacta, maqueta, abre las PR, pasa las auditorías y mantiene este MASTER. Sergio revisa la vista previa y aprueba. Para la serie de páginas de opiniones de deshumidificadores del 13 al 19/11/2026, Sergio autorizó a Claude a fusionar y publicar sin visto bueno previo, con las comprobaciones en verde y aviso diario con el enlace. Los chats y la skill de ChatGPT quedan como histórico.
+
+## 15.1.1 Páginas de opiniones por modelo (formato aprobado el 12/11/2026)
+
+- URL: `/<categoría>/<subcategoría>/<modelo>-opiniones/`, `body.ccs-comparison-v3.ccs-modelo`. Fuera del menú; se enlazan desde la comparativa donde aparece el modelo (excepción en `site-audit.py` y `responsive-audit.mjs`).
+- Piloto publicado: `/hogar/deshumidificadores/xiaomi-smart-dehumidifier-lite-opiniones/` (PR #100). Es la referencia de estructura: hero con 4 datos, apertura «En resumen», ficha con CTA, balance por aspecto, ficha frente a uso real (gráficos de barras), calculadora de consumo (`js/consumo-v1.js`), detalles poco conocidos, para quién sí/no con imagen, dos alternativas con CTA, CTA final, nota de método, FAQ y dos tarjetas de cierre.
+- Opiniones: se resumen con palabras propias en un **balance por aspecto** con etiquetas cualitativas (Muy bien valorado, Bien valorado, Cumple con límites, Opiniones divididas, Punto débil). Sin notas numéricas, estrellas ni porcentajes. El tamaño de la muestra no aparece en titulares ni metadatos, solo en la nota de método.
+- Nota de método: al final, antes de las preguntas frecuentes, en gris y sin recuadro (`section.ccs-metodo`). Dice que no se ha probado el modelo y enumera fuentes y fecha. Nunca «Probado por nosotros» ni frases que sugieran prueba propia.
+- Cálculos propios (consumo, litros reales, vaciado del depósito) con fuente de cada dato y nota pequeña de estimación bajo el gráfico.
+- Imágenes: nunca descargar fotos de Amazon ni de otras webs. Se usan las ilustrativas del repositorio con «Imagen ilustrativa», fotos de áreas de prensa con licencia que lo permita o fotos cedidas por la marca con permiso por escrito (correo desde la cuenta de BCN Layer 3D).
 
 ## 15.2 Regla de traspaso entre chats
 
