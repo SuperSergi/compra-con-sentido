@@ -571,7 +571,7 @@
    ========================================================= */
 .ccs-vehiculos{
   display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(min(100%,9.5rem),1fr));
+  grid-template-columns:repeat(4,minmax(0,1fr));
   gap:var(--ccs-space-2);
   margin:0;
   padding:0;
@@ -591,7 +591,7 @@
 
 .ccs-vehiculo svg{
   width:100%;
-  max-width:7.5rem;
+  max-width:11rem;
   height:auto;
   color:var(--ccs-gris);
 }
