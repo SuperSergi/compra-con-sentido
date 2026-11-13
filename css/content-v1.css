@@ -531,3 +531,35 @@
     grid-column:1 / -1;
   }
 }
+
+/* Tarjetas de análisis por modelo: variante cuadrada de .ccs-hero-links
+   <section class="ccs-hero-links ccs-hero-links--modelos"> … misma estructura de tarjetas … */
+.ccs-hero-links--modelos .ccs-hero-links__grid{
+  grid-template-columns:repeat(auto-fill,minmax(min(100%,15rem),1fr));
+}
+
+.ccs-hero-links--modelos .ccs-hero-links__card{
+  background:var(--ccs-blanco);
+}
+
+.ccs-hero-links--modelos .ccs-hero-links__card img{
+  aspect-ratio:1 / 1;
+  object-fit:cover;
+}
+
+.ccs-hero-links--modelos .ccs-hero-links__copy strong{
+  font-size:var(--ccs-fs-h3);
+}
+
+@media (max-width:700px){
+  .ccs-hero-links--modelos .ccs-hero-links__grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:var(--ccs-space-2);
+  }
+  .ccs-hero-links--modelos .ccs-hero-links__copy{
+    padding:var(--ccs-space-2);
+  }
+  .ccs-hero-links--modelos .ccs-hero-links__copy strong{
+    font-size:var(--ccs-fs-small);
+  }
+}
