@@ -207,7 +207,7 @@
         "css/cta-v1.css",
         "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-08308f9b863c-284ef5bc47c3.min.css"
+      "output": "css/compiled/ccs-08308f9b863c-25113ddc1ead.min.css"
     },
     "ccs-b89203d8fe0e": {
       "sources": [
@@ -240,7 +240,7 @@
       ],
       "output": "css/compiled/ccs-14612fdc71ea-d364ea7d43f6.min.css"
     },
-    "ccs-689fbf04bb64": {
+    "ccs-2f8c50651735": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -248,10 +248,11 @@
         "css/hero-v5.css",
         "css/intro-v1.css",
         "css/related-heroes-v1.css",
+        "css/content-v1.css",
         "css/faq-standard-v1.css",
         "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-689fbf04bb64-45c05606e732.min.css"
+      "output": "css/compiled/ccs-2f8c50651735-39bee3e760dc.min.css"
     },
     "ccs-3c9293896d22": {
       "sources": [
