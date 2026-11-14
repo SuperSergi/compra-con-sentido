@@ -50,7 +50,7 @@
 .ccs-section-head{
   display:grid;
   gap:var(--ccs-space-2);
-  max-width:72ch;
+  max-width:none;
 }
 
 .ccs-section-head h2{
@@ -76,7 +76,7 @@
 
 .ccs-section > p{
   margin:0;
-  max-width:72ch;
+  max-width:none;
   color:var(--ccs-tinta);
   font-size:var(--ccs-fs-body);
   line-height:1.7;
@@ -86,6 +86,14 @@
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));
   gap:var(--ccs-space-4);
+}
+
+/* Con 3 o 6 tarjetas, filas completas de 3 en lugar de 4 + 2 */
+@media (min-width:901px){
+  .ccs-cards:has(> :nth-child(3):last-child),
+  .ccs-cards:has(> :nth-child(6):last-child){
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
 }
 
 .ccs-card{
@@ -115,7 +123,7 @@
 .ccs-list{
   display:grid;
   gap:var(--ccs-space-2);
-  max-width:72ch;
+  max-width:none;
   margin:0;
   padding:0;
   list-style:none;
@@ -148,7 +156,7 @@
 }
 
 .ccs-callout{
-  max-width:72ch;
+  max-width:none;
   padding:var(--ccs-space-3) var(--ccs-space-4);
   border:1px solid var(--ccs-verde-200);
   border-left:4px solid var(--ccs-verde-700);
@@ -448,7 +456,7 @@
 .ccs-metodo p,
 .ccs-metodo li{
   margin:0;
-  max-width:80ch;
+  max-width:none;
   color:var(--ccs-gris);
   font-size:var(--ccs-fs-small);
   line-height:1.55;
@@ -549,6 +557,20 @@
 
 .ccs-hero-links--modelos .ccs-hero-links__copy strong{
   font-size:var(--ccs-fs-h3);
+}
+
+/* Cierre con dos tarjetas: a todo el ancho y en formato apaisado. Con 3 o 6, filas de 3. */
+@media (min-width:701px){
+  .ccs-hero-links--modelos .ccs-hero-links__grid:has(> :nth-child(2):last-child){
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .ccs-hero-links--modelos .ccs-hero-links__grid:has(> :nth-child(2):last-child) img{
+    aspect-ratio:16 / 9;
+  }
+  .ccs-hero-links--modelos .ccs-hero-links__grid:has(> :nth-child(3):last-child),
+  .ccs-hero-links--modelos .ccs-hero-links__grid:has(> :nth-child(6):last-child){
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
 }
 
 @media (max-width:700px){
@@ -731,4 +753,52 @@
 .ccs-gato-svg text.sub{
   fill:var(--ccs-gris);
   font-weight:var(--ccs-fw-normal);
+}
+
+/* Cabecera de página de modelo con la foto de producto del modelo exacto.
+   Fondo verde liso; la foto va en una tarjeta a su tamaño, sin ampliarla.
+   Sin figure, la cabecera queda sin imagen. Uso:
+   <header class="ccs-hero ccs-hero--producto" style="--ccs-hero-image:none">
+   … <figure class="ccs-hero-producto"><img …><figcaption>Imagen ilustrativa</figcaption></figure> */
+.ccs-comparison-v3 .ccs-hero.ccs-hero--producto,
+.ccs-hero.ccs-hero--producto{
+  background-color:var(--ccs-verde-900);
+}
+
+.ccs-hero-producto{
+  display:grid;
+  gap:var(--ccs-space-1);
+  order:99;
+  width:8rem;
+  margin:var(--ccs-space-4) 0 0;
+  padding:var(--ccs-space-1);
+  border-radius:var(--ccs-r-lg);
+  background:var(--ccs-blanco);
+  box-shadow:var(--ccs-sombra-alta);
+}
+
+.ccs-hero-producto img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:1 / 1;
+  object-fit:contain;
+  border-radius:var(--ccs-r-md);
+}
+
+.ccs-hero-producto figcaption{
+  color:var(--ccs-gris);
+  font-size:var(--ccs-fs-kicker);
+  text-align:center;
+}
+
+@media (min-width:75rem){
+  .ccs-hero-producto{
+    position:absolute;
+    top:50%;
+    right:0;
+    width:13rem;
+    margin:var(--ccs-space-6) 0 0;
+    transform:translateY(-50%);
+  }
 }
