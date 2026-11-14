@@ -585,3 +585,51 @@
     font-size:var(--ccs-fs-small);
   }
 }
+
+/* Cabecera de página de modelo con la foto de producto del modelo exacto.
+   Fondo verde liso; la foto va en una tarjeta a su tamaño, sin ampliarla.
+   Sin figure, la cabecera queda sin imagen. Uso:
+   <header class="ccs-hero ccs-hero--producto" style="--ccs-hero-image:none">
+   … <figure class="ccs-hero-producto"><img …><figcaption>Imagen ilustrativa</figcaption></figure> */
+.ccs-comparison-v3 .ccs-hero.ccs-hero--producto,
+.ccs-hero.ccs-hero--producto{
+  background-color:var(--ccs-verde-900);
+}
+
+.ccs-hero-producto{
+  display:grid;
+  gap:var(--ccs-space-1);
+  order:99;
+  width:8rem;
+  margin:var(--ccs-space-4) 0 0;
+  padding:var(--ccs-space-1);
+  border-radius:var(--ccs-r-lg);
+  background:var(--ccs-blanco);
+  box-shadow:var(--ccs-sombra-alta);
+}
+
+.ccs-hero-producto img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:1 / 1;
+  object-fit:contain;
+  border-radius:var(--ccs-r-md);
+}
+
+.ccs-hero-producto figcaption{
+  color:var(--ccs-gris);
+  font-size:var(--ccs-fs-kicker);
+  text-align:center;
+}
+
+@media (min-width:75rem){
+  .ccs-hero-producto{
+    position:absolute;
+    top:50%;
+    right:0;
+    width:13rem;
+    margin:var(--ccs-space-6) 0 0;
+    transform:translateY(-50%);
+  }
+}
