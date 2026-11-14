@@ -88,6 +88,14 @@
   gap:var(--ccs-space-4);
 }
 
+/* Con 3 o 6 tarjetas, filas completas de 3 en lugar de 4 + 2 */
+@media (min-width:901px){
+  .ccs-cards:has(> :nth-child(3):last-child),
+  .ccs-cards:has(> :nth-child(6):last-child){
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+}
+
 .ccs-card{
   display:flex;
   flex-direction:column;
