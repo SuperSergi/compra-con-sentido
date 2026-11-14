@@ -50,7 +50,7 @@
 .ccs-section-head{
   display:grid;
   gap:var(--ccs-space-2);
-  max-width:72ch;
+  max-width:none;
 }
 
 .ccs-section-head h2{
@@ -76,7 +76,7 @@
 
 .ccs-section > p{
   margin:0;
-  max-width:72ch;
+  max-width:none;
   color:var(--ccs-tinta);
   font-size:var(--ccs-fs-body);
   line-height:1.7;
@@ -123,7 +123,7 @@
 .ccs-list{
   display:grid;
   gap:var(--ccs-space-2);
-  max-width:72ch;
+  max-width:none;
   margin:0;
   padding:0;
   list-style:none;
@@ -156,7 +156,7 @@
 }
 
 .ccs-callout{
-  max-width:72ch;
+  max-width:none;
   padding:var(--ccs-space-3) var(--ccs-space-4);
   border:1px solid var(--ccs-verde-200);
   border-left:4px solid var(--ccs-verde-700);
@@ -456,7 +456,7 @@
 .ccs-metodo p,
 .ccs-metodo li{
   margin:0;
-  max-width:80ch;
+  max-width:none;
   color:var(--ccs-gris);
   font-size:var(--ccs-fs-small);
   line-height:1.55;
