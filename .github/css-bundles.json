@@ -40,7 +40,23 @@
       ],
       "output": "css/compiled/ccs-133378096366-0029ab618396.min.css"
     },
-    "ccs-aadbdaf2b492": {
+    "ccs-08308f9b863c": {
+      "sources": [
+        "css/tokens-v1.css",
+        "css/style-v4.css",
+        "css/hero-v5.css",
+        "css/intro-v1.css",
+        "css/comparativas-v3.css",
+        "css/product-cards-v1.css",
+        "css/content-v1.css",
+        "css/faq-standard-v1.css",
+        "css/related-heroes-v1.css",
+        "css/cta-v1.css",
+        "css/type-v1.css"
+      ],
+      "output": "css/compiled/ccs-08308f9b863c-c2fbae435cc2.min.css"
+    },
+    "ccs-b8f979179199": {
       "sources": [
         "css/tokens-v1.css",
         "css/style-v4.css",
@@ -48,9 +64,10 @@
         "css/hero-v5.css",
         "css/intro-v1.css",
         "css/related-heroes-v1.css",
+        "css/content-v1.css",
         "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-aadbdaf2b492-7b59c42577b1.min.css"
+      "output": "css/compiled/ccs-b8f979179199-c2da2b0459a0.min.css"
     },
     "ccs-d0df0977807e": {
       "sources": [
@@ -193,22 +210,6 @@
       ],
       "output": "css/compiled/ccs-b220394cd6db-1937956c48c0.min.css"
     },
-    "ccs-08308f9b863c": {
-      "sources": [
-        "css/tokens-v1.css",
-        "css/style-v4.css",
-        "css/hero-v5.css",
-        "css/intro-v1.css",
-        "css/comparativas-v3.css",
-        "css/product-cards-v1.css",
-        "css/content-v1.css",
-        "css/faq-standard-v1.css",
-        "css/related-heroes-v1.css",
-        "css/cta-v1.css",
-        "css/type-v1.css"
-      ],
-      "output": "css/compiled/ccs-08308f9b863c-22894f5f9341.min.css"
-    },
     "ccs-b89203d8fe0e": {
       "sources": [
         "css/tokens-v1.css",
@@ -252,7 +253,7 @@
         "css/faq-standard-v1.css",
         "css/type-v1.css"
       ],
-      "output": "css/compiled/ccs-2f8c50651735-183dc36b9831.min.css"
+      "output": "css/compiled/ccs-2f8c50651735-ab6bc72c0726.min.css"
     },
     "ccs-3c9293896d22": {
       "sources": [
