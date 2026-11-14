@@ -753,4 +753,39 @@
 .ccs-gato-svg text.sub{
   fill:var(--ccs-gris);
   font-weight:var(--ccs-fw-normal);
+/* Foto en las tarjetas de alternativas: enlaza al producto como el botón */
+.ccs-card__media{
+  display:grid;
+  gap:var(--ccs-space-1);
+  margin:0 0 var(--ccs-space-2);
+  padding:var(--ccs-space-2);
+  border:1px solid var(--ccs-linea);
+  border-radius:var(--ccs-r-md);
+  background:var(--ccs-blanco);
+  text-decoration:none;
+}
+
+.ccs-card__media img{
+  display:block;
+  width:auto;
+  max-width:100%;
+  height:12rem;
+  margin:0 auto;
+  object-fit:contain;
+  transition:transform .2s ease;
+}
+
+.ccs-card__media:hover img,
+.ccs-card__media:focus-visible img{
+  transform:scale(1.03);
+}
+
+.ccs-card__media small{
+  color:var(--ccs-gris);
+  font-size:var(--ccs-fs-kicker);
+  text-align:right;
+}
+
+.ccs-card > .ccs-product-cta-button:last-child{
+  margin-top:auto;
 }
